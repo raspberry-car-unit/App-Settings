@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Roshan Agrawal <roshanagrawal@google.com>
+Verified+1: Anton Hansson <hansson@google.com>
+Submitted-by: Anton Hansson <hansson@google.com>
+Submitted-at: Tue, 17 Apr 2018 10:18:21 +0000
+Reviewed-on: https://android-review.googlesource.com/664332
+Project: platform/packages/apps/Car/Settings
+Branch: refs/heads/master
