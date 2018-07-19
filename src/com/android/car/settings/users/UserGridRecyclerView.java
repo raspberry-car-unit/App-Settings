@@ -253,7 +253,14 @@ public class UserGridRecyclerView extends PagedListView implements
 
                 // If the user selects Guest, start the guest session.
                 if (userRecord.mIsStartGuestSession) {
-                    mCarUserManagerHelper.startNewGuestSession(mGuestName);
+                    UserInfo currentGuestUser = mCarUserManagerHelper.findCurrentGuestUser();
+                    // If guest user was already created, switch to it;
+                    // Otherwise, create a new guest user
+                    if (currentGuestUser != null) {
+                        mCarUserManagerHelper.switchToUser(currentGuestUser);
+                    } else {
+                        mCarUserManagerHelper.startNewGuestSession(mGuestName);
+                    }
                     return;
                 }
 
