@@ -17,6 +17,7 @@
 package com.android.car.settings.users;
 
 import android.car.user.CarUserManagerHelper;
+import android.content.pm.UserInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -75,7 +76,14 @@ public class GuestFragment extends ListItemSettingsFragment {
         switchUserBtn.setText(R.string.user_switch);
         switchUserBtn.setOnClickListener(v -> {
             getActivity().onBackPressed();
-            mCarUserManagerHelper.startNewGuestSession(getContext().getString(R.string.user_guest));
+            UserInfo currentGuestUser = mCarUserManagerHelper.findCurrentGuestUser();
+            // If guest user already created, switch to it; otherwise, create a new guest user
+            if (currentGuestUser != null) {
+                mCarUserManagerHelper.switchToUser(currentGuestUser);
+            } else {
+                mCarUserManagerHelper.startNewGuestSession(
+                        getContext().getString(R.string.user_guest));
+            }
         });
     }
 
