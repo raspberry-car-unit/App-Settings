@@ -102,10 +102,11 @@ public class SoundSettingsFragment extends BaseFragment {
             for (ListItem lineItem : mVolumeLineItems) {
                 VolumeLineItem volumeLineItem = (VolumeLineItem) lineItem;
                 if (volumeLineItem.getVolumeGroupId() == groupId) {
-                    volumeLineItem.updateProgress();
+                    if (getActivity() != null) {
+                        getActivity().runOnUiThread(() -> volumeLineItem.updateProgress());
+                    }
                 }
             }
-            updateList();
         }
 
         @Override
