@@ -15,14 +15,17 @@
  */
 package com.android.car.settings.quicksettings;
 
+import android.app.admin.DevicePolicyManager;
 import android.car.drivingstate.CarUxRestrictions;
 import android.car.user.CarUserManagerHelper;
+import android.content.Context;
 import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.car.widget.PagedListView;
 
@@ -46,6 +49,7 @@ public class QuickSettingFragment extends BaseFragment {
     private HomeFragmentLauncher mHomeFragmentLauncher;
     private float mOpacityDisabled;
     private float mOpacityEnabled;
+    private DevicePolicyManager mDevicePolicyManager;
 
     /**
      * Returns an instance of this class.
@@ -78,7 +82,14 @@ public class QuickSettingFragment extends BaseFragment {
         mFullSettingBtn = getActivity().findViewById(R.id.full_setting_btn);
         mFullSettingBtn.setOnClickListener(mHomeFragmentLauncher);
         mUserSwitcherBtn = getActivity().findViewById(R.id.user_switcher_btn);
+        mDevicePolicyManager = (DevicePolicyManager) getContext().getSystemService(
+                Context.DEVICE_POLICY_SERVICE);
         mUserSwitcherBtn.setOnClickListener(v -> {
+            if (mDevicePolicyManager.isDeviceManaged()) {
+                Toast.makeText(getContext(), R.string.device_info_not_available,
+                    Toast.LENGTH_SHORT).show();
+                return;
+            }
             getFragmentController().launchFragment(UserSwitcherFragment.newInstance());
         });
 
