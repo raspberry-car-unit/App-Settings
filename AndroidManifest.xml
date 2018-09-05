@@ -73,7 +73,6 @@
             <!-- TODO: once phone setting is removed from car system image, set priority to 1 -->
             <intent-filter android:priority="10">
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.settings.SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
