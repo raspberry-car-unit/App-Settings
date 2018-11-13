@@ -23,7 +23,7 @@ import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.SystemProperties;
+import android.sysprop.BluetoothProperties;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,9 +63,6 @@ public class BluetoothDeviceListAdapter
         extends RecyclerView.Adapter<BluetoothDeviceListAdapter.ViewHolder>
         implements PagedListView.ItemCap, BluetoothCallback {
     private static final Logger LOG = new Logger(BluetoothDeviceListAdapter.class);
-    // Copied from BluetoothDeviceNoNamePreferenceController.java
-    private static final String BLUETOOTH_SHOW_DEVICES_WITHOUT_NAMES_PROPERTY =
-            "persist.bluetooth.showdeviceswithoutnames";
     private static final int DEVICE_ROW_TYPE = 1;
     private static final int BONDED_DEVICE_HEADER_TYPE = 2;
     private static final int AVAILABLE_DEVICE_HEADER_TYPE = 3;
@@ -134,7 +131,7 @@ public class BluetoothDeviceListAdapter
         mHeadphoneDescription = r.getString(R.string.bluetooth_talkback_headphone);
         mBluetoothDescription = r.getString(R.string.bluetooth_talkback_bluetooth);
         mShowDevicesWithoutNames =
-                SystemProperties.getBoolean(BLUETOOTH_SHOW_DEVICES_WITHOUT_NAMES_PROPERTY, false);
+                BluetoothProperties.show_devices_without_names().orElse(false);
     }
 
     public void start() {
