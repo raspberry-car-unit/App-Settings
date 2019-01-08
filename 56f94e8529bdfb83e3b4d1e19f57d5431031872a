@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "60ad6343_9cf8f200",
+        "filename": "src/com/android/car/settings/quicksettings/QuickSettingFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1344527
+      },
+      "writtenOn": "2019-01-08T17:43:35Z",
+      "side": 1,
+      "message": "Can we hide the button instead of blocking the click action?",
+      "range": {
+        "startLine": 88,
+        "startChar": 11,
+        "endLine": 88,
+        "endChar": 57
+      },
+      "revId": "56f94e8529bdfb83e3b4d1e19f57d5431031872a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf5489f7_88cccbf5",
+        "filename": "src/com/android/car/settings/quicksettings/QuickSettingFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1344527
+      },
+      "writtenOn": "2019-01-08T17:43:35Z",
+      "side": 1,
+      "message": "I don\u0027t think we should reuse this string.  Even though it has the desired value, the name is misleading.",
+      "range": {
+        "startLine": 89,
+        "startChar": 54,
+        "endLine": 89,
+        "endChar": 79
+      },
+      "revId": "56f94e8529bdfb83e3b4d1e19f57d5431031872a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
