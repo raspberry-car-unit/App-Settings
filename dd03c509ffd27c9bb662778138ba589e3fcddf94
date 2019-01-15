@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "02b9c124_b40ebc8f",
+        "filename": "src/com/android/car/settings/quicksettings/QuickSettingFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1344527
+      },
+      "writtenOn": "2019-01-15T18:56:02Z",
+      "side": 1,
+      "message": "Not sure it makes sense to have this as a parameter.  Can we check demo mode inside the helper method similar to checking for multi user support and restrictions?",
+      "range": {
+        "startLine": 103,
+        "startChar": 56,
+        "endLine": 103,
+        "endChar": 62
+      },
+      "revId": "dd03c509ffd27c9bb662778138ba589e3fcddf94",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
