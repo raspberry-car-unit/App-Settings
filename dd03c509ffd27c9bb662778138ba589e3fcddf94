@@ -22,6 +22,30 @@
       "revId": "dd03c509ffd27c9bb662778138ba589e3fcddf94",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "adf28c5b_006e5582",
+        "filename": "src/com/android/car/settings/quicksettings/QuickSettingFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1043738
+      },
+      "writtenOn": "2019-01-15T23:48:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "02b9c124_b40ebc8f",
+      "range": {
+        "startLine": 103,
+        "startChar": 56,
+        "endLine": 103,
+        "endChar": 62
+      },
+      "revId": "dd03c509ffd27c9bb662778138ba589e3fcddf94",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
