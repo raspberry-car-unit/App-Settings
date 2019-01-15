@@ -19,6 +19,7 @@ import android.car.drivingstate.CarUxRestrictions;
 import android.car.user.CarUserManagerHelper;
 import android.content.pm.UserInfo;
 import android.os.Bundle;
+import android.os.UserManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -95,6 +96,12 @@ public class QuickSettingFragment extends BaseFragment {
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        mUserSwitcherBtn.setVisibility(showUserSwitcher() ? View.VISIBLE : View.INVISIBLE);
+    }
+
+    @Override
     public void onStop() {
         super.onStop();
         mGridAdapter.stop();
@@ -108,6 +115,17 @@ public class QuickSettingFragment extends BaseFragment {
 
         TextView userSwitcherText = (TextView) getActivity().findViewById(R.id.user_switcher_text);
         userSwitcherText.setText(currentUserInfo.name);
+    }
+
+    private boolean showUserSwitcher() {
+        UserManager userManager = UserManager.get(getContext());
+        if (userManager.isDeviceInDemoMode(getContext()) || !userManager.supportsMultipleUsers()) {
+            return false;
+        }
+        if (userManager.hasUserRestriction(UserManager.DISALLOW_USER_SWITCH)) {
+            return false;
+        }
+        return true;
     }
 
     /**
