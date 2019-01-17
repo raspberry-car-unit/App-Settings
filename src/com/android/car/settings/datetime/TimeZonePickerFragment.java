@@ -21,6 +21,7 @@ import android.os.Bundle;
 
 import androidx.car.widget.ListItem;
 import androidx.car.widget.ListItemProvider;
+import androidx.car.widget.PagedListView;
 
 import com.android.car.settings.R;
 import com.android.car.settings.common.ListItemSettingsFragment;
@@ -49,6 +50,8 @@ public class TimeZonePickerFragment extends ListItemSettingsFragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         mZoneList = ZoneGetter.getZonesList(getContext());
         super.onActivityCreated(savedInstanceState);
+        PagedListView listView = getView().findViewById(R.id.list);
+        listView.setMaxPages(PagedListView.UNLIMITED_PAGES);
     }
 
     @Override
