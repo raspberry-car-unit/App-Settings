@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e87b291_b99e76ad",
+        "filename": "OWNERS",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1022261
+      },
+      "writtenOn": "2019-01-18T21:23:12Z",
+      "side": 1,
+      "message": "You can take me out, it\u0027s been a long time since I left Android auto.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 14
+      },
+      "revId": "2f0b89be5e01c7d05f40efc91ccd5f00634b99eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
