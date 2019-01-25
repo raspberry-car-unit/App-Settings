@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1044a314_90294e1a",
+        "filename": "src/com/android/car/settings/quicksettings/QuickSettingFragment.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1043738
+      },
+      "writtenOn": "2019-01-25T23:00:41Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c8f96936_dfa5c435",
+      "range": {
+        "startLine": 122,
+        "startChar": 12,
+        "endLine": 122,
+        "endChar": 96
+      },
+      "revId": "a787f88c58b6f377b7fce2ca55eab8bd45c17c8b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "472b804f_fe262d15",
         "filename": "src/com/android/car/settings/quicksettings/QuickSettingFragment.java",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2019-01-16T02:27:25Z",
       "side": 1,
       "message": "Optional: can simplify this method as\n\nreturn !UserManager.isDeviceInDemoMode(getContext()) \n        \u0026\u0026 UserManager.supportsMultipleUsers()\n        \u0026\u0026 !UserManager.get(getContext()).hasUserRestriction(UserManager.DISALLOW_USER_SWITCH);",
+      "range": {
+        "startLine": 120,
+        "startChar": 4,
+        "endLine": 129,
+        "endChar": 5
+      },
+      "revId": "a787f88c58b6f377b7fce2ca55eab8bd45c17c8b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "84db9673_036a1112",
+        "filename": "src/com/android/car/settings/quicksettings/QuickSettingFragment.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1043738
+      },
+      "writtenOn": "2019-01-25T23:00:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "472b804f_fe262d15",
       "range": {
         "startLine": 120,
         "startChar": 4,
