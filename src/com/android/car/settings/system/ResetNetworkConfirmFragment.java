@@ -21,6 +21,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkPolicyManager;
@@ -83,6 +84,7 @@ public class ResetNetworkConfirmFragment extends SettingsFragment {
         }
 
         Context context = requireActivity().getApplicationContext();
+        PackageManager pm = context.getPackageManager();
 
         ConnectivityManager connectivityManager = (ConnectivityManager)
                 context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -105,22 +107,23 @@ public class ResetNetworkConfirmFragment extends SettingsFragment {
             }
         }
 
-        int networkSubscriptionId = getNetworkSubscriptionId();
-        TelephonyManager telephonyManager = (TelephonyManager)
-                context.getSystemService(Context.TELEPHONY_SERVICE);
-        if (telephonyManager != null) {
-            telephonyManager.factoryReset(networkSubscriptionId);
+        if (pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+            int networkSubscriptionId = getNetworkSubscriptionId();
+            TelephonyManager telephonyManager = (TelephonyManager)
+                    context.getSystemService(Context.TELEPHONY_SERVICE);
+            if (telephonyManager != null) {
+                telephonyManager.factoryReset(networkSubscriptionId);
+            }
+
+            NetworkPolicyManager policyManager = (NetworkPolicyManager)
+                    context.getSystemService(Context.NETWORK_POLICY_SERVICE);
+            if (policyManager != null) {
+                String subscriberId = telephonyManager.getSubscriberId(networkSubscriptionId);
+                policyManager.factoryReset(subscriberId);
+            }
+
+            restoreDefaultApn(context, networkSubscriptionId);
         }
-
-        NetworkPolicyManager policyManager = (NetworkPolicyManager)
-                context.getSystemService(Context.NETWORK_POLICY_SERVICE);
-        if (policyManager != null) {
-            String subscriberId = telephonyManager.getSubscriberId(networkSubscriptionId);
-            policyManager.factoryReset(subscriberId);
-        }
-
-        restoreDefaultApn(context, networkSubscriptionId);
-
         // There has been issues when Sms raw table somehow stores orphan
         // fragments. They lead to garbled message when new fragments come
         // in and combined with those stale ones. In case this happens again,
