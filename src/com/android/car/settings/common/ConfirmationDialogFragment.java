@@ -168,6 +168,7 @@ public class ConfirmationDialogFragment extends DialogFragment implements
         dialogFragment.setArguments(args);
         dialogFragment.setConfirmListener(builder.mConfirmListener);
         dialogFragment.setRejectListener(builder.mRejectListener);
+        dialogFragment.setCancelable(false);
         return dialogFragment;
     }
 
