@@ -79,6 +79,7 @@ public class QuickSettingFragment extends BaseFragment {
     private float mOpacityDisabled;
     private float mOpacityEnabled;
     private TextView mBuildInfo;
+    private Activity mActivity;
 
     @Override
     @LayoutRes
@@ -96,9 +97,9 @@ public class QuickSettingFragment extends BaseFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mHomeFragmentLauncher = new HomeFragmentLauncher();
-        Activity activity = requireActivity();
+        mActivity = requireActivity();
 
-        FragmentManager fragmentManager = ((FragmentActivity) activity).getSupportFragmentManager();
+        FragmentManager fragmentManager = ((FragmentActivity) mActivity).getSupportFragmentManager();
         if (fragmentManager.getBackStackEntryCount() == 1
                 && fragmentManager.findFragmentByTag("0") != null
                 && fragmentManager.findFragmentByTag("0").getClass().getName().equals(
@@ -108,34 +109,28 @@ public class QuickSettingFragment extends BaseFragment {
             hideExitIcon();
         }
 
-        activity.findViewById(R.id.action_bar_icon_container).setOnClickListener(
-                v -> activity.finish());
+        mActivity.findViewById(R.id.action_bar_icon_container).setOnClickListener(
+                v -> mActivity.finish());
 
-        mOpacityDisabled = activity.getResources().getFloat(R.dimen.opacity_disabled);
-        mOpacityEnabled = activity.getResources().getFloat(R.dimen.opacity_enabled);
-        mCarUserManagerHelper = new CarUserManagerHelper(activity);
+        mOpacityDisabled = mActivity.getResources().getFloat(R.dimen.opacity_disabled);
+        mOpacityEnabled = mActivity.getResources().getFloat(R.dimen.opacity_enabled);
+        mCarUserManagerHelper = new CarUserManagerHelper(mActivity);
         mUserIconProvider = new UserIconProvider(mCarUserManagerHelper);
-        mListView = activity.findViewById(R.id.list);
-        mGridAdapter = new QuickSettingGridAdapter(activity);
+        mListView = mActivity.findViewById(R.id.list);
+        mGridAdapter = new QuickSettingGridAdapter(mActivity);
         mListView.setLayoutManager(mGridAdapter.getGridLayoutManager());
 
-        mFullSettingsBtn = activity.findViewById(R.id.full_settings_btn);
+        mFullSettingsBtn = mActivity.findViewById(R.id.full_settings_btn);
         mFullSettingsBtn.setOnClickListener(mHomeFragmentLauncher);
-        mUserSwitcherBtn = activity.findViewById(R.id.user_switcher_btn);
+        mUserSwitcherBtn = mActivity.findViewById(R.id.user_switcher_btn);
         mUserSwitcherBtn.setOnClickListener(v -> {
             getFragmentController().launchFragment(new UserSwitcherFragment());
         });
-        setupUserButton(activity);
+        setupUserButton(mActivity);
 
-        View exitBtn = activity.findViewById(R.id.action_bar_icon_container);
+        View exitBtn = mActivity.findViewById(R.id.action_bar_icon_container);
         exitBtn.setOnClickListener(v -> getFragmentController().goBack());
 
-        mGridAdapter
-                .addTile(new WifiTile(activity, mGridAdapter, getFragmentController()))
-                .addTile(new BluetoothTile(activity, mGridAdapter, getFragmentController()))
-                .addTile(new DayNightTile(activity, mGridAdapter, getFragmentController()))
-                .addTile(new CelluarTile(activity, mGridAdapter))
-                .addSeekbarTile(new BrightnessTile(activity));
         mListView.setAdapter(mGridAdapter);
 
         mPreferencesIgnoringUxRestrictions = new HashSet<String>(Arrays.asList(
@@ -155,6 +150,12 @@ public class QuickSettingFragment extends BaseFragment {
     public void onStart() {
         super.onStart();
 
+        mGridAdapter
+                .addTile(new WifiTile(mActivity, mGridAdapter, getFragmentController()))
+                .addTile(new BluetoothTile(mActivity, mGridAdapter, getFragmentController()))
+                .addTile(new DayNightTile(mActivity, mGridAdapter, getFragmentController()))
+                .addTile(new CelluarTile(mActivity, mGridAdapter))
+                .addSeekbarTile(new BrightnessTile(mActivity));
         mGridAdapter.start();
         mUserSwitcherBtn.setVisibility(showUserSwitcher() ? View.VISIBLE : View.INVISIBLE);
         // In non-user builds (that is, user-debug, eng, etc), display some version information.
