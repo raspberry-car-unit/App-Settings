@@ -41,6 +41,9 @@ public class WifiIpAddressPreferenceController extends
 
     @Override
     protected void updateState(WifiDetailsPreference preference) {
+        if (getWifiInfoProvider().getLinkProperties() == null) {
+            return;
+        }
         String ipv4Address = null;
 
         for (LinkAddress addr : getWifiInfoProvider().getLinkProperties().getLinkAddresses()) {

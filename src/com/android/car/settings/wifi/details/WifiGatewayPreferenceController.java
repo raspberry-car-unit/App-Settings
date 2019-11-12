@@ -39,6 +39,9 @@ public class WifiGatewayPreferenceController extends
 
     @Override
     protected void updateState(WifiDetailsPreference preference) {
+        if (getWifiInfoProvider().getLinkProperties() == null) {
+            return;
+        }
         String gateway = null;
         for (RouteInfo routeInfo : getWifiInfoProvider().getLinkProperties().getRoutes()) {
             if (routeInfo.isIPv4Default() && routeInfo.hasGateway()) {

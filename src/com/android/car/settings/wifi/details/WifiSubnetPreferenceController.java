@@ -44,6 +44,9 @@ public class WifiSubnetPreferenceController extends
 
     @Override
     protected void updateState(WifiDetailsPreference preference) {
+        if (getWifiInfoProvider().getLinkProperties() == null) {
+            return;
+        }
         String subnet = null;
 
         for (LinkAddress addr : getWifiInfoProvider().getLinkProperties().getLinkAddresses()) {

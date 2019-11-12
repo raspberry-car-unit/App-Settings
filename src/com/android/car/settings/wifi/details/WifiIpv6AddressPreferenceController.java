@@ -45,6 +45,9 @@ public class WifiIpv6AddressPreferenceController extends
 
     @Override
     protected void updateState(Preference preference) {
+        if (getWifiInfoProvider().getLinkProperties() == null) {
+            return;
+        }
         StringJoiner ipv6Addresses = new StringJoiner(System.lineSeparator());
 
         for (LinkAddress addr : getWifiInfoProvider().getLinkProperties().getLinkAddresses()) {
