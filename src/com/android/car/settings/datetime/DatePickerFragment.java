@@ -15,7 +15,8 @@
  */
 package com.android.car.settings.datetime;
 
-import android.app.AlarmManager;
+import android.app.timedetector.ManualTimeSuggestion;
+import android.app.timedetector.TimeDetector;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -72,7 +73,11 @@ public class DatePickerFragment extends BaseFragment {
             c.set(Calendar.DAY_OF_MONTH, mDatePicker.getDayOfMonth());
             long when = Math.max(c.getTimeInMillis(), DatetimeSettingsFragment.MIN_DATE);
             if (when / MILLIS_IN_SECOND < Integer.MAX_VALUE) {
-                ((AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE)).setTime(when);
+                TimeDetector timeDetector = (TimeDetector)
+                        mContext.getSystemService(Context.TIME_DETECTOR_SERVICE);
+                ManualTimeSuggestion manualTimeSuggestion =
+                        TimeDetector.createManualTimeSuggestion(when, "Settings: Set date");
+                timeDetector.suggestManualTime(manualTimeSuggestion);
                 getContext().sendBroadcast(new Intent(Intent.ACTION_TIME_CHANGED));
             }
             getFragmentController().goBack();
