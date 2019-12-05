@@ -376,7 +376,6 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
 
             case BluetoothDevice.PAIRING_VARIANT_PASSKEY:
                 int pass = Integer.parseInt(passkey);
-                mDevice.setPasskey(pass);
                 break;
 
             case BluetoothDevice.PAIRING_VARIANT_PASSKEY_CONFIRMATION:
@@ -386,11 +385,8 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
 
             case BluetoothDevice.PAIRING_VARIANT_DISPLAY_PASSKEY:
             case BluetoothDevice.PAIRING_VARIANT_DISPLAY_PIN:
-                // Do nothing.
-                break;
-
             case BluetoothDevice.PAIRING_VARIANT_OOB_CONSENT:
-                mDevice.setRemoteOutOfBandData();
+                // Do nothing.
                 break;
 
             default:
