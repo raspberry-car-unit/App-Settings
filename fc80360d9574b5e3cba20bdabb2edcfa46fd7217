@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7330e54f_08f27019",
+        "filename": "src/com/android/car/settings/wifi/details/WifiGatewayPreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1573237
+      },
+      "writtenOn": "2019-12-12T21:38:40Z",
+      "side": 1,
+      "message": "Do this check before setting the variable.\n\nSame below.",
+      "range": {
+        "startLine": 43,
+        "startChar": 8,
+        "endLine": 45,
+        "endChar": 9
+      },
+      "revId": "fc80360d9574b5e3cba20bdabb2edcfa46fd7217",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
