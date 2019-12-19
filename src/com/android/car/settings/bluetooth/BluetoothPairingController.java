@@ -269,7 +269,8 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
         if (mType == BluetoothDevice.PAIRING_VARIANT_DISPLAY_PASSKEY) {
             mDevice.setPairingConfirmation(true);
         } else if (mType == BluetoothDevice.PAIRING_VARIANT_DISPLAY_PIN) {
-            mDevice.setPin(mPasskeyFormatted);
+            byte[] pinBytes = BluetoothDevice.convertPinToBytes(mPasskeyFormatted);
+            mDevice.setPin(pinBytes);
         }
     }
 
@@ -366,11 +367,16 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
         switch (mType) {
             case BluetoothDevice.PAIRING_VARIANT_PIN:
             case BluetoothDevice.PAIRING_VARIANT_PIN_16_DIGITS:
-                mDevice.setPin(passkey);
+                byte[] pinBytes = BluetoothDevice.convertPinToBytes(passkey);
+                if (pinBytes == null) {
+                    return;
+                }
+                mDevice.setPin(pinBytes);
                 break;
 
             case BluetoothDevice.PAIRING_VARIANT_PASSKEY:
                 int pass = Integer.parseInt(passkey);
+                mDevice.setPasskey(pass);
                 break;
 
             case BluetoothDevice.PAIRING_VARIANT_PASSKEY_CONFIRMATION:
@@ -380,8 +386,11 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
 
             case BluetoothDevice.PAIRING_VARIANT_DISPLAY_PASSKEY:
             case BluetoothDevice.PAIRING_VARIANT_DISPLAY_PIN:
-            case BluetoothDevice.PAIRING_VARIANT_OOB_CONSENT:
                 // Do nothing.
+                break;
+
+            case BluetoothDevice.PAIRING_VARIANT_OOB_CONSENT:
+                mDevice.setRemoteOutOfBandData();
                 break;
 
             default:
@@ -395,7 +404,7 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
      */
     public void onCancel() {
         LOG.d("Pairing dialog canceled");
-        mDevice.cancelPairing();
+        mDevice.cancelPairingUserInput();
     }
 
     /**

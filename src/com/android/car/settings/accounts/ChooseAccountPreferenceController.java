@@ -23,7 +23,6 @@ import android.car.userlib.CarUserManagerHelper;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.os.Handler;
 import android.os.UserHandle;
 
 import androidx.annotation.Nullable;
@@ -59,8 +58,6 @@ public class ChooseAccountPreferenceController extends
     private Set<String> mAccountTypesFilter;
     private Set<String> mAccountTypesExclusionFilter;
     private ArrayMap<String, AuthenticatorDescriptionPreference> mPreferences = new ArrayMap<>();
-    private boolean mIsStarted = false;
-    private boolean mHasPendingBack = false;
 
     public ChooseAccountPreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
@@ -111,15 +108,6 @@ public class ChooseAccountPreferenceController extends
     @Override
     protected void onStartInternal() {
         mAuthenticatorHelper.listenToAccountUpdates();
-        mIsStarted = true;
-
-        if (mHasPendingBack) {
-            mHasPendingBack = false;
-
-            // Post the fragment navigation because FragmentManager may still be executing
-            // transactions during onStart.
-            new Handler().post(() -> getFragmentController().goBack());
-        }
     }
 
     /**
@@ -128,7 +116,6 @@ public class ChooseAccountPreferenceController extends
     @Override
     protected void onStopInternal() {
         mAuthenticatorHelper.stopListeningToAccountUpdates();
-        mIsStarted = false;
     }
 
     @Override
@@ -231,11 +218,7 @@ public class ChooseAccountPreferenceController extends
 
     private void onAccountAdded(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == ADD_ACCOUNT_REQUEST_CODE) {
-            if (mIsStarted) {
-                getFragmentController().goBack();
-            } else {
-                mHasPendingBack = true;
-            }
+            getFragmentController().goBack();
         }
     }
 
