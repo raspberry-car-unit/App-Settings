@@ -1,0 +1,10 @@
+Verified+1: Hugh Chen <hughchen@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+2: Zach Johnson <zachoverflow@google.com>
+Open-Source-Licensing+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Fri, 07 Feb 2020 02:46:04 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/packages/apps/Car/Settings/+/1227981
+Project: platform/packages/apps/Car/Settings
+Branch: refs/heads/master
