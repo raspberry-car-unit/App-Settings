@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "445e8e10_ec14cf65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1059499
+      },
+      "writtenOn": "2020-07-17T10:11:49Z",
+      "side": 1,
+      "message": "Bypassing TH as this fixes the aosp-master build breakage.",
+      "revId": "7db029a109026385ff778936383fb813e97f51c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
