@@ -1,0 +1,10 @@
+Code-Review+2: Eran Messeri <eranm@google.com>
+Bypass-Presubmit+1: Rubin Xu <rubinxu@google.com>
+Autosubmit+1: Rubin Xu <rubinxu@google.com>
+Presubmit-Ready+1: Rubin Xu <rubinxu@google.com>
+Open-Source-Licensing+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Submitted-by: Rubin Xu <rubinxu@google.com>
+Submitted-at: Fri, 17 Jul 2020 10:12:32 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/packages/apps/Car/Settings/+/1365860
+Project: platform/packages/apps/Car/Settings
+Branch: refs/heads/master
