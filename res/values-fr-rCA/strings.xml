@@ -140,7 +140,7 @@
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"D\'autres appareils peuvent se connecter à <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g>"</string>
     <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"Mot de passe du point d\'accès"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"Sécurité"</string>
-    <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2 personnel"</string>
+    <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2-Personnel"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"Aucun"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"Bande PA"</string>
     <string name="wifi_ap_band_config" msgid="6143905484067008736">"Sélectionner la bande PA"</string>
@@ -157,6 +157,13 @@
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> souhaite activer le Wi-Fi"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> souhaite désactiver le Wi-Fi"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Erreur"</string>
+    <string name="network_connection_request_dialog_title" msgid="8449606155059098762">"Appareil à utiliser avec <xliff:g id="APPNAME">%1$s</xliff:g>"</string>
+    <string name="network_connection_timeout_dialog_message" msgid="2536299451668687586">"Aucun appareil trouvé. Assurez-vous que l\'appareil est allumé et prêt à se connecter."</string>
+    <string name="network_connection_timeout_dialog_ok" msgid="2228662561126434792">"Réessayer"</string>
+    <string name="network_connection_errorstate_dialog_message" msgid="4268321315241218483">"Une erreur s\'est produite. L\'application a annulé la demande de sélection d\'un appareil."</string>
+    <string name="network_connection_connect_successful" msgid="7893957133113302365">"Connexion réussie"</string>
+    <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Tout afficher"</string>
+    <string name="progress_scanning" msgid="7191583064717479795">"Recherche en cours…"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Appareil sans nom"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"Appareils associés"</string>
@@ -306,7 +313,7 @@
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Autoriser l\'application d\'assistance à accéder à une image affichée à l\'écran"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"Entrée vocale"</string>
     <string name="autofill_settings_title" msgid="1188754272680049972">"Service de remplissage automatique"</string>
-    <string name="app_list_preference_none" msgid="7753357799926715901">"Aucun"</string>
+    <string name="app_list_preference_none" msgid="7753357799926715901">"Aucune"</string>
     <string name="default_app_selected_app" msgid="5289396663745484773">"Sélectionnée"</string>
     <string name="assistant_security_warning" msgid="1844807956967428012">"L\'Assistant Google pourra accéder aux données des applications en cours d\'utilisation sur votre système, y compris les données visibles à l\'écran ou accessibles au sein des applications."</string>
     <string name="autofill_confirmation_message" msgid="1832984461556991378">"&lt;b&gt;Assurez-vous de faire confiance à cette application&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; &lt;xliff:g id=app_name example=Le remplissage automatique de Google&gt;%1$s&lt;/xliff:g&gt; utilise les éléments affichés à l\'écran pour déterminer les champs qui peuvent bénéficier de l\'entrée automatique."</string>
@@ -333,8 +340,8 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Cette autorisation permet à une application de modifier les paramètres du système."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Accès aux notifications"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"Autoriser <xliff:g id="SERVICE">%1$s</xliff:g> à accéder aux notifications?"</string>
-    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> pourra lire toutes les notifications, y compris des données personnelles, telles que le nom de contacts et le texte des messages que vous recevez. Ce service d\'écoute pourra également ignorer des notifications ou déclencher des boutons d\'action que celles-ci contiennent.\n\nCe déclenchement permettra également à l\'application d\'activer et de désactiver la fonction Ne pas déranger ainsi que de modifier les paramètres connexes."</string>
-    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Si vous désactivez l\'accès aux notifications pour <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, l\'accès à la fonction Ne pas déranger peut également être désactivé."</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> pourra lire toutes les notifications, y compris des données personnelles, telles que le nom de contacts et le texte des messages que vous recevez. Ce service d\'écoute pourra également ignorer des notifications ou déclencher des boutons d\'action que celles-ci contiennent.\n\nCe déclenchement permettra également à l\'application d\'activer et de désactiver le mode Ne pas déranger ainsi que de modifier les paramètres connexes."</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Si vous désactivez l\'accès aux notifications pour <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, l\'accès au mode Ne pas déranger peut également être désactivé."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"Désactiver"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Annuler"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"Accès aux messages texte payants"</string>
@@ -350,7 +357,7 @@
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Autorisations à l\'échelle des applis"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Services de localisation"</string>
     <string name="system_setting_title" msgid="6864599341809463440">"Système"</string>
-    <string name="system_update_settings_title" msgid="8448588267784138855">"Mises à jour système"</string>
+    <string name="system_update_settings_title" msgid="8448588267784138855">"Mises à jour du système"</string>
     <string name="firmware_version" msgid="8491753744549309333">"Version d\'Android"</string>
     <string name="security_patch" msgid="4794276590178386903">"Niveau du correctif de sécurité Android"</string>
     <string name="hardware_info" msgid="3973165746261507658">"Modèle et matériel"</string>
@@ -497,7 +504,7 @@
     <string name="storage_data_size_label" msgid="5022911581004239367">"Données de l\'utilisateur"</string>
     <string name="storage_cache_size_label" msgid="6361308766707419555">"Cache"</string>
     <string name="storage_total_size_label" msgid="3892138268243791912">"Total"</string>
-    <string name="storage_clear_user_data_text" msgid="8787615136779130680">"Vider le stockage"</string>
+    <string name="storage_clear_user_data_text" msgid="8787615136779130680">"Effacer l\'espace de stockage"</string>
     <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"Vider le cache"</string>
     <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"Supprimer les données de l\'appli?"</string>
     <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"Toutes les données de cette application seront supprimées définitivement, y compris l\'intégralité des fichiers, des paramètres, des comptes, des bases de données, etc."</string>
@@ -567,6 +574,7 @@
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"Schéma incorrect"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"Comment dessiner un schéma de déverr."</string>
     <string name="error_saving_lockpattern" msgid="2933512812768570130">"Erreur lors de l\'enregistrement du schéma"</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts" msgid="4636307830951251013">"Trop de tentatives incorrectes. Réessayez dans <xliff:g id="NUMBER">%d</xliff:g> secondes."</string>
     <string name="okay" msgid="4589873324439764349">"OK"</string>
     <string name="remove_screen_lock_title" msgid="1234382338764193387">"Suppr. le verrouill. de l\'écran?"</string>
     <string name="remove_screen_lock_message" msgid="6675850371585564965">"Cela permettra à quiconque d\'accéder à votre compte"</string>
@@ -633,7 +641,7 @@
     <string name="credentials_not_erased" msgid="6118567459076742720">"Impossible d\'effacer le stockage des authentifiants."</string>
     <string name="forget" msgid="3971143908183848527">"Oublier"</string>
     <string name="connect" msgid="5861699594602380150">"Connexion"</string>
-    <string name="disconnect" msgid="6140789953324820336">"Déconnexion"</string>
+    <string name="disconnect" msgid="6140789953324820336">"Déconnecter"</string>
     <string name="delete_button" msgid="5840500432614610850">"Supprimer"</string>
     <string name="remove_button" msgid="6664656962868194178">"Supprimer"</string>
     <string name="cancel" msgid="750286395700355455">"Annuler"</string>
