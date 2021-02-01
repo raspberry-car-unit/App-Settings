@@ -157,6 +157,13 @@
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> сака да вклучи Wi-Fi"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> сака да исклучи Wi-Fi"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Грешка"</string>
+    <string name="network_connection_request_dialog_title" msgid="8449606155059098762">"Уред за користење со <xliff:g id="APPNAME">%1$s</xliff:g>"</string>
+    <string name="network_connection_timeout_dialog_message" msgid="2536299451668687586">"Не се најдени уреди. Уверете се дека уредите се вклучени и достапни за поврзување."</string>
+    <string name="network_connection_timeout_dialog_ok" msgid="2228662561126434792">"Обидете се повторно"</string>
+    <string name="network_connection_errorstate_dialog_message" msgid="4268321315241218483">"Нешто се случи. Апликацијата го откажа барањето за избор на уред."</string>
+    <string name="network_connection_connect_successful" msgid="7893957133113302365">"Поврзувањето е успешно"</string>
+    <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Прикажи ги сите"</string>
+    <string name="progress_scanning" msgid="7191583064717479795">"Пребарување"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Неименуван уред"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"Спарени уреди"</string>
@@ -281,7 +288,7 @@
     <string name="enable_text" msgid="1794971777861881238">"Овозможи"</string>
     <string name="uninstall_text" msgid="277907956072833012">"Деинсталирај"</string>
     <string name="app_disable_dialog_text" msgid="7731155411006654025">"Ако ја оневозможите оваа апликација, Android и другите апликации можеби веќе нема да функционираат како што треба."</string>
-    <string name="app_disable_dialog_positive" msgid="4448684722791563349">"Оневозможете ја апликацијата"</string>
+    <string name="app_disable_dialog_positive" msgid="4448684722791563349">"Оневозможи ја апликацијата"</string>
     <string name="not_installed" msgid="4218816013370552746">"Не е инсталирано за корисников"</string>
     <string name="permissions_label" msgid="2701446753515612685">"Дозволи"</string>
     <string name="notifications_label" msgid="6586089149665170731">"Известувања"</string>
@@ -409,11 +416,11 @@
     <string name="reset_network_confirm_button_text" msgid="5246859685069024851">"Ресетирај поставки"</string>
     <string name="reset_network_complete_toast" msgid="3804108209431416865">"Мрежните поставки се ресетирани"</string>
     <string name="reset_app_pref_title" msgid="5855420038951743992">"Ресетирај ги поставките за апликациите"</string>
-    <string name="reset_app_pref_desc" msgid="579392665146962149">"Со ова ќе се ресетираат сите поставки за:\n\n"<li>"оневозможените апликации;"</li>\n<li>"оневозможените известувања за апликации;"</li>\n<li>"стандардните апликации за дејства;"</li>\n<li>"ограничувањата за податоци од заднина за апликациите;"</li>\n<li>"сите ограничувања за дозволите."</li>\n\n"Нема да изгубите никакви податоци на апликациите."</string>
+    <string name="reset_app_pref_desc" msgid="579392665146962149">"Со ова ќе се ресетираат сите поставки за:\n\n"<li>"оневозможените апликации;"</li>\n<li>"оневозможените известувања за апликации;"</li>\n<li>"стандардните апликации за дејства;"</li>\n<li>"ограничувањата за интернет во заднина за апликациите;"</li>\n<li>"сите ограничувања за дозволите."</li>\n\n"Нема да изгубите никакви податоци од апликациите."</string>
     <string name="reset_app_pref_button_text" msgid="6270820447321231609">"Ресетирај апликации"</string>
     <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"Параметрите за апликацијата се ресетирани"</string>
     <string name="master_clear_title" msgid="8515335233363214414">"Избриши ги сите податоци"</string>
-    <string name="master_clear_desc" msgid="9058719802779893535">"Ова ќе ги избрише сите податоци од уредот за на глава на возилото, заедно со:\n\n"<li>"вашата сметка на Google;"</li>\n<li>"податоците и поставките на системот и апликациите;"</li>\n<li>"преземените апликации."</li></string>
+    <string name="master_clear_desc" msgid="9058719802779893535">"Ова ќе ги избрише сите податоци од главниот уред на возилото, заедно со:\n\n"<li>"вашата сметка на Google"</li>\n<li>"податоците и поставките на системот и апликациите"</li>\n<li>"преземените апликации"</li></string>
     <string name="master_clear_accounts" msgid="7797522012993567494">"Моментално сте најавени на следниве сметки:"</string>
     <string name="master_clear_other_users_present" msgid="8383376863095743337">"Присутни се и други корисници на возилово."</string>
     <string name="master_clear_button_text" msgid="8010754220392741160">"Ресетирај го возилото"</string>
@@ -500,10 +507,10 @@
     <string name="storage_clear_user_data_text" msgid="8787615136779130680">"Избриши го капацитетот"</string>
     <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"Избриши го кешот"</string>
     <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"Да се избришат податоци на аплик.?"</string>
-    <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"Сите податоци на оваа апликација ќе бидат трајно избришани. Ова ги опфаќа сите датотеки, поставки, сметки, бази на податоци, итн."</string>
+    <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"Сите податоци на оваа апликација ќе бидат трајно избришани. Ова ги опфаќа сите датотеки, поставки, сметки, бази на податоци итн."</string>
     <string name="storage_clear_failed_dlg_text" msgid="6710485971686866306">"Не може да се избрише капацитетот за апликацијата."</string>
     <string name="storage_unmount_success" msgid="1553591517580407021">"<xliff:g id="NAME">%1$s</xliff:g> безбедно се отстрани"</string>
-    <string name="storage_unmount_failure" msgid="4591934911541762883">"<xliff:g id="NAME">%1$s</xliff:g> не можеше безбедно да се отстрани"</string>
+    <string name="storage_unmount_failure" msgid="4591934911541762883">"<xliff:g id="NAME">%1$s</xliff:g> не може безбедно да се отстрани"</string>
     <string name="accounts_settings_title" msgid="436190037084293471">"Сметки"</string>
     <string name="user_add_account_menu" msgid="6625351983590713721">"Додајте сметка"</string>
     <string name="no_accounts_added" msgid="5148163140691096055">"Нема додадени сметки"</string>
@@ -567,6 +574,7 @@
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"Погрешна шема"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"Како се употребува шемата на отклучување"</string>
     <string name="error_saving_lockpattern" msgid="2933512812768570130">"Грешка при зачувување на шемата"</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts" msgid="4636307830951251013">"Премногу погрешни обиди. Обидете се повторно за <xliff:g id="NUMBER">%d</xliff:g> секунди."</string>
     <string name="okay" msgid="4589873324439764349">"Во ред"</string>
     <string name="remove_screen_lock_title" msgid="1234382338764193387">"Отстрани заклучување екран?"</string>
     <string name="remove_screen_lock_message" msgid="6675850371585564965">"Ова ќе овозможи секој да пристапува до вашата сметка"</string>

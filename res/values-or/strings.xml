@@ -157,6 +157,13 @@
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> ୱାଇ-ଫାଇ ଚାଲୁ କରିବାକୁ ଚାହୁଁଛନ୍ତି"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> ୱାଇ-ଫାଇ ବନ୍ଦ କରିବାକୁ ଚାହୁଁଛନ୍ତି"</string>
     <string name="wifi_error" msgid="3105105447117289410">"ତ୍ରୁଟି"</string>
+    <string name="network_connection_request_dialog_title" msgid="8449606155059098762">"<xliff:g id="APPNAME">%1$s</xliff:g> ସହ ବ୍ୟବହାର କରିବା ପାଇଁ ଡିଭାଇସ୍"</string>
+    <string name="network_connection_timeout_dialog_message" msgid="2536299451668687586">"କୌଣସି ଡିଭାଇସ୍ ମିଳିଲା ନାହିଁ। ସୁନିଶ୍ଚିତ ହୁଅନ୍ତୁ ଯେ ଡିଭାଇସ୍‍ ଚାଲୁ ହୋଇଛି ଏବଂ ସଂଯୋଗ କରିବା ପାଇଁ ଉପଲବ୍ଧ ଅଛି।"</string>
+    <string name="network_connection_timeout_dialog_ok" msgid="2228662561126434792">"ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ"</string>
+    <string name="network_connection_errorstate_dialog_message" msgid="4268321315241218483">"କିଛି ଗୋଟିଏ ବାହାରିଛି ଏକ ଡିଭାଇସ୍‍କୁ ବାଛିବାକୁ, ଆପ୍ଲିକେସନ୍‌ ଅନୁରୋଧ ବାତିଲ୍‌ କରିଛି।"</string>
+    <string name="network_connection_connect_successful" msgid="7893957133113302365">"ସଫଳତାର ସହ ସଂଯୋଗ ହୋଇଛି"</string>
+    <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"ସମସ୍ତ ଦେଖାନ୍ତୁ"</string>
+    <string name="progress_scanning" msgid="7191583064717479795">"ଖୋଜୁଛି..."</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"ବ୍ଲୁଟୁଥ୍‌"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"ନାମହୀନ ଡିଭାଇସ୍‍"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"ପେୟାର୍‌ ହୋଇଥିବା ଡିଭାଇସ୍‌ଗୁଡ଼ିକ"</string>
@@ -171,7 +178,7 @@
     <string name="bluetooth_rename_device" msgid="8406868875363878712">"ଡିଭାଇସକୁ ରିନେମ୍‌ କରନ୍ତୁ"</string>
     <string name="bluetooth_rename_button" msgid="2397892174725986383">"ରିନେମ୍‌ କରନ୍ତୁ"</string>
     <string name="bluetooth_available_devices" msgid="1854446368146061448">"ଉପଲବ୍ଧ ଥିବା ଡିଭାଇସ୍"</string>
-    <string name="bluetooth_profiles" msgid="5580372290862835951">"ପ୍ରୋଫାଇଲ୍‌ଗୁଡିକ"</string>
+    <string name="bluetooth_profiles" msgid="5580372290862835951">"ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ"</string>
     <string name="bluetooth_error_title" msgid="2341600997536511742"></string>
     <string name="bluetooth_turning_on" msgid="7046983059601710414">"ବ୍ଲୁଟୂଥ୍ ଚାଲୁ ହେଉଛି…"</string>
     <string name="bluetooth_turning_off" msgid="1753975097241024061">"ବ୍ଲୁଟୂଥ୍ ବନ୍ଦ ହେଉଛି…"</string>
@@ -533,7 +540,7 @@
     <string name="sync_one_time_sync" msgid="491707183321353107">"ବର୍ତ୍ତମାନ <xliff:g id="LAST_SYNC_TIME">
 %1$s</xliff:g> ରେ  ସିଙ୍କ୍‌ କରିବାକୁ ଟାପ୍‌ କରନ୍ତୁ"</string>
     <string name="sync_button_sync_now" msgid="5767643057970371315">"ବର୍ତ୍ତମାନ ସିଙ୍କ କରନ୍ତୁ"</string>
-    <string name="sync_button_sync_cancel" msgid="7739510554513641393">"ସିଙ୍କ୍‌ କ୍ୟାନ୍ସଲ୍‌‌ କରନ୍ତୁ"</string>
+    <string name="sync_button_sync_cancel" msgid="7739510554513641393">"ସିଙ୍କ୍‌ ବାତିଲ୍‌‌ କରନ୍ତୁ"</string>
     <string name="sync_is_failing" msgid="5766255460901806206">"ସମ୍ପ୍ରତି ସିଙ୍କ କରିବାରେ ସମସ୍ୟା ହେଉଛି। ଏହା ଖୁବ୍‌ ଶୀଘ୍ର ଫେରିବ।"</string>
     <string name="privacy_settings_title" msgid="3150145262029229572">"ଗୋପନୀୟତା"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"ସୁରକ୍ଷା"</string>
@@ -543,13 +550,13 @@
     <string name="security_lock_pin" msgid="4891899974369503200">"PIN"</string>
     <string name="security_lock_password" msgid="4420203740048322494">"ପାସୱର୍ଡ"</string>
     <string name="lock_settings_picker_title" msgid="6590330165050361632">"ଏକ ଲକ୍‌ ପ୍ରକାର ବାଛନ୍ତୁ"</string>
-    <string name="screen_lock_options" msgid="8531177937577168185">"ବିକଳ୍ପ ଲକ୍‍ କରନ୍ତୁ"</string>
+    <string name="screen_lock_options" msgid="8531177937577168185">"ଲକ୍ ବିକଳ୍ପଗୁଡ଼ିକ"</string>
     <string name="lock_settings_enter_pattern" msgid="4826034565853171624">"ଆପଣଙ୍କର ପାଟର୍ନ ଆଙ୍କନ୍ତୁ"</string>
     <string name="lockpattern_confirm_button_text" msgid="7784925958324484965">"ନିଶ୍ଚିତ"</string>
     <string name="lockpattern_restart_button_text" msgid="9355771277617537">"ପୁନଃଅଙ୍କନ"</string>
     <string name="continue_button_text" msgid="5129979170426836641">"ଜାରି ରଖନ୍ତୁ"</string>
     <string name="lockscreen_retry_button_text" msgid="5314212350698701242">"ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ"</string>
-    <string name="lockscreen_skip_button_text" msgid="3755748786396198091">"ଛାଡ଼ିଦିଅନ୍ତୁ"</string>
+    <string name="lockscreen_skip_button_text" msgid="3755748786396198091">"ବାଦ୍ ଦିଅନ୍ତୁ"</string>
     <string name="set_screen_lock" msgid="5239317292691332780">"ଏକ ସ୍କ୍ରିନ୍‌ ଲକ୍‌ ସେଟ୍ କରନ୍ତୁ"</string>
     <string name="lockscreen_choose_your_pin" msgid="1645229555410061526">"ନିଜ ପିନ୍‌ ନମ୍ବର ବାଛନ୍ତୁ"</string>
     <string name="lockscreen_choose_your_pattern" msgid="6801175111142593404">"ନିଜ ପାର୍ଟନ୍‌ ବାଛନ୍ତୁ"</string>
@@ -557,7 +564,7 @@
     <string name="current_screen_lock" msgid="637651611145979587">"ବର୍ତ୍ତମାନର ସ୍କ୍ରୀନ୍‌ ଲକ୍‌"</string>
     <string name="choose_lock_pattern_message" msgid="6242765203541309524">"ସୁରକ୍ଷା ପାଇଁ ଗୋଟିଏ ପାଟର୍ନ ସେଟ୍‌ କରନ୍ତୁ"</string>
     <string name="lockpattern_retry_button_text" msgid="4655398824001857843">"ଖାଲି କରନ୍ତୁ"</string>
-    <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"କ୍ୟାନ୍ସଲ୍‍ କରନ୍ତୁ"</string>
+    <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"ବାତିଲ୍ କରନ୍ତୁ"</string>
     <string name="lockpattern_pattern_confirmed" msgid="5984306638250515385">"ଆପଣଙ୍କର ନୂଆ ଅନ୍‌ଲକ୍‌ ପାଟର୍ନ"</string>
     <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"ଏକ ଅନଲକ ପାଟର୍ନ ଆଙ୍କନ୍ତୁ"</string>
     <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"ହୋଇଯିବା ପରେ ଆଙ୍ଗୁଠି କାଢ଼ିଦିଅନ୍ତୁ"</string>
@@ -567,6 +574,7 @@
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"ଭୁଲ ପାଟର୍ନ"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"ଏକ ଅନ୍‌ଲକ୍‌ ପାଟର୍ନ କିପରି ଅଙ୍କାଯିବ"</string>
     <string name="error_saving_lockpattern" msgid="2933512812768570130">"ପାଟର୍ନ ସେଭ୍‌ କରିବାରେ ତ୍ରୁଟି"</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts" msgid="4636307830951251013">"ଅନେକଗୁଡ଼ିଏ ଭୁଲ୍ ପ୍ରଚେଷ୍ଟା। <xliff:g id="NUMBER">%d</xliff:g> ସେକେଣ୍ଡରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।"</string>
     <string name="okay" msgid="4589873324439764349">"ଓକେ"</string>
     <string name="remove_screen_lock_title" msgid="1234382338764193387">"ସ୍କ୍ରୀନ ଲକ୍ ରିମୁଭ୍‍ କରିବେ କି?"</string>
     <string name="remove_screen_lock_message" msgid="6675850371585564965">"ଏହା ଯେକୌଣସି ବ୍ୟକ୍ତି ଆପଣଙ୍କ ଆକାଉଣ୍ଟରେ ପ୍ରବେଶ ପାଇଁ ଅନୁମତି ଦେବ"</string>
@@ -584,7 +592,7 @@
     <string name="confirm_your_password_header" msgid="7052891840366724938">"ପାସ୍‌ୱର୍ଡ ପୁନଃ-ପ୍ରବେଶ କରନ୍ତୁ"</string>
     <string name="confirm_passwords_dont_match" msgid="7300229965206501753">"ପାସ୍‌ୱର୍ଡ ମେଳ ଖାଉନାହିଁ"</string>
     <string name="lockpassword_clear_label" msgid="6363680971025188064">"ଖାଲି କରନ୍ତୁ"</string>
-    <string name="lockpassword_cancel_label" msgid="5791237697404166450">"କ୍ୟାନ୍ସଲ୍‍ କରନ୍ତୁ"</string>
+    <string name="lockpassword_cancel_label" msgid="5791237697404166450">"ବାତିଲ୍ କରନ୍ତୁ"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"ନିଶ୍ଚିତ"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"ଅତିକମ୍‌ରେ 4 ଅକ୍ଷର ରହିବା ଦରକାର"</string>
     <string name="lockpassword_password_too_short" msgid="6681218025001328405">"ଅତିକମ୍‌ରେ <xliff:g id="COUNT">%d</xliff:g> ଅକ୍ଷର ରହିବା ଦରକାର"</string>
@@ -636,7 +644,7 @@
     <string name="disconnect" msgid="6140789953324820336">"ବିଛିନ୍ନ କରନ୍ତୁ"</string>
     <string name="delete_button" msgid="5840500432614610850">"ଡିଲିଟ୍‍"</string>
     <string name="remove_button" msgid="6664656962868194178">"କାଢ଼ିଦିଅନ୍ତୁ"</string>
-    <string name="cancel" msgid="750286395700355455">"କ୍ୟାନ୍ସଲ୍‍ କରନ୍ତୁ"</string>
+    <string name="cancel" msgid="750286395700355455">"ବାତିଲ୍ କରନ୍ତୁ"</string>
     <string name="allow" msgid="7519431342750394402">"ଅନୁମତି ଦିଅନ୍ତୁ"</string>
     <string name="deny" msgid="340512788979930804">"ଅଗ୍ରାହ୍ୟ କରନ୍ତୁ"</string>
     <string name="backspace_key" msgid="1545590866688979099">"Backspace କୀ"</string>
