@@ -213,7 +213,7 @@
     <string name="text_to_speech_settings" msgid="811985746199507343">"Տեքստի հնչեցում"</string>
     <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Կանխադրված սինթեզատոր"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"Ընթացիկ սինթեզատոր"</string>
-    <string name="tts_speech_rate" msgid="4512944877291943133">"Խոսքի արագություն"</string>
+    <string name="tts_speech_rate" msgid="4512944877291943133">"Խոսքի արագությունը"</string>
     <string name="tts_pitch" msgid="2389171233852604923">"Ձայներանգ"</string>
     <string name="tts_reset" msgid="6289481549801844709">"Զրոյացնել"</string>
     <string name="sound_settings" msgid="3072423952331872246">"Ձայն"</string>
@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Հեռախոսի զանգերանգը"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Ծանուցման կանխադրված ազդանշանը"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Զարթուցիչի կանխադրված ազդանշանը"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Պահել"</string>
     <string name="units_settings" msgid="402325305096925886">"Միավորներ"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Արագություն"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Հեռավորություն"</string>

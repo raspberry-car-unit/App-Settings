@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Tono de llamada del teléfono"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Sonido de notificación predeterminado"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Sonido de alarma predeterminado"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Guardar"</string>
     <string name="units_settings" msgid="402325305096925886">"Unidades"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Velocidad"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Distancia"</string>
@@ -280,7 +281,7 @@
     <string name="default_applications" msgid="1558183275638697087">"Aplicaciones predeterminadas"</string>
     <string name="app_permissions" msgid="32799922508313948">"Permisos de aplicaciones"</string>
     <string name="app_permissions_summary" msgid="1842858532315056367">"Aplicaciones que utilizan <xliff:g id="APPS">%1$s</xliff:g>"</string>
-    <string name="applications_settings" msgid="794261395191035632">"Información de la aplicación"</string>
+    <string name="applications_settings" msgid="794261395191035632">"Información de las aplicaciones"</string>
     <string name="force_stop" msgid="2153183697014720520">"Forzar detención"</string>
     <string name="force_stop_dialog_title" msgid="3342850939200388694">"¿Quieres forzar la detención?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"Si se fuerza la detención de una aplicación, es posible que no funcione correctamente."</string>
@@ -417,7 +418,7 @@
     <string name="reset_network_complete_toast" msgid="3804108209431416865">"Se han restablecido los ajustes de red"</string>
     <string name="reset_app_pref_title" msgid="5855420038951743992">"Restablecer preferencias de aplicaciones"</string>
     <string name="reset_app_pref_desc" msgid="579392665146962149">"Se restablecerán todas las preferencias de:\n\n"<li>"Aplicaciones desactivadas"</li>\n<li>"Notificaciones de aplicaciones desactivadas"</li>\n<li>"Aplicaciones para acciones predeterminadas"</li>\n<li>"Restricciones de datos en segundo plano de aplicaciones"</li>\n<li>"Restricciones de permisos"</li>\n\n"No se perderán los datos de las aplicaciones."</string>
-    <string name="reset_app_pref_button_text" msgid="6270820447321231609">"Restablecer aplicaciones"</string>
+    <string name="reset_app_pref_button_text" msgid="6270820447321231609">"Restablecer"</string>
     <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"Se han restablecido las preferencias de las aplicaciones"</string>
     <string name="master_clear_title" msgid="8515335233363214414">"Volver al estado de fábrica (borrar todo)"</string>
     <string name="master_clear_desc" msgid="9058719802779893535">"Se borrarán todos los datos de la unidad principal de tu vehículo, como:\n\n"<li>"Tu cuenta de Google"</li>\n<li>"Los ajustes y datos de aplicaciones y del sistema"</li>\n<li>"Las aplicaciones descargadas"</li></string>

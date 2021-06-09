@@ -29,7 +29,7 @@
     <string name="keywords_display_auto_brightness" msgid="2700310050333468752">"снижение яркости, сенсорный экран, батарея"</string>
     <string name="keywords_display_night_display" msgid="2922294576679769957">"снижение яркости, ночь, оттенок"</string>
     <string name="night_mode_tile_label" msgid="6603597795502131664">"Ночной режим"</string>
-    <string name="network_and_internet" msgid="4229023630498537530">"Сеть и Интернет"</string>
+    <string name="network_and_internet" msgid="4229023630498537530">"Сеть и интернет"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Мобильная сеть"</string>
     <plurals name="mobile_network_summary_count" formatted="false" msgid="6917348330386831454">
       <item quantity="one"><xliff:g id="COUNT_1">%1$d</xliff:g> SIM-карта</item>
@@ -231,6 +231,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Рингтон"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Звук уведомления по умолчанию"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Звук будильника по умолчанию"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Сохранить"</string>
     <string name="units_settings" msgid="402325305096925886">"Единицы"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Скорость"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Расстояние"</string>

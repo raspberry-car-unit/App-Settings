@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Телефон рингтоны"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Әдепкі хабарландыру дыбысы"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Әдепкі оятқыш сигналы"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Сақтау"</string>
     <string name="units_settings" msgid="402325305096925886">"Өлшем бірліктер"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Жылдамдық"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Арақашықтық"</string>
@@ -340,8 +341,8 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Бұл рұқсат қолданбаға жүйе параметрлерін өзгертуге рұқсат етеді."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Хабарландыруларды пайдалану"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"<xliff:g id="SERVICE">%1$s</xliff:g> қызметіне хабарландыруларды пайдалануға рұқсат берілсін бе?"</string>
-    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> барлық хабарландыруларды, соның ішінде контакт аттары, сізге келген хабарлардың мәтіні сияқты жеке ақпаратты оқи алатын болады. Сондай-ақ хабарландыруларды өзгерте, жаба немесе олардағы әрекет түймелерін қоса алады. \n\nБұл, сондай-ақ қолданбаға \"Мазаламау\" режимін қосуға немесе өшіруге және тиісті параметрлерді өзгертуге мүмкіндік береді."</string>
-    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Егер <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> үшін хабарландыруларды пайдалану мүмкіндігін өшірсеңіз, \"Мазаламау\" режимін пайдалану мүмкін болмайды."</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> барлық хабарландыруларды, соның ішінде контакт аттары, сізге келген хабарлардың мәтіні сияқты жеке ақпаратты оқи алатын болады. Сондай-ақ хабарландыруларды өзгерте, жаба немесе олардағы әрекет түймелерін қоса алады. \n\nБұл, сондай-ақ қолданбаға Мазаламау режимін қосуға немесе өшіруге және тиісті параметрлерді өзгертуге мүмкіндік береді."</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Егер <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> үшін хабарландыруларды пайдалану мүмкіндігін өшірсеңіз, Мазаламау режимін пайдалану мүмкін болмайды."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"Өшіру"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Бас тарту"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"Ақылы SMS жіберу"</string>

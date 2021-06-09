@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"着信音"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"デフォルトの通知音"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"デフォルトのアラーム音"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"保存"</string>
     <string name="units_settings" msgid="402325305096925886">"単位"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"速度"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"距離"</string>
@@ -340,7 +341,7 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"この権限により、アプリはシステム設定を変更できるようになります。"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"通知へのアクセス"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"通知へのアクセス を <xliff:g id="SERVICE">%1$s</xliff:g> に許可しますか？"</string>
-    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> はすべての通知を読み取ることができます。通知には、連絡先名などの個人情報や受信したメッセージの本文も含まれます。また、通知を非表示にしたり、通知内のボタン操作を実行したりすることもできます。\n\nこれにより、アプリがサイレント モード設定を切り替えたり、関連する設定を変更したりすることも可能になります。"</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> がすべての通知を読み取れるようになります。通知には、連絡先名などの個人情報や受信したメッセージの本文も含まれます。また、通知を非表示にしたり、通知内の操作ボタンをタップしたりすることも許可されます。\n\nこれにより、アプリがサイレント モード設定を切り替えたり、関連する設定を変更したりすることも可能になります。"</string>
     <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> の通知アクセスを無効にすると、サイレント モードのアクセスも無効になります。"</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"無効にする"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"キャンセル"</string>
@@ -393,11 +394,11 @@
     <string name="settings_license_activity_unavailable" msgid="6104592821991010350">"ライセンスの読み込み中に問題が発生しました。"</string>
     <string name="settings_license_activity_loading" msgid="6163263123009681841">"読み込んでいます…"</string>
     <plurals name="show_dev_countdown" formatted="false" msgid="2968627665608969405">
-      <item quantity="other">デベロッパー設定が有効になるまであと <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> ステップです。</item>
-      <item quantity="one">デベロッパー設定が有効になるまであと <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> ステップです。</item>
+      <item quantity="other">開発者向けオプションが有効になるまであと <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> 回です。</item>
+      <item quantity="one">開発者向けオプションが有効になるまであと <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> 回です</item>
     </plurals>
-    <string name="show_dev_on" msgid="5339077400040834808">"デベロッパー設定が有効になりました！"</string>
-    <string name="show_dev_already" msgid="1678087328973865736">"デベロッパー設定はすでに有効です。"</string>
+    <string name="show_dev_on" msgid="5339077400040834808">"開発者向けオプションが有効になりました"</string>
+    <string name="show_dev_already" msgid="1678087328973865736">"開発者向けオプションはすでに有効です"</string>
     <string name="developer_options_settings" msgid="1530739225109118480">"開発者向けオプション"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"リセット オプション"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"ネットワーク、アプリ、デバイスのリセット"</string>

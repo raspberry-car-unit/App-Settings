@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"ഫോണിന്റെ റിംഗ്ടോൺ"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"ഡിഫോൾട്ടായ അറിയിപ്പ് ശബ്‌ദം"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"ഡിഫോൾട്ടായ അലാറം ശബ്‌ദം"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"സംരക്ഷിക്കുക"</string>
     <string name="units_settings" msgid="402325305096925886">"യൂണിറ്റുകൾ"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"വേഗത"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"ദൂരം"</string>
@@ -340,7 +341,7 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"സിസ്‌റ്റം ക്രമീകരണം പരിഷ്‌ക്കരിക്കുന്നതിന് ഈ അനുമതി ആപ്പിനെ അനുവദിക്കുന്നു."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"അറിയിപ്പ് ആക്‌സസ്"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"<xliff:g id="SERVICE">%1$s</xliff:g>-ന് അറിയിപ്പ് ആക്‌സസ് അനുവദിക്കണോ?"</string>
-    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"കോൺടാക്റ്റ് പേരുകൾ, നിങ്ങൾക്ക് ലഭിക്കുന്ന സന്ദേശങ്ങൾ എന്നിവ പോലുള്ള വ്യക്തിഗത വിവരങ്ങൾ ഉൾപ്പെടെ എല്ലാ അറിയിപ്പുകളും <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>-ന് വായിക്കാൻ കഴിയും. അറിയിപ്പുകൾ ഡിസ്‍മിസ് ചെയ്യാനോ അവയിലടങ്ങിയിരിക്കുന്ന പ്രവർത്തന ബട്ടണുകൾ ട്രിഗർ ചെയ്യാനോ ഇതിന് കഴിയും.\n\nആപ്പിന് \'ശല്യപ്പെടുത്തരുത്\' ഓണോ ഓഫോ ആക്കാനും ബന്ധപ്പെട്ട ക്രമീകരണം മാറ്റാനുമുള്ള ശേഷിയും ഇത് നൽകും."</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"കോൺടാക്റ്റ് പേരുകൾ, നിങ്ങൾക്ക് ലഭിക്കുന്ന സന്ദേശങ്ങൾ എന്നിവ പോലുള്ള വ്യക്തിപരമായ വിവരങ്ങൾ ഉൾപ്പെടെ എല്ലാ അറിയിപ്പുകളും <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>-ന് വായിക്കാൻ കഴിയും. അറിയിപ്പുകൾ ഡിസ്‍മിസ് ചെയ്യാനോ അവയിലടങ്ങിയിരിക്കുന്ന പ്രവർത്തന ബട്ടണുകൾ ട്രിഗർ ചെയ്യാനോ ഇതിന് കഴിയും.\n\nആപ്പിന് \'ശല്യപ്പെടുത്തരുത്\' ഓണോ ഓഫോ ആക്കാനും ബന്ധപ്പെട്ട ക്രമീകരണം മാറ്റാനുമുള്ള ശേഷിയും ഇത് നൽകും."</string>
     <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> എന്നതിനുള്ള അറിയിപ്പ് ആക്‌സസ് നിങ്ങൾ ഓഫാക്കുന്നുവെങ്കിൽ, \'ശല്യപ്പെടുത്തരുത്\' ആക്‌സസും ഓഫാക്കപ്പെട്ടേക്കാം."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"ഓഫാക്കുക"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"റദ്ദാക്കുക"</string>
@@ -425,7 +426,7 @@
     <string name="master_clear_other_users_present" msgid="8383376863095743337">"ഈ വാഹനത്തിൽ മറ്റ് ഉപയോക്താക്കളുണ്ട്."</string>
     <string name="master_clear_button_text" msgid="8010754220392741160">"വാഹനത്തിലെ ക്രമീകരണം പുനഃസജ്ജീകരിക്കുക"</string>
     <string name="master_clear_confirm_title" msgid="8646455623132887370">"പുനഃസജ്ജീകരിക്കണോ?"</string>
-    <string name="master_clear_confirm_desc" msgid="8920446291698038558">"നിങ്ങളുടെ എല്ലാ വ്യക്തിഗത വിവരവും ഡൗൺലോഡ് ചെയ്‌ത ആപ്പുകളും മായ്‌ക്കണോ? നിങ്ങൾക്ക് ഈ പ്രവർത്തനം പഴയപടിയാക്കാനാകില്ല!"</string>
+    <string name="master_clear_confirm_desc" msgid="8920446291698038558">"നിങ്ങളുടെ എല്ലാ വ്യക്തിപരമായ വിവരങ്ങളും ഡൗൺലോഡ് ചെയ്‌ത ആപ്പുകളും മായ്‌ക്കണോ? നിങ്ങൾക്ക് ഈ പ്രവർത്തനം പഴയപടിയാക്കാനാകില്ല!"</string>
     <string name="master_clear_confirm_button_text" msgid="7981254968588121786">"എല്ലാം മായ്ക്കുക"</string>
     <string name="master_clear_progress_title" msgid="7087480656932674774">"മായ്‌ക്കുന്നു"</string>
     <string name="master_clear_progress_text" msgid="3440789441935303176">"കാത്തിരിക്കുക..."</string>
@@ -521,7 +522,7 @@
     <string name="data_usage_auto_sync_on_dialog" msgid="2770233931307606956">"വെബിൽ നിങ്ങളുടെ അക്കൗണ്ടുകളിൽ വരുത്തുന്ന മാറ്റങ്ങളെല്ലാം ഉപകരണത്തിലേക്ക് സ്വയമേവ പകർത്തും.\n\nഫോണിൽ വരുത്തുന്ന മാറ്റങ്ങളെല്ലാം ചില അക്കൗണ്ടുകൾ സ്വയമേവ വെബ്ബിലേക്കും പകർത്തിയേക്കാം. ഇങ്ങനെയാണ് Google അക്കൗണ്ട് പ്രവർത്തിക്കുന്നത്."</string>
     <string name="data_usage_auto_sync_off_dialog_title" msgid="1235955038330202536">"ഡാറ്റാ സ്വയം സമന്വയം ഓഫാക്കണോ?"</string>
     <string name="data_usage_auto_sync_off_dialog" msgid="5040873073016183315">"ഇത് ഡാറ്റ ലാഭിക്കും, എന്നാൽ അടുത്തിടെയുള്ള വിവരം ശേഖരിക്കാൻ, നിങ്ങൾ ഓരോ അക്കൗണ്ടും നേരിട്ട് സമന്വയിപ്പിക്കേണ്ടിവരും. അപ്‌ഡേറ്റുകൾ നടക്കുമ്പോൾ അറിയിപ്പുകൾ ലഭിക്കുകയുമില്ല."</string>
-    <string name="account_details_title" msgid="7529571432258448573">"അക്കൗണ്ട് വിവരം"</string>
+    <string name="account_details_title" msgid="7529571432258448573">"അക്കൗണ്ട് വിവരങ്ങൾ"</string>
     <string name="add_account_title" msgid="5988746086885210040">"അക്കൗണ്ട് ചേർക്കുക"</string>
     <string name="add_an_account" msgid="1072285034300995091">"ഒരു അക്കൗണ്ട് ചേർക്കുക"</string>
     <string name="user_cannot_add_accounts_message" msgid="6775605884544906797">"നിയന്ത്രിത പ്രൊഫൈലുകൾക്ക് അക്കൗണ്ടുകൾ ചേർക്കാനാകില്ല"</string>
