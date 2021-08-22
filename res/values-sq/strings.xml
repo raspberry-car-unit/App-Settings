@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Zilja e telefonit"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Tingulli i parazgjedhur i njoftimit"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Tingulli i parazgjedhur i alarmit"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Ruaj"</string>
     <string name="units_settings" msgid="402325305096925886">"Njësitë"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Shpejtësia"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Distanca"</string>
@@ -433,7 +434,7 @@
     <string name="date_and_time_settings_summary" msgid="7669856855390804666">"Cakto datën, orën, brezin orar dhe formatet"</string>
     <string name="date_time_auto" msgid="3570339569471779767">"Data dhe ora automatike"</string>
     <string name="date_time_auto_summary" msgid="3311706425095342759">"Përdor orën e ofruar nga rrjeti"</string>
-    <string name="zone_auto" msgid="3701878581920206160">"Brezi orar, automatik"</string>
+    <string name="zone_auto" msgid="3701878581920206160">"Brezi orar automatik"</string>
     <string name="zone_auto_summary" msgid="4345856882906981864">"Përdor brezin orar të ofruar nga rrjeti"</string>
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Formati 24 orë"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Përdor formatin 24 orë"</string>
@@ -497,7 +498,7 @@
     <string name="storage_other_apps" msgid="945509804756782640">"Aplikacionet e tjera"</string>
     <string name="storage_files" msgid="6382081694781340364">"Skedarët"</string>
     <string name="storage_system" msgid="1271345630248014010">"Sistemi"</string>
-    <string name="storage_detail_dialog_system" msgid="796365720531622361">"Sistemi përfshin skedarët e përdorur për ekzekutimin e versionit <xliff:g id="VERSION">%s</xliff:g> të Android"</string>
+    <string name="storage_detail_dialog_system" msgid="796365720531622361">"Sistemi përfshin skedarët që përdoren për ekzekutimin e versionit <xliff:g id="VERSION">%s</xliff:g> të Android"</string>
     <string name="storage_audio_files_title" msgid="5183170457027181700">"Skedarët audio"</string>
     <string name="memory_calculating_size" msgid="1672238502950390033">"Po llogaritet…"</string>
     <string name="storage_application_size_label" msgid="1146156683170661354">"Madhësia e aplikacionit"</string>

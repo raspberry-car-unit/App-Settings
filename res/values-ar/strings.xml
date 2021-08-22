@@ -79,7 +79,7 @@
     <string name="app_data_usage" msgid="3878609885080232877">"استخدام بيانات التطبيق"</string>
     <string name="data_usage_app_restricted" msgid="4570970078120010951">"مقيَّد"</string>
     <string name="cycle_reset_day_of_month_picker_title" msgid="1374568502823735361">"تاريخ إعادة ضبط دورة الاستخدام"</string>
-    <string name="cycle_reset_day_of_month_picker_subtitle" msgid="5361061448258189846">"تاريخ كل شهر:"</string>
+    <string name="cycle_reset_day_of_month_picker_subtitle" msgid="5361061448258189846">"اليوم من كل شهر:"</string>
     <string name="cycle_reset_day_of_month_picker_positive_button" msgid="6919858010423269305">"ضبط"</string>
     <string name="data_warning_limit_title" msgid="4950868241810828601">"تحذير بشأن قيود البيانات"</string>
     <string name="app_usage_cycle" msgid="8445927080245880296">"دورة استخدام التطبيقات للبيانات"</string>
@@ -235,6 +235,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"نغمة رنين الهاتف"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"الصوت التلقائي للإشعارات"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"الصوت التلقائي للمنبّه"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"حفظ"</string>
     <string name="units_settings" msgid="402325305096925886">"وحدات العرض"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"السرعة"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"المسافة"</string>
@@ -551,7 +552,7 @@
     <string name="remove_account_error_title" msgid="8368044943174826635">"أخفق حذف الحساب."</string>
     <string name="account_sync_title" msgid="6541844336300236915">"مزامنة الحساب"</string>
     <string name="account_sync_summary_some_on" msgid="4525960296068027182">"تمّ تفعيل المزامنة لـ <xliff:g id="ID_1">%1$d</xliff:g> من إجمالي <xliff:g id="ID_2">%2$d</xliff:g> عنصر."</string>
-    <string name="account_sync_summary_all_on" msgid="3652264471870312725">"المزامنة مفعَّلة لكل العناصر."</string>
+    <string name="account_sync_summary_all_on" msgid="3652264471870312725">"تم تفعيل المزامنة لكل العناصر."</string>
     <string name="account_sync_summary_all_off" msgid="6550959714035312414">"المزامنة متوقفة لكل العناصر."</string>
     <string name="sync_disabled" msgid="393531064334628258">"المزامنة متوقفة."</string>
     <string name="sync_error" msgid="6698021343089247914">"خطأ في المزامنة"</string>
@@ -650,7 +651,7 @@
     </plurals>
     <plurals name="lockpassword_password_requires_numeric" formatted="false" msgid="7935079851855168646">
       <item quantity="zero">يجب أن تحتوي كلمة المرور على <xliff:g id="COUNT">%d</xliff:g> رقم عددي على الأقل.</item>
-      <item quantity="two">يجب أن تحتوي كلمة المرور على رقمين عددين (<xliff:g id="COUNT">%d</xliff:g>) على الأقل.</item>
+      <item quantity="two">يجب أن تحتوي كلمة المرور على رقمين عدديين (<xliff:g id="COUNT">%d</xliff:g>) على الأقل.</item>
       <item quantity="few">يجب أن تحتوي كلمة المرور على <xliff:g id="COUNT">%d</xliff:g> أرقام عددية على الأقل.</item>
       <item quantity="many">يجب أن تحتوي كلمة المرور على <xliff:g id="COUNT">%d</xliff:g> رقمًا عدديًا على الأقل.</item>
       <item quantity="other">يجب أن تحتوي كلمة المرور على <xliff:g id="COUNT">%d</xliff:g> رقم عددي على الأقل.</item>

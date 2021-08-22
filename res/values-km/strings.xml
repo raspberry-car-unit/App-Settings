@@ -210,7 +210,7 @@
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"ភាសាទាំងអស់"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"ក្ដារចុច"</string>
     <string name="manage_keyboard" msgid="4045394766282200132">"គ្រប់គ្រងក្តារចុច"</string>
-    <string name="text_to_speech_settings" msgid="811985746199507343">"លទ្ធផលនៃការបំប្លែងអត្ថបទទៅជាការនិយាយ"</string>
+    <string name="text_to_speech_settings" msgid="811985746199507343">"ធាតុចេញនៃការបំប្លែងអត្ថបទទៅជាការនិយាយ"</string>
     <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"ម៉ាស៊ីន​ដែល​ចង់ប្រើ"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"ម៉ាស៊ីន​បច្ចុប្បន្ន"</string>
     <string name="tts_speech_rate" msgid="4512944877291943133">"ល្បឿននៃការនិយាយ"</string>
@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"សំឡេងរោទ៍ទូរសព្ទ"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"សំឡេង​ជូន​ដំណឹង​លំនាំដើម"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"សំឡេង​ម៉ោងរោទ៍​លំនាំដើម"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"រក្សាទុក"</string>
     <string name="units_settings" msgid="402325305096925886">"ខ្នាត"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"ល្បឿន"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"ចម្ងាយ"</string>
@@ -292,7 +293,7 @@
     <string name="not_installed" msgid="4218816013370552746">"មិន​បាន​ដំឡើង​សម្រាប់​អ្នក​ប្រើប្រាស់​នេះទេ"</string>
     <string name="permissions_label" msgid="2701446753515612685">"ការអនុញ្ញាត"</string>
     <string name="notifications_label" msgid="6586089149665170731">"ការជូនដំណឹង"</string>
-    <string name="storage_application_label" msgid="5911779903670978586">"ទំហំផ្ទុក និង​ឃ្លាំងផ្ទុកទិន្នន័យ"</string>
+    <string name="storage_application_label" msgid="5911779903670978586">"ទំហំផ្ទុក និងឃ្លាំងបម្រុង"</string>
     <string name="application_version_label" msgid="8556889839783311649">"កំណែ៖ %1$s"</string>
     <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"មិន​បាន​ផ្តល់សិទ្ធិអនុញ្ញាតទេ"</string>
     <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"គ្មានការអនុញ្ញាត​ដែលបានស្នើសុំទេ"</string>

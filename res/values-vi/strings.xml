@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Nhạc chuông điện thoại"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Âm thanh thông báo mặc định"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Âm thanh chuông báo mặc định"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Lưu"</string>
     <string name="units_settings" msgid="402325305096925886">"Đơn vị"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Tốc độ"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Khoảng cách"</string>
@@ -340,7 +341,7 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Quyền này cho phép ứng dụng sửa đổi các chế độ cài đặt hệ thống."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Quyền truy cập thông báo"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"Cho phép <xliff:g id="SERVICE">%1$s</xliff:g> truy cập thông báo?"</string>
-    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> có thể đọc tất cả các thông báo, bao gồm cả thông tin cá nhân như tên liên hệ và nội dung của thông báo mà bạn nhận được. Dịch vụ này cũng có thể bỏ qua thông báo hoặc kích hoạt các nút hành động trong các thông báo đó.\n\nĐiều này cũng sẽ cho phép ứng dụng bật hoặc tắt chế độ Không làm phiền và thay đổi các tùy chọn cài đặt có liên quan."</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> có thể đọc tất cả các thông báo, bao gồm cả thông tin cá nhân như tên của người liên hệ và nội dung của thông báo mà bạn nhận được. Ứng dụng này cũng có thể bỏ qua thông báo hoặc kích hoạt các nút thao tác trong những thông báo đó.\n\nĐiều này cũng sẽ cho phép ứng dụng bật hoặc tắt chế độ Không làm phiền và thay đổi chế độ cài đặt có liên quan."</string>
     <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Nếu bạn tắt quyền truy cập thông báo của <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, thì quyền truy cập chế độ Không làm phiền cũng có thể bị tắt."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"Tắt"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Hủy"</string>
@@ -549,7 +550,7 @@
     <string name="security_lock_pattern" msgid="1174352995619563104">"Hình mở khóa"</string>
     <string name="security_lock_pin" msgid="4891899974369503200">"Mã PIN"</string>
     <string name="security_lock_password" msgid="4420203740048322494">"Mật khẩu"</string>
-    <string name="lock_settings_picker_title" msgid="6590330165050361632">"Chọn một cách khóa"</string>
+    <string name="lock_settings_picker_title" msgid="6590330165050361632">"Chọn một kiểu khóa"</string>
     <string name="screen_lock_options" msgid="8531177937577168185">"Tùy chọn khóa"</string>
     <string name="lock_settings_enter_pattern" msgid="4826034565853171624">"Nhập hình mở khóa của bạn"</string>
     <string name="lockpattern_confirm_button_text" msgid="7784925958324484965">"Xác nhận"</string>

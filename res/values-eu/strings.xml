@@ -37,8 +37,8 @@
     </plurals>
     <string name="mobile_network_active_sim" msgid="1901674954229832811">"Aktibo / SIM txartela"</string>
     <string name="mobile_network_inactive_sim" msgid="3644984830926224318">"Inaktibo / SIM txartela"</string>
-    <string name="mobile_network_active_esim" msgid="5864100786496761032">"Aktibo / Deskargatutako SIM txartela"</string>
-    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"Inaktibo / Deskargatutako SIM txartela"</string>
+    <string name="mobile_network_active_esim" msgid="5864100786496761032">"Aktibo / Deskargatutako SIMa"</string>
+    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"Inaktibo / Deskargatutako SIMa"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"Gehitu beste batzuk"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"Datu-konexioa"</string>
     <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Atzitu datuak datu-konexioaren bidez"</string>
@@ -80,7 +80,7 @@
     <string name="set_data_limit" msgid="7136539812414500084">"Ezarri datuen muga"</string>
     <string name="data_limit" msgid="227338836292511425">"Datuen muga"</string>
     <string name="data_usage_limit_dialog_title" msgid="1864716658371721883">"Datuen erabilera mugatzea"</string>
-    <string name="data_usage_limit_dialog_mobile" msgid="3633960011913085089">"Ibilgailua ezarri duzun datuen mugara heltzen denean, ibilgailuaren gailu nagusiak datu-konexioa desaktibatuko du.\n\nIbilgailuaren gailu nagusiak datuen erabilera neurtzen du, baina baliteke operadoreak erabilera hori beste era batera neurtzea. Horregatik, muga zuhurra ezartzea gomendatzen dugu."</string>
+    <string name="data_usage_limit_dialog_mobile" msgid="3633960011913085089">"Ibilgailua ezarri duzun datuen mugara heltzen denean, ibilgailuaren unitate nagusiak datu-konexioa desaktibatuko du.\n\nIbilgailuaren unitate nagusiak datuen erabilera neurtzen du, baina baliteke operadoreak erabilera hori beste era batera neurtzea. Horregatik, muga zuhurra ezartzea gomendatzen dugu."</string>
     <string name="data_usage_warning_editor_title" msgid="2041517150169038813">"Ezarri datuen erabileraren abisua"</string>
     <string name="data_usage_limit_editor_title" msgid="133468242379286689">"Ezarri datuen erabilera-muga"</string>
     <string name="usage_bytes_threshold_picker_positive_button" msgid="4625479840977965519">"Ezarri"</string>
@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Telefonoaren tonua"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Jakinarazpenen soinu lehenetsia"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Alarmen soinu lehenetsia"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Gorde"</string>
     <string name="units_settings" msgid="402325305096925886">"Unitateak"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Abiadura"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Distantzia"</string>
@@ -420,7 +421,7 @@
     <string name="reset_app_pref_button_text" msgid="6270820447321231609">"Berrezarri aplikazioak"</string>
     <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"Berrezarri dira aplikazioen hobespenak"</string>
     <string name="master_clear_title" msgid="8515335233363214414">"Ezabatu datu guztiak (berrezarri jatorrizkoak)"</string>
-    <string name="master_clear_desc" msgid="9058719802779893535">"Ibilgailuaren gailu nagusiko datu guztiak ezabatuko dira, honako hauek barne:\n\n"<li>"Google-ko kontua,"</li>\n<li>"sistemako eta aplikazioetako datuak eta ezarpenak,"</li>\n<li>"deskargatutako aplikazioak."</li></string>
+    <string name="master_clear_desc" msgid="9058719802779893535">"Ibilgailuaren unitate nagusiko datu guztiak ezabatuko dira, honako hauek barne:\n\n"<li>"Google-ko kontua"</li>\n<li>"sistemako eta aplikazioetako datuak eta ezarpenak"</li>\n<li>"deskargatutako aplikazioak"</li></string>
     <string name="master_clear_accounts" msgid="7797522012993567494">"Kontu hauetan hasi duzu saioa:"</string>
     <string name="master_clear_other_users_present" msgid="8383376863095743337">"Beste erabiltzaile batzuk daude ibilgailu honetan."</string>
     <string name="master_clear_button_text" msgid="8010754220392741160">"Berrezarri ibilgailua"</string>
@@ -431,7 +432,7 @@
     <string name="master_clear_progress_text" msgid="3440789441935303176">"Itxaron, mesedez…"</string>
     <string name="date_and_time_settings_title" msgid="4058492663544475485">"Data eta ordua"</string>
     <string name="date_and_time_settings_summary" msgid="7669856855390804666">"Ezarri data, ordua, ordu-zona eta formatuak"</string>
-    <string name="date_time_auto" msgid="3570339569471779767">"Data eta ordu automatikoa"</string>
+    <string name="date_time_auto" msgid="3570339569471779767">"Data eta ordu automatikoak"</string>
     <string name="date_time_auto_summary" msgid="3311706425095342759">"Erabili sareak emandako ordua"</string>
     <string name="zone_auto" msgid="3701878581920206160">"Ordu-zona automatikoa"</string>
     <string name="zone_auto_summary" msgid="4345856882906981864">"Erabili sareak emandako ordu-zona"</string>
@@ -547,7 +548,7 @@
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Pantailaren blokeoa"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Bat ere ez"</string>
     <string name="security_lock_pattern" msgid="1174352995619563104">"Eredua"</string>
-    <string name="security_lock_pin" msgid="4891899974369503200">"PIN kodea"</string>
+    <string name="security_lock_pin" msgid="4891899974369503200">"PINa"</string>
     <string name="security_lock_password" msgid="4420203740048322494">"Pasahitza"</string>
     <string name="lock_settings_picker_title" msgid="6590330165050361632">"Aukeratu blokeo mota"</string>
     <string name="screen_lock_options" msgid="8531177937577168185">"Blokeatzeko aukerak"</string>
@@ -558,7 +559,7 @@
     <string name="lockscreen_retry_button_text" msgid="5314212350698701242">"Saiatu berriro"</string>
     <string name="lockscreen_skip_button_text" msgid="3755748786396198091">"Saltatu"</string>
     <string name="set_screen_lock" msgid="5239317292691332780">"Ezarri pantailaren blokeo bat"</string>
-    <string name="lockscreen_choose_your_pin" msgid="1645229555410061526">"Aukeratu PIN kode bat"</string>
+    <string name="lockscreen_choose_your_pin" msgid="1645229555410061526">"Aukeratu PIN bat"</string>
     <string name="lockscreen_choose_your_pattern" msgid="6801175111142593404">"Aukeratu eredu bat"</string>
     <string name="lockscreen_choose_your_password" msgid="4487577710136014069">"Aukeratu pasahitz bat"</string>
     <string name="current_screen_lock" msgid="637651611145979587">"Ezarrita dagoen pantailaren blokeoa"</string>
@@ -578,15 +579,15 @@
     <string name="okay" msgid="4589873324439764349">"Ados"</string>
     <string name="remove_screen_lock_title" msgid="1234382338764193387">"Pantailaren blokeoa kendu?"</string>
     <string name="remove_screen_lock_message" msgid="6675850371585564965">"Edonork atzitu ahalko du zure kontua"</string>
-    <string name="lock_settings_enter_pin" msgid="1669172111244633904">"Idatzi PIN kodea"</string>
+    <string name="lock_settings_enter_pin" msgid="1669172111244633904">"Idatzi PINa"</string>
     <string name="lock_settings_enter_password" msgid="2636669926649496367">"Idatzi pasahitza"</string>
     <string name="choose_lock_pin_message" msgid="2963792070267774417">"Babestuta egoteko, ezarri PIN bat"</string>
-    <string name="confirm_your_pin_header" msgid="9096581288537156102">"Idatzi berriro PIN kodea"</string>
+    <string name="confirm_your_pin_header" msgid="9096581288537156102">"Idatzi berriro PINa"</string>
     <string name="choose_lock_pin_hints" msgid="7362906249992020844">"PINak lau digitu izan behar ditu gutxienez"</string>
     <string name="lockpin_invalid_pin" msgid="2149191577096327424">"PIN kodeak ez du balio: gutxienez lau digitu izan behar ditu."</string>
     <string name="confirm_pins_dont_match" msgid="4607110139373520720">"PINak ez datoz bat"</string>
     <string name="error_saving_lockpin" msgid="9011960139736000393">"Errore bat gertatu da PINa gordetzean"</string>
-    <string name="lockscreen_wrong_pin" msgid="4922465731473805306">"PIN kodea ez da zuzena"</string>
+    <string name="lockscreen_wrong_pin" msgid="4922465731473805306">"PINa ez da zuzena"</string>
     <string name="lockscreen_wrong_password" msgid="5757087577162231825">"Pasahitza ez da zuzena"</string>
     <string name="choose_lock_password_message" msgid="6124341145027370784">"Babestuta egoteko, ezarri pasahitz bat"</string>
     <string name="confirm_your_password_header" msgid="7052891840366724938">"Idatzi berriro pasahitza"</string>
@@ -600,7 +601,7 @@
     <string name="lockpassword_password_too_long" msgid="7530214940279491291">"Gehienez <xliff:g id="NUMBER">%d</xliff:g> karaktere izan behar ditu"</string>
     <string name="lockpassword_pin_too_long" msgid="62957683396974404">"Gehienez <xliff:g id="NUMBER">%d</xliff:g> digitu izan behar ditu"</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"0 eta 9 arteko zenbakiak soilik izan ditzake."</string>
-    <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Gailuaren administratzaileak ez du eman beste PIN kode bat erabiltzeko baimenik"</string>
+    <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Gailuaren administratzaileak ez du eman beste PIN bat erabiltzeko baimenik"</string>
     <string name="lockpassword_pin_blacklisted_by_admin" msgid="7412709707800738442">"IKT saileko administratzaileak blokeatu egiten ditu asmatzen errazak diren PIN kodeak. Erabili beste PIN bat."</string>
     <string name="lockpassword_illegal_character" msgid="1984970060523635618">"Ezin da erabili onartzen ez den karaktererik."</string>
     <string name="lockpassword_invalid_password" msgid="1690956113717418430">"Pasahitzak ez du balio; lau karaktere izan behar ditu gutxienez."</string>

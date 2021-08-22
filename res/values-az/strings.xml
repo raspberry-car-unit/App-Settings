@@ -69,7 +69,7 @@
     <string name="no_carrier_update_now_text" msgid="5953142546373783189">"İndi güncəlləşdirilib"</string>
     <string name="launch_manage_plan_text" msgid="906657488611815787">"Plana baxın"</string>
     <string name="app_data_usage" msgid="3878609885080232877">"Tətbiq trafiki"</string>
-    <string name="data_usage_app_restricted" msgid="4570970078120010951">"məhdudlaşdırılmış"</string>
+    <string name="data_usage_app_restricted" msgid="4570970078120010951">"məhdud"</string>
     <string name="cycle_reset_day_of_month_picker_title" msgid="1374568502823735361">"Statistika sıfırlanması"</string>
     <string name="cycle_reset_day_of_month_picker_subtitle" msgid="5361061448258189846">"Hər ayın tarixi:"</string>
     <string name="cycle_reset_day_of_month_picker_positive_button" msgid="6919858010423269305">"Ayarlayın"</string>
@@ -210,11 +210,11 @@
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"Bütün dillər"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"Klaviatura"</string>
     <string name="manage_keyboard" msgid="4045394766282200132">"Klaviaturaları idarə edin"</string>
-    <string name="text_to_speech_settings" msgid="811985746199507343">"Mətndən-nitqə daxiletmə"</string>
-    <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Tərcih edilən mühərrik"</string>
+    <string name="text_to_speech_settings" msgid="811985746199507343">"Mətnin səsləndirilməsi"</string>
+    <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Defolt nitq sintezatoru"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"Cari mühərrik"</string>
     <string name="tts_speech_rate" msgid="4512944877291943133">"Nitq sürəti"</string>
-    <string name="tts_pitch" msgid="2389171233852604923">"Tembr"</string>
+    <string name="tts_pitch" msgid="2389171233852604923">"Ton"</string>
     <string name="tts_reset" msgid="6289481549801844709">"Sıfırlayın"</string>
     <string name="sound_settings" msgid="3072423952331872246">"Səs"</string>
     <string name="ring_volume_title" msgid="3135241004980719442">"Zəngin səs səviyyəsi"</string>
@@ -227,6 +227,7 @@
     <string name="ringtone_title" msgid="8370531086214517972">"Telefon zəng səsi"</string>
     <string name="notification_ringtone_title" msgid="8661716239594010288">"Defolt bildiriş səsi"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"Defolt zəngli saat səsi"</string>
+    <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Yadda saxlayın"</string>
     <string name="units_settings" msgid="402325305096925886">"Vahidlər"</string>
     <string name="units_speed_title" msgid="7115143916747108160">"Sürət"</string>
     <string name="units_distance_title" msgid="6257691565990474635">"Məsafə"</string>
@@ -280,7 +281,7 @@
     <string name="default_applications" msgid="1558183275638697087">"Defolt tətbiqlər"</string>
     <string name="app_permissions" msgid="32799922508313948">"Tətbiq icazələri"</string>
     <string name="app_permissions_summary" msgid="1842858532315056367">"<xliff:g id="APPS">%1$s</xliff:g> istifadə edən tətbiqlər"</string>
-    <string name="applications_settings" msgid="794261395191035632">"Tətbiq haqqında məlumat"</string>
+    <string name="applications_settings" msgid="794261395191035632">"Tətbiq haqqında"</string>
     <string name="force_stop" msgid="2153183697014720520">"Dayandırılsın"</string>
     <string name="force_stop_dialog_title" msgid="3342850939200388694">"Dayandırılsın?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"Tətbiqi məcburi dayandırsanız, o, düzgün işləməyə bilər."</string>
@@ -309,7 +310,7 @@
     <string name="assist_app_settings" msgid="9085261410166776497">"Yardım tətbiqi"</string>
     <string name="assist_access_context_title" msgid="8034851731390785301">"Ekrandakı mətni istifadə edin"</string>
     <string name="assist_access_context_summary" msgid="2374281280599443774">"Yardım tətbiqinə ekran məzmunlarına mətn kimi daxil olmağa icazə verin"</string>
-    <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Ani görüntü istifadə edin"</string>
+    <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Skrinşot istifadə edin"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Yardım tətbiqinə ekrandakı şəkilə daxil olmağa icazə verin"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"Səslə daxiletmə"</string>
     <string name="autofill_settings_title" msgid="1188754272680049972">"Avtodoldurma xidməti"</string>
@@ -318,17 +319,17 @@
     <string name="assistant_security_warning" msgid="1844807956967428012">"Asistent sisteminizdə istifadə olunan tətbiqlər haqqında məlumatı oxuya biləcək, bura ekranınızda görünən və ya tətbiqlər daxilində əlçatan olan məlumatlar da daxildir."</string>
     <string name="autofill_confirmation_message" msgid="1832984461556991378">"&lt;b&gt;Bu tətbiqə inana biləcəyinizi dəqiqləşdirin&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; &lt;xliff:g id=app_name example=Google Avtodoldurma&gt;%1$s&lt;/xliff:g&gt; ekranı analiz edərək avtomatik doldurula bilən sahələri tapır."</string>
     <string name="autofill_add_service" msgid="6413893366443609951">"Xidmət əlavə edin"</string>
-    <string name="app_launch_domain_links_title" msgid="774480184927726651">"Linkləri açmaq"</string>
+    <string name="app_launch_domain_links_title" msgid="774480184927726651">"Linklərin açılması"</string>
     <string name="domain_url_section_title" msgid="9070403140947787214">"Quraşdırılmış tətbiqlər"</string>
-    <string name="domain_urls_summary_none" msgid="3077803215088293183">"Dəstəklənən linkləri açmayın"</string>
+    <string name="domain_urls_summary_none" msgid="3077803215088293183">"Dəstəklənən linklər açılmasın"</string>
     <string name="domain_urls_summary_one" msgid="5072257421806034237">"<xliff:g id="DOMAIN">%s</xliff:g> linkini açın"</string>
     <string name="domain_urls_summary_some" msgid="5523153458016701725">"<xliff:g id="DOMAIN">%s</xliff:g> domenini və digər URL\'ləri açın"</string>
-    <string name="app_launch_title" msgid="3442601467010363057">"Defolt olaraq açın"</string>
+    <string name="app_launch_title" msgid="3442601467010363057">"Defolt olaraq açılsın"</string>
     <string name="app_launch_other_defaults_title" msgid="5734827759507953180">"Digər defoltlar"</string>
     <string name="auto_launch_disable_text" msgid="3595315315092716391">"Defolt ayarlanmayıb."</string>
     <string name="auto_launch_enable_text" msgid="7230832269574106901">"Bu tətbiqin defolt olaraq bəzi əməliyyatlar üçün işə salınmasını seçmisiniz."</string>
     <string name="auto_launch_reset_text" msgid="590439611312092392">"Defoltları təmizləyin"</string>
-    <string name="app_launch_open_domain_urls_title" msgid="4705344946367759393">"Dəstəklənən linkləri açın"</string>
+    <string name="app_launch_open_domain_urls_title" msgid="4705344946367759393">"Dəstəklənən linklər açılsın"</string>
     <string name="app_link_open_always" msgid="5783167184335545230">"Bu tətbiqdə açın"</string>
     <string name="app_link_open_ask" msgid="7242075065136237456">"Həmişə soruşulsun"</string>
     <string name="app_link_open_never" msgid="2173174327831792316">"Bu tətbiqdə açmayın"</string>
@@ -415,10 +416,10 @@
     <string name="reset_network_confirm_desc" msgid="7721698076856330212">"Bütün şəbəkə ayarları sıfırlansın? Bu əməliyyatı geri qaytara bilməzsiniz!"</string>
     <string name="reset_network_confirm_button_text" msgid="5246859685069024851">"Ayarları sıfırlayın"</string>
     <string name="reset_network_complete_toast" msgid="3804108209431416865">"Şəbəkə ayarları sıfırlandı"</string>
-    <string name="reset_app_pref_title" msgid="5855420038951743992">"Tətbiq seçimlərini sıfırlayın"</string>
+    <string name="reset_app_pref_title" msgid="5855420038951743992">"Tətbiq tərcihləri sıfırlansın"</string>
     <string name="reset_app_pref_desc" msgid="579392665146962149">"Bu, aşağıdakılar üçün bütün tərcihləri sıfırlayacaq:\n\n"<li>" Deaktiv edilmiş tətbiqlər"</li>\n<li>"Deaktiv edilmiş tətbiq bildirişləri"</li>\n<li>"Əməliyyatlar üçün defolt tətbiqlər"</li>\n<li>"Tətbiqlər üçün arxa fon məlumatlarının məhdudlaşdırılması"</li>\n<li>"İstənilən icazə məhdudiyyətləri"</li>\n\n"Hər hansı tətbiq məlumatını itirməyəcəksiniz."</string>
     <string name="reset_app_pref_button_text" msgid="6270820447321231609">"Tətbiqləri sıfırla"</string>
-    <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"Tətbiq seçimləri sıfırlanıb"</string>
+    <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"Tətbiq tərcihləri sıfırlanıb"</string>
     <string name="master_clear_title" msgid="8515335233363214414">"Bütün datanı silin (fabrika sıfırlaması)"</string>
     <string name="master_clear_desc" msgid="9058719802779893535">"Bu, avtomobilin əsas blokundakı bütün datanı siləcək, bura daxildir:\n\n"<li>"Google Hesabınız"</li>\n<li>"Sistem və tətbiq datası və ayarları"</li>\n<li>"Endirilmiş tətbiqlər"</li></string>
     <string name="master_clear_accounts" msgid="7797522012993567494">"Hazırda bu hesablara daxil olmusunuz:"</string>
