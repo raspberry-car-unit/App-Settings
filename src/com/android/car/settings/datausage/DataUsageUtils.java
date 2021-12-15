@@ -16,6 +16,8 @@
 
 package com.android.car.settings.datausage;
 
+import android.annotation.NonNull;
+import android.app.usage.NetworkStats;
 import android.content.Context;
 import android.net.NetworkTemplate;
 import android.telephony.SubscriptionInfo;
@@ -32,6 +34,7 @@ import androidx.annotation.VisibleForTesting;
 import com.android.car.settings.R;
 import com.android.internal.util.CollectionUtils;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 
@@ -51,7 +54,8 @@ public final class DataUsageUtils {
             int subscriptionId) {
         NetworkTemplate mobileAll = NetworkTemplate.buildTemplateMobileAll(
                 telephonyManager.getSubscriberId(subscriptionId));
-        return NetworkTemplate.normalize(mobileAll, telephonyManager.getMergedSubscriberIds());
+        return NetworkTemplate.normalize(mobileAll,
+                Arrays.<String[]>asList(telephonyManager.getMergedSubscriberIds()));
     }
 
     /**
@@ -119,5 +123,22 @@ public final class DataUsageUtils {
 
     private static boolean saneSize(long value) {
         return value >= 0L && value < PETA;
+    }
+
+    /**
+     * Return whether there is any data of the next bin in the NetworkStats enumeration.
+     */
+    public static boolean hasNextBucket(@NonNull NetworkStats stats) {
+        return stats.hasNextBucket();
+    }
+
+    /**
+     * Return the bucket with data of the next bin in the NetworkStats enumeration.
+     */
+    @NonNull
+    public static NetworkStats.Bucket getNextBucket(@NonNull NetworkStats stats) {
+        final NetworkStats.Bucket ret = new NetworkStats.Bucket();
+        stats.getNextBucket(ret);
+        return ret;
     }
 }

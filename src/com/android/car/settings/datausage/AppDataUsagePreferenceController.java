@@ -19,10 +19,10 @@ package com.android.car.settings.datausage;
 import static android.net.TrafficStats.UID_REMOVED;
 import static android.net.TrafficStats.UID_TETHERING;
 
+import android.app.usage.NetworkStats;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
 import android.content.pm.UserInfo;
-import android.net.NetworkStats;
 import android.os.UserHandle;
 import android.util.SparseArray;
 
@@ -74,10 +74,11 @@ public class AppDataUsagePreferenceController extends
         List<UserInfo> profiles = ProfileHelper.getInstance(getContext()).getAllProfiles();
         SparseArray<AppItem> knownItems = new SparseArray<>();
 
-        NetworkStats.Entry entry = null;
+        // NetworkStats#getNextBucket(bucketOut) cannot be used for NetworkStats injection.
+        // Invoke them indirectly via utility class which will be mocked in the test.
         if (stats != null) {
-            for (int i = 0; i < stats.size(); i++) {
-                entry = stats.getValues(i, entry);
+            while (DataUsageUtils.hasNextBucket(stats)) {
+                final NetworkStats.Bucket entry = DataUsageUtils.getNextBucket(stats);
                 long size = aggregateDataUsage(knownItems, items, entry, profiles);
                 largest = Math.max(size, largest);
             }
@@ -88,11 +89,11 @@ public class AppDataUsagePreferenceController extends
     }
 
     private long aggregateDataUsage(SparseArray<AppItem> knownItems, List<AppItem> items,
-            NetworkStats.Entry entry, List<UserInfo> profiles) {
+            NetworkStats.Bucket entry, List<UserInfo> profiles) {
         int currentUserId = UserHandle.myUserId();
 
         // Decide how to collapse items together.
-        int uid = entry.uid;
+        int uid = entry.getUid();
 
         int collapseKey;
         int category;
@@ -199,8 +200,8 @@ public class AppDataUsagePreferenceController extends
      * @param itemCategory the item is categorized on the list view by this category. Must be
      */
     private static long accumulate(int collapseKey, SparseArray<AppItem> knownItems,
-            NetworkStats.Entry entry, int itemCategory, List<AppItem> items) {
-        int uid = entry.uid;
+            NetworkStats.Bucket entry, int itemCategory, List<AppItem> items) {
+        int uid = entry.getUid();
         AppItem item = knownItems.get(collapseKey);
         if (item == null) {
             item = new AppItem(collapseKey);
@@ -209,7 +210,7 @@ public class AppDataUsagePreferenceController extends
             knownItems.put(item.key, item);
         }
         item.addUid(uid);
-        item.total += entry.rxBytes + entry.txBytes;
+        item.total += entry.getRxBytes() + entry.getTxBytes();
         return item.total;
     }
 

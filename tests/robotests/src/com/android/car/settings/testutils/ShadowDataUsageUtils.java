@@ -16,28 +16,39 @@
 
 package com.android.car.settings.testutils;
 
-import android.net.INetworkStatsService;
+import android.annotation.NonNull;
+import android.app.usage.NetworkStats;
+
+import com.android.car.settings.datausage.DataUsageUtils;
 
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import org.robolectric.annotation.Resetter;
 
-@Implements(value = INetworkStatsService.Stub.class)
-public class ShadowINetworkStatsServiceStub {
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
 
-    private static INetworkStatsService sINetworkStatsService;
+@Implements(DataUsageUtils.class)
+public class ShadowDataUsageUtils {
 
-    @Resetter
-    public static void reset() {
-        sINetworkStatsService = null;
+    private static Queue<NetworkStats.Bucket> sMockedBuckets = new LinkedBlockingQueue<>();
+
+    public static void addBucket(NetworkStats.Bucket bucket) {
+        sMockedBuckets.add(bucket);
     }
 
     @Implementation
-    public static android.net.INetworkStatsService asInterface(android.os.IBinder obj) {
-        return sINetworkStatsService;
+    public static boolean hasNextBucket(@NonNull NetworkStats unused) {
+        return !sMockedBuckets.isEmpty();
     }
 
-    public static void setINetworkStatsSession(INetworkStatsService iNetworkStatsService) {
-        sINetworkStatsService = iNetworkStatsService;
+    @Implementation
+    public static NetworkStats.Bucket getNextBucket(@NonNull NetworkStats unused) {
+        return sMockedBuckets.remove();
+    }
+
+    @Resetter
+    public static void reset() {
+        sMockedBuckets.clear();
     }
 }

@@ -16,9 +16,10 @@
 
 package com.android.car.settings.datausage;
 
+import android.app.usage.NetworkStats;
+import android.app.usage.NetworkStatsManager;
 import android.content.Context;
-import android.net.INetworkStatsSession;
-import android.net.NetworkStats;
+import android.net.ConnectivityManager;
 import android.net.NetworkTemplate;
 import android.os.Bundle;
 import android.os.RemoteException;
@@ -26,18 +27,17 @@ import android.os.RemoteException;
 import androidx.loader.content.AsyncTaskLoader;
 
 /**
- * Fetches the network stats using the {@link INetworkStatsSession}.
+ * Fetches the network stats using the {@link NetworkStatsManager}.
  *
  * <p>Class is taken from {@link com.android.settingslib.net.SummaryForAllUidLoader}. The only
  * difference is we are using {@link AsyncTaskLoader} instead of {@link
  * android.content.AsyncTaskLoader}.
  */
 public class SummaryForAllUidLoader extends AsyncTaskLoader<NetworkStats> {
-    private static final String KEY_TEMPLATE = "template";
+    private static final String KEY_SUBSCRIBER_ID = "subscriber_id";
     private static final String KEY_START = "start";
     private static final String KEY_END = "end";
 
-    private final INetworkStatsSession mSession;
     private final Bundle mArgs;
 
     /**
@@ -45,15 +45,14 @@ public class SummaryForAllUidLoader extends AsyncTaskLoader<NetworkStats> {
      */
     public static Bundle buildArgs(NetworkTemplate template, long start, long end) {
         Bundle args = new Bundle();
-        args.putParcelable(KEY_TEMPLATE, template);
+        args.putString(KEY_SUBSCRIBER_ID, template.getSubscriberId());
         args.putLong(KEY_START, start);
         args.putLong(KEY_END, end);
         return args;
     }
 
-    public SummaryForAllUidLoader(Context context, INetworkStatsSession session, Bundle args) {
+    public SummaryForAllUidLoader(Context context, Bundle args) {
         super(context);
-        mSession = session;
         mArgs = args;
     }
 
@@ -65,12 +64,15 @@ public class SummaryForAllUidLoader extends AsyncTaskLoader<NetworkStats> {
 
     @Override
     public NetworkStats loadInBackground() {
-        NetworkTemplate template = mArgs.getParcelable(KEY_TEMPLATE);
-        long start = mArgs.getLong(KEY_START);
-        long end = mArgs.getLong(KEY_END);
+        final String subscriberId = mArgs.getString(KEY_SUBSCRIBER_ID);
+        final long start = mArgs.getLong(KEY_START);
+        final long end = mArgs.getLong(KEY_END);
 
         try {
-            return mSession.getSummaryForAllUid(template, start, end, /* includeTags= */ false);
+            final NetworkStatsManager statsManager =
+                    getContext().getSystemService(NetworkStatsManager.class);
+            return statsManager.querySummary(ConnectivityManager.TYPE_MOBILE, subscriberId, start,
+                    end);
         } catch (RemoteException e) {
             return null;
         }

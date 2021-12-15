@@ -20,8 +20,11 @@ import static android.net.TrafficStats.UID_TETHERING;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import android.app.usage.NetworkStats;
 import android.content.Context;
-import android.net.NetworkStats;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.test.core.app.ApplicationProvider;
@@ -29,6 +32,7 @@ import androidx.test.core.app.ApplicationProvider;
 import com.android.car.settings.common.LogicalPreferenceGroup;
 import com.android.car.settings.common.PreferenceControllerTestHelper;
 import com.android.car.settings.common.ProgressBarPreference;
+import com.android.car.settings.testutils.ShadowDataUsageUtils;
 import com.android.car.settings.testutils.ShadowUidDetailProvider;
 import com.android.car.settings.testutils.ShadowUserManager;
 import com.android.settingslib.net.UidDetail;
@@ -44,7 +48,8 @@ import org.robolectric.annotation.Config;
 
 /** Unit test for {@link AppDataUsagePreferenceController}. */
 @RunWith(RobolectricTestRunner.class)
-@Config(shadows = {ShadowUidDetailProvider.class, ShadowUserManager.class})
+@Config(shadows = {ShadowUidDetailProvider.class, ShadowUserManager.class,
+        ShadowDataUsageUtils.class})
 public class AppDataUsagePreferenceControllerTest {
 
     private Context mContext;
@@ -88,23 +93,28 @@ public class AppDataUsagePreferenceControllerTest {
 
     @Test
     public void onDataLoaded_statsSizeZero_hasNoPreference() {
-        NetworkStats networkStats = new NetworkStats(0, 0);
+        final NetworkStats networkStats = mock(NetworkStats.class);
+        when(networkStats.hasNextBucket()).thenReturn(false);
 
         mController.onDataLoaded(networkStats, new int[0]);
 
         assertThat(mLogicalPreferenceGroup.getPreferenceCount()).isEqualTo(0);
     }
 
+    private NetworkStats.Bucket getMockBucket(int uid, long rxBytes, long txBytes) {
+        final NetworkStats.Bucket ret = mock(NetworkStats.Bucket.class);
+        when(ret.getUid()).thenReturn(uid);
+        when(ret.getRxBytes()).thenReturn(rxBytes);
+        when(ret.getTxBytes()).thenReturn(txBytes);
+        return ret;
+    }
+
     @Test
     public void onDataLoaded_statsLoaded_hasTwoPreference() {
-        NetworkStats networkStats = new NetworkStats(0, 0);
-        NetworkStats.Entry entry1 = new NetworkStats.Entry();
-        entry1.rxBytes = 100;
-        NetworkStats.Entry entry2 = new NetworkStats.Entry();
-        entry2.uid = UID_TETHERING;
-        entry2.rxBytes = 200;
+        ShadowDataUsageUtils.addBucket(getMockBucket(0, 100, 0));
+        ShadowDataUsageUtils.addBucket(getMockBucket(UID_TETHERING, 200, 0));
 
-        mController.onDataLoaded(networkStats.addEntry(entry1).addEntry(entry2), new int[0]);
+        mController.onDataLoaded(mock(NetworkStats.class), new int[0]);
 
         assertThat(mLogicalPreferenceGroup.getPreferenceCount()).isEqualTo(2);
     }
@@ -112,14 +122,10 @@ public class AppDataUsagePreferenceControllerTest {
     @Test
     public void onDataLoaded_statsLoaded_hasOnePreference() {
         ShadowUidDetailProvider.setUidDetail(mUidDetail);
-        NetworkStats networkStats = new NetworkStats(0, 0);
-        NetworkStats.Entry entry1 = new NetworkStats.Entry();
-        entry1.rxBytes = 100;
-        NetworkStats.Entry entry2 = new NetworkStats.Entry();
-        entry2.uid = UID_TETHERING;
-        entry2.rxBytes = 200;
+        ShadowDataUsageUtils.addBucket(getMockBucket(0, 100, 0));
+        ShadowDataUsageUtils.addBucket(getMockBucket(UID_TETHERING, 200, 0));
 
-        mController.onDataLoaded(networkStats.addEntry(entry1).addEntry(entry2), new int[0]);
+        mController.onDataLoaded(mock(NetworkStats.class), new int[0]);
 
         ProgressBarPreference preference1 =
                 (ProgressBarPreference) mLogicalPreferenceGroup.getPreference(0);
