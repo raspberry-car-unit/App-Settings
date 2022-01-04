@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0f5b38f_a83ee441",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121193
+      },
+      "writtenOn": "2022-01-04T18:11:59Z",
+      "side": 1,
+      "message": "This is a cherrypick CL from master to AOSP",
+      "revId": "7944153d2e5bd4d7920163a4c1db7fcb5468a81d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
