@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c2ee1454_fd9f2b3f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1364839
+      },
+      "writtenOn": "2022-01-26T12:39:22Z",
+      "side": 1,
+      "message": "it has Merge-Conflicts on the file:\n    tests/unit/src/com/android/car/settings/storage/StorageAsyncLoaderTest.java",
+      "revId": "768ddb1218e7c06e38d9c486f87e115da2294b1a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
