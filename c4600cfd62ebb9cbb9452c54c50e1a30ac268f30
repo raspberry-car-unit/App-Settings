@@ -16,6 +16,98 @@
       "message": "friendly ping",
       "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cfa04316_467ff5e8",
+        "filename": "src/com/android/car/settings/datausage/DataUsageUnitPreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2022-05-26T19:15:54Z",
+      "side": 1,
+      "message": "nit: go/no-final (for all instances in this change)",
+      "range": {
+        "startLine": 79,
+        "startChar": 8,
+        "endLine": 79,
+        "endChar": 13
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61add8c1_48612438",
+        "filename": "src/com/android/car/settings/storage/FileSizeFormatter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2022-05-26T19:15:54Z",
+      "side": 1,
+      "message": "Could this method just use the no-param getInstance() method (which will handle determining RTL or not) and just call unicodeWrap on that (essentially turning this method into a one-liner of `return BidiFormatter.getInstance().unicodeWrap(source);`). Or is that not equivalent?",
+      "range": {
+        "startLine": 62,
+        "startChar": 26,
+        "endLine": 62,
+        "endChar": 34
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e8d9e4f2_2dbcd3fb",
+        "filename": "src/com/android/car/settings/storage/FileSizeFormatter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2022-05-26T19:15:54Z",
+      "side": 1,
+      "message": "nit: prefer param comments of `/* param\u003d */ param`",
+      "range": {
+        "startLine": 65,
+        "startChar": 50,
+        "endLine": 65,
+        "endChar": 58
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b315e41e_d84d44bc",
+        "filename": "tests/unit/src/com/android/car/settings/storage/FileSizeFormatterTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2022-05-26T19:15:54Z",
+      "side": 1,
+      "message": "Can you clarify under what conditions this method call can now return an exception?",
+      "range": {
+        "startLine": 39,
+        "startChar": 45,
+        "endLine": 39,
+        "endChar": 54
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
