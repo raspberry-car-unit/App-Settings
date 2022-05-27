@@ -108,6 +108,23 @@
       },
       "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d22add6_dd9725f4",
+        "filename": "tests/unit/src/com/android/car/settings/storage/FileSizeFormatterTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2022-05-27T00:29:15Z",
+      "side": 1,
+      "message": "nit: param comment format",
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
