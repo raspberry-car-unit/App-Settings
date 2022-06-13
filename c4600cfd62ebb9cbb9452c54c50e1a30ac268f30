@@ -41,6 +41,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4df98181_75d497ec",
+        "filename": "src/com/android/car/settings/datausage/DataUsageUnitPreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1047684
+      },
+      "writtenOn": "2022-06-13T23:18:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cfa04316_467ff5e8",
+      "range": {
+        "startLine": 79,
+        "startChar": 8,
+        "endLine": 79,
+        "endChar": 13
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "61add8c1_48612438",
@@ -54,6 +78,30 @@
       "writtenOn": "2022-05-26T19:15:54Z",
       "side": 1,
       "message": "Could this method just use the no-param getInstance() method (which will handle determining RTL or not) and just call unicodeWrap on that (essentially turning this method into a one-liner of `return BidiFormatter.getInstance().unicodeWrap(source);`). Or is that not equivalent?",
+      "range": {
+        "startLine": 62,
+        "startChar": 26,
+        "endLine": 62,
+        "endChar": 34
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7838292_85e95cc2",
+        "filename": "src/com/android/car/settings/storage/FileSizeFormatter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1047684
+      },
+      "writtenOn": "2022-06-13T23:18:17Z",
+      "side": 1,
+      "message": "Not sure how to turn it into a no-param  method. Because the caller is a static method and this needs the context object to obtain the object. It seems not equivalent to me.\n\nAnd this file is a hard copy of non-Car Settings. I have submitted the same CL to non-car Settings. https://r.android.com/2096605 I hope that the code structure won\u0027t change too much here unless necessary. Otherwise, it\u0027s hard to maintain 2 copies of the codes.",
+      "parentUuid": "61add8c1_48612438",
       "range": {
         "startLine": 62,
         "startChar": 26,
@@ -87,6 +135,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a31398d9_0c9bf4aa",
+        "filename": "src/com/android/car/settings/storage/FileSizeFormatter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1047684
+      },
+      "writtenOn": "2022-06-13T23:18:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e8d9e4f2_2dbcd3fb",
+      "range": {
+        "startLine": 65,
+        "startChar": 50,
+        "endLine": 65,
+        "endChar": 58
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b315e41e_d84d44bc",
@@ -110,6 +182,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a74f0dc2_a3b1b09a",
+        "filename": "tests/unit/src/com/android/car/settings/storage/FileSizeFormatterTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1047684
+      },
+      "writtenOn": "2022-06-13T23:18:17Z",
+      "side": 1,
+      "message": "Actually, it won\u0027t throw exception. (tried `m CarSettingsUnitTests`) The author left Google, and I just re-land the CL.",
+      "parentUuid": "b315e41e_d84d44bc",
+      "range": {
+        "startLine": 39,
+        "startChar": 45,
+        "endLine": 39,
+        "endChar": 54
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3d22add6_dd9725f4",
@@ -123,6 +219,24 @@
       "writtenOn": "2022-05-27T00:29:15Z",
       "side": 1,
       "message": "nit: param comment format",
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "920de1cf_bbadeeef",
+        "filename": "tests/unit/src/com/android/car/settings/storage/FileSizeFormatterTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1047684
+      },
+      "writtenOn": "2022-06-13T23:18:17Z",
+      "side": 1,
+      "message": "It\u0027s obvious and unnecessary. Removed the param comment.",
+      "parentUuid": "3d22add6_dd9725f4",
       "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
