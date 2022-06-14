@@ -112,6 +112,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ea45d59_48c0f291",
+        "filename": "src/com/android/car/settings/storage/FileSizeFormatter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2022-06-14T18:54:08Z",
+      "side": 1,
+      "message": "Oh I was referring to the BidiFormatter.getInstance() method itself - was curious if doing the check and passing the RTL param was necessary vs. the one-liner above. But it should be fine either way.",
+      "parentUuid": "e7838292_85e95cc2",
+      "range": {
+        "startLine": 62,
+        "startChar": 26,
+        "endLine": 62,
+        "endChar": 34
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e8d9e4f2_2dbcd3fb",
