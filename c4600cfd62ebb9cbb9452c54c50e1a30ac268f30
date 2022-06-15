@@ -136,6 +136,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "164ee695_ed0a6b48",
+        "filename": "src/com/android/car/settings/storage/FileSizeFormatter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1047684
+      },
+      "writtenOn": "2022-06-15T10:40:00Z",
+      "side": 1,
+      "message": "It\u0027s very similiar, but this implementation is more efficient than oneliner BidiFormatter.getInstance(locale).unicodeWrap(source), because we know the layout direction and the text are generated from ICU\u0027s numberformatter in the same locale, while BidiFormatter doesn\u0027t seem to have such assumption, and thus we return the source string directly for LTR language here. It\u0027s more efficient.\n\nandroid.icu.text.NumberFormat doesn\u0027t know if the layout is RTL, and thus we have to call BidiFormatter for unicodeWrap, but the generated strings should be correct for LTR layout.",
+      "parentUuid": "9ea45d59_48c0f291",
+      "range": {
+        "startLine": 62,
+        "startChar": 26,
+        "endLine": 62,
+        "endChar": 34
+      },
+      "revId": "c4600cfd62ebb9cbb9452c54c50e1a30ac268f30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e8d9e4f2_2dbcd3fb",
