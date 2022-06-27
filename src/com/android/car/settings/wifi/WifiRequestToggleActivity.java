@@ -114,11 +114,21 @@ public class WifiRequestToggleActivity extends FragmentActivity {
         }
 
         try {
+<<<<<<< HEAD   (16fc45 [automerger skipped] Import translations. DO NOT MERGE ANYWH)
             ApplicationInfo applicationInfo = getPackageManager().getApplicationInfo(
                     packageName, /* flags= */ 0);
             mAppLabel = applicationInfo.loadSafeLabel(getPackageManager());
+=======
+            PackageManager pm = getPackageManager();
+            ApplicationInfo ai = pm.getApplicationInfo(getLaunchedFromPackage(), /* flags= */ 0);
+            mAppLabel = pm.getApplicationLabel(ai);
+>>>>>>> CHANGE (a3599e Update API to get launching package)
         } catch (PackageManager.NameNotFoundException e) {
+<<<<<<< HEAD   (16fc45 [automerger skipped] Import translations. DO NOT MERGE ANYWH)
             LOG.e("Couldn't find app with package name " + packageName);
+=======
+            LOG.e("Couldn't find app with package name " + getLaunchedFromPackage());
+>>>>>>> CHANGE (a3599e Update API to get launching package)
             finish();
             return;
         }
