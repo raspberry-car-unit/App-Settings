@@ -117,8 +117,11 @@ public class WifiRequestToggleActivity extends FragmentActivity {
             ApplicationInfo applicationInfo = getPackageManager().getApplicationInfo(
                     packageName, /* flags= */ 0);
             mAppLabel = applicationInfo.loadSafeLabel(getPackageManager());
+            PackageManager pm = getPackageManager();
+            ApplicationInfo ai = pm.getApplicationInfo(getLaunchedFromPackage(), /* flags= */ 0);
+            mAppLabel = pm.getApplicationLabel(ai);
         } catch (PackageManager.NameNotFoundException e) {
-            LOG.e("Couldn't find app with package name " + packageName);
+            LOG.e("Couldn't find app with package name " + getLaunchedFromPackage());
             finish();
             return;
         }
