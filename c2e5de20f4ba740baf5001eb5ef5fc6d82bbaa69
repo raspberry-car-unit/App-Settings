@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c7fd8b85_2c55808c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1870696
+      },
+      "writtenOn": "2022-08-25T20:10:57Z",
+      "side": 1,
+      "message": "Please mention that this cl is cherry picked from commit 1f0d4ebf9d45ab1150d6f28b9f56bb9c861ad83d",
+      "revId": "c2e5de20f4ba740baf5001eb5ef5fc6d82bbaa69",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
