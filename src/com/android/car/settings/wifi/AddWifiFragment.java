@@ -264,7 +264,9 @@ public class AddWifiFragment extends SettingsFragment {
                                 mSecurityType, /* password= */ null, /* hidden= */ true,
                                 mMeteredChoice, mPrivacyChoice,
                                 mConnectionListener);
-                    } else if (mSecurityType == WifiEntry.SECURITY_EAP) {
+                    } else if (mSecurityType == WifiEntry.SECURITY_EAP ||
+                               mSecurityType == WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE ||
+                               mSecurityType == WifiEntry.SECURITY_EAP_SUITE_B) {
                         Log.d(TAG, "Connect to EAP AP " + mNetworkName);
                         WifiUtil.connectToEAPWifiEntry(getContext(), mNetworkName,
                                 mSecurityType, mWifiConfig, /* hidden= */ true,
@@ -341,7 +343,9 @@ public class AddWifiFragment extends SettingsFragment {
         if (mAddWifiButton != null) {
             mAddWifiButton.setEnabled(
                     !TextUtils.isEmpty(mNetworkName) && WifiUtil.isOpenNetwork(mSecurityType));
-            if (mSecurityType == WifiEntry.SECURITY_EAP) {
+            if (mSecurityType == WifiEntry.SECURITY_EAP ||
+                mSecurityType == WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE ||
+                mSecurityType == WifiEntry.SECURITY_EAP_SUITE_B) {
                 mWifiConfig = getConfig();
                 if (mWifiConfig != null) {
                     mAddWifiButton.setEnabled(true);
