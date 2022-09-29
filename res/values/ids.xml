@@ -24,4 +24,23 @@
     <item type="id" name="ringtone_picker_selected_id"/>
     <!-- ID key for tagging whether a preference is highlighted or not -->
     <item type="id" name="preference_highlighted" />
+
+    <!-- ID for wifi eap -->
+    <item type="id" name="eap"/>
+    <item type="id" name="l_method"/>
+    <item type="id" name="eap_method_edit"/>
+    <item type="id" name="l_phase2"/>
+    <item type="id" name="phase2_authentication_edit"/>
+    <item type="id" name="l_ca_cert"/>
+    <item type="id" name="ca_cert"/>
+    <item type="id" name="l_user_cert"/>
+    <item type="id" name="user_cert"/>
+    <item type="id" name="l_identity"/>
+    <item type="id" name="identity"/>
+    <item type="id" name="l_domain"/>
+    <item type="id" name="domain"/>
+    <item type="id" name="l_anonymous"/>
+    <item type="id" name="anonymous"/>
+    <item type="id" name="l_password_notice"/>
+    <item type="id" name="l_show_password" />
 </resources>

@@ -34,21 +34,202 @@
         android:textColor="?android:attr/textColorSecondary"
         android:visibility="gone"/>
 
-    <EditText
-        android:id="@android:id/edit"
+    <LinearLayout android:id="@+id/eap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/alert_dialog_edit_text_margin_end"
-        android:layout_marginStart="@dimen/alert_dialog_edit_text_margin_start"/>
+        style="@style/wifi_section"
+        android:visibility="gone">
 
-    <CheckBox
-        android:id="@+id/checkbox"
+        <LinearLayout android:id="@+id/l_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/wifi_item">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_title_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_title_margin_start"
+                android:text="@string/eap_method" />
+
+            <Spinner
+                android:id="@+id/eap_method_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/wifi_item_spinner"
+                android:prompt="@string/wifi_eap_method" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/l_phase2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/wifi_item" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_title_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_title_margin_start"
+                android:text="@string/phase2_authentication" />
+
+            <Spinner
+                android:id="@+id/phase2_authentication_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/wifi_item_spinner"
+                android:prompt="@string/please_select_phase2" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/l_ca_cert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/wifi_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_title_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_title_margin_start"
+                android:text="@string/ca_certificate" />
+
+            <Spinner
+                android:id="@+id/ca_cert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/wifi_item_spinner"
+                android:prompt="@string/wifi_eap_ca_cert" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/wifi_item" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_title_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_title_margin_start"
+                android:text="@string/wifi_eap_identity" />
+
+            <EditText
+                android:id="@+id/identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_edit_text_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_edit_text_margin_start"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/l_anonymous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/wifi_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_title_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_title_margin_start"
+                android:text="@string/wifi_eap_anonymous" />
+
+            <EditText android:id="@+id/anonymous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_edit_text_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_edit_text_margin_start"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/l_domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/wifi_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_title_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_title_margin_start"
+                android:text="@string/wifi_eap_domain" />
+
+            <EditText android:id="@+id/domain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_edit_text_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_edit_text_margin_start"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/l_user_cert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="@style/wifi_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_title_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_title_margin_start"
+                android:text="@string/wifi_eap_user_cert" />
+
+            <Spinner
+                android:id="@+id/user_cert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/wifi_item_spinner"
+                android:prompt="@string/wifi_eap_user_cert" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/l_password_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/wifi_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/alert_dialog_edit_text_margin_end"
+                android:layout_marginStart="@dimen/alert_dialog_edit_text_margin_start"
+                android:text="@string/enter_eap_password" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/l_show_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/alert_dialog_password_checkbox_margin_end"
-        android:layout_marginStart="@dimen/alert_dialog_password_checkbox_margin_start"
-        android:layout_marginTop="@dimen/alert_dialog_password_checkbox_margin_top"
-        android:text="@string/show_password"/>
+        style="@style/wifi_item" >
+
+        <EditText
+            android:id="@android:id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/alert_dialog_edit_text_margin_end"
+            android:layout_marginStart="@dimen/alert_dialog_edit_text_margin_start"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/alert_dialog_password_checkbox_margin_end"
+            android:layout_marginStart="@dimen/alert_dialog_password_checkbox_margin_start"
+            android:layout_marginTop="@dimen/alert_dialog_password_checkbox_margin_top"
+            android:text="@string/show_password"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/meteredtext"
