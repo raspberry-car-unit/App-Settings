@@ -32,4 +32,18 @@
         <item>com.android.systemui</item>
     </string-array>
 
+     <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
+     <string-array name="wifi_eap_method" translatable="false">
+         <item>TTLS</item>
+         <item>TLS</item>
+     </string-array>
+
+     <!-- Phase 2 options for TTLS -->
+     <string-array name="wifi_ttls_phase2_entries">
+         <item>PAP</item>
+         <item>MSCHAP</item>
+         <item>MSCHAPV2</item>
+         <item>GTC</item>
+     </string-array>
+
 </resources>
