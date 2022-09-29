@@ -12,6 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+ * Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package com.android.car.settings.wifi;
@@ -74,6 +78,24 @@ public class WifiEntryListPreferenceController extends
                     }
                 }
             };
+
+    @VisibleForTesting
+    final WifiEnterpriseDialog.WifiDialogListener mEapDialogListener =
+            new WifiEnterpriseDialog.WifiDialogListener() {
+                @Override
+                public void onSubmit(WifiEnterpriseDialog dialog) {
+                    WifiConfiguration config = dialog.getWifiConfiguration();
+                    WifiEntry wifiEntry = dialog.getWifiEntry();
+                    if (config == null) {
+                        wifiEntry.connect(
+                                new WifiEntryConnectCallback(wifiEntry,
+                                        /* editIfNoConfig= */ false));
+                    } else {
+                        getWifiManager().connect(config, mConnectionListener);
+                    }
+                }
+            };
+
 
     private List<WifiEntry> mWifiEntries = new ArrayList<>();
 
@@ -175,10 +197,16 @@ public class WifiEntryListPreferenceController extends
                         getFragmentController().launchFragment(
                                 WifiDetailsFragment.getInstance(wifiEntry));
                     }
-                } else if (wifiEntry.shouldEditBeforeConnect()) {
-                    getFragmentController().showDialog(
-                            new WifiPasswordDialog(wifiEntry, mDialogListener),
-                            WifiPasswordDialog.TAG);
+                 } else if (wifiEntry.shouldEditBeforeConnect()) {
+                    if (wifiEntry.getSecurity() == WifiEntry.SECURITY_EAP) {
+                        getFragmentController().showDialog(
+                                new WifiEnterpriseDialog(wifiEntry, mEapDialogListener),
+                                WifiEnterpriseDialog.TAG);
+                    } else {
+                        getFragmentController().showDialog(
+                                new WifiPasswordDialog(wifiEntry, mDialogListener),
+                                WifiPasswordDialog.TAG);
+                    }
                 } else {
                     wifiEntry.connect(
                             new WifiEntryConnectCallback(wifiEntry, /* editIfNoConfig= */ true));
@@ -220,9 +248,15 @@ public class WifiEntryListPreferenceController extends
 
             if (status == WifiEntry.ConnectCallback.CONNECT_STATUS_FAILURE_NO_CONFIG) {
                 if (mEditIfNoConfig) {
-                    getFragmentController().showDialog(
-                            new WifiPasswordDialog(mConnectWifiEntry, mDialogListener),
-                            WifiPasswordDialog.TAG);
+                    if (mConnectWifiEntry.getSecurity() == WifiEntry.SECURITY_EAP) {
+                        getFragmentController().showDialog(
+                                new WifiEnterpriseDialog(mConnectWifiEntry, mEapDialogListener),
+                                WifiEnterpriseDialog.TAG);
+                    } else {
+                        getFragmentController().showDialog(
+                                new WifiPasswordDialog(mConnectWifiEntry, mDialogListener),
+                                WifiPasswordDialog.TAG);
+                    }
                 }
             } else if (status == CONNECT_STATUS_FAILURE_UNKNOWN) {
                 Toast.makeText(getContext(), R.string.wifi_failed_connect_message,

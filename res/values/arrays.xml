@@ -13,6 +13,10 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+    Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+    Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+    SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 
 <resources>
@@ -31,5 +35,19 @@
     <string-array name="settings_qc_provider_package_allowlist" translatable="false">
         <item>com.android.systemui</item>
     </string-array>
+
+     <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
+     <string-array name="wifi_eap_method" translatable="false">
+         <item>TTLS</item>
+         <item>TLS</item>
+     </string-array>
+
+     <!-- Phase 2 options for TTLS -->
+     <string-array name="wifi_ttls_phase2_entries">
+         <item>PAP</item>
+         <item>MSCHAP</item>
+         <item>MSCHAPV2</item>
+         <item>GTC</item>
+     </string-array>
 
 </resources>

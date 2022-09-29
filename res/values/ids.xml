@@ -13,6 +13,10 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+    Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+    Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+    SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 
 <resources>
@@ -24,4 +28,23 @@
     <item type="id" name="ringtone_picker_selected_id"/>
     <!-- ID key for tagging whether a preference is highlighted or not -->
     <item type="id" name="preference_highlighted" />
+
+    <!-- ID for wifi eap -->
+    <item type="id" name="eap"/>
+    <item type="id" name="l_method"/>
+    <item type="id" name="eap_method_edit"/>
+    <item type="id" name="l_phase2"/>
+    <item type="id" name="phase2_authentication_edit"/>
+    <item type="id" name="l_ca_cert"/>
+    <item type="id" name="ca_cert"/>
+    <item type="id" name="l_user_cert"/>
+    <item type="id" name="user_cert"/>
+    <item type="id" name="l_identity"/>
+    <item type="id" name="identity"/>
+    <item type="id" name="l_domain"/>
+    <item type="id" name="domain"/>
+    <item type="id" name="l_anonymous"/>
+    <item type="id" name="anonymous"/>
+    <item type="id" name="l_password_notice"/>
+    <item type="id" name="l_show_password" />
 </resources>
