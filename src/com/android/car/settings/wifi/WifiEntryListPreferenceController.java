@@ -194,7 +194,9 @@ public class WifiEntryListPreferenceController extends
                                 WifiDetailsFragment.getInstance(wifiEntry));
                     }
                  } else if (wifiEntry.shouldEditBeforeConnect()) {
-                    if (wifiEntry.getSecurity() == WifiEntry.SECURITY_EAP) {
+                    if (wifiEntry.getSecurity() == WifiEntry.SECURITY_EAP ||
+                        wifiEntry.getSecurity() == WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE ||
+                        wifiEntry.getSecurity() == WifiEntry.SECURITY_EAP_SUITE_B) {
                         getFragmentController().showDialog(
                                 new WifiEnterpriseDialog(wifiEntry, mEapDialogListener),
                                 WifiEnterpriseDialog.TAG);
@@ -244,7 +246,9 @@ public class WifiEntryListPreferenceController extends
 
             if (status == WifiEntry.ConnectCallback.CONNECT_STATUS_FAILURE_NO_CONFIG) {
                 if (mEditIfNoConfig) {
-                    if (mConnectWifiEntry.getSecurity() == WifiEntry.SECURITY_EAP) {
+                    if (mConnectWifiEntry.getSecurity() == WifiEntry.SECURITY_EAP ||
+                        mConnectWifiEntry.getSecurity() == WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE ||
+                        mConnectWifiEntry.getSecurity() == WifiEntry.SECURITY_EAP_SUITE_B) {
                         getFragmentController().showDialog(
                                 new WifiEnterpriseDialog(mConnectWifiEntry, mEapDialogListener),
                                 WifiEnterpriseDialog.TAG);
