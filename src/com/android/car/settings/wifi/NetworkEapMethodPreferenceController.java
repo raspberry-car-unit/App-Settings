@@ -138,10 +138,19 @@ public class NetworkEapMethodPreferenceController extends
 
     @Override
     protected void updateState(ListPreference preference) {
+        if (preference.isSelectable() == false) {
+            preference.setSelectable(true);
+            mSelectedEapMethod = WIFI_EAP_METHOD_TTLS;
+            preference.setEnabled(true);
+        }
         if (mSecurityType == WifiEntry.SECURITY_EAP ||
             mSecurityType == WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE ||
             mSecurityType == WifiEntry.SECURITY_EAP_SUITE_B) {
             preference.setVisible(true);
+            if (mSecurityType == WifiEntry.SECURITY_EAP_SUITE_B) {
+                mSelectedEapMethod = WIFI_EAP_METHOD_TLS;
+                preference.setSelectable(false);
+            }
             preference.setSummary(EAP_METHOD_TO_DESC_RES.get(mSelectedEapMethod));
         } else {
             preference.setVisible(false);
