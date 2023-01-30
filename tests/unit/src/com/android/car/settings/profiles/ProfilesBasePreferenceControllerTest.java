@@ -83,7 +83,7 @@ public class ProfilesBasePreferenceControllerTest {
     public void setUp() {
         mSession = ExtendedMockito.mockitoSession()
                 .initMocks(this)
-                .spyStatic(ProfileHelper.class)
+                .mockStatic(ProfileHelper.class)
                 .strictness(Strictness.LENIENT)
                 .startMocking();
         mLifecycleOwner = new TestLifecycleOwner();

@@ -118,15 +118,7 @@ public class VolumeSettingsRingtoneManager {
             if (ringtone == null) {
                 return null;
             }
-
-            AudioAttributes.Builder builder = new AudioAttributes.Builder();
-            if (AudioAttributes.isSystemUsage(usage)) {
-                builder.setSystemUsage(usage);
-            } else {
-                builder.setUsage(usage);
-            }
-
-            ringtone.setAudioAttributes(builder.build());
+            ringtone.setAudioAttributes(new AudioAttributes.Builder().setUsage(usage).build());
             mGroupToRingtoneMap.put(group, ringtone);
         }
         return mGroupToRingtoneMap.get(group);

@@ -138,7 +138,7 @@ public class PasswordHelper {
     private byte[] getPasswordHistoryHashFactor(LockscreenCredential credential) {
         if (mPasswordHistoryHashFactor == null) {
             mPasswordHistoryHashFactor = mLockPatternUtils.getPasswordHistoryHashFactor(
-                    credential != null ? credential : LockscreenCredential.createNone(), mUserId);
+                    credential, mUserId);
         }
         return mPasswordHistoryHashFactor;
     }

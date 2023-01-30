@@ -146,16 +146,13 @@ public class EnabledKeyboardPreferenceControllerTest {
 
     @Test
     public void refreshUi_skipVoiceTyping() {
-        // TODO: b/236143731 Add Sufficient Testing to Prevent "Google Voice Typing" Regression
-        for (String gvtPackageName : InputMethodUtil.GVT_PACKAGE_NAMES) {
-            List<InputMethodInfo> infos =
-                    createInputMethodInfoList(gvtPackageName);
-            when(mInputMethodManager.getEnabledInputMethodList()).thenReturn(infos);
+        List<InputMethodInfo> infos =
+                createInputMethodInfoList(InputMethodUtil.GOOGLE_VOICE_TYPING);
+        when(mInputMethodManager.getEnabledInputMethodList()).thenReturn(infos);
 
-            mPreferenceController.refreshUi();
+        mPreferenceController.refreshUi();
 
-            assertThat(mPreference.getPreferenceCount()).isEqualTo(0);
-        }
+        assertThat(mPreference.getPreferenceCount()).isEqualTo(0);
     }
 
     @Test

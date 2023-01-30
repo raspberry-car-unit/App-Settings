@@ -424,29 +424,19 @@ public class WifiUtil {
 
     /**
      * Shows {@code ActionDisabledByAdminDialog} when the action is disallowed by
-     * a device owner or a profile owner. Otherwise, a {@code Toast} will be shown to inform the
+     * a device owner or a profile owner. Otherwise, a {@code Toast} will be shwon to inform the
      * user that the action is disabled.
      */
     // TODO(b/186905050): add unit tests for this class and {@code PreferenceController} that uses
     // this method.
-    public static void runClickableWhileDisabled(Context context, String restriction,
+    public static void runClickableWhileDisabled(Context context,
             FragmentController fragmentController) {
-        if (hasUserRestrictionByDpm(context, restriction)) {
-            showActionDisabledByAdminDialog(context, restriction, fragmentController);
+        if (hasUserRestrictionByDpm(context, DISALLOW_CONFIG_WIFI)) {
+            showActionDisabledByAdminDialog(context, fragmentController);
         } else {
             Toast.makeText(context, context.getString(R.string.action_unavailable),
                     Toast.LENGTH_LONG).show();
         }
-    }
-
-    /**
-     * Shows {@code ActionDisabledByAdminDialog} when the action is disallowed with
-     * {@code DISALLOW_CONFIG_WIFI} restriction by DevicePolicyManager. Otherwise, a {@code Toast}
-     * will be shown to inform the user that the action is disabled.
-     */
-    public static void runClickableWhileDisabled(Context context,
-            FragmentController fragmentController) {
-        runClickableWhileDisabled(context, DISALLOW_CONFIG_WIFI, fragmentController);
     }
 
     /**
@@ -455,10 +445,11 @@ public class WifiUtil {
      */
     // TODO(b/186905050): add unit tests for this class and {@code PreferenceController} that uses
     // this method.
-    public static void showActionDisabledByAdminDialog(Context context, String restriction,
+    public static void showActionDisabledByAdminDialog(Context context,
             FragmentController fragmentController) {
         fragmentController.showDialog(
-                EnterpriseUtils.getActionDisabledByAdminDialog(context, restriction),
+                EnterpriseUtils.getActionDisabledByAdminDialog(context,
+                        DISALLOW_CONFIG_WIFI),
                 DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG);
     }
 }
