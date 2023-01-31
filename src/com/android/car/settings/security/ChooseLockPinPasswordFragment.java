@@ -302,7 +302,7 @@ public class ChooseLockPinPasswordFragment extends BaseFragment {
     }
 
     private boolean shouldEnableSubmit() {
-        return mPasswordHelper.validate(getEnteredPassword())
+        return mPasswordHelper.validate(getEnteredPassword(), mExistingCredential)
                 && (mSaveLockWorker == null || mSaveLockWorker.isFinished());
     }
 
@@ -331,7 +331,8 @@ public class ChooseLockPinPasswordFragment extends BaseFragment {
 
         switch (mUiStage) {
             case Introduction:
-                boolean passwordCompliant = mPasswordHelper.validate(mCurrentEntry);
+                boolean passwordCompliant =
+                        mPasswordHelper.validate(mCurrentEntry, mExistingCredential);
                 if (passwordCompliant) {
                     mFirstEntry = mCurrentEntry;
                     mPasswordField.setText("");
@@ -406,12 +407,27 @@ public class ChooseLockPinPasswordFragment extends BaseFragment {
             mPinPad.setEnterKeyIcon(mUiStage.enterKeyIcon);
         }
 
-        mPasswordHelper.validate(getEnteredPassword());
+        mPasswordHelper.validate(getEnteredPassword(), mExistingCredential);
         List<String> messages = mPasswordHelper.convertErrorCodeToMessages();
         mHintMessage.setText(String.join("\n", messages));
 
+        setHintIfNeeded();
         setPrimaryButtonText(mUiStage.primaryButtonText);
         mPasswordEntryInputDisabler.setInputEnabled(inputAllowed);
+    }
+
+    private void setHintIfNeeded() {
+        if (!mHintMessage.getText().toString().isEmpty()) {
+            return;
+        }
+
+        if (mUiStage == Stage.ConfirmWrong) {
+            mHintMessage.setText(mIsPin ? R.string.confirm_pins_dont_match
+                    : R.string.confirm_passwords_dont_match);
+        } else if (mUiStage == Stage.SaveFailure) {
+            mHintMessage.setText(mIsPin ? R.string.error_saving_lockpin
+                    : R.string.error_saving_password);
+        }
     }
 
     @VisibleForTesting
@@ -438,6 +454,16 @@ public class ChooseLockPinPasswordFragment extends BaseFragment {
 
         getActivity().setResult(Activity.RESULT_OK);
         getActivity().finish();
+    }
+
+    @VisibleForTesting
+    void setPasswordHelper(PasswordHelper passwordHelper) {
+        mPasswordHelper = passwordHelper;
+    }
+
+    @VisibleForTesting
+    String getHintText() {
+        return mHintMessage.getText().toString();
     }
 
     // Keep track internally of where the user is in choosing a password.
