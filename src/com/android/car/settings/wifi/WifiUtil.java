@@ -34,7 +34,6 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
-import android.net.NetworkScoreManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
@@ -389,7 +388,6 @@ public class WifiUtil {
                 lifecycle, context,
                 context.getSystemService(WifiManager.class),
                 context.getSystemService(ConnectivityManager.class),
-                context.getSystemService(NetworkScoreManager.class),
                 mainHandler, workerHandler, ELAPSED_REALTIME_CLOCK,
                 maxScanAgeMillis, scanIntervalMillis,
                 listener);
@@ -419,7 +417,6 @@ public class WifiUtil {
                 lifecycle, context,
                 context.getSystemService(WifiManager.class),
                 context.getSystemService(ConnectivityManager.class),
-                context.getSystemService(NetworkScoreManager.class),
                 mainHandler, workerHandler, ELAPSED_REALTIME_CLOCK,
                 maxScanAgeMillis, scanIntervalMillis,
                 key);
@@ -427,19 +424,29 @@ public class WifiUtil {
 
     /**
      * Shows {@code ActionDisabledByAdminDialog} when the action is disallowed by
-     * a device owner or a profile owner. Otherwise, a {@code Toast} will be shwon to inform the
+     * a device owner or a profile owner. Otherwise, a {@code Toast} will be shown to inform the
      * user that the action is disabled.
      */
     // TODO(b/186905050): add unit tests for this class and {@code PreferenceController} that uses
     // this method.
-    public static void runClickableWhileDisabled(Context context,
+    public static void runClickableWhileDisabled(Context context, String restriction,
             FragmentController fragmentController) {
-        if (hasUserRestrictionByDpm(context, DISALLOW_CONFIG_WIFI)) {
-            showActionDisabledByAdminDialog(context, fragmentController);
+        if (hasUserRestrictionByDpm(context, restriction)) {
+            showActionDisabledByAdminDialog(context, restriction, fragmentController);
         } else {
             Toast.makeText(context, context.getString(R.string.action_unavailable),
                     Toast.LENGTH_LONG).show();
         }
+    }
+
+    /**
+     * Shows {@code ActionDisabledByAdminDialog} when the action is disallowed with
+     * {@code DISALLOW_CONFIG_WIFI} restriction by DevicePolicyManager. Otherwise, a {@code Toast}
+     * will be shown to inform the user that the action is disabled.
+     */
+    public static void runClickableWhileDisabled(Context context,
+            FragmentController fragmentController) {
+        runClickableWhileDisabled(context, DISALLOW_CONFIG_WIFI, fragmentController);
     }
 
     /**
@@ -448,11 +455,10 @@ public class WifiUtil {
      */
     // TODO(b/186905050): add unit tests for this class and {@code PreferenceController} that uses
     // this method.
-    public static void showActionDisabledByAdminDialog(Context context,
+    public static void showActionDisabledByAdminDialog(Context context, String restriction,
             FragmentController fragmentController) {
         fragmentController.showDialog(
-                EnterpriseUtils.getActionDisabledByAdminDialog(context,
-                        DISALLOW_CONFIG_WIFI),
+                EnterpriseUtils.getActionDisabledByAdminDialog(context, restriction),
                 DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG);
     }
 }
