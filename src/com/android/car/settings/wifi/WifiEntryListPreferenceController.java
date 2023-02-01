@@ -134,9 +134,17 @@ public class WifiEntryListPreferenceController extends
      * @return List of wifi entries that should be displayed
      */
     protected List<WifiEntry> fetchWifiEntries() {
-        List<WifiEntry> wifiEntries = shouldApplyUxRestrictions(getUxRestrictions())
-                ? getCarWifiManager().getSavedWifiEntries()
-                : getCarWifiManager().getAllWifiEntries();
+        List<WifiEntry> wifiEntries;
+        // Do not populate the entries when DISALLOW_CONFIG_WIFI restriction is set.
+        Context context = getContext();
+        if (WifiUtil.isConfigWifiRestrictedByUm(context)
+                || WifiUtil.isConfigWifiRestrictedByDpm(context)) {
+            wifiEntries = new ArrayList<>();
+        } else if (shouldApplyUxRestrictions(getUxRestrictions())) {
+            wifiEntries = getCarWifiManager().getSavedWifiEntries();
+        } else {
+            wifiEntries = getCarWifiManager().getAllWifiEntries();
+        }
 
         WifiEntry connectedWifiEntry = getCarWifiManager().getConnectedWifiEntry();
         // Insert current connected network as first item, if available
@@ -178,6 +186,12 @@ public class WifiEntryListPreferenceController extends
                     () -> wifiEntry.forget(/* callback= */ null));
             wifiEntryPreference.setSecondaryActionVisible(true);
         }
+
+        // Since this preference is dynamically created, it doesn't have the dpm behaviors set
+        wifiEntryPreference.setEnabled(getPreference().isEnabled());
+        wifiEntryPreference.setClickableWhileDisabled(true);
+        wifiEntryPreference.setDisabledClickListener(p ->
+                WifiUtil.runClickableWhileDisabled(getContext(), getFragmentController()));
 
         return wifiEntryPreference;
     }
