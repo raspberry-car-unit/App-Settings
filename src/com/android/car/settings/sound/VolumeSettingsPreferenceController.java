@@ -30,6 +30,8 @@ import android.car.CarNotConnectedException;
 import android.car.drivingstate.CarUxRestrictions;
 import android.car.media.CarAudioManager;
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -69,6 +71,7 @@ public class VolumeSettingsPreferenceController extends PreferenceController<Pre
     private final VolumeSettingsRingtoneManager mRingtoneManager;
 
     private final Handler mUiHandler;
+    private int mZoneId;
 
     @VisibleForTesting
     final CarAudioManager.CarVolumeCallback mVolumeChangeCallback =
@@ -113,12 +116,19 @@ public class VolumeSettingsPreferenceController extends PreferenceController<Pre
 
         mCarAudioManager = (CarAudioManager) mCar.getCarManager(Car.AUDIO_SERVICE);
         if (mCarAudioManager != null) {
-            int volumeGroupCount = mCarAudioManager.getVolumeGroupCount();
+            try {
+                ApplicationInfo info = context.getPackageManager()
+                        .getApplicationInfo(context.getPackageName(), 0);
+                mZoneId = mCarAudioManager.getZoneIdForUid(info.uid);
+            } catch (PackageManager.NameNotFoundException e) {
+                LOG.e("getZoneIdForUid Failed to find zoneId: " , e);
+            }
+            int volumeGroupCount = mCarAudioManager.getVolumeGroupCount(mZoneId);
             cleanUpVolumePreferences();
             // Populates volume slider items from volume groups to UI.
             for (int groupId = 0; groupId < volumeGroupCount; groupId++) {
                 VolumeItem volumeItem = getVolumeItemForUsages(
-                        mCarAudioManager.getUsagesForVolumeGroupId(groupId));
+                        mCarAudioManager.getUsagesForVolumeGroupId(mZoneId, groupId));
                 VolumeSeekBarPreference volumePreference = createVolumeSeekBarPreference(
                         groupId, volumeItem.getUsage(), volumeItem.getIcon(),
                         volumeItem.getMuteIcon(), volumeItem.getTitle());
@@ -177,9 +187,9 @@ public class VolumeSettingsPreferenceController extends PreferenceController<Pre
         preference.getMutedIcon().setTintList(
                 getContext().getColorStateList(R.color.icon_color_default));
         try {
-            preference.setValue(mCarAudioManager.getGroupVolume(volumeGroupId));
-            preference.setMin(mCarAudioManager.getGroupMinVolume(volumeGroupId));
-            preference.setMax(mCarAudioManager.getGroupMaxVolume(volumeGroupId));
+            preference.setValue(mCarAudioManager.getGroupVolume(mZoneId, volumeGroupId));
+            preference.setMin(mCarAudioManager.getGroupMinVolume(mZoneId, volumeGroupId));
+            preference.setMax(mCarAudioManager.getGroupMaxVolume(mZoneId, volumeGroupId));
             preference.setIsMuted(isGroupMuted(volumeGroupId));
         } catch (CarNotConnectedException e) {
             LOG.e("Car is not connected!", e);
@@ -208,14 +218,14 @@ public class VolumeSettingsPreferenceController extends PreferenceController<Pre
     }
 
     private void updateVolumeAndMute(int zoneId, int groupId) {
-        // Settings only handles primary zone changes
-        if (zoneId != PRIMARY_AUDIO_ZONE) {
+        // Check if updated volume zone is different from the zone where app is running.
+        if (zoneId != mZoneId) {
             return;
         }
         if (mCarAudioManager != null) {
 
             boolean isMuted = isGroupMuted(groupId);
-            int value = mCarAudioManager.getGroupVolume(groupId);
+            int value = mCarAudioManager.getGroupVolume(zoneId, groupId);
 
             for (VolumeSeekBarPreference volumePreference : mVolumePreferences) {
                 Bundle extras = volumePreference.getExtras();
@@ -235,7 +245,7 @@ public class VolumeSettingsPreferenceController extends PreferenceController<Pre
 
     private void setGroupVolume(int volumeGroupId, int newVolume) {
         try {
-            mCarAudioManager.setGroupVolume(volumeGroupId, newVolume, /* flags= */ 0);
+            mCarAudioManager.setGroupVolume(mZoneId, volumeGroupId, newVolume, /* flags= */ 0);
         } catch (CarNotConnectedException e) {
             LOG.w("Ignoring volume change event because the car isn't connected", e);
         }
