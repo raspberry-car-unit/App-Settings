@@ -491,7 +491,7 @@
     <string name="reset_esim_desc" msgid="1437276625485586740">"הפעולה לא תבטל את תוכנית השירות שלך."</string>
     <string name="reset_esim_error_title" msgid="7245109418130525492">"לא ניתן לאתחל את כרטיסי ה-eSIM"</string>
     <string name="reset_network_select" msgid="2433825874868038739">"בחירת רשת"</string>
-    <string name="reset_network_button_text" msgid="8374174455632765033">"איפוס הגדרות"</string>
+    <string name="reset_network_button_text" msgid="8374174455632765033">"איפוס ההגדרות"</string>
     <string name="reset_network_confirm_title" msgid="5255502723840197663">"לאפס?"</string>
     <string name="reset_network_confirm_desc" msgid="7721698076856330212">"האם לאפס את כל הגדרות הרשת? לא ניתן לבטל את הפעולה!"</string>
     <string name="reset_network_confirm_button_text" msgid="5246859685069024851">"איפוס הגדרות"</string>
@@ -672,7 +672,7 @@
     <string name="lock_settings_enter_password" msgid="2636669926649496367">"הזנת סיסמה"</string>
     <string name="choose_lock_pin_message" msgid="2963792070267774417">"לשיפור האבטחה, מומלץ להגדיר קוד גישה"</string>
     <string name="confirm_your_pin_header" msgid="9096581288537156102">"יש להזין שוב את קוד הגישה"</string>
-    <string name="choose_lock_pin_hints" msgid="7362906249992020844">"קוד הגישה חייב לכלול 4 ספרות לפחות"</string>
+    <string name="choose_lock_pin_hints" msgid="7362906249992020844">"קוד האימות חייב לכלול 4 ספרות לפחות"</string>
     <string name="lockpin_invalid_pin" msgid="2149191577096327424">"קוד גישה לא חוקי, צריך להכיל 4 ספרות לפחות."</string>
     <string name="confirm_pins_dont_match" msgid="4607110139373520720">"קודי הגישה אינם תואמים"</string>
     <string name="error_saving_lockpin" msgid="9011960139736000393">"שגיאה בשמירת קוד הגישה"</string>
@@ -685,6 +685,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"ביטול"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"אישור"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"הסיסמה חייבת להיות באורך של ארבעה תווים לפחות"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"סוג המנעול הזה לא זמין."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"צריכה להכיל רק את הספרות 0-9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"מנהל המכשיר לא מאפשר להשתמש בקוד גישה שנעשה בו שימוש לאחרונה"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"קודי אימות נפוצים חסומים בידי מנהל ה-IT. יש לנסות קוד אימות אחר."</string>
