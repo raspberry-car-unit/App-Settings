@@ -672,9 +672,9 @@
     <string name="lock_settings_enter_password" msgid="2636669926649496367">"Nhập mật khẩu của bạn"</string>
     <string name="choose_lock_pin_message" msgid="2963792070267774417">"Để bảo mật, hãy đặt mã PIN"</string>
     <string name="confirm_your_pin_header" msgid="9096581288537156102">"Nhập lại mã PIN"</string>
-    <string name="choose_lock_pin_hints" msgid="7362906249992020844">"Mã PIN phải có ít nhất 4 chữ số"</string>
+    <string name="choose_lock_pin_hints" msgid="7362906249992020844">"Mã PIN phải chứa ít nhất 4 chữ số"</string>
     <string name="lockpin_invalid_pin" msgid="2149191577096327424">"Mã PIN không hợp lệ. Mã này phải có ít nhất 4 chữ số."</string>
-    <string name="confirm_pins_dont_match" msgid="4607110139373520720">"Các mã PIN không khớp"</string>
+    <string name="confirm_pins_dont_match" msgid="4607110139373520720">"Mã PIN không khớp"</string>
     <string name="error_saving_lockpin" msgid="9011960139736000393">"Lỗi khi lưu mã PIN"</string>
     <string name="lockscreen_wrong_pin" msgid="4922465731473805306">"Mã PIN sai"</string>
     <string name="lockscreen_wrong_password" msgid="5757087577162231825">"Mật khẩu sai"</string>
@@ -685,6 +685,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Hủy"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Xác nhận"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Mật khẩu phải chứa ít nhất 4 ký tự"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"Không có loại khoá này."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Chỉ được chứa các chữ số từ 0 đến 9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Quản trị viên thiết bị không cho phép dùng mã PIN gần đây"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"Quản vị viên CNTT đã chặn các mã PIN phổ biến. Hãy thử mã PIN khác."</string>
