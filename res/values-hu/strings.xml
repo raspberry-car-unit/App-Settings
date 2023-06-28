@@ -574,7 +574,7 @@
     <string name="storage_other_apps" msgid="945509804756782640">"Egyéb alkalmazások"</string>
     <string name="storage_files" msgid="6382081694781340364">"Fájlok"</string>
     <string name="storage_system" msgid="1271345630248014010">"Rendszer"</string>
-    <string name="storage_detail_dialog_system" msgid="796365720531622361">"A rendszer az Android <xliff:g id="VERSION">%s</xliff:g>. verziójának futtatásához használt fájlokat tartalmaz"</string>
+    <string name="storage_detail_dialog_system" msgid="796365720531622361">"A rendszer az Android <xliff:g id="VERSION">%s</xliff:g> verziójának futtatásához használt fájlokat tartalmaz"</string>
     <string name="storage_audio_files_title" msgid="5183170457027181700">"Hangfájlok"</string>
     <string name="memory_calculating_size" msgid="1672238502950390033">"Számítás…"</string>
     <string name="storage_application_size_label" msgid="1146156683170661354">"Alkalmazás mérete"</string>
@@ -685,6 +685,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Mégse"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Megerősítés"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Legalább 4 karakterből kell állnia"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"Ez a lezárási típus nem áll rendelkezésre."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Csak számokat tartalmazhat, 0-tól 9-ig."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Az eszközrendszergazda nem engedélyezi a legutóbbi PIN-kódok használatát"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"Rendszergazdája letiltotta a gyakran használt PIN-kódokat. Próbálkozzon másik PIN-kóddal."</string>

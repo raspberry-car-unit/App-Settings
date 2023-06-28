@@ -41,7 +41,7 @@
     <string name="confirm_mobile_data_disable" msgid="826493998804496639">"Désactiver les données mobiles?"</string>
     <string name="sim_selection_required_pref" msgid="6599562910262785784">"Sélection requise"</string>
     <string name="sim_change_data_title" msgid="6677115745127365131">"Utiliser <xliff:g id="CARRIER">%1$s</xliff:g> pour donn. mob.?"</string>
-    <string name="sim_change_data_message" msgid="4669775284395549069">"Vous utilisez le réseau de <xliff:g id="CARRIER2_0">%2$s</xliff:g> pour les données mobiles. Si vous passez au réseau de <xliff:g id="CARRIER1">%1$s</xliff:g>, celui de <xliff:g id="CARRIER2_1">%2$s</xliff:g> ne sera plus utilisé pour les données mobiles."</string>
+    <string name="sim_change_data_message" msgid="4669775284395549069">"Vous utilisez <xliff:g id="CARRIER2_0">%2$s</xliff:g> pour les données cellulaires. Si vous passez à <xliff:g id="CARRIER1">%1$s</xliff:g>, <xliff:g id="CARRIER2_1">%2$s</xliff:g> ne sera plus utilisé pour les données cellulaires."</string>
     <string name="sim_change_data_ok" msgid="2348804996223271081">"Utiliser <xliff:g id="CARRIER">%1$s</xliff:g>"</string>
     <string name="roaming_title" msgid="6218635014519017734">"Itinérance"</string>
     <string name="roaming_summary" msgid="7476127740259728901">"Se connecter aux services de données lors de l\'itinérance"</string>
@@ -685,6 +685,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Annuler"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Confirmer"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Doit comprendre au moins quatre caractères"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"Ce type de verrouillage n\'est pas offert."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Doit contenir uniquement des chiffres contenus entre 0 et 9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"L\'administrateur de l\'appareil ne permet pas l\'utilisation d\'un NIP récent"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"Les NIP communs sont bloqués par votre administrateur informatique. Essayez un NIP différent."</string>
