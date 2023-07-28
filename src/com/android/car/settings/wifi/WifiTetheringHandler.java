@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.TetheringManager;
+import android.net.MacAddress;
 import android.net.wifi.SoftApInfo;
 import android.net.wifi.WifiClient;
 import android.net.wifi.WifiManager;
@@ -31,6 +32,8 @@ import androidx.lifecycle.Lifecycle;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 /**
  * Consolidates Wifi tethering logic into one handler so we can have consistent logic across various
@@ -44,6 +47,7 @@ public class WifiTetheringHandler {
     private final WifiTetheringAvailabilityListener mWifiTetheringAvailabilityListener;
     private boolean mRestartBooked = false;
     private boolean mMonitorRestarts;
+    private static Map<MacAddress, Integer> mInstanceClients = new HashMap<>();
 
     private final WifiManager.SoftApCallback mSoftApCallback = new WifiManager.SoftApCallback() {
         @Override
@@ -54,7 +58,9 @@ public class WifiTetheringHandler {
         @Override
         public void onConnectedClientsChanged(@NonNull SoftApInfo info,
                 @NonNull List<WifiClient> clients) {
-            mWifiTetheringAvailabilityListener.onConnectedClientsChanged(clients.size());
+            mInstanceClients.put(info.getBssid(), clients.size());
+            int numClients = mInstanceClients.values().stream().mapToInt(Integer::intValue).sum();
+            mWifiTetheringAvailabilityListener.onConnectedClientsChanged(numClients);
         }
     };
 
@@ -165,6 +171,7 @@ public class WifiTetheringHandler {
     }
 
     private void startTethering() {
+        mInstanceClients.clear();
         WifiTetherUtil.startTethering(mTetheringManager,
                 new TetheringManager.StartTetheringCallback() {
                     @Override
