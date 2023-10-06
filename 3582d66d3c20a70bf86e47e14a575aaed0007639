@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "946f4a4a_d49702b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1137063
+      },
+      "writtenOn": "2023-10-06T16:58:40Z",
+      "side": 1,
+      "message": "clean cherry-pick from internal main to AOSP main to unblock cherry-picking other CLs from internal main to AOSP main",
+      "revId": "3582d66d3c20a70bf86e47e14a575aaed0007639",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
