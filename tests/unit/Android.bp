@@ -26,14 +26,22 @@ android_test {
         "androidx.test.ext.truth",
         "mockito-target-extended-minus-junit4",
         "platform-test-annotations",
-        "truth-prebuilt",
+        "truth",
         "testng",
         "car-helper-lib",
     ],
 
-    jni_libs: ["libdexmakerjvmtiagent", "libstaticjvmtiagent"],
+    jni_libs: [
+        "libdexmakerjvmtiagent",
+        "libstaticjvmtiagent",
+    ],
 
     aaptflags: ["--extra-packages com.android.car.settings"],
 
-    test_suites: ["device-tests"]
+    test_suites: [
+        "device-tests",
+        "automotive-tests",
+    ],
+
+    compile_multilib: "64",
 }
