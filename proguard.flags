@@ -24,6 +24,9 @@
 # Unexpected reference to missing service class: META-INF/services/javax.annotation.processing.Processor.
 -dontwarn javax.annotation.processing.Processor
 
+# Keep PreferenceController derived classes
+-keep public class * extends com.android.car.settings.common.PreferenceController
+
 # Keep PreferenceController constructors
 -keepclassmembers public class * extends com.android.car.settings.common.PreferenceController {
    public <init>(...);
