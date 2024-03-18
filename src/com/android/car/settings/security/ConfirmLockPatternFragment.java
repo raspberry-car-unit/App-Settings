@@ -179,7 +179,15 @@ public class ConfirmLockPatternFragment extends BaseFragment {
 
     private void onCheckCompleted(boolean lockMatched, int timeoutMs) {
         if (lockMatched) {
-            mCheckLockListener.onLockVerified(LockscreenCredential.createPattern(mPattern));
+            LockscreenCredential patternCred = LockscreenCredential.createPattern(mPattern);
+            mCheckLockListener.onLockVerified(patternCred);
+            // onLockVerified does not take ownership of the LockscreenCredential if it is
+            // a CheckLockListenerActivity see CheckLockActivity#onLockVerified
+            // however, if the listener is a VerifyLockChangeActivity then it _does_ take
+            // ownership, so we cannot wrap the LockscreenCredential in a try-with-resources
+            if (mCheckLockListener instanceof CheckLockActivity) {
+                patternCred.close();
+            }
         } else {
             if (timeoutMs > 0) {
                 mConfirmLockLockoutHelper.onCheckCompletedWithTimeout(timeoutMs);
