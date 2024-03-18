@@ -90,8 +90,10 @@ public class CheckLockWorker extends Fragment implements LockPatternChecker.OnCh
         }
 
         mCheckInProgress = true;
-        LockPatternChecker.checkCredential(mLockPatternUtils,
-                LockscreenCredential.createPattern(pattern), userId, this);
+        try(LockscreenCredential toCheck = LockscreenCredential.createPattern(pattern)) {
+            LockPatternChecker.checkCredential(mLockPatternUtils,
+                    toCheck, userId, this);
+        }
     }
 
     /**
