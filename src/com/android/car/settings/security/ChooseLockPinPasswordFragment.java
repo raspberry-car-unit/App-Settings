@@ -284,12 +284,12 @@ public class ChooseLockPinPasswordFragment extends BaseFragment {
 
             @Override
             public void onBackspaceClick() {
-                LockscreenCredential pin = getEnteredPassword();
-                if (pin.size() > 0) {
-                    mPasswordField.getText().delete(mPasswordField.getSelectionEnd() - 1,
-                            mPasswordField.getSelectionEnd());
+                try (LockscreenCredential pin = getEnteredPassword()) {
+                    if (pin.size() > 0) {
+                        mPasswordField.getText().delete(mPasswordField.getSelectionEnd() - 1,
+                                mPasswordField.getSelectionEnd());
+                    }
                 }
-                pin.zeroize();
             }
 
             @Override

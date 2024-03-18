@@ -178,18 +178,21 @@ public class ConfirmLockPatternFragment extends BaseFragment {
             };
 
     private void onCheckCompleted(boolean lockMatched, int timeoutMs) {
-        if (lockMatched) {
-            mCheckLockListener.onLockVerified(LockscreenCredential.createPattern(mPattern));
-        } else {
-            if (timeoutMs > 0) {
-                mConfirmLockLockoutHelper.onCheckCompletedWithTimeout(timeoutMs);
+        try (LockscreenCredential patternCred = LockscreenCredential.createPattern(mPattern)) {
+            if (lockMatched) {
+                mCheckLockListener.onLockVerified(patternCred);
             } else {
-                mLockPatternView.setEnabled(true);
-                mMsgView.setText(R.string.lockpattern_pattern_wrong);
+                if (timeoutMs > 0) {
+                    mConfirmLockLockoutHelper.onCheckCompletedWithTimeout(timeoutMs);
+                } else {
+                    mLockPatternView.setEnabled(true);
+                    mMsgView.setText(R.string.lockpattern_pattern_wrong);
 
-                // Set timer to clear wrong pattern
-                mLockPatternView.removeCallbacks(mClearErrorRunnable);
-                mLockPatternView.postDelayed(mClearErrorRunnable, CLEAR_WRONG_ATTEMPT_TIMEOUT_MS);
+                    // Set timer to clear wrong pattern
+                    mLockPatternView.removeCallbacks(mClearErrorRunnable);
+                    mLockPatternView.postDelayed(mClearErrorRunnable,
+                        CLEAR_WRONG_ATTEMPT_TIMEOUT_MS);
+                }
             }
         }
     }
