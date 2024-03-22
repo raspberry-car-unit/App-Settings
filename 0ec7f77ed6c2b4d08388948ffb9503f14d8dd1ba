@@ -47,6 +47,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b994da8_d1cf6629",
+        "filename": "src/com/android/car/settings/security/ChooseLockPinPasswordFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1954616
+      },
+      "writtenOn": "2024-03-22T01:52:35Z",
+      "side": 1,
+      "message": "Good catch! Yes, there are a few others -- fixed. `mPasswordHelper.validateCredential` is called several times, taking `getEnteredCredential()` as an argument but not taking ownership of the resulting LockscreenCredential.",
+      "parentUuid": "e4ded612_f6c04fc6",
+      "range": {
+        "startLine": 287,
+        "startChar": 48,
+        "endLine": 287,
+        "endChar": 66
+      },
+      "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "03e1ce97_632f469d",
@@ -60,6 +84,30 @@
       "writtenOn": "2024-03-22T00:58:02Z",
       "side": 1,
       "message": "Only the `lockMatched` case actually uses the pattern, so this should be scoped to there.\n\nAlso, does `onLockVerified()` take ownership of the `LockscreenCredential`?  If it does, it mustn\u0027t be closed from here.",
+      "range": {
+        "startLine": 181,
+        "startChar": 8,
+        "endLine": 181,
+        "endChar": 95
+      },
+      "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3bcc494b_0a0f0a81",
+        "filename": "src/com/android/car/settings/security/ConfirmLockPatternFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1954616
+      },
+      "writtenOn": "2024-03-22T01:52:35Z",
+      "side": 1,
+      "message": "Good catch with the scope, thanks. \n\n`onLockVerified` is a method in the `CheckLockListener` interface: the class extending it that is used here looks like it is `CheckLockActivity`, which does not even use the LockscreenCredential. I _think_ it is safe to say the method does not take ownership of the LockscreenCredential.",
+      "parentUuid": "03e1ce97_632f469d",
       "range": {
         "startLine": 181,
         "startChar": 8,
