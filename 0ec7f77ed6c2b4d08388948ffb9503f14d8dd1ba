@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98baa0d5_e934b6a1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1137063
+      },
+      "writtenOn": "2024-03-22T00:58:02Z",
+      "side": 1,
+      "message": "Maybe \"Ensure that LockscreenCredential#close() gets called\", similar to what I recommended on the TvSettings CL",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 56
+      },
+      "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e4ded612_f6c04fc6",
+        "filename": "src/com/android/car/settings/security/ChooseLockPinPasswordFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1137063
+      },
+      "writtenOn": "2024-03-22T00:58:02Z",
+      "side": 1,
+      "message": "So `getEnteredPassword()` creates a `LockscreenCredential` and passes ownership of it to the caller.  Are there any other callers of `getEnteredPassword()` that should be updated too?",
+      "range": {
+        "startLine": 287,
+        "startChar": 48,
+        "endLine": 287,
+        "endChar": 66
+      },
+      "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03e1ce97_632f469d",
+        "filename": "src/com/android/car/settings/security/ConfirmLockPatternFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1137063
+      },
+      "writtenOn": "2024-03-22T00:58:02Z",
+      "side": 1,
+      "message": "Only the `lockMatched` case actually uses the pattern, so this should be scoped to there.\n\nAlso, does `onLockVerified()` take ownership of the `LockscreenCredential`?  If it does, it mustn\u0027t be closed from here.",
+      "range": {
+        "startLine": 181,
+        "startChar": 8,
+        "endLine": 181,
+        "endChar": 95
+      },
+      "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
