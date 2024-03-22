@@ -140,6 +140,30 @@
       },
       "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15b6dce5_663bbd77",
+        "filename": "src/com/android/car/settings/security/ConfirmLockPatternFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1137063
+      },
+      "writtenOn": "2024-03-22T18:26:21Z",
+      "side": 1,
+      "message": "What about `VerifyLockChangeActivity`?",
+      "parentUuid": "3bcc494b_0a0f0a81",
+      "range": {
+        "startLine": 181,
+        "startChar": 8,
+        "endLine": 181,
+        "endChar": 95
+      },
+      "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

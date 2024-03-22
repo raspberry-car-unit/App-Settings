@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a65bec2_ad6e73cd",
+        "filename": "src/com/android/car/settings/security/ChooseLockPinPasswordFragment.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 412,
+      "author": {
+        "id": 1137063
+      },
+      "writtenOn": "2024-03-22T18:26:21Z",
+      "side": 1,
+      "message": "`enteredCredential`",
+      "range": {
+        "startLine": 412,
+        "startChar": 34,
+        "endLine": 412,
+        "endChar": 49
+      },
+      "revId": "0c4094b0e1dae5ffd7e753cd765a995ee5442aa1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
