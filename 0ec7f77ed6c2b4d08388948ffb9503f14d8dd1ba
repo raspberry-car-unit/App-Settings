@@ -164,6 +164,30 @@
       },
       "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfa3db08_6c6193fa",
+        "filename": "src/com/android/car/settings/security/ConfirmLockPatternFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1954616
+      },
+      "writtenOn": "2024-03-22T19:17:05Z",
+      "side": 1,
+      "message": "Oh good catch -- I changed it to an explicit call to `close()` on the credential if the activity is a `CheckLockActivity`",
+      "parentUuid": "15b6dce5_663bbd77",
+      "range": {
+        "startLine": 181,
+        "startChar": 8,
+        "endLine": 181,
+        "endChar": 95
+      },
+      "revId": "0ec7f77ed6c2b4d08388948ffb9503f14d8dd1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
