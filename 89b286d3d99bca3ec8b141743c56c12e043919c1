@@ -16,6 +16,24 @@
       "message": "This is too complicated.  `onLockVerified()` should have consistent semantics - either it takes ownership or it doesn\u0027t.  To make it never take ownership, `VerifyLockChangeActivity` could be changed to call `LockscreenCredential#duplicate()`.  That way it would explicitly make a copy.",
       "revId": "89b286d3d99bca3ec8b141743c56c12e043919c1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2eceef46_f07df112",
+        "filename": "src/com/android/car/settings/security/ConfirmLockPatternFragment.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 1954616
+      },
+      "writtenOn": "2024-03-22T21:45:49Z",
+      "side": 1,
+      "message": "Ok, that makes sense! Good idea.",
+      "parentUuid": "176caf82_4120bc06",
+      "revId": "89b286d3d99bca3ec8b141743c56c12e043919c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
