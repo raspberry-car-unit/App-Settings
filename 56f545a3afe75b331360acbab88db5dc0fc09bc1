@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8721e1d8_5592679f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-05-03T16:51:41Z",
+      "side": 1,
+      "message": "Is there a reason this is being merged to aosp main and not internal main?",
+      "revId": "56f545a3afe75b331360acbab88db5dc0fc09bc1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
