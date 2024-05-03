@@ -16,6 +16,24 @@
       "message": "Is there a reason this is being merged to aosp main and not internal main?",
       "revId": "56f545a3afe75b331360acbab88db5dc0fc09bc1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e676365a_2549be41",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1137063
+      },
+      "writtenOn": "2024-05-03T16:57:06Z",
+      "side": 1,
+      "message": "This is a dependency of a change to AOSP-first code (https://r.android.com/3061908).  So this has to go to AOSP too.  There are also many benefits to developing in AOSP-first.\n\nIf you\u0027re wondering about the presubmit failure, it\u0027s just because I accidentally triggered presubmit too early after submitting a prerequisite CL this morning that the automerger hasn\u0027t caught up with yet.  It will get resolved automatically shortly.",
+      "parentUuid": "8721e1d8_5592679f",
+      "revId": "56f545a3afe75b331360acbab88db5dc0fc09bc1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
