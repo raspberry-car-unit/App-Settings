@@ -42,7 +42,10 @@ import com.android.car.settings.common.PreferenceController;
 import com.android.car.ui.preference.CarUiSwitchPreference;
 import com.android.settingslib.applications.ServiceListing;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * Displays a list of notification listener services and provides toggles to allow the user to
@@ -67,6 +70,7 @@ public class NotificationAccessPreferenceController extends PreferenceController
     private final IconDrawableFactory mIconDrawableFactory;
 
     private final ServiceListing.Callback mCallback = this::onServicesReloaded;
+    private final Set<String> mFixedPackages;
     @VisibleForTesting
     AsyncTask<Void, Void, Void> mAsyncTask;
 
@@ -100,6 +104,10 @@ public class NotificationAccessPreferenceController extends PreferenceController
                 .setNoun("notification listener") // For logging.
                 .build();
         mIconDrawableFactory = IconDrawableFactory.newInstance(context);
+
+        mFixedPackages = Arrays.stream(getContext().getResources()
+                        .getStringArray(R.array.config_fixed_notification_access_packages))
+                        .collect(Collectors.toSet());
     }
 
     @Override
@@ -156,11 +164,17 @@ public class NotificationAccessPreferenceController extends PreferenceController
             CharSequence title = null;
             try {
                 title = packageManager.getApplicationInfoAsUser(service.packageName, /* flags= */ 0,
-                        UserHandle.myUserId()).loadLabel(packageManager);
+                        UserHandle.myUserId()).loadSafeLabel(packageManager,
+                            PackageItemInfo.DEFAULT_MAX_LABEL_SIZE_PX,
+                            PackageItemInfo.SAFE_LABEL_FLAG_TRIM
+                            | PackageItemInfo.SAFE_LABEL_FLAG_FIRST_LINE);
             } catch (PackageManager.NameNotFoundException e) {
                 LOG.e("can't find package name", e);
             }
-            String summary = service.loadLabel(packageManager).toString();
+            String summary = service.loadSafeLabel(packageManager,
+                            PackageItemInfo.DEFAULT_MAX_LABEL_SIZE_PX,
+                            PackageItemInfo.SAFE_LABEL_FLAG_TRIM
+                            | PackageItemInfo.SAFE_LABEL_FLAG_FIRST_LINE).toString();
             SwitchPreference pref = new CarUiSwitchPreference(getContext());
             pref.setPersistent(false);
             pref.setIcon(mIconDrawableFactory.getBadgedIcon(service, service.applicationInfo,
@@ -177,6 +191,10 @@ public class NotificationAccessPreferenceController extends PreferenceController
                 boolean enable = (boolean) newValue;
                 return promptUserToConfirmChange(cn, summary, enable);
             });
+
+            if (mFixedPackages.contains(service.packageName)) {
+                pref.setEnabled(false);
+            }
             getPreference().addPreference(pref);
         }
     }

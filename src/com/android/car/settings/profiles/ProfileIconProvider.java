@@ -16,19 +16,17 @@
 
 package com.android.car.settings.profiles;
 
-import android.annotation.UserIdInt;
 import android.content.Context;
 import android.content.pm.UserInfo;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.os.UserHandle;
 import android.os.UserManager;
 
 import com.android.car.admin.ui.UserAvatarView;
+import com.android.car.internal.user.UserHelper;
 import com.android.car.settings.R;
-import com.android.internal.util.UserIcons;
 
 /**
  * Simple class for providing icons for profiles in Settings.
@@ -50,34 +48,16 @@ public class ProfileIconProvider {
         Bitmap icon = userManager.getUserIcon(userInfo.id);
 
         if (icon == null) {
-            icon = assignDefaultIcon(userManager, res, userInfo);
+            icon = UserHelper.assignDefaultIcon(context, userInfo.getUserHandle());
         }
 
         return new BitmapDrawable(res, icon);
     }
 
     /** Returns a scaled, rounded, default icon for the Guest profile */
-    public Drawable getRoundedGuestDefaultIcon(Resources resources) {
-        Bitmap icon = getGuestProfileDefaultIcon(resources);
-        return new BitmapDrawable(resources, icon);
-    }
-
-    /**
-     * Assigns a default icon to a profile according to the user's id. Handles Guest icon and
-     * non-guest profile icons.
-     *
-     * @param userManager {@link UserManager} to set user icon
-     * @param resources {@link Resources} to grab icons from
-     * @param userInfo User whose avatar is set to default icon.
-     * @return Bitmap of the profile icon.
-     */
-    public Bitmap assignDefaultIcon(
-            UserManager userManager, Resources resources, UserInfo userInfo) {
-        Bitmap bitmap = userInfo.isGuest()
-                ? getGuestProfileDefaultIcon(resources)
-                : getProfileDefaultIcon(resources, userInfo.id);
-        userManager.setUserIcon(userInfo.id, bitmap);
-        return bitmap;
+    public Drawable getRoundedGuestDefaultIcon(Context context) {
+        Bitmap icon = UserHelper.getGuestDefaultIcon(context);
+        return new BitmapDrawable(context.getResources(), icon);
     }
 
     // TODO (b/179802719): refactor this method into getRoundedUserIcon().
@@ -104,22 +84,5 @@ public class ProfileIconProvider {
         Drawable badgedIcon = userAvatarView.getUserIconDrawable();
         badgedIcon.setBounds(0, 0, iconSize, iconSize);
         return badgedIcon;
-    }
-
-    /**
-     * Gets a bitmap representing the profile's default avatar.
-     *
-     * @param resources The resources to pull from
-     * @param id The id of the user to get the icon for.  Pass {@link UserHandle#USER_NULL} for
-     *           Guest user.
-     * @return Default profile icon
-     */
-    private Bitmap getProfileDefaultIcon(Resources resources, @UserIdInt int id) {
-        return UserIcons.convertToBitmap(
-                UserIcons.getDefaultUserIcon(resources, id, /* light= */ false));
-    }
-
-    private Bitmap getGuestProfileDefaultIcon(Resources resources) {
-        return getProfileDefaultIcon(resources, UserHandle.USER_NULL);
     }
 }

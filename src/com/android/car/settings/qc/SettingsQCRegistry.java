@@ -73,6 +73,12 @@ public class SettingsQCRegistry {
             .appendPath("hotspot_row")
             .build();
 
+    public static final Uri HOTSPOT_ROW_WITH_ACTION_URI = new Uri.Builder()
+            .scheme(ContentResolver.SCHEME_CONTENT)
+            .authority(AUTHORITY)
+            .appendPath("hotspot_row_with_action")
+            .build();
+
     public static final Uri MOBILE_DATA_ROW_URI = new Uri.Builder()
             .scheme(ContentResolver.SCHEME_CONTENT)
             .authority(AUTHORITY)
@@ -97,10 +103,22 @@ public class SettingsQCRegistry {
             .appendPath("adaptive_brightness_switch")
             .build();
 
+    public static final Uri THEME_TOGGLE_URI = new Uri.Builder()
+            .scheme(ContentResolver.SCHEME_CONTENT)
+            .authority(AUTHORITY)
+            .appendPath("theme_toggle")
+            .build();
+
     public static final Uri MEDIA_VOLUME_SLIDER_URI = new Uri.Builder()
             .scheme(ContentResolver.SCHEME_CONTENT)
             .authority(AUTHORITY)
             .appendPath("media_volume_slider")
+            .build();
+
+    public static final Uri MEDIA_VOLUME_SLIDER_WITHOUT_ICON_URI = new Uri.Builder()
+            .scheme(ContentResolver.SCHEME_CONTENT)
+            .authority(AUTHORITY)
+            .appendPath("media_volume_slider_without_icon")
             .build();
 
     public static final Uri CALL_VOLUME_SLIDER_URI = new Uri.Builder()
@@ -129,11 +147,14 @@ public class SettingsQCRegistry {
         map.put(MOBILE_DATA_TILE_URI, MobileDataTile.class);
         map.put(WIFI_ROW_URI, WifiRow.class);
         map.put(HOTSPOT_ROW_URI, HotspotRow.class);
+        map.put(HOTSPOT_ROW_WITH_ACTION_URI, HotspotRowWithAction.class);
         map.put(MOBILE_DATA_ROW_URI, MobileDataRow.class);
         map.put(BRIGHTNESS_SLIDER_URI, BrightnessSlider.class);
         map.put(BRIGHTNESS_SLIDER_WITH_ICON_URI, BrightnessSliderWithIcon.class);
         map.put(ADAPTIVE_BRIGHTNESS_SWITCH_URI, AdaptiveBrightnessSwitch.class);
+        map.put(THEME_TOGGLE_URI, ThemeToggle.class);
         map.put(MEDIA_VOLUME_SLIDER_URI, MediaVolumeSlider.class);
+        map.put(MEDIA_VOLUME_SLIDER_WITHOUT_ICON_URI, MediaVolumeSliderWithoutIcon.class);
         map.put(CALL_VOLUME_SLIDER_URI, CallVolumeSlider.class);
         map.put(NAVIGATION_VOLUME_SLIDER_URI, NavigationVolumeSlider.class);
 

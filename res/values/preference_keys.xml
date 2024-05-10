@@ -29,6 +29,8 @@
     <string name="pk_wireless_extra_settings" translatable="false">wireless_extra_settings</string>
     <string name="pk_bluetooth_settings_entry" translatable="false">bluetooth_settings_entry
     </string>
+    <string name="pk_bluetooth_extra_settings" translatable="false">bluetooth_extra_settings
+    </string>
     <string name="pk_location_settings_entry" translatable="false">location_settings_entry</string>
     <string name="pk_notifications_settings_entry" translatable="false">
         notifications_settings_entry
@@ -102,6 +104,7 @@
     <string name="pk_wifi_tether_name" translatable="false">wifi_tether_name</string>
     <string name="pk_wifi_tether_state_switch" translatable="false">wifi_tether_state_switch
     </string>
+    <string name="pk_wifi_tether_qr_code" translatable="false">wifi_tether_qr_code</string>
 
     <!-- WIFI -->
     <string name="pk_wifi_settings_entry" translatable="false">wifi_settings_entry</string>
@@ -190,6 +193,7 @@
     <string name="pk_application_details_action_buttons" translatable="false">
         application_details_action_buttons
     </string>
+    <string name="pk_all_services_settings" translatable="false">all_services_settings</string>
     <string name="pk_application_details_notifications" translatable="false">
         application_details_notifications
     </string>
@@ -238,6 +242,17 @@
     </string>
     <string name="pk_opening_links_app_details_reset" translatable="false">
         opening_links_app_details_reset
+    </string>
+
+    <!-- Performance-impacting App Settings -->
+    <string name="pk_performance_impacting_apps_entry" translatable="false">
+        performance_impacting_apps_settings_entry
+    </string>
+    <string name="pk_performance_impacting_apps_settings" translatable="false">
+        performance_impacting_apps_settings
+    </string>
+    <string name="pk_performance_impacting_apps_description" translatable="false">
+        performance_impacting_apps_description
     </string>
 
     <!-- Special App Access Settings -->
@@ -379,19 +394,24 @@
     <string name="pk_location_app_permissions" translatable="false">location_app_permissions
     </string>
     <string name="pk_location_services" translatable="false">location_services</string>
-    <string name="pk_location_footer" translatable="false">location_footer</string>
     <string name="pk_location_state_switch" translatable="false">location_state_switch</string>
-    <string name="pk_location_driver_assistance_state_switch" translatable="false">
-        driver_assistance_state_switch
+    <string name="pk_adas_location_state_switch" translatable="false">
+        adas_location_state_switch
     </string>
-    <string name="pk_location_driver_assistance_preference_group" translatable="false">
-        driver_assistance_preference_group
-    </string>
+    <string name="pk_location_divider" translatable="false">location_divider</string>
     <string name="pk_location_driver_assistance_privacy_policy_group" translatable="false">
-        driver_assistance_privacy_policy_group
+        location_driver_assistance_privacy_policy_group
     </string>
-    <string name="pk_location_driver_assistance_privacy_policy_header" translatable="false">
-        driver_assistanceprivacy_policy_header
+    <string name="pk_location_adas_apps_list" translatable="false">
+        location_adas_apps_list
+    </string>
+    <string name="pk_location_access_fragment" translatable="false">
+        location_access_fragment
+    </string>
+    <string name="pk_location_access" translatable="false">location_access</string>
+    <string name="pk_location_adas_app_info" translatable="false">location_adas_app_info</string>
+    <string name="pk_location_access_disclaimer" translatable="false">
+        location_access_disclaimer
     </string>
 
     <!-- Microphone Settings -->
@@ -444,6 +464,7 @@
     <string name="pk_about_settings_entry" translatable="false">about_settings_entry</string>
     <string name="pk_legal_information_entry" translatable="false">legal_information_entry</string>
     <string name="pk_reset_options_entry" translatable="false">reset_options_entry</string>
+    <string name="pk_restart_infotainment_system">restart_infotainment_system</string>
     <string name="pk_developer_options_entry" translatable="false">developer_options_entry</string>
 
     <!-- Language Settings -->

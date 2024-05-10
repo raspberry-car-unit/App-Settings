@@ -107,8 +107,10 @@ public class LocationRecentAccessesPreferenceController
 
     @Override
     protected void onStartInternal() {
-        getContext().registerReceiver(mAdasReceiver, INTENT_FILTER_ADAS_GNSS_ENABLED_CHANGED);
-        getContext().registerReceiver(mLocationReceiver, INTENT_FILTER_LOCATION_MODE_CHANGED);
+        getContext().registerReceiver(mAdasReceiver, INTENT_FILTER_ADAS_GNSS_ENABLED_CHANGED,
+                Context.RECEIVER_EXPORTED);
+        getContext().registerReceiver(mLocationReceiver, INTENT_FILTER_LOCATION_MODE_CHANGED,
+                Context.RECEIVER_EXPORTED);
     }
 
     @Override
@@ -120,14 +122,19 @@ public class LocationRecentAccessesPreferenceController
     @Override
     public void updateState(PreferenceCategory preference) {
         super.updateState(preference);
-
-        if (!mLocationManager.isLocationEnabled()
-                && !mLocationManager.isAdasGnssLocationEnabled()) {
-            getPreference().setVisible(false);
-            return;
+        boolean isVisible = getVisibility();
+        preference.setVisible(isVisible);
+        if (isVisible) {
+            updateUi(loadData());
         }
-        getPreference().setVisible(true);
-        updateUi(loadData());
+    }
+
+    private boolean getVisibility() {
+        boolean isVisible = mLocationManager.isLocationEnabled();
+        if (LocationUtil.isDriverWithAdasApps(getContext())) {
+            isVisible = isVisible || mLocationManager.isAdasGnssLocationEnabled();
+        }
+        return isVisible;
     }
 
     private List<RecentAppOpsAccess.Access> loadData() {

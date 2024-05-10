@@ -18,8 +18,10 @@ package com.android.car.settings.qc;
 
 import static com.android.car.qc.QCItem.QC_ACTION_TOGGLE_STATE;
 import static com.android.car.settings.qc.QCUtils.getActionDisabledDialogIntent;
+import static com.android.car.settings.qc.QCUtils.getAvailabilityStatusForZoneFromXml;
 import static com.android.car.settings.qc.SettingsQCRegistry.WIFI_TILE_URI;
 
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
@@ -29,6 +31,7 @@ import android.os.UserManager;
 
 import com.android.car.qc.QCItem;
 import com.android.car.qc.QCTile;
+import com.android.car.settings.R;
 import com.android.car.settings.enterprise.EnterpriseUtils;
 
 /**
@@ -39,12 +42,19 @@ public class WifiTile extends SettingsQCItem {
 
     public WifiTile(Context context) {
         super(context);
+        setAvailabilityStatusForZone(getAvailabilityStatusForZoneFromXml(context,
+                R.xml.network_and_internet_fragment, R.string.pk_wifi_entry_state_switch));
         mWifiManager = context.getSystemService(WifiManager.class);
     }
 
     @Override
     QCItem getQCItem() {
-        boolean wifiEnabled = mWifiManager.isWifiEnabled();
+        if (isHiddenForZone()) {
+            return null;
+        }
+        int wifiState = mWifiManager.getWifiState();
+        boolean wifiEnabled = wifiState == WifiManager.WIFI_STATE_ENABLED
+                || wifiState == WifiManager.WIFI_STATE_ENABLING;
         Icon icon = Icon.createWithResource(getContext(), WifiQCUtils.getIcon(mWifiManager));
 
         String userRestriction = UserManager.DISALLOW_CONFIG_WIFI;
@@ -53,14 +63,19 @@ public class WifiTile extends SettingsQCItem {
         boolean hasUmRestrictions = EnterpriseUtils.hasUserRestrictionByUm(getContext(),
                 userRestriction);
 
+        boolean isReadOnlyForZone = isReadOnlyForZone();
+        PendingIntent disabledPendingIntent = isReadOnlyForZone
+                ? QCUtils.getDisabledToastBroadcastIntent(getContext())
+                : getActionDisabledDialogIntent(getContext(), userRestriction);
+
         return new QCTile.Builder()
                 .setIcon(icon)
                 .setChecked(wifiEnabled)
                 .setAction(getBroadcastIntent())
-                .setEnabled(!hasUmRestrictions && !hasDpmRestrictions)
-                .setClickableWhileDisabled(hasDpmRestrictions)
-                .setDisabledClickAction(getActionDisabledDialogIntent(getContext(),
-                        userRestriction))
+                .setEnabled(!WifiQCUtils.isWifiBusy(mWifiManager) && !hasUmRestrictions
+                        && !hasDpmRestrictions && isWritableForZone())
+                .setClickableWhileDisabled(hasDpmRestrictions | isReadOnlyForZone)
+                .setDisabledClickAction(disabledPendingIntent)
                 .setSubtitle(WifiQCUtils.getSubtitle(getContext(), mWifiManager))
                 .build();
     }

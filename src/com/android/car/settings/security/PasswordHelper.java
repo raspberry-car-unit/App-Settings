@@ -55,16 +55,14 @@ public class PasswordHelper {
     public static final String EXTRA_CURRENT_SCREEN_LOCK = "extra_current_screen_lock";
     public static final String EXTRA_CURRENT_PASSWORD_QUALITY = "extra_current_password_quality";
 
-    // Error code returned from validateSetupWizard(byte[] password).
-    static final int NO_ERROR = 0;
-    static final int ERROR_CODE = 1;
     private static final Logger LOG = new Logger(PasswordHelper.class);
 
     private final Context mContext;
-    private final boolean mIsPin;
     private final LockPatternUtils mLockPatternUtils;
     private final PasswordMetrics mMinMetrics;
     private List<PasswordValidationError> mValidationErrors;
+    private boolean mIsPin;
+    private boolean mIsPattern;
     private byte[] mPasswordHistoryHashFactor;
 
     @UserIdInt
@@ -73,9 +71,8 @@ public class PasswordHelper {
     @DevicePolicyManager.PasswordComplexity
     private final int mMinComplexity;
 
-    public PasswordHelper(Context context, boolean isPin, @UserIdInt int userId) {
+    public PasswordHelper(Context context, @UserIdInt int userId) {
         mContext = context;
-        mIsPin = isPin;
         mUserId = userId;
         mLockPatternUtils = new LockPatternUtils(context);
         mMinMetrics = mLockPatternUtils.getRequestedPasswordMetrics(
@@ -85,11 +82,9 @@ public class PasswordHelper {
     }
 
     @VisibleForTesting
-    PasswordHelper(Context context, boolean isPin, @UserIdInt int userId,
-            LockPatternUtils lockPatternUtils, PasswordMetrics minMetrics,
-            @DevicePolicyManager.PasswordComplexity int minComplexity) {
+    PasswordHelper(Context context, @UserIdInt int userId, LockPatternUtils lockPatternUtils,
+            PasswordMetrics minMetrics, @DevicePolicyManager.PasswordComplexity int minComplexity) {
         mContext = context;
-        mIsPin = isPin;
         mUserId = userId;
         mLockPatternUtils = lockPatternUtils;
         mMinMetrics = minMetrics;
@@ -97,37 +92,39 @@ public class PasswordHelper {
     }
 
     /**
-     * Validates PIN/Password and returns the validation result and updates mValidationErrors.
+     * Validates a proposed new lockscreen credential. Does not check it against the password
+     * history, but does all other types of validation such as length, allowed characters, etc.
+     * {@link #getCredentialValidationErrorMessages()} can be called afterwards to retrieve the
+     * error message(s).
      *
-     * @param password password the user typed in.
-     * @return The error code where 0 is no error.
+     * @param credential the proposed new lockscreen credential
+     * @return whether the new credential is valid
      */
-    public int validateSetupWizard(byte[] password) {
-        mValidationErrors =
-                PasswordMetrics.validatePassword(mMinMetrics, mMinComplexity, mIsPin, password);
-
-        return mValidationErrors.isEmpty() ? NO_ERROR : ERROR_CODE;
+    public boolean validateCredential(LockscreenCredential credential) {
+        mValidationErrors = PasswordMetrics.validateCredential(mMinMetrics, mMinComplexity,
+                credential);
+        mIsPin = credential.isPin();
+        mIsPattern = credential.isPattern();
+        return mValidationErrors.isEmpty();
     }
 
     /**
-     * Validates PIN/Password and returns the validation result and updates mValidationErrors
-     * and checks whether the password has been reused.
+     * Validates a proposed new lockscreen credential. Does the full validation including checking
+     * against the password history. {@link #getCredentialValidationErrorMessages()} can be called
+     * afterwards to retrieve the error message(s).
      *
-     * @param enteredCredential credential the user typed in.
-     * @param existingCredential existing credential the user previously set.
-     * @return whether password satisfies all the requirements.
+     * @param enteredCredential the proposed new lockscreen credential
+     * @param existingCredential the current lockscreen credential
+     * @return whether the new credential is valid
      */
-    public boolean validate(LockscreenCredential enteredCredential,
+    public boolean validateCredential(LockscreenCredential enteredCredential,
             LockscreenCredential existingCredential) {
-        byte[] password = enteredCredential.getCredential();
-        mValidationErrors =
-                PasswordMetrics.validatePassword(mMinMetrics, mMinComplexity, mIsPin, password);
-        if (mValidationErrors.isEmpty() && mLockPatternUtils.checkPasswordHistory(
-                password, getPasswordHistoryHashFactor(existingCredential), mUserId)) {
+        if (validateCredential(enteredCredential)
+                && mLockPatternUtils.checkPasswordHistory(enteredCredential.getCredential(),
+                    getPasswordHistoryHashFactor(existingCredential), mUserId)) {
             mValidationErrors =
                     Collections.singletonList(new PasswordValidationError(RECENTLY_USED));
         }
-
         return mValidationErrors.isEmpty();
     }
 
@@ -144,10 +141,12 @@ public class PasswordHelper {
     }
 
     /**
-     * Returns an array of messages describing any errors of the last
-     * {@link #validate(LockscreenCredential)} call, important messages come first.
+     * Returns a message describing any errors of the last call to {@link
+     * #validateCredential(LockscreenCredential)} or {@link
+     * #validateCredential(LockscreenCredential, LockscreenCredential)}.
+     * Returns an empty string if there were no errors.
      */
-    public List<String> convertErrorCodeToMessages() {
+    public String getCredentialValidationErrorMessages() {
         List<String> messages = new ArrayList<>();
         for (PasswordValidationError error : mValidationErrors) {
             switch (error.errorCode) {
@@ -186,6 +185,8 @@ public class PasswordHelper {
                     messages.add(StringUtil.getIcuPluralsString(mContext, error.requirement,
                             mIsPin
                                     ? R.string.lockpassword_pin_too_short
+                            : mIsPattern
+                                    ? R.string.lockpattern_recording_incorrect_too_short
                                     : R.string.lockpassword_password_too_short));
                     break;
                 case TOO_LONG:
@@ -207,7 +208,12 @@ public class PasswordHelper {
                     LOG.wtf("unknown error validating password: " + error);
             }
         }
-        return messages;
+        if (messages.isEmpty() && !mValidationErrors.isEmpty()) {
+            // All errors were unknown, so fall back to the default message. If you see this message
+            // in the UI, something needs to be added to the switch statement above!
+            messages.add(mContext.getString(R.string.lockpassword_invalid_password));
+        }
+        return String.join("\n", messages);
     }
 
     /**

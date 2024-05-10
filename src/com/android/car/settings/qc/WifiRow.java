@@ -19,8 +19,10 @@ package com.android.car.settings.qc;
 import static com.android.car.qc.QCItem.QC_ACTION_TOGGLE_STATE;
 import static com.android.car.qc.QCItem.QC_TYPE_ACTION_SWITCH;
 import static com.android.car.settings.qc.QCUtils.getActionDisabledDialogIntent;
+import static com.android.car.settings.qc.QCUtils.getAvailabilityStatusForZoneFromXml;
 import static com.android.car.settings.qc.SettingsQCRegistry.WIFI_ROW_URI;
 
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
@@ -45,12 +47,21 @@ public class WifiRow extends SettingsQCItem {
 
     public WifiRow(Context context) {
         super(context);
+        setAvailabilityStatusForZone(getAvailabilityStatusForZoneFromXml(context,
+                R.xml.network_and_internet_fragment, R.string.pk_wifi_entry_state_switch));
         mWifiManager = context.getSystemService(WifiManager.class);
     }
 
     @Override
     QCItem getQCItem() {
-        boolean wifiEnabled = mWifiManager.isWifiEnabled();
+        if (isHiddenForZone()) {
+            return null;
+        }
+        int wifiState = mWifiManager.getWifiState();
+        boolean wifiEnabled = wifiState == WifiManager.WIFI_STATE_ENABLED
+                || wifiState == WifiManager.WIFI_STATE_ENABLING;
+
+        // TODO(b/304694358): Use api that detects connected secondary networks
         Icon icon = Icon.createWithResource(getContext(), WifiQCUtils.getIcon(mWifiManager));
 
         String userRestriction = UserManager.DISALLOW_CONFIG_WIFI;
@@ -59,13 +70,19 @@ public class WifiRow extends SettingsQCItem {
         boolean hasUmRestrictions = EnterpriseUtils.hasUserRestrictionByUm(getContext(),
                 userRestriction);
 
+        boolean isReadOnlyForZone = isReadOnlyForZone();
+        PendingIntent disabledPendingIntent = isReadOnlyForZone
+                ? QCUtils.getDisabledToastBroadcastIntent(getContext())
+                : getActionDisabledDialogIntent(getContext(), userRestriction);
+
         QCActionItem wifiToggle = new QCActionItem.Builder(QC_TYPE_ACTION_SWITCH)
                 .setChecked(wifiEnabled)
                 .setAction(getBroadcastIntent())
-                .setEnabled(!hasUmRestrictions && !hasDpmRestrictions)
-                .setClickableWhileDisabled(hasDpmRestrictions)
-                .setDisabledClickAction(getActionDisabledDialogIntent(getContext(),
-                        userRestriction))
+                .setEnabled(!WifiQCUtils.isWifiBusy(mWifiManager) && !hasUmRestrictions
+                        && !hasDpmRestrictions && isWritableForZone())
+                .setClickableWhileDisabled(hasDpmRestrictions | isReadOnlyForZone)
+                .setDisabledClickAction(disabledPendingIntent)
+                .setContentDescription(getContext(), R.string.wifi_settings)
                 .build();
 
         QCRow wifiRow = new QCRow.Builder()

@@ -24,7 +24,6 @@
     <string name="auto_brightness_title" msgid="9124647862844666581">"Adaptive brightness"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Iangkop ang liwanag ng screen sa kapaligiran"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Naka-on ang Night Light"</string>
-    <string name="night_mode_tile_label" msgid="6603597795502131664">"Night mode"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Network at internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobile network"</string>
     <string name="mobile_network_summary_count" msgid="760865625847664029">"{count,plural, =1{# SIM}one{# SIM}other{# na SIM}}"</string>
@@ -161,11 +160,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Pumili ng kahit isang band para sa Wi‑Fi hotspot:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"Hotspot at pag-tether"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi hotspot"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Gamitin ang Wi‑Fi hotspot"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Naka-off"</string>
     <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Awtomatikong i-off ang hotspot"</string>
     <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Mao-off ang Wi‑Fi hotspot kung walang nakakonektang device"</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"I-scan ang QR code na ito para makasali sa \"%s\""</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Password ng hotspot: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"Gustong i-on ng <xliff:g id="REQUESTER">%s</xliff:g> ang Wi-Fi"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"Gustong i-off ng <xliff:g id="REQUESTER">%s</xliff:g> ang Wi-Fi"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Error"</string>
@@ -176,6 +178,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Naikonekta"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Ipakita lahat"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Naghahanap"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"Mga nakakonektang device"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"Gumamit ng Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Walang pangalang device"</string>
@@ -222,6 +225,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"Kahilingan sa pagpapares"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"I-tap para makipagpares sa <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"Pumili ng Bluetooth device"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"Bluetooth"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"Telepono"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"Media"</string>
     <string name="language_settings" msgid="2079258598337245546">"Mga Wika"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"Mga wika at input"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"Iminumungkahi"</string>
@@ -301,14 +307,16 @@
     <string name="apps_and_notifications_settings" msgid="8704585874333781975">"Mga app at notification"</string>
     <string name="all_applications" msgid="7798210477486822168">"Ipakita ang lahat ng app"</string>
     <string name="default_applications" msgid="1558183275638697087">"Mga default na app"</string>
+    <string name="performance_impacting_apps" msgid="3439260699394720569">"Mga app na nakakaapekto sa performance"</string>
     <string name="app_permissions" msgid="32799922508313948">"Mga pahintulot sa app"</string>
     <string name="app_permissions_summary" msgid="5402214755935368418">"Kontrolin ang pag-access ng app sa iyong data"</string>
     <string name="applications_settings" msgid="794261395191035632">"Impormasyon ng app"</string>
-    <string name="force_stop" msgid="2153183697014720520">"Sapilitang ihinto"</string>
-    <string name="force_stop_dialog_title" msgid="3342850939200388694">"Sapilitang itigil?"</string>
+    <string name="force_stop" msgid="1616958676171167028">"Ihinto ang app"</string>
+    <string name="force_stop_dialog_title" msgid="4481858344628934971">"Ihinto ang app?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"Kung sapilitan mong ititigil ang isang app, maaari itong kumilos nang hindi tama."</string>
-    <string name="prioritize_app_performance_dialog_title" msgid="2561577032540073080">"I-on ang gawing priyoridad ang performance ng app?"</string>
-    <string name="prioritize_app_performance_dialog_text" msgid="572525689800110355">"Kapag na-on ito, puwede itong magdulot ng posibleng kawalan ng stability sa system o pangmatagalang epekto sa hardware. Gusto mo bang magpatuloy?"</string>
+    <string name="force_stop_success_toast_text" msgid="2986272849275894254">"Ihininto ang <xliff:g id="APP_NAME">%1$s</xliff:g>."</string>
+    <string name="prioritize_app_performance_dialog_title" msgid="3205297520523665568">"Isapriyoridad ang performance ng app?"</string>
+    <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"Puwede itong magdulot ng posibleng kawalan ng stability sa system o pangmatagalang epekto sa hardware. Gusto mo bang magpatuloy?"</string>
     <string name="prioritize_app_performance_dialog_action_on" msgid="3556735049873419163">"Oo"</string>
     <string name="prioritize_app_performance_dialog_action_off" msgid="2813324718753199319">"Huwag na lang"</string>
     <string name="disable_text" msgid="4358165448648990820">"I-disable"</string>
@@ -318,6 +326,7 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"I-disable ang app"</string>
     <string name="not_installed" msgid="4163454337822508007">"Hindi na-install para sa profile na ito"</string>
     <string name="permissions_label" msgid="2701446753515612685">"Mga Pahintulot"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"Lahat ng serbisyo"</string>
     <string name="notifications_label" msgid="6586089149665170731">"Mga Notification"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"Storage at cache"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"Gawing priyoridad ang performance ng app"</string>
@@ -379,6 +388,7 @@
     <string name="apps_permission_manager_title" msgid="8776335943862484131">"Manager ng pahintulot"</string>
     <string name="apps_permission_manager_summary" msgid="4180424218228141274">"Kontrolin ang pag-access ng app sa iyong data"</string>
     <string name="apps_default_apps_summary" msgid="2017792579839972926">"Para sa Assistant at higit pa"</string>
+    <string name="performance_impacting_apps_summary" msgid="7762122057244111162">"{count,plural, =1{# app ang nakakaapekto sa performance}one{# app ang nakakaapekto sa performance}other{# na app ang nakakaapekto sa performance}}"</string>
     <string name="apps_special_app_access_summary" msgid="6464767436309742163">"Para sa system at iba pang setting"</string>
     <string name="special_access" msgid="5730278220917123811">"Espesyal na access ng app"</string>
     <string name="show_system" msgid="4401355756969485287">"Ipakita ang system"</string>
@@ -392,6 +402,8 @@
     <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Kung io-off mo ang access sa notification para kay <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, puwedeng ma-off din ang access sa Huwag Istorbohin."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"I-off"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Kanselahin"</string>
+    <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Negatibo ang nagiging epekto ng mga app na ito sa performance ng system at pinigilan ang mga ito sa pagtakbo sa background.\nIsapriyoridad ang app para payagan ang paggamit ng background at alisin ito sa listahang ito."</string>
+    <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Isapriyoridad ang app"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"Access sa Premium SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Puwedeng kailanganin mong magbayad para sa Premium SMS at isasama ito sa mga singilin ng iyong carrier. Kung ie-enable mo ang pahintulot para sa isang app, magagawa mong magpadala ng premium SMS gamit ang app na iyon."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Access sa paggamit"</string>
@@ -401,28 +413,28 @@
     <string name="more_special_access_title" msgid="166115485446645971">"Higit pa"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Lokasyon"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Gumamit ng lokasyon"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"Payagan ang tutukuyin mong app na i-access ang lokasyon mo"</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"Gamitin ang lokasyon ng iyong kotse sa anumang app na tinukoy mo."</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Kung io-off mo ito, maaalis ang access sa lokasyon para sa lahat ng app maliban sa mga kailangan para sa tulong sa driver"</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"Gamitin ang lokasyon para sa tulong sa driver"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"Naka-off ang lokasyon ng sasakyan"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"Hindi ma-access ng mga app ng tulong sa driver ang lokasyon mo"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"Baguhin"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"Payagan ang mga app na tulong sa pagmamaneho na i-access ang lokasyon mo"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"Kung io-off mo ito, madi-disable ang mga app ng tulong sa driver na dumedepende sa impormasyon ng lokasyon"</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"I-off pa rin"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Kung io-off mo ito, madi-disable ang mga app ng tulong sa driver na dumedepende sa impormasyon ng lokasyon"</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"I-off pa rin"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Hindi puwedeng baguhin ang setting na ito at na-disable ito ng manufacturer ng iyong kotse."</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"Mga feature na nakakatulong magmaneho"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Payagang i-access ng mga built-in na feature, na inaprubahan ng manufacturer ng iyong kotse, ang lokasyon ng kotse mo."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Kamakailang na-access"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Kamakailang na-access"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Tingnan lahat"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"Walang kamakailang app"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • Tulong sa driver"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"Mga app na may pahintulot na i-access ang lokasyon ng sasakyang ito para sa mga feature ng tulong sa driver"</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"Patakaran sa privacy"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • Tulong sa driver • Kailangan ng access"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"Mga feature na nakakatulong magmaneho"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"Patakaran"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Mga pahintulot sa antas ng app"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"Pamahalaan ang mga pahintulot ng mga individwal na app"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Mga Serbisyo ng Lokasyon"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Gumamit ng lokasyon"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"Posibleng gumamit ang mga lokasyon ng mga source na gaya ng GPS, Wi‑Fi, mga mobile network, at sensor para tumulong sa pagtantiya ng lokasyon ng iyong device."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Tulong sa driver"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"Walang impormasyong tumutukoy sa iyong pagkakakilanlan sa impormasyon ng lokasyon na ipinapadala sa mga app ng tulong sa driver. Sino-store ito nang hindi hihigit sa 2 araw bago i-delete."</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"Access sa lokasyon"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"Piliin kung puwedeng i-access ng mga app ang lokasyon ng iyong kotse"</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"Posibleng may access pa rin ang manufacturer ng iyong kotse sa lokasyon ng kotse mo. Puwede mong suriin ang mga patakaran nila para sa higit pang impormasyon."</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"Kailangan ng mga built-in na feature na ito ng access sa lokasyon ng iyong kotse para makatulong sa pagmamaneho.\n\nMatuto pa tungkol sa kung paano ginagamit ng bawat app ang iyong Data ng lokasyon sa pamamagitan ng pagsuri sa Patakaran sa Privacy nito."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"Mikropono"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"Gamitin ang mikropono"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"Payagan ang lahat ng app na i-access ang iyong mikropono"</string>
@@ -438,6 +450,9 @@
     <string name="system_update_settings_title" msgid="8448588267784138855">"Mga pag-update ng system"</string>
     <string name="system_advanced_title" msgid="6303355131691523362">"Advanced"</string>
     <string name="system_advanced_summary" msgid="5833643795981791953">"Tungkol dito, legal na impormasyon, at higit pa"</string>
+    <string name="restart_infotainment_system_title" msgid="5174129167446756511">"I-restart ang infotainment system"</string>
+    <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"Posibleng umabot nang ilang minuto ang pag-restart sa infotainment system ng iyong kotse. Gusto mo bang magpatuloy?"</string>
+    <string name="continue_confirmation" msgid="1598892163951467191">"Magpatuloy"</string>
     <string name="firmware_version" msgid="8491753744549309333">"Bersyon ng Android"</string>
     <string name="security_patch" msgid="4794276590178386903">"Antas ng patch ng seguridad ng Android"</string>
     <string name="hardware_info" msgid="3973165746261507658">"Modelo at hardware"</string>
@@ -478,11 +493,11 @@
     <string name="developer_options_settings" msgid="1530739225109118480">"Mga opsyon ng developer"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"Mga opsyon sa pag-reset"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"Pag-reset ng network, mga app, o device"</string>
-    <string name="reset_network_title" msgid="1284233059990797263">"I-reset ang network"</string>
-    <string name="reset_network_desc" msgid="602381374544634925">"Ire-reset nito ang lahat ng setting ng network, kabilang ang:"</string>
-    <string name="reset_network_item_wifi" msgid="7569481589699982698"><li>"Wi‑Fi"</li></string>
+    <string name="reset_network_title" msgid="3077846909739832734">"I-reset ang Wi‑Fi at Bluetooth"</string>
+    <string name="reset_network_desc" msgid="3332203703135823033">"Ire-reset nito ang mga setting ng Wi-Fi at Bluetooth na mag-aalis sa memory ng dating nakakonektang:"</string>
+    <string name="reset_network_item_wifi" msgid="2876370861806060314"><li>"Mga Wi‑Fi network at password"</li></string>
     <string name="reset_network_item_mobile" msgid="5747282716664480997"><li>"Mobile data"</li></string>
-    <string name="reset_network_item_bluetooth" msgid="6035019931106921284"><li>"Bluetooth"</li></string>
+    <string name="reset_network_item_bluetooth" msgid="7475279871421815601"><li>"Mga telepono at iba pang Bluetooth device"</li></string>
     <string name="reset_esim_title" msgid="8132107637911831211">"Burahin ang lahat ng eSIM ng sasakyan"</string>
     <string name="reset_esim_desc" msgid="1437276625485586740">"Hindi makakansela ang iyong plan ng serbisyo dahil dito."</string>
     <string name="reset_esim_error_title" msgid="7245109418130525492">"Hindi ma-reset ang mga eSIM"</string>
@@ -681,6 +696,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Kanselahin"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Kumpirmahin"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Dapat ay may hindi bababa sa 4 na character"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"Hindi available ang uri ng lock na ito."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Binubuo lang dapat ito ng mga digit na 0-9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Hindi pinapayagan ng admin ng device ang paggamit ng kamakailang PIN"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"Bina-block ng iyong IT admin ang mga pangkaraniwang PIN. Sumubok ng ibang PIN."</string>
@@ -705,7 +721,6 @@
     <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{Mas kaunti dapat sa # digit}one{Mas kaunti dapat sa # digit}other{Mas kaunti dapat sa # na digit}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"Hindi pinapayagan ang pataas, pababa, o paulit-ulit na pagkakasunod-sunod ng mga digit"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"Mga opsyon sa lock ng screen"</string>
-    <string name="build_info_fmt" msgid="5592554123908086426">"<xliff:g id="FINGERPRINT">%1$s</xliff:g>\n<xliff:g id="DATE">%2$s</xliff:g> : <xliff:g id="NUM_DAYS">%3$s</xliff:g> (na) araw ang nakalipas"</string>
     <string name="credentials_reset" msgid="873900550885788639">"I-clear ang mga kredensyal"</string>
     <string name="credentials_reset_summary" msgid="6067911547500459637">"Alisin ang lahat ng certificate"</string>
     <string name="credentials_reset_hint" msgid="3459271621754137661">"Alisin ang lahat ng content?"</string>
@@ -728,6 +743,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"Lumabas sa Demo"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"I-DISMISS"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"Hindi available ang feature habang nagmamaneho"</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"Hilingin sa driver na baguhin ang setting"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"Hindi mo magagawa ang pagkilos na ito"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"Hindi makakapagdagdag ng profile habang nagmamaneho"</string>
     <string name="default_search_query" msgid="3137420627428857068">"Hanapin"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistant at boses"</string>
@@ -743,6 +760,7 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"Magdagdag ng profile"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"I-delete ang profile na ito"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"Magdagdag ng profile"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"Naka-sign in ngayon ang profile bilang driver. Subukan ulit kapag hindi ginagamit ng driver ang profile."</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"Liwanag ng display"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Para makita ang iyong mga device, i-on ang Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Para magpares ng device, buksan ang mga setting ng Bluetooth"</string>

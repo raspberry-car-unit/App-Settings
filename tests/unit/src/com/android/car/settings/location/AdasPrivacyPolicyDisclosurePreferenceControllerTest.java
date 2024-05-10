@@ -20,8 +20,6 @@ import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
@@ -72,7 +70,7 @@ public class AdasPrivacyPolicyDisclosurePreferenceControllerTest {
 
     @Before
     @UiThreadTest
-    public void setUp() {
+    public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
         mLifecycleOwner = new TestLifecycleOwner();
 
@@ -102,63 +100,13 @@ public class AdasPrivacyPolicyDisclosurePreferenceControllerTest {
     }
 
     @Test
-    public void refreshUi_noAdasAppWithLocationPermission_showEmpty() {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_DENIED);
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_FINE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_DENIED);
-
-        mPreferenceController.refreshUi();
-        assertThat(mPreference.getPreferenceCount()).isEqualTo(0);
-    }
-
-    @Test
-    public void refreshUi_AdasAppWithCoarseLocationPermission_showApp() {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_FINE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_DENIED);
-
-        mPreferenceController.refreshUi();
-        assertThat(mPreference.getPreferenceCount()).isEqualTo(1);
-    }
-
-    @Test
-    public void refreshUi_AdasAppWithFineLocationPermission_showApp() {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_DENIED);
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_FINE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-
-        mPreferenceController.refreshUi();
-        assertThat(mPreference.getPreferenceCount()).isEqualTo(1);
-    }
-
-    @Test
-    public void refreshUi_AdasAppWithLocationPermission_showApp() {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_FINE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-
+    public void refreshUi_oneAdasApp_showApp() {
         mPreferenceController.refreshUi();
         assertThat(mPreference.getPreferenceCount()).isEqualTo(1);
     }
 
     @Test
     public void refreshUi_adasAppWithLocationPermission_launchLocationSettings() throws Exception {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-
         mPreferenceController.refreshUi();
         mPreference.getPreference(0).performClick();
 
@@ -173,22 +121,6 @@ public class AdasPrivacyPolicyDisclosurePreferenceControllerTest {
 
     @Test
     public void refreshUi_adasAppWithLocationPermission_launchPrivacyPolicy() throws Exception {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-
-        when(mContext.getPackageManager()).thenReturn(mPackageManager);
-
-        ApplicationInfo appInfo = new ApplicationInfo();
-        Bundle bundle = new Bundle();
-        appInfo.metaData = bundle;
-        bundle.putCharSequence(
-                "privacy_policy",
-                "https://developer.android.com/guide/topics/manifest/meta-data-element");
-
-        when(mPackageManager.getApplicationInfoAsUser(any(), anyInt(), anyInt()))
-                .thenReturn(appInfo);
-
         mPreferenceController.refreshUi();
         CarUiTwoActionTextPreference perf =
                 (CarUiTwoActionTextPreference) mPreference.getPreference(0);
@@ -204,12 +136,6 @@ public class AdasPrivacyPolicyDisclosurePreferenceControllerTest {
 
     @Test
     public void refreshUi_privacyPolicyMissing_throwsNoException() throws Exception {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-
-        when(mContext.getPackageManager()).thenReturn(mPackageManager);
-
         ApplicationInfo appInfo = new ApplicationInfo();
         Bundle bundle = new Bundle();
         appInfo.metaData = bundle;
@@ -228,12 +154,6 @@ public class AdasPrivacyPolicyDisclosurePreferenceControllerTest {
 
     @Test
     public void refreshUi_metaDataMissing_throwsNoException() throws Exception {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-
-        when(mContext.getPackageManager()).thenReturn(mPackageManager);
-
         ApplicationInfo appInfo = new ApplicationInfo();
         when(mPackageManager.getApplicationInfoAsUser(any(), anyInt(), anyInt()))
                 .thenReturn(appInfo);
@@ -250,12 +170,6 @@ public class AdasPrivacyPolicyDisclosurePreferenceControllerTest {
 
     @Test
     public void refreshUi_throwsNoException() throws Exception {
-        when(mPackageManager.checkPermission(
-                        eq(Manifest.permission.ACCESS_COARSE_LOCATION), anyString()))
-                .thenReturn(PackageManager.PERMISSION_GRANTED);
-
-        when(mContext.getPackageManager()).thenReturn(mPackageManager);
-
         when(mPackageManager.getApplicationInfoAsUser(any(), anyInt(), anyInt()))
                 .thenThrow(new NameNotFoundException());
 
@@ -263,11 +177,15 @@ public class AdasPrivacyPolicyDisclosurePreferenceControllerTest {
         assertThat(mPreference.getPreferenceCount()).isEqualTo(0);
     }
 
-    private void initializePreference() {
-        // This test is expected to run on a device with the adaslocation on the device, because of
-        // {@link AdasPrivacyPolicyUtil#createPrivacyPolicyPreference(Context, String, UserHandle)}
-        PackageTagsList list =
-                new PackageTagsList.Builder().add("com.google.android.car.adaslocation").build();
+    private void initializePreference() throws Exception {
+        ApplicationInfo appInfo = new ApplicationInfo();
+        Bundle bundle = new Bundle();
+        appInfo.metaData = bundle;
+        bundle.putCharSequence("privacy_policy", "test App Url");
+        when(mPackageManager.getApplicationInfoAsUser(any(), anyInt(), anyInt()))
+                .thenReturn(appInfo);
+
+        PackageTagsList list = new PackageTagsList.Builder().add("testApp").build();
         when(mLocationManager.getAdasAllowlist()).thenReturn(list);
 
         mPreferenceController.onCreate(mLifecycleOwner);

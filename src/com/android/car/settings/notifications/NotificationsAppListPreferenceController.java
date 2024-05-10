@@ -18,8 +18,10 @@ package com.android.car.settings.notifications;
 
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
 import android.graphics.drawable.Drawable;
 
+import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
@@ -61,31 +63,45 @@ public class NotificationsAppListPreferenceController extends
         getPreference().removeAll();
         for (ApplicationsState.AppEntry appEntry : apps) {
             getPreference().addPreference(
-                    createPreference(appEntry.label, appEntry.icon,
-                            appEntry.info.packageName, appEntry.info.uid));
+                    createPreference(appEntry.label, appEntry.icon, appEntry.info));
         }
     }
 
-    private Preference createPreference(String title, Drawable icon, String packageName, int uid) {
-        CarUiTwoActionSwitchPreference preference =
-                new CarUiTwoActionSwitchPreference(getContext());
+    private Preference createPreference(String title, Drawable icon, ApplicationInfo appInfo) {
+        String packageName = appInfo.packageName;
+        int uid = appInfo.uid;
+
+        CarUiTwoActionSwitchPreference preference = createPreference();
         preference.setTitle(title);
         preference.setIcon(icon);
         preference.setKey(packageName);
-        preference.setOnPreferenceClickListener(p -> {
-            getFragmentController().launchFragment(
-                    ApplicationDetailsFragment.getInstance(packageName));
-            return true;
-        });
+        preference.setOnPreferenceClickListener(p -> onPrimaryActionClick(packageName));
 
         preference.setOnSecondaryActionClickListener((newValue) -> {
-            toggleNotificationsSetting(packageName, uid, newValue);
-            if (mNotificationSwitchListener != null) {
-                mNotificationSwitchListener.onSwitchChanged();
-            }
+            onSecondaryActionClick(packageName, uid, newValue);
         });
         preference.setSecondaryActionChecked(areNotificationsEnabled(packageName, uid));
+        preference.setSecondaryActionEnabled(areNotificationsChangeable(appInfo));
 
         return preference;
+    }
+
+    @VisibleForTesting
+    CarUiTwoActionSwitchPreference createPreference() {
+        return new CarUiTwoActionSwitchPreference(getContext());
+    }
+
+    @VisibleForTesting
+    boolean onPrimaryActionClick(String packageName) {
+        getFragmentController().launchFragment(
+                ApplicationDetailsFragment.getInstance(packageName));
+        return true;
+    }
+    @VisibleForTesting
+    void onSecondaryActionClick(String packageName, int uid, boolean newValue) {
+        toggleNotificationsSetting(packageName, uid, newValue);
+        if (mNotificationSwitchListener != null) {
+            mNotificationSwitchListener.onSwitchChanged();
+        }
     }
 }

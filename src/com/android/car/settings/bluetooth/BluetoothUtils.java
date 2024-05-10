@@ -29,6 +29,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.text.TextUtils;
 import android.widget.Toast;
 
@@ -41,11 +42,15 @@ import com.android.settingslib.bluetooth.LocalBluetoothAdapter;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 import com.android.settingslib.bluetooth.LocalBluetoothManager.BluetoothManagerCallback;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * BluetoothUtils provides an interface to the preferences
  * related to Bluetooth.
  */
-final class BluetoothUtils {
+public final class BluetoothUtils {
     private static final Logger LOG = new Logger(BluetoothUtils.class);
     private static final String SHARED_PREFERENCES_NAME = "bluetooth_settings";
 
@@ -68,6 +73,9 @@ final class BluetoothUtils {
     private static final String KEY_LAST_SELECTED_DEVICE_TIME = "last_selected_device_time";
 
     private static final String KEY_DISCOVERABLE_END_TIMESTAMP = "discoverable_end_timestamp";
+
+    public static final String BLUETOOTH_SHOW_DEVICES_WITHOUT_NAMES_PROPERTY =
+            "persist.bluetooth.showdeviceswithoutnames";
 
     private BluetoothUtils() {
     }
@@ -236,8 +244,9 @@ final class BluetoothUtils {
         String settingsPackageName = context.getPackageName();
 
         // Find SystemUi package name
+        Resources resources = context.getResources();
         String systemUiPackageName;
-        String flattenName = context.getResources()
+        String flattenName = resources
                 .getString(com.android.internal.R.string.config_systemUIServiceComponent);
         if (TextUtils.isEmpty(flattenName)) {
             throw new IllegalStateException("No "
@@ -252,7 +261,18 @@ final class BluetoothUtils {
                     + flattenName);
         }
 
-        return TextUtils.equals(callingPackageName, settingsPackageName)
-                || TextUtils.equals(callingPackageName, systemUiPackageName);
+        // Find allowed package names
+        List<String> allowedPackages = new ArrayList<>(Arrays.asList(
+                resources.getStringArray(R.array.config_allowed_bluetooth_scanning_packages)));
+        allowedPackages.add(settingsPackageName);
+        allowedPackages.add(systemUiPackageName);
+
+        for (String allowedPackage : allowedPackages) {
+            if (TextUtils.equals(callingPackageName, allowedPackage)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

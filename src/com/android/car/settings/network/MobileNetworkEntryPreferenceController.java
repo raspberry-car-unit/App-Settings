@@ -19,6 +19,7 @@ package com.android.car.settings.network;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
 import android.database.ContentObserver;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
@@ -29,6 +30,7 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
 import androidx.annotation.CallSuper;
+import androidx.annotation.VisibleForTesting;
 
 import com.android.car.settings.R;
 import com.android.car.settings.common.FragmentController;
@@ -46,6 +48,7 @@ public class MobileNetworkEntryPreferenceController extends
     private final UserManager mUserManager;
     private final SubscriptionsChangeListener mChangeListener;
     private final SubscriptionManager mSubscriptionManager;
+    private final ConnectivityManager mConnectivityManager;
     private final TelephonyManager mTelephonyManager;
     private final int mSubscriptionId;
     private final ContentObserver mMobileDataChangeObserver = new ContentObserver(
@@ -63,6 +66,7 @@ public class MobileNetworkEntryPreferenceController extends
         mUserManager = UserManager.get(context);
         mChangeListener = new SubscriptionsChangeListener(context, /* action= */ this);
         mSubscriptionManager = context.getSystemService(SubscriptionManager.class);
+        mConnectivityManager = context.getSystemService(ConnectivityManager.class);
         mTelephonyManager = context.getSystemService(TelephonyManager.class);
         mSubscriptionId = SubscriptionManager.getDefaultDataSubscriptionId();
     }
@@ -75,16 +79,14 @@ public class MobileNetworkEntryPreferenceController extends
     @Override
     protected void onCreateInternal() {
         super.onCreateInternal();
-        getPreference().setOnSecondaryActionClickListener(isChecked -> {
-            mTelephonyManager.setDataEnabled(isChecked);
-        });
+        getPreference().setOnSecondaryActionClickListener(this::onSecondaryActionClick);
     }
 
     @Override
     protected void updateState(CarUiTwoActionSwitchPreference preference) {
         List<SubscriptionInfo> subs = SubscriptionUtils.getAvailableSubscriptions(
                 mSubscriptionManager, mTelephonyManager);
-        preference.setEnabled(!subs.isEmpty());
+        preference.setEnabled(!subs.isEmpty() && getAvailabilityStatus() == AVAILABLE);
         preference.setSummary(getSummary(subs));
         getPreference().setSecondaryActionChecked(mTelephonyManager.isDataEnabled());
     }
@@ -107,8 +109,9 @@ public class MobileNetworkEntryPreferenceController extends
     }
 
     @Override
-    protected int getAvailabilityStatus() {
-        if (!NetworkUtils.hasSim(mTelephonyManager)) {
+    protected int getDefaultAvailabilityStatus() {
+        if (!NetworkUtils.hasMobileNetwork(mConnectivityManager)
+                && !NetworkUtils.hasSim(mTelephonyManager)) {
             return UNSUPPORTED_ON_DEVICE;
         }
 
@@ -165,5 +168,10 @@ public class MobileNetworkEntryPreferenceController extends
             uri = Settings.Global.getUriFor(Settings.Global.MOBILE_DATA + subId);
         }
         return uri;
+    }
+
+    @VisibleForTesting
+    void onSecondaryActionClick(boolean isChecked) {
+        mTelephonyManager.setDataEnabled(isChecked);
     }
 }
