@@ -80,7 +80,16 @@ public class ShadowBluetoothAdapter extends org.robolectric.shadows.ShadowBlueto
         return mScanMode;
     }
 
-    @Implementation
+    @Implementation(methodName = "setScanMode")
+    protected int setScanModeFromT(int scanMode) {
+        if (getState() != STATE_ON) {
+            return BluetoothStatusCodes.ERROR_BLUETOOTH_NOT_ENABLED;
+        }
+        mScanMode = scanMode;
+        return BluetoothStatusCodes.SUCCESS;
+    }
+
+    @Implementation(methodName)
     protected Object setScanMode(int scanMode) {
         if (getState() != STATE_ON) {
             return BluetoothStatusCodes.ERROR_BLUETOOTH_NOT_ENABLED;
