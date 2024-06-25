@@ -152,8 +152,10 @@ public class WifiTetherPreferenceController extends
     }
 
     private void updateSummary(boolean hotspotEnabled) {
-        String subtitle = WifiTetherUtil.getHotspotSubtitle(getContext(),
-                mCarWifiManager.getSoftApConfig(), hotspotEnabled, mConnectedDevicesCount);
-        getPreference().setSummary(subtitle);
+        if(mCarWifiManager.getSoftApConfig() != null) {
+            String subtitle = WifiTetherUtil.getHotspotSubtitle(getContext(),
+                    mCarWifiManager.getSoftApConfig(), hotspotEnabled, mConnectedDevicesCount);
+            getPreference().setSummary(subtitle);
+        }
     }
 }
