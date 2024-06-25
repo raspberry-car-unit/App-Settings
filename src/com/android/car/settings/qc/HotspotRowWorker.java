@@ -76,7 +76,9 @@ public class HotspotRowWorker extends SettingsQCBackgroundWorker<HotspotRow> {
         if (!mCallbacksRegistered) {
             mTetheringManager.registerTetheringEventCallback(
                     new HandlerExecutor(mHandler), mTetheringEventCallback);
-            mWifiManager.registerSoftApCallback(getContext().getMainExecutor(), mSoftApCallback);
+            if(mWifiManager != null){
+                mWifiManager.registerSoftApCallback(getContext().getMainExecutor(), mSoftApCallback);
+            }
             mCallbacksRegistered = true;
         }
     }
@@ -93,7 +95,9 @@ public class HotspotRowWorker extends SettingsQCBackgroundWorker<HotspotRow> {
 
     private void unregisterCallbacks() {
         if (mCallbacksRegistered) {
-            mWifiManager.unregisterSoftApCallback(mSoftApCallback);
+            if(mWifiManager != null){
+                mWifiManager.unregisterSoftApCallback(mSoftApCallback);
+            }
             mTetheringManager.unregisterTetheringEventCallback(mTetheringEventCallback);
             mCallbacksRegistered = false;
         }
