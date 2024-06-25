@@ -1,0 +1,231 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8fed5971_70351710",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-06-25T17:07:54Z",
+      "side": 1,
+      "message": "nit: add a space after \"if\"",
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74f3e1a4_982e1a99",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-06-25T17:07:54Z",
+      "side": 1,
+      "message": "Please fix this WARNING reported by Check Contents: Lines longer than 100 characters should be wrapped to improve readability; see https://source.android.com/setup/contribute/code-style#limit-line-length for more details. See go/ayeaye-long-lines for ayeaye-specific info.\n\nAnalyzer Description: Validates that changes do not have prohibited expressions in them.\nOwner: ayeaye-team@google.com\n\nLines longer than 100 characters should be wrapped to improve readability; see https://source.android.com/setup/contribute/code-style#limit-line-length for more details. See go/ayeaye-long-lines for ayeaye-specific info.",
+      "range": {
+        "startLine": 80,
+        "startChar": 0,
+        "endLine": 80,
+        "endChar": 101
+      },
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4845cad8_37301f6f",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-06-25T17:07:54Z",
+      "side": 1,
+      "message": "Please move this into the above if statement",
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae151efd_dfb12c1a",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-06-25T17:07:54Z",
+      "side": 1,
+      "message": "nit: format like below to be consistent with the rest of the codebase\n\n } catch(NullPointerException e){",
+      "fixSuggestions": [
+        {
+          "fixId": "9a73f7e9_1955f0c8",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 173,
+                "startChar": 0,
+                "endLine": 175,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 186,
+                "startChar": 0,
+                "endLine": 188,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 199,
+                "startChar": 0,
+                "endLine": 201,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 212,
+                "startChar": 0,
+                "endLine": 214,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 224,
+                "startChar": 0,
+                "endLine": 226,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 237,
+                "startChar": 0,
+                "endLine": 239,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 248,
+                "startChar": 0,
+                "endLine": 250,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 259,
+                "startChar": 0,
+                "endLine": 261,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 270,
+                "startChar": 0,
+                "endLine": 272,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 280,
+                "startChar": 0,
+                "endLine": 282,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "678fd513_e488a9a2",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-06-25T17:07:54Z",
+      "side": 1,
+      "message": "Can you annotate this and other relevant methods as @Nullable? This may also cause issues elsewhere in the code where the callers don\u0027t expect the value to be nullable, for example WifiTetherPreferenceController calls `WifiTetherUtil.getHotspotSubtitle()` which will result in a NPE",
+      "fixSuggestions": [
+        {
+          "fixId": "0b73c231_317719de",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 196,
+                "startChar": 0,
+                "endLine": 196,
+                "endChar": 0
+              },
+              "replacement": "    @Nullable\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 221,
+                "startChar": 0,
+                "endLine": 221,
+                "endChar": 0
+              },
+              "replacement": "    @Nullable\n"
+            }
+          ]
+        }
+      ],
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
