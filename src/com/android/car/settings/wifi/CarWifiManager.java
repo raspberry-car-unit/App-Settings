@@ -119,8 +119,13 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      */
     @Nullable
     public WifiEntry getConnectedWifiEntry() {
-        if (mWifiManager.isWifiEnabled()) {
-            return mWifiTracker.getConnectedWifiEntry();
+        try {
+            if (mWifiManager.isWifiEnabled()) {
+                return mWifiTracker.getConnectedWifiEntry();
+            }
+        }
+        catch(NullPointerException e){
+            e.printStackTrace();
         }
         return null;
     }
@@ -163,62 +168,111 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      * Returns {@code true} if Wifi is enabled
      */
     public boolean isWifiEnabled() {
-        return mWifiManager.isWifiEnabled();
+        try {
+            return mWifiManager.isWifiEnabled();
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     /**
      * Returns {@code true} if Wifi tethering is enabled
      */
     public boolean isWifiApEnabled() {
-        return mWifiManager.isWifiApEnabled();
+        try {
+            return mWifiManager.isWifiApEnabled();
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     /**
      * Gets {@link SoftApConfiguration} for tethering
      */
+    @Nullable
     public SoftApConfiguration getSoftApConfig() {
-        return mWifiManager.getSoftApConfiguration();
+        try {
+            return mWifiManager.getSoftApConfiguration();
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**
      * Sets {@link SoftApConfiguration} for tethering
      */
     public void setSoftApConfig(SoftApConfiguration config) {
-        mWifiManager.setSoftApConfiguration(config);
+        try {
+            mWifiManager.setSoftApConfiguration(config);
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
     }
 
     /**
      * Gets the country code in ISO 3166 format.
      */
+    @Nullable
     public String getCountryCode() {
-        return mWifiManager.getCountryCode();
+        try {
+            return mWifiManager.getCountryCode();
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**
      * Checks if the chipset supports 5GHz frequency band.
      */
     public boolean is5GhzBandSupported() {
-        return mWifiManager.is5GHzBandSupported();
+        try {
+            return mWifiManager.is5GHzBandSupported();
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     /** Gets the wifi state from {@link WifiManager}. */
     public int getWifiState() {
-        return mWifiManager.getWifiState();
+        try {
+            return mWifiManager.getWifiState();
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     /** Sets whether wifi is enabled. */
     public boolean setWifiEnabled(boolean enabled) {
-        return mWifiManager.setWifiEnabled(enabled);
+        try {
+            return mWifiManager.setWifiEnabled(enabled);
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     /** Adds callback for Soft AP */
     public void registerSoftApCallback(Executor executor, WifiManager.SoftApCallback callback) {
-        mWifiManager.registerSoftApCallback(executor, callback);
+        try {
+            mWifiManager.registerSoftApCallback(executor, callback);
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
     }
 
     /** Removes callback for Soft AP */
     public void unregisterSoftApCallback(WifiManager.SoftApCallback callback) {
-        mWifiManager.unregisterSoftApCallback(callback);
+        try {
+            mWifiManager.unregisterSoftApCallback(callback);
+        } catch(NullPointerException e){
+            e.printStackTrace();
+        }
     }
 
     @Override
