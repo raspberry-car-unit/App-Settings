@@ -74,7 +74,9 @@ public class WifiTetherPasswordPreferenceController extends
     protected void onCreateInternal() {
         super.onCreateInternal();
         getPreference().setValidator(PASSWORD_VALIDATOR);
-        mSecurityType = getCarSoftApConfig().getSecurityType();
+        if (getCarSoftApConfig() != null) {
+            mSecurityType = getCarSoftApConfig().getSecurityType();
+        }
         syncPassword();
     }
 
@@ -135,9 +137,11 @@ public class WifiTetherPasswordPreferenceController extends
             return null;
         }
 
-        String passphrase = getCarSoftApConfig().getPassphrase();
-        if (!TextUtils.isEmpty(passphrase)) {
-            return passphrase;
+        if (getCarSoftApConfig() != null) {
+            String passphrase = getCarSoftApConfig().getPassphrase();
+            if (!TextUtils.isEmpty(passphrase)) {
+                return passphrase;
+            }
         }
 
         if (!TextUtils.isEmpty(
@@ -165,10 +169,12 @@ public class WifiTetherPasswordPreferenceController extends
         } else {
             passwordOrNullIfOpen = password;
         }
-        SoftApConfiguration config = new SoftApConfiguration.Builder(getCarSoftApConfig())
-                .setPassphrase(passwordOrNullIfOpen, mSecurityType)
-                .build();
-        setCarSoftApConfig(config);
+        if (getCarSoftApConfig() != null) {
+            SoftApConfiguration config = new SoftApConfiguration.Builder(getCarSoftApConfig())
+                    .setPassphrase(passwordOrNullIfOpen, mSecurityType)
+                    .build();
+            setCarSoftApConfig(config);
+        }
 
         if (!TextUtils.isEmpty(password)) {
             mSharedPreferences.edit().putString(KEY_SAVED_PASSWORD, password).commit();
