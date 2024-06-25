@@ -136,10 +136,13 @@ public class WifiTetherApBandPreferenceController extends
     }
 
     private void updateApBand() {
-        SoftApConfiguration config = new SoftApConfiguration.Builder(getCarSoftApConfig())
-                .setBand(mBand)
-                .build();
-        setCarSoftApConfig(config);
+        SoftApConfiguration config = getCarSoftApConfig();
+        if (config != null) {
+            config = new SoftApConfiguration.Builder(config)
+                    .setBand(mBand)
+                    .build();
+            setCarSoftApConfig(config);
+        }
         getPreference().setValue(getBandEntry());
     }
 
