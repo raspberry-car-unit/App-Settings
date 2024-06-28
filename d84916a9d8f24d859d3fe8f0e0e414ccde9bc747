@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41969b0d_37efe8ec",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-06-28T16:51:54Z",
+      "side": 1,
+      "message": "Can we make sure the callers handle a null variable so we don\u0027t get a NPE elsewhere in the code?",
+      "revId": "d84916a9d8f24d859d3fe8f0e0e414ccde9bc747",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2ceb95ba_895b8476",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-06-28T16:51:54Z",
+      "side": 1,
+      "message": "nit: remove extra indent",
+      "revId": "d84916a9d8f24d859d3fe8f0e0e414ccde9bc747",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
