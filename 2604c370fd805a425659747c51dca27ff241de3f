@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a020dfa4_49ee93c2",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-06-28T13:06:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8fed5971_70351710",
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "74f3e1a4_982e1a99",
@@ -41,6 +59,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8ced4e81_1298229a",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-06-28T13:06:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "74f3e1a4_982e1a99",
+      "range": {
+        "startLine": 80,
+        "startChar": 0,
+        "endLine": 80,
+        "endChar": 101
+      },
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4845cad8_37301f6f",
@@ -54,6 +96,24 @@
       "writtenOn": "2024-06-25T17:07:54Z",
       "side": 1,
       "message": "Please move this into the above if statement",
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "298e94af_c55129cc",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-06-28T13:06:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4845cad8_37301f6f",
       "revId": "2604c370fd805a425659747c51dca27ff241de3f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
@@ -183,6 +243,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "01f96170_50714389",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-06-28T13:06:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae151efd_dfb12c1a",
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "678fd513_e488a9a2",
@@ -224,6 +302,24 @@
           ]
         }
       ],
+      "revId": "2604c370fd805a425659747c51dca27ff241de3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3f09e5c_8325df4e",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-06-28T13:06:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "678fd513_e488a9a2",
       "revId": "2604c370fd805a425659747c51dca27ff241de3f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
