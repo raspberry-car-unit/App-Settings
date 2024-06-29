@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f016bf73_3f6fce95",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-06-29T15:24:22Z",
+      "side": 1,
+      "message": "Yes @Eric Chiang , at present NPE occurred when there is no try catch block for given API.",
+      "parentUuid": "41969b0d_37efe8ec",
+      "revId": "d84916a9d8f24d859d3fe8f0e0e414ccde9bc747",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2ceb95ba_895b8476",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-06-28T16:51:54Z",
       "side": 1,
       "message": "nit: remove extra indent",
+      "revId": "d84916a9d8f24d859d3fe8f0e0e414ccde9bc747",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "387f629d_820cab3f",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-06-29T15:24:22Z",
+      "side": 1,
+      "message": "Removed",
+      "parentUuid": "2ceb95ba_895b8476",
       "revId": "d84916a9d8f24d859d3fe8f0e0e414ccde9bc747",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
