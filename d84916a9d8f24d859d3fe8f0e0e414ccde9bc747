@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4caf69c8_a42e5d23",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-07-02T16:27:49Z",
+      "side": 1,
+      "message": "This just moves the NPE to other parts of the code. Callers don\u0027t expect the method to return nullable. Can you fix it for other classes? For example `WifiTetherPreferenceController` will now pass a null to `WifiTetherUtil.getHotspotSubtitle()` which will result in a NPE",
+      "parentUuid": "f016bf73_3f6fce95",
+      "revId": "d84916a9d8f24d859d3fe8f0e0e414ccde9bc747",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2ceb95ba_895b8476",
         "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
         "patchSetId": 2
