@@ -74,6 +74,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f200c642_ca74fb76",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-07-03T18:11:35Z",
+      "side": 1,
+      "message": "Can you fix the other uses such as as WifiTetherApBandPreferenceController, WifiTetherNamePreferenceController, etc.?",
+      "parentUuid": "743a7649_9a2f816f",
+      "revId": "d84916a9d8f24d859d3fe8f0e0e414ccde9bc747",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2ceb95ba_895b8476",
         "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
         "patchSetId": 2
