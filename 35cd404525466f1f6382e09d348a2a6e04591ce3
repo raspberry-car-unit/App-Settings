@@ -74,6 +74,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f33fc55a_be60998f",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-07-08T18:43:51Z",
+      "side": 1,
+      "message": "I meant changing the try-catch to if-else for `isWifiEnabled()` `isWifiApEnabled`, etc. in this file.",
+      "parentUuid": "86e99625_d6b631df",
+      "revId": "35cd404525466f1f6382e09d348a2a6e04591ce3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2209f109_e3879073",
         "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
         "patchSetId": 5
