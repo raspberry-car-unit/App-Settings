@@ -1,0 +1,56 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7570a671_f71b743e",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-07-08T16:10:06Z",
+      "side": 1,
+      "message": "I just want to make sure, is WifiManager null when the wifi feature is disabled or does the npe come from deeper in the framework? \n\nCan we use an if-else instead of a try-catch?\n\n```\nif (mWifiManager !\u003d null) {\n  // Normal logic\n} else {\n  // Log and return default value\n}\n```",
+      "revId": "35cd404525466f1f6382e09d348a2a6e04591ce3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2209f109_e3879073",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-07-08T16:10:06Z",
+      "side": 1,
+      "message": "nit: move to previous line and add a space after \"catch\"",
+      "fixSuggestions": [
+        {
+          "fixId": "5ea0d9c2_0008d534",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 126,
+                "startChar": 0,
+                "endLine": 128,
+                "endChar": 0
+              },
+              "replacement": "        } catch (NullPointerException e){\n"
+            }
+          ]
+        }
+      ],
+      "revId": "35cd404525466f1f6382e09d348a2a6e04591ce3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
