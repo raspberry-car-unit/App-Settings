@@ -54,6 +54,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "86e99625_d6b631df",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-07-08T18:42:00Z",
+      "side": 1,
+      "message": "Haven\u0027t found  in other functions, mentioned changes are done.",
+      "parentUuid": "be449733_d72dce03",
+      "revId": "35cd404525466f1f6382e09d348a2a6e04591ce3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2209f109_e3879073",
