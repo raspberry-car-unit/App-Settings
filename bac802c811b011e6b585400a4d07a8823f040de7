@@ -33,6 +33,200 @@
       "message": "@alexstetson@google.com please help to review the changes",
       "revId": "bac802c811b011e6b585400a4d07a8823f040de7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8f0de4c_b71220b0",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2024-07-08T22:54:07Z",
+      "side": 1,
+      "message": "nit: should have space between ) and { (same below)",
+      "range": {
+        "startLine": 79,
+        "startChar": 37,
+        "endLine": 79,
+        "endChar": 38
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "2fea6ec3_9c4b0a43",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+              "range": {
+                "startLine": 79,
+                "startChar": 0,
+                "endLine": 80,
+                "endChar": 0
+              },
+              "replacement": "            if (mWifiManager !\u003d null) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+              "range": {
+                "startLine": 99,
+                "startChar": 0,
+                "endLine": 100,
+                "endChar": 0
+              },
+              "replacement": "            if (mWifiManager !\u003d null) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "bac802c811b011e6b585400a4d07a8823f040de7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "306784b4_d6e13ef3",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2024-07-08T22:54:07Z",
+      "side": 1,
+      "message": "if this is nullable, should this return null? why return the empty string instead?",
+      "range": {
+        "startLine": 210,
+        "startChar": 8,
+        "endLine": 210,
+        "endChar": 18
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "e12fb8ac_053cdb1b",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 210,
+                "startChar": 0,
+                "endLine": 211,
+                "endChar": 0
+              },
+              "replacement": "        return null;\n"
+            }
+          ]
+        }
+      ],
+      "revId": "bac802c811b011e6b585400a4d07a8823f040de7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e114071f_d87c429b",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 228,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2024-07-08T22:54:07Z",
+      "side": 1,
+      "message": "should this return something like `WIFI_STATE_UNKNOWN` or `WIFI_STATE_DISABLED`? 0 corresponds to an intermediate state of `WIFI_STATE_DISABLING`",
+      "range": {
+        "startLine": 228,
+        "startChar": 15,
+        "endLine": 228,
+        "endChar": 16
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "d9b5844c_c1be6ce7",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 228,
+                "startChar": 0,
+                "endLine": 229,
+                "endChar": 0
+              },
+              "replacement": "        return WifiManager.WIFI_STATE_UNKNOWN;\n"
+            }
+          ]
+        }
+      ],
+      "revId": "bac802c811b011e6b585400a4d07a8823f040de7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ddaecd5_5d7492ed",
+        "filename": "src/com/android/car/settings/wifi/WifiTetherApBandPreferenceController.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2024-07-08T22:54:07Z",
+      "side": 1,
+      "message": "should we store this in a local variable so we don\u0027t have to call in twice if not null? same in other files",
+      "range": {
+        "startLine": 139,
+        "startChar": 12,
+        "endLine": 139,
+        "endChar": 32
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "6aea7740_987c5336",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/WifiTetherApBandPreferenceController.java",
+              "range": {
+                "startLine": 139,
+                "startChar": 0,
+                "endLine": 143,
+                "endChar": 0
+              },
+              "replacement": "        SoftApConfiguration config \u003d getCarSoftApConfig();\n        if (config !\u003d null) {\n            config \u003d new SoftApConfiguration.Builder(config).setBand(mBand).build();\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/WifiTetherApBandPreferenceController.java",
+              "range": {
+                "startLine": 144,
+                "startChar": 0,
+                "endLine": 145,
+                "endChar": 0
+              },
+              "replacement": ""
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/WifiTetherApBandPreferenceController.java",
+              "range": {
+                "startLine": 146,
+                "startChar": 0,
+                "endLine": 146,
+                "endChar": 0
+              },
+              "replacement": "        getPreference().setValue(getBandEntry());\n"
+            }
+          ]
+        }
+      ],
+      "revId": "bac802c811b011e6b585400a4d07a8823f040de7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
