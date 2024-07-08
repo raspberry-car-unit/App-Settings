@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "be449733_d72dce03",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-07-08T18:34:29Z",
+      "side": 1,
+      "message": "Thanks! One final comment, can you combine the if statements like so?\n```\nif (mWifiManager !\u003d null \u0026\u0026 mWifiManager.isWifiEnabled()) {\n    return mWifiTracker.getConnectedWifiEntry();\n} else {\n    return null;\n}\n```\n\nAnd do the same for all the other methods in the file?",
+      "parentUuid": "14879509_a96eee08",
+      "revId": "35cd404525466f1f6382e09d348a2a6e04591ce3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2209f109_e3879073",
         "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
         "patchSetId": 5
