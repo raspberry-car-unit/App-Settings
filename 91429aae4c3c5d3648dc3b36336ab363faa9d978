@@ -41,6 +41,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b37df3f9_17dc4424",
+        "filename": "src/com/android/car/settings/qc/HotspotRowWorker.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-07-09T16:42:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1c9cb355_e7529e96",
+      "range": {
+        "startLine": 99,
+        "startChar": 14,
+        "endLine": 99,
+        "endChar": 15
+      },
+      "revId": "91429aae4c3c5d3648dc3b36336ab363faa9d978",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "73a6338b_029fccaf",
@@ -78,6 +102,30 @@
           ]
         }
       ],
+      "revId": "91429aae4c3c5d3648dc3b36336ab363faa9d978",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3dc99ff5_3cbfba42",
+        "filename": "src/com/android/car/settings/wifi/WifiTetherPreferenceController.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-07-09T16:42:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "73a6338b_029fccaf",
+      "range": {
+        "startLine": 156,
+        "startChar": 10,
+        "endLine": 156,
+        "endChar": 12
+      },
       "revId": "91429aae4c3c5d3648dc3b36336ab363faa9d978",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
