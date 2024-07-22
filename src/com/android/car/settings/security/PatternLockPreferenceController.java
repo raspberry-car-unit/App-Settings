@@ -16,6 +16,8 @@
 
 package com.android.car.settings.security;
 
+import static android.app.admin.DevicePolicyManager.PASSWORD_COMPLEXITY_LOW;
+
 import android.app.admin.DevicePolicyManager;
 import android.app.admin.PasswordMetrics;
 import android.car.drivingstate.CarUxRestrictions;
@@ -59,5 +61,9 @@ public class PatternLockPreferenceController extends LockTypeBasePreferenceContr
         PasswordMetrics metrics = mLockPatternUtils.getRequestedPasswordMetrics(
                 UserHandle.myUserId(), /* deviceWideOnly= */ false);
         preference.setEnabled(metrics.credType <= LockPatternUtils.CREDENTIAL_TYPE_PATTERN);
+        int reqComplexity = mLockPatternUtils.getRequestedPasswordComplexity(
+                UserHandle.myUserId(), /* deviceWideOnly= */ false);
+        preference.setEnabled(metrics.credType <= LockPatternUtils.CREDENTIAL_TYPE_PATTERN &&
+                reqComplexity <= PASSWORD_COMPLEXITY_LOW);
     }
 }
