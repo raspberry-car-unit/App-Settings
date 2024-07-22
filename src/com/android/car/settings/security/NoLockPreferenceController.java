@@ -16,6 +16,8 @@
 
 package com.android.car.settings.security;
 
+import static android.app.admin.DevicePolicyManager.PASSWORD_COMPLEXITY_NONE;
+
 import android.app.admin.DevicePolicyManager;
 import android.app.admin.PasswordMetrics;
 import android.car.drivingstate.CarUxRestrictions;
@@ -104,7 +106,10 @@ public class NoLockPreferenceController extends LockTypeBasePreferenceController
 
         PasswordMetrics metrics = mLockPatternUtils.getRequestedPasswordMetrics(
                 UserHandle.myUserId(), /* deviceWideOnly= */ false);
-        preference.setEnabled(metrics.credType == LockPatternUtils.CREDENTIAL_TYPE_NONE);
+        int reqComplexity = mLockPatternUtils.getRequestedPasswordComplexity(
+                UserHandle.myUserId(), /* deviceWideOnly= */ false);
+        preference.setEnabled(metrics.credType == LockPatternUtils.CREDENTIAL_TYPE_NONE &&
+                reqComplexity == PASSWORD_COMPLEXITY_NONE);
     }
 
     private ConfirmationDialogFragment getConfirmRemoveScreenLockDialogFragment() {
