@@ -99,9 +99,12 @@ public class WifiEntryListPreferenceController extends
         preferenceGroup.setVisible(!mWifiEntries.isEmpty());
         preferenceGroup.removeAll();
 
-        WifiEntry connectedWifiEntry = getCarWifiManager().getConnectedWifiEntry();
-        for (WifiEntry wifiEntry : mWifiEntries) {
-            if (wifiEntry.equals(connectedWifiEntry)) {
+        List<WifiEntry> connectedWifiEntries = getCarWifiManager().getConnectedWifiEntries();
+        for (int i = 0; i < mWifiEntries.size(); i++) {
+            WifiEntry wifiEntry = mWifiEntries.get(i);
+
+            // fetchWifiEntries() sort the connected networks to the front
+            if (i < connectedWifiEntries.size()) {
                 preferenceGroup.addPreference(
                         createWifiEntryPreference(wifiEntry, /* connected= */  true));
             } else {
@@ -146,11 +149,10 @@ public class WifiEntryListPreferenceController extends
             wifiEntries = getCarWifiManager().getAllWifiEntries();
         }
 
-        WifiEntry connectedWifiEntry = getCarWifiManager().getConnectedWifiEntry();
-        // Insert current connected network as first item, if available
-        if (connectedWifiEntry != null) {
-            wifiEntries.add(0, connectedWifiEntry);
-        }
+        List<WifiEntry> connectedWifiEntries = getCarWifiManager().getConnectedWifiEntries();
+        // Insert current connected networks as first items, if available
+        wifiEntries.addAll(0, connectedWifiEntries);
+
         return wifiEntries;
     }
 
@@ -162,23 +164,28 @@ public class WifiEntryListPreferenceController extends
     private WifiEntryPreference createWifiEntryPreference(WifiEntry wifiEntry, boolean connected) {
         LOG.d("Adding preference for " + WifiUtil.getKey(wifiEntry));
         WifiEntryPreference wifiEntryPreference = new WifiEntryPreference(getContext(), wifiEntry);
-        wifiEntryPreference.setOnPreferenceClickListener(pref -> {
-            if (connected) {
-                if (wifiEntry.canSignIn()) {
-                    wifiEntry.signIn(/* callback= */ null);
+
+        // Make connected secondary networks unclickable
+        if (!connected || wifiEntry.isPrimaryNetwork()) {
+            wifiEntryPreference.setOnPreferenceClickListener(pref -> {
+                if (connected) {
+                    if (wifiEntry.canSignIn()) {
+                        wifiEntry.signIn(/* callback= */ null);
+                    } else {
+                        getFragmentController().launchFragment(
+                                WifiDetailsFragment.getInstance(wifiEntry));
+                    }
+                } else if (wifiEntry.shouldEditBeforeConnect()) {
+                    getFragmentController().showDialog(
+                            new WifiPasswordDialog(wifiEntry, mDialogListener),
+                            WifiPasswordDialog.TAG);
                 } else {
-                    getFragmentController().launchFragment(
-                            WifiDetailsFragment.getInstance(wifiEntry));
+                    wifiEntry.connect(
+                            new WifiEntryConnectCallback(wifiEntry, /* editIfNoConfig= */ true));
                 }
-            } else if (wifiEntry.shouldEditBeforeConnect()) {
-                getFragmentController().showDialog(
-                        new WifiPasswordDialog(wifiEntry, mDialogListener), WifiPasswordDialog.TAG);
-            } else {
-                wifiEntry.connect(
-                        new WifiEntryConnectCallback(wifiEntry, /* editIfNoConfig= */ true));
-            }
-            return true;
-        });
+                return true;
+            });
+        }
 
         if (wifiEntry.isSaved()) {
             wifiEntryPreference.setSecondaryActionIcon(R.drawable.ic_delete);

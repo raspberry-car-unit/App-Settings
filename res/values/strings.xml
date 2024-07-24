@@ -338,9 +338,11 @@
     <!-- Label that is shown as a dialog summary informing users they must pick at LEAST one band for their hotspot [CHAR LIMIT=25]-->
     <string name="wifi_ap_band_select_one">Choose at least one band for Wi\u2011Fi hotspot:</string>
     <!-- Tethering controls, item title to go into the tethering settings when USB, Bluetooth and Wifi tethering are available [CHAR LIMIT=60]-->
-    <string name="tether_settings_title_all">Hotspot &amp; tethering</string>
+    <string name="tether_settings_title_all">Wi\u2011Fi hotspot</string>
     <!-- Settings title to go into the hotspot settings when USB, Bluetooth and Wifi tethering are available [CHAR LIMIT=60]-->
     <string name="hotspot_settings_title">Hotspot</string>
+    <!-- The title for the switch to turn on and off the hotspot [CHAR LIMIT=45] -->
+    <string name="wifi_hotspot_switch_title">Use Wi\u2011Fi hotspot</string>
     <!-- Subtitle for when Wi-Fi hotspot is toggled off [CHAR LIMIT=45] -->
     <string name="wifi_hotspot_state_off">Off</string>
     <!-- Title for the toggle to turn off hotspot automatically [CHAR LIMIT=50]-->
@@ -349,8 +351,10 @@
     <string name="wifi_hotspot_auto_off_summary">Wi\u2011Fi hotspot will turn off if no devices are connected</string>
     <!-- Content description for the hotspot state switch. [CHAR LIMIT=NONE] -->
     <string name="wifi_hotspot_state_switch_content_description" translatable="false">Hotspot toggle switch</string>
-    <!-- Text for the hotspot QR code. -->
-    <string name="wifi_hotspot_qr_code_text">Scan this QR code to join</string>
+    <!-- Text for the hotspot QR code related information. [CHAR LIMIT=50] -->
+    <string name="wifi_hotspot_qr_code_text">Scan this QR code to join \u0022%s\u0022</string>
+    <!-- Text for the hotspot QR code related information. [CHAR LIMIT=50] -->
+    <string name="wifi_hotspot_qr_code_password_text">Hotspot password: %s</string>
     <!-- This string asks the user whether or not to allow an app to enable WiFi. [CHAR LIMIT=NONE] -->
     <string name="wifi_ask_enable"><xliff:g id="requester" example="FancyApp">%s</xliff:g> wants to turn on Wi-Fi</string>
     <!-- This string asks the user whether or not to allow an app to disable WiFi. [CHAR LIMIT=NONE] -->
@@ -373,6 +377,8 @@
     <string name="progress_scanning">Searching</string>
 
     <!-- Bluetooth settings --><skip/>
+    <!-- Title of Connected devices settings pages. [CHAR LIMIT=30] -->
+    <string name="connected_settings_title">Connected devices</string>
     <!-- Title of Bluetooth settings pages. [CHAR LIMIT=30] -->
     <string name="bluetooth_settings_title">Bluetooth</string>
     <!-- Title of Bluetooth toggle. [CHAR LIMIT=40] -->
@@ -532,6 +538,8 @@
     <string name="sound_alert_sounds">Alert sounds</string>
     <!-- Sound settings screen, setting option description of different alerts that can be changed [CHAR LIMIT=100] -->
     <string name="sound_alert_sounds_summary">Ringtone, notifications, alarm</string>
+    <!-- Title for the audio routes selector. [CHAR LIMIT=40] -->
+    <string name="audio_route_selector_title">Play media on</string>
 
     <!-- Display settings --><skip/>
     <!-- Display settings screen, setting option name to manage display brightness [CHAR LIMIT=60] -->
@@ -714,6 +722,8 @@
     <string name="not_installed">Not installed for this profile</string>
     <!-- Manage applications, individual application info screen, heading for settings related to the app's permissions. for example, it may list all the permissions the app has. -->
     <string name="permissions_label">Permissions</string>
+    <!-- Label for All Services preference in App info settings [CHAR LIMIT=40] -->
+    <string name="app_info_all_services_label">All services</string>
     <!-- Label for the toggle that enables/disables an app's notifications. [CHAR LIMIT=20] -->
     <string name="notifications_label">Notifications</string>
     <!-- Label that lead into individual application storage info screen -->
@@ -909,11 +919,6 @@
     <!-- Location --><skip/>
     <!-- Main setting menu item to go into location settings [CHAR LIMIT=40] -->
     <string name="location_settings_title">Location</string>
-    <!-- Location settings footer warning text [CHAR LIMIT=NONE] -->
-    <string name="location_settings_footer">
-        Location may use sources like GPS, Wi\u2011Fi, mobile networks, and sensors to help estimate
-        your device\u2019s location.
-    </string>
     <!-- Title of location toggle setting [CHAR LIMIT=40] -->
     <string name="location_toggle_title">Use location</string>
     <!-- Summary of location toggle setting [CHAR LIMIT=NONE] -->
@@ -1484,6 +1489,50 @@
     <string name="vehicle_data_delete_user_summary">Erase your profile and accounts from the infotainment system</string>
     <!-- Privacy settings screen, text that shows when a user tries to take an action that is unavailable to the current user. [CHAR LIMIT=60] -->
     <string name="action_unavailable">This action is unavailable for your profile</string>
+    <!-- Title of camera access page [CHAR LIMIT=40]-->
+    <string name="camera_access_settings_title">Camera access</string>
+    <!-- Summary of camera access page [CHAR LIMIT=NONE]-->
+    <string name="camera_access_settings_summary">Choose if apps can access your car\u2019s cameras</string>
+    <!-- Title of camera access radio group [CHAR LIMIT=NONE]-->
+    <string name="camera_access_radio_group_title">Use your car\u2019s cameras with:</string>
+    <!-- Title of camera access radio button any app [CHAR LIMIT=40]-->
+    <string name="camera_access_radio_any_app_title">Any App</string>
+    <!-- Summary of camera access radio button any app [CHAR LIMIT=NONE]-->
+    <string name="camera_access_radio_any_app_summary">Any app you\u2019ve allowed to access your camera</string>
+     <!-- Title of camera access radio button no apps [CHAR LIMIT=40]-->
+    <string name="camera_access_radio_no_apps_title">No Apps</string>
+    <!-- Summary of camera access radio button no apps [CHAR LIMIT=NONE]-->
+    <string name="camera_access_radio_no_apps_summary">None of your apps</string>
+     <!-- Title of camera access radio button helpful apps [CHAR LIMIT=40]-->
+    <string name="camera_access_radio_helpful_apps_title">Apps that help you drive</string>
+    <!-- Summary of camera access radio button helpful apps [CHAR LIMIT=NONE]-->
+    <string name="camera_access_radio_helpful_apps_summary">Apps that assist with things like showing your surroundings when parking</string>
+    <!-- Title of camera access radio button required apps [CHAR LIMIT=40]-->
+    <string name="camera_access_radio_required_apps_title">Only required apps</string>
+    <!-- Summary of camera access radio button required apps [CHAR LIMIT=NONE]-->
+    <string name="camera_access_radio_required_apps_summary">Only apps required by your car\u2019s manufacturer</string>
+     <!-- Title of camera access radio button helpful and required apps [CHAR LIMIT=40]-->
+    <string name="camera_access_radio_helpful_required_apps_title">Apps that help you drive</string>
+    <!-- Summary of camera access radio button helpful and required apps [CHAR LIMIT=NONE]-->
+    <string name="camera_access_radio_helpful_required_apps_summary">Apps that assist with things like showing your surroundings when parking, and required apps</string>
+    <!-- Title of helpful apps accessing camera-->
+    <string name="camera_helpful_apps_list_title">Apps that help you drive</string>
+    <!-- Summary of helpful apps accessing camera-->
+    <string name="camera_helpful_apps_list_summary">These apps can access your camera to assist with driving</string>
+    <!-- Title of required apps accessing camera-->
+    <string name="camera_required_apps_list_title">Required apps</string>
+    <!-- Summary of required apps accessing camera-->
+    <string name="camera_required_apps_list_summary">These apps are needed to help your car function safely</string>
+    <string name="camera_privacy_policy_button_text">Policy</string>
+    <!-- Camera access page disclaimer summary [CHAR LIMIT=NONE] -->
+    <string name="camera_access_disclaimer_summary">
+        Your car manufacturer may still have access to your car\u2019s camera. You can review
+        their policies for more info.
+    </string>
+     <!-- Camera access privacy policy info summary [CHAR LIMIT=NONE] -->
+    <string name="camera_privacy_policy_info_summary">
+        Learn more about how each app uses your Camera by reviewing its Privacy Policy.
+    </string>
 
     <!-- security lock --><skip/>
     <!-- Title for security settings [CHAR LIMIT=20] -->
@@ -1842,6 +1891,8 @@
     <string name="qc_bluetooth_off_devices_info">To see your devices, turn on Bluetooth</string>
     <!-- Informational text to be shown when bluetooth devices can't be shown in quick controls because no devices are paired [CHAR LIMIT=75] -->
     <string name="qc_bluetooth_on_no_devices_info">To pair a device, open Bluetooth settings</string>
+    <!-- UI Mode quick control, control name to change display UI mode (auto/day/night) [CHAR LIMIT=40] -->
+    <string name="qc_ui_mode_title">Theme</string>
 
     <!-- Device Policy Management --><skip/>
     <!-- Device admin add activity title -->

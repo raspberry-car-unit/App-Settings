@@ -160,11 +160,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Mindestens ein Band für WLAN-Hotspot wählen:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"Hotspot und Tethering"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"WLAN-Hotspot"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"WLAN-Hotspot verwenden"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Aus"</string>
     <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Hotspot automatisch deaktivieren"</string>
     <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Der WLAN-Hotspot wird deaktiviert, wenn keine Geräte verbunden sind"</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Scanne diesen QR-Code, um „%s“ beizutreten"</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Hotspot-Passwort: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> möchte die WLAN-Funktion aktivieren"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> möchte die WLAN-Funktion deaktivieren"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Fehler"</string>
@@ -175,6 +178,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Verbindung hergestellt"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Alle anzeigen"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Suche läuft"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"Verbundene Geräte"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"Bluetooth verwenden"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Unbenanntes Gerät"</string>
@@ -250,6 +254,7 @@
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Speichern"</string>
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Warntöne"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Klingelton, Benachrichtigungen, Wecker"</string>
+    <string name="audio_route_selector_title" msgid="9137648859313120159">"Medien abspielen über"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Helligkeit"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Bildschirm für geringe Helligkeit anpassen"</string>
     <string name="units_settings" msgid="402325305096925886">"Einheiten"</string>
@@ -322,6 +327,7 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"App deaktivieren"</string>
     <string name="not_installed" msgid="4163454337822508007">"Für dieses Profil nicht installiert"</string>
     <string name="permissions_label" msgid="2701446753515612685">"Berechtigungen"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"Alle Dienste"</string>
     <string name="notifications_label" msgid="6586089149665170731">"Benachrichtigungen"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"Speicher und Cache"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"App-Leistung priorisieren"</string>
@@ -408,28 +414,28 @@
     <string name="more_special_access_title" msgid="166115485446645971">"Mehr"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Standort"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Standort verwenden"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"Angegebenen Apps Standortzugriff erlauben"</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"Du kannst den Standort deines Autos mit den von dir ausgewählten Apps verwenden."</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Wenn du diese Funktion deaktivierst, wird der Standortzugriff für alle Apps entfernt, außer für diejenigen, die für das Fahrassistenzsystem benötigt werden"</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"Standort für Fahrassistenzsystem verwenden"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"Fahrzeugstandort ist deaktiviert"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"Fahrassistenzsystem-Apps: kein Standortzugriff"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"Ändern"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"Fahrassistenzsystem Zugriff auf Standort erlauben"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"Wenn du diese Funktion deaktivierst, werden Fahrassistenzsystem-Apps deaktiviert, die Standortinformationen benötigen."</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"Trotzdem deaktivieren"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Wenn du diese Funktion deaktivierst, werden Fahrassistenzsystem-Apps deaktiviert, die Standortinformationen benötigen"</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Trotzdem deaktivieren"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Diese Einstellung kann nicht geändert werden und wurde von deinem Fahrzeughersteller deaktiviert."</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"Funktionen des Fahrassistenzsystems"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Dadurch erlaubst du integrierten Funktionen, die vom Fahrzeughersteller genehmigt wurden, auf den Standort deines Autos zuzugreifen."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Vor Kurzem zugegriffen"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Vor Kurzem zugegriffen"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Alle ansehen"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"Keine Apps, die vor Kurzem zugegriffen haben"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • Fahrassistenzsystem"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"Apps mit der Berechtigung, für Fahrassistenzfunktionen auf den Standort dieses Fahrzeugs zuzugreifen"</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"Datenschutzerklärung"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • Fahrassistenzsystem • Zugriff erforderlich"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"Funktionen des Fahrassistenzsystems"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"Richtlinie"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Berechtigungen auf App-Ebene"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"Du kannst einzelne App-Berechtigungen verwalten"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Standortdienste"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Standort verwenden"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"Der Standortdienst kann Quellen wie GPS, WLANs, Mobilfunknetze und Sensoren nutzen, um den Standort deines Geräts zu ermitteln."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Fahrassistenzsystem"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"Standortinformationen, die an Fahrassistenzsystem-Apps gesendet werden, enthalten keine Daten, anhand derer du identifiziert werden kannst. Die Informationen werden vor dem Löschen höchstens 2 Tage lang gespeichert."</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"Standortzugriff"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"Du kannst festlegen, ob Apps auf den Standort deines Autos zugreifen können"</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"Dein Fahrzeughersteller kann möglicherweise weiterhin auf den Standort deines Autos zugreifen. Mehr dazu findest du vielleicht in dessen Richtlinien."</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"Diese integrierten Funktionen erfordern Zugriff auf den Standort deines Autos, um beim Fahren zu assistieren.\n\nWeitere Informationen dazu, wie Apps deine Standortdaten verwenden, findest du in der Datenschutzerklärung der jeweiligen App."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"Mikrofon"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"Mikrofon verwenden"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"Allen Apps den Zugriff auf dein Mikrofon gewähren"</string>
@@ -637,6 +643,26 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Profil löschen"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Mein Profil und meine Konten aus dem Infotainmentsystem löschen"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Diese Aktion ist für dein Profil nicht verfügbar"</string>
+    <string name="camera_access_settings_title" msgid="1841809323727456945">"Kamerazugriff"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Du kannst festlegen, ob Apps auf die Kameras deines Autos zugreifen können"</string>
+    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Die Kameras deines Autos werden für folgende Apps verwendet:"</string>
+    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Jede App"</string>
+    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Jede App, der du den Zugriff auf deine Kamera gewährt hast"</string>
+    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Keine Apps"</string>
+    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Keine deiner Apps"</string>
+    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Apps, die dir beim Fahren helfen"</string>
+    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Apps, die assistieren, indem sie beispielsweise die Umgebung beim Parken zeigen"</string>
+    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Nur erforderliche Apps"</string>
+    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Nur Apps, die für den Fahrzeughersteller erforderlich sind"</string>
+    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Apps, die dir beim Fahren helfen"</string>
+    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Apps, die assistieren, indem sie beispielsweise die Umgebung beim Parken zeigen, sowie erforderliche Apps"</string>
+    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Apps, die dir beim Fahren helfen"</string>
+    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Diese Apps können auf deine Kamera zugreifen, um beim Fahren zu assistieren"</string>
+    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Erforderliche Apps"</string>
+    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Diese Apps sind erforderlich, damit dein Auto sicher funktioniert"</string>
+    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Datenschutzerklärung"</string>
+    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Dein Fahrzeughersteller kann möglicherweise weiterhin auf die Kamera deines Autos zugreifen. Mehr dazu findest du vielleicht in dessen Richtlinien."</string>
+    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Weitere Informationen dazu, wie einzelne Apps deine Kamera nutzen, findest du in der jeweiligen Datenschutzerklärung."</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Sicherheit"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Displaysperre"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Keine"</string>
@@ -738,10 +764,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"Demo beenden"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"SCHLIEẞEN"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"Funktion während der Fahrt nicht verfügbar"</string>
-    <!-- no translation found for restricted_for_passenger (7240117443887727753) -->
-    <skip />
-    <!-- no translation found for restricted_for_driver (3364388937671526800) -->
-    <skip />
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"Bitte den Fahrer, die Einstellung zu ändern"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"Du kannst diese Aktion nicht durchführen"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"Während der Fahrt kann kein Profil hinzugefügt werden"</string>
     <string name="default_search_query" msgid="3137420627428857068">"Suche"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistant &amp; Voice"</string>
@@ -757,9 +781,11 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"Profil hinzufügen"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"Profil löschen"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"Profil hinzufügen"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"Das Profil ist als Fahrer angemeldet. Versuche es noch einmal, wenn es nicht als Fahrer angemeldet ist."</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"Helligkeit des Displays"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Aktiviere Bluetooth, um deine Geräte anzuzeigen"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Öffne die Bluetooth-Einstellungen, um ein Gerät zu koppeln"</string>
+    <string name="qc_ui_mode_title" msgid="2425571805732530923">"Design"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Administrator des Infotainmentsystems"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktivierte Apps"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Deaktivierte Apps"</string>
