@@ -118,6 +118,7 @@
 
         <activity
             android:name=".common.SubSettingsActivity"
+            android:configChanges="uiMode"
             android:windowSoftInputMode="adjustPan">
             <meta-data android:name="com.android.car.settings.SINGLE_PANE" android:value="true"/>
             <meta-data android:name="distractionOptimized" android:value="true"/>
@@ -790,7 +791,7 @@
 
         <activity
             android:name=".profiles.ProfileSwitcherActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <meta-data android:name="com.android.car.settings.SINGLE_PANE" android:value="true"/>
