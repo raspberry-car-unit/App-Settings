@@ -16,6 +16,171 @@
       "message": "Hi Google Team, please help to review the changes.",
       "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "17725ba4_4138fb16",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-01T16:52:43Z",
+      "side": 1,
+      "message": "Both mWifiManager and mWifiTracker are assumed non-null elsewhere in the class. Can we annotate them as @Nullable and null check them appropriately?",
+      "fixSuggestions": [
+        {
+          "fixId": "23cb1673_78dafd78",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 25,
+                "startChar": 0,
+                "endLine": 25,
+                "endChar": 0
+              },
+              "replacement": "import android.support.annotation.Nullable;\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 51,
+                "startChar": 0,
+                "endLine": 52,
+                "endChar": 0
+              },
+              "replacement": "    @Nullable private WifiManager mWifiManager;\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 122,
+                "startChar": 0,
+                "endLine": 123,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager !\u003d null \u0026\u0026 mWifiManager.isWifiEnabled()) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 144,
+                "startChar": 0,
+                "endLine": 145,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager !\u003d null \u0026\u0026 mWifiManager.isWifiEnabled()) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 166,
+                "startChar": 0,
+                "endLine": 167,
+                "endChar": 0
+              },
+              "replacement": "        return mWifiManager !\u003d null \u0026\u0026 mWifiManager.isWifiEnabled();\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 173,
+                "startChar": 0,
+                "endLine": 174,
+                "endChar": 0
+              },
+              "replacement": "        return mWifiManager !\u003d null \u0026\u0026 mWifiManager.isWifiApEnabled();\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 180,
+                "startChar": 0,
+                "endLine": 181,
+                "endChar": 0
+              },
+              "replacement": "        return mWifiManager !\u003d null ? mWifiManager.getSoftApConfiguration() : null;\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 187,
+                "startChar": 0,
+                "endLine": 188,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager !\u003d null) {\n            mWifiManager.setSoftApConfiguration(config);\n        }\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 194,
+                "startChar": 0,
+                "endLine": 195,
+                "endChar": 0
+              },
+              "replacement": "        return mWifiManager !\u003d null ? mWifiManager.getCountryCode() : null;\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 201,
+                "startChar": 0,
+                "endLine": 202,
+                "endChar": 0
+              },
+              "replacement": "        return mWifiManager !\u003d null \u0026\u0026 mWifiManager.is5GHzBandSupported();\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 206,
+                "startChar": 0,
+                "endLine": 207,
+                "endChar": 0
+              },
+              "replacement": "        return mWifiManager !\u003d null ? mWifiManager.getWifiState() : WifiManager.WIFI_STATE_UNKNOWN;\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 211,
+                "startChar": 0,
+                "endLine": 212,
+                "endChar": 0
+              },
+              "replacement": "        return mWifiManager !\u003d null \u0026\u0026 mWifiManager.setWifiEnabled(enabled);\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 216,
+                "startChar": 0,
+                "endLine": 217,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager !\u003d null) {\n            mWifiManager.registerSoftApCallback(executor, callback);\n        }\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 221,
+                "startChar": 0,
+                "endLine": 222,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager !\u003d null) {\n            mWifiManager.unregisterSoftApCallback(callback);\n        }\n"
+            }
+          ]
+        }
+      ],
+      "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
