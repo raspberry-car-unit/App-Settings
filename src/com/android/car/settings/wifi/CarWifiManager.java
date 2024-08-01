@@ -82,9 +82,11 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
                 + "{" + Integer.toHexString(System.identityHashCode(this)) + "}",
                 android.os.Process.THREAD_PRIORITY_BACKGROUND);
         mWorkerThread.start();
-        mWifiTracker = WifiUtil.createWifiPickerTracker(lifecycle, context,
-                new Handler(Looper.getMainLooper()), mWorkerThread.getThreadHandler(),
-                /* listener= */ this);
+        if (mWifiManager != null) {
+            mWifiTracker = WifiUtil.createWifiPickerTracker(lifecycle, context,
+                    new Handler(Looper.getMainLooper()), mWorkerThread.getThreadHandler(),
+                    /* listener= */ this);
+        }
     }
 
     /**
@@ -266,9 +268,11 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
 
     @Override
     public void onWifiStateChanged() {
-        int state = mWifiTracker.getWifiState();
-        for (Listener listener : mListeners) {
-            listener.onWifiStateChanged(state);
+        if (mWifiTracker != null) {
+            int state = mWifiTracker.getWifiState();
+            for (Listener listener : mListeners) {
+                listener.onWifiStateChanged(state);
+            }
         }
     }
 }
