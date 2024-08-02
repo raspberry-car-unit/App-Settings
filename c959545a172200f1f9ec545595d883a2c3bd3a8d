@@ -199,6 +199,24 @@
       "parentUuid": "17725ba4_4138fb16",
       "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5a9ad05_c7277891",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-02T16:14:52Z",
+      "side": 1,
+      "message": "I see, please cherrypick the other CL and add the null check for WifiTracker.",
+      "parentUuid": "914a716f_2d1d6ad4",
+      "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
