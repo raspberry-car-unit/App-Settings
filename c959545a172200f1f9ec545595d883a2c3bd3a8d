@@ -181,6 +181,24 @@
       ],
       "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "914a716f_2d1d6ad4",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-08-02T05:58:18Z",
+      "side": 1,
+      "message": "Hi @eschiang@google.com, we have already a patch merged in dev branch for mWifiManager null check. Patch link: https://android-review.googlesource.com/c/platform/packages/apps/Car/Settings/+/3146117 . We can cherry-pick the same patch to mainline if required. Please let us know do we need to cherry-pick?\n\nMeanwhile we can add null check for mWifiTracker.",
+      "parentUuid": "17725ba4_4138fb16",
+      "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
