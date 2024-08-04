@@ -217,6 +217,24 @@
       "parentUuid": "914a716f_2d1d6ad4",
       "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d35db33_6b7630b1",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-08-04T06:30:23Z",
+      "side": 1,
+      "message": "@eschiang@google.com below is the patch link for main line. will add wifitracker changes separately.  Please let us know if any concerns on this approach.\n\nhttps://android-review.googlesource.com/c/platform/packages/apps/Car/Settings/+/3204254",
+      "parentUuid": "c5a9ad05_c7277891",
+      "revId": "c959545a172200f1f9ec545595d883a2c3bd3a8d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
