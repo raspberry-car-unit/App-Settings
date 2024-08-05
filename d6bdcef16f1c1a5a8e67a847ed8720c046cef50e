@@ -16,6 +16,24 @@
       "message": "@eschiang@google.com please help to share the error log.",
       "revId": "d6bdcef16f1c1a5a8e67a847ed8720c046cef50e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e700283e_d50d73cf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-05T16:38:24Z",
+      "side": 1,
+      "message": "There are automerge conflicts, please rebase this CL on the cherrypick",
+      "parentUuid": "47b9bb4e_7ff56199",
+      "revId": "d6bdcef16f1c1a5a8e67a847ed8720c046cef50e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
