@@ -44,8 +44,6 @@ import com.android.car.settings.common.PreferenceController;
 import com.android.wifitrackerlib.WifiEntry;
 import com.android.car.settings.units.AndroidKeystoreAliasLoader;
 
-import android.security.Credentials;
-import android.security.KeyStore;
 import android.security.keystore.KeyProperties;
 
 import java.util.ArrayList;
