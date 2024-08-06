@@ -69,6 +69,24 @@
       "message": "@eschiang@google.com its again failing. \"INFRA ERROR\" seems its internal to Google and we are not sure how to reproduce the issue locally. Please let us know if any thoughts on this.",
       "revId": "3234400654dbf10f590da638637aa53db7b182c8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81efc08d_ae8cfd88",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-06T16:44:45Z",
+      "side": 1,
+      "message": "The infrastructure issue has been identified and we are in the process of fixing it. Likely we need to wait for the fix to land.",
+      "parentUuid": "ea3a94ea_e84a5da6",
+      "revId": "3234400654dbf10f590da638637aa53db7b182c8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
