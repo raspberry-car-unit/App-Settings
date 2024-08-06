@@ -16,6 +16,24 @@
       "message": "@eschiang@google.com please help to share the error log. \nI did the rebase, no new changes in repo.",
       "revId": "3234400654dbf10f590da638637aa53db7b182c8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6b5100c_f702f3d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-06T04:20:11Z",
+      "side": 1,
+      "message": "It was an infrastructure error. I started presubmit checks again, hopefully it\u0027s more stable now",
+      "parentUuid": "07306149_4128aa4d",
+      "revId": "3234400654dbf10f590da638637aa53db7b182c8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
