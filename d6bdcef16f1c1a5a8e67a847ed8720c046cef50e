@@ -36,6 +36,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "320015f6_addec31a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-08-06T01:38:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e700283e_d50d73cf",
+      "revId": "d6bdcef16f1c1a5a8e67a847ed8720c046cef50e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ac5bdd98_dd31fe23",
@@ -49,6 +67,30 @@
       "writtenOn": "2024-08-05T20:21:37Z",
       "side": 1,
       "message": "Please fix this ERROR reported by Build Warnings: could not resolve Nullable\n\nAnalyzer Description: Reports warnings that originate from build.log in the build artifacts.\nOwner: farivar@google.com\n\n    could not resolve Nullable\n        @Nullable\n        ^\n\nThis finding was found on https://android-build.googleplex.com/builds/build-details/P78660199/targets/aosp_cf_x86_64_phone-trunk_staging-userdebug, but may also be present on other builds.\n\nThis is a different branch than your cl originated on (it was automerged), and thus might better reflect the state of the code in the aosp-main branch.",
+      "range": {
+        "startLine": 183,
+        "startChar": 0,
+        "endLine": 183,
+        "endChar": 13
+      },
+      "revId": "d6bdcef16f1c1a5a8e67a847ed8720c046cef50e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00509b47_3bf14430",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-08-06T01:38:28Z",
+      "side": 1,
+      "message": "Added import androidx.annotation.Nullable;\n\nPlease help to review the changes again",
+      "parentUuid": "ac5bdd98_dd31fe23",
       "range": {
         "startLine": 183,
         "startChar": 0,
