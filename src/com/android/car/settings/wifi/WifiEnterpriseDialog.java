@@ -50,8 +50,6 @@ import com.android.car.ui.preference.CarUiDialogFragment;
 import com.android.wifitrackerlib.WifiEntry;
 import com.android.car.settings.units.AndroidKeystoreAliasLoader;
 
-import android.security.Credentials;
-import android.security.KeyStore;
 import android.security.keystore.KeyProperties;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -501,10 +499,6 @@ public class WifiEnterpriseDialog extends CarUiDialogFragment
 
         setSelection(mEapCaCertSpinner, mUseSystemCertsString);
         mEapCaCertSpinner.setEnabled(true);
-    }
-
-    private KeyStore getKeyStore() {
-        return KeyStore.getInstance();
     }
 
     private AndroidKeystoreAliasLoader getAndroidKeystoreAliasLoader() {
