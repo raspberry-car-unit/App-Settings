@@ -16,6 +16,24 @@
       "message": "@eschiang@google.com we found issues in patch. Updated the changes. Please help to retrigger the pre-submit",
       "revId": "b03adfe4c7dedb529e1a09b0487886dd08db0d84",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9cac28f5_7707729c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-07T22:27:10Z",
+      "side": 1,
+      "message": "There seems to be merge conflicts still, specifically with WifiTetherApBandPreferenceController. I\u0027m trying to cherrypick it internally to try to resolve the issue",
+      "parentUuid": "11462140_e923e120",
+      "revId": "b03adfe4c7dedb529e1a09b0487886dd08db0d84",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
