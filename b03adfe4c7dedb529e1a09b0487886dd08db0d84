@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11462140_e923e120",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-08-07T06:35:00Z",
+      "side": 1,
+      "message": "@eschiang@google.com we found issues in patch. Updated the changes. Please help to retrigger the pre-submit",
+      "revId": "b03adfe4c7dedb529e1a09b0487886dd08db0d84",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
