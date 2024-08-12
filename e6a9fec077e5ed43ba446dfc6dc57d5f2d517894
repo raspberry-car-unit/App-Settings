@@ -16,6 +16,58 @@
       "message": "Hi @eschiang@google.com @qal@google.com @alexstetson@google.com, please help to review the changes",
       "revId": "e6a9fec077e5ed43ba446dfc6dc57d5f2d517894",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d080640_f57a0ab5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-12T17:24:10Z",
+      "side": 1,
+      "message": "Please rebase the changes and make sure all instances of mWifiTracker and null checked.",
+      "revId": "e6a9fec077e5ed43ba446dfc6dc57d5f2d517894",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "139bd1c4_263a2a1e",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-12T17:24:10Z",
+      "side": 1,
+      "message": "Can we null check mWifiTracker instead?",
+      "fixSuggestions": [
+        {
+          "fixId": "97c2b717_f05b342f",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 241,
+                "startChar": 0,
+                "endLine": 242,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiTracker !\u003d null) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "e6a9fec077e5ed43ba446dfc6dc57d5f2d517894",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
