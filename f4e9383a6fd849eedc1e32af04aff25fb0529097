@@ -16,6 +16,138 @@
       "message": "@eschiang@google.com Commit has been rebased now. Please help to review",
       "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b9ff047_cbe1887b",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-13T16:16:16Z",
+      "side": 1,
+      "message": "nit: annotate as @Nullable",
+      "fixSuggestions": [
+        {
+          "fixId": "4c9e8656_6a691b3d",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 51,
+                "startChar": 0,
+                "endLine": 52,
+                "endChar": 0
+              },
+              "replacement": "    @Nullable private WifiPickerTracker mWifiTracker;\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43fa8cbf_f2387b4e",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-13T16:16:16Z",
+      "side": 1,
+      "message": "Same as bove",
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "578374f5_ae829132",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-13T16:16:16Z",
+      "side": 1,
+      "message": "Can we null check mWifiTracker here as well?",
+      "fixSuggestions": [
+        {
+          "fixId": "d7132300_53001656",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 123,
+                "startChar": 0,
+                "endLine": 124,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager !\u003d null \u0026\u0026 mWifiManager.isWifiEnabled() \u0026\u0026 mWifiTracker !\u003d null) {\n"
+            },
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 145,
+                "startChar": 0,
+                "endLine": 146,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager.isWifiEnabled() \u0026\u0026 mWifiTracker !\u003d null) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1186f841_3adde6dd",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2024-08-13T16:16:16Z",
+      "side": 1,
+      "message": "Please null check mWifiManager and mWifiTracker",
+      "fixSuggestions": [
+        {
+          "fixId": "1bc702d8_0d3dd418",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/CarWifiManager.java",
+              "range": {
+                "startLine": 145,
+                "startChar": 0,
+                "endLine": 146,
+                "endChar": 0
+              },
+              "replacement": "        if (mWifiManager !\u003d null \u0026\u0026 mWifiManager.isWifiEnabled()) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
