@@ -53,6 +53,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce884474_ba070f19",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-08-13T17:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2b9ff047_cbe1887b",
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "43fa8cbf_f2387b4e",
@@ -66,6 +84,24 @@
       "writtenOn": "2024-08-13T16:16:16Z",
       "side": 1,
       "message": "Same as bove",
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3e44850_6a752391",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-08-13T17:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "43fa8cbf_f2387b4e",
       "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
@@ -115,6 +151,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b9cc1e8_40c65a85",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-08-13T17:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "578374f5_ae829132",
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1186f841_3adde6dd",
@@ -146,6 +200,24 @@
           ]
         }
       ],
+      "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f23ad55_e172650c",
+        "filename": "src/com/android/car/settings/wifi/CarWifiManager.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 3507068
+      },
+      "writtenOn": "2024-08-13T17:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1186f841_3adde6dd",
       "revId": "f4e9383a6fd849eedc1e32af04aff25fb0529097",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
