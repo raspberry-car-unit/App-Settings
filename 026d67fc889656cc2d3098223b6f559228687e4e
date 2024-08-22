@@ -85,6 +85,24 @@
       "message": "No worries,",
       "revId": "026d67fc889656cc2d3098223b6f559228687e4e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0808772a_a0764110",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2051900
+      },
+      "writtenOn": "2024-08-22T17:35:47Z",
+      "side": 1,
+      "message": "Thanks for the confirmation @eschiang@google.com",
+      "parentUuid": "b123d3c0_8858ffce",
+      "revId": "026d67fc889656cc2d3098223b6f559228687e4e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
