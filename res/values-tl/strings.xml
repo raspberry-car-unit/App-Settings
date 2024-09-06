@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Level ng brightness"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Adaptive brightness"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Iangkop ang liwanag ng screen sa kapaligiran"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Tema"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Naka-on ang Night Light"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Network at internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobile network"</string>
@@ -86,7 +87,7 @@
     <string name="network_and_internet_oem_network_disabled_footer" msgid="3529208167627034245">"Na-off ang internet sa sasakyan. Posibleng mapigilan nitong gumana ang ilang feature o app ng sasakyan. Patuloy na ibabahagi sa manufacturer ng sasakyan ang kritikal na data na kinakailangan para mapagana ang iyong sasakyan."</string>
     <string name="network_and_internet_data_usage_time_range_summary" msgid="1792995626433410056">"%1$s ang nagamit %2$s - %3$s"</string>
     <string name="network_and_internet_join_other_network_title" msgid="7126831320010062712">"Sumali sa ibang network"</string>
-    <string name="network_and_internet_network_preferences_title" msgid="2983548049081168876">"Mga kagustuhan sa network"</string>
+    <string name="network_and_internet_network_preferences_title" msgid="2983548049081168876">"Mga preference sa network"</string>
     <string name="wifi_settings" msgid="7701477685273103841">"Wi‑Fi"</string>
     <string name="wifi_starting" msgid="473253087503153167">"Ino-on ang Wi‑Fi…"</string>
     <string name="wifi_stopping" msgid="3534173972547890148">"Ino-off ang Wi-Fi…"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Mas gusto ang 5.0 GHz Band"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2.4 at 5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Pumili ng kahit isang band para sa Wi‑Fi hotspot:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi hotspot"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Gamitin ang Wi‑Fi hotspot"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Naka-off"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Awtomatikong i-off ang hotspot"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Mao-off ang Wi‑Fi hotspot kung walang nakakonektang device"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Gumamit ng hotspot para sa lahat ng biyahe"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Gawing available ang hotspot tuwing naka-on ang kotse"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"I-scan ang QR code na ito para makasali sa \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Password ng hotspot: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"Gustong i-on ng <xliff:g id="REQUESTER">%s</xliff:g> ang Wi-Fi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Dating nakakonekta"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Nakakonekta ang %1$s"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Nadiskonekta ang %1$s"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Mga koneksyon sa device sa kotse mo"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultra‑Wideband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Tumutulong sa kotse mo na matukoy ang posisyon ng mga UWB device"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Kahilingan sa pagpapares ng Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Ipares at kumonekta"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Code ng pagpapares ng Bluetooth"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Mga tunog ng alerto"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Ringtone, mga notification, alarm"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"I-play ang media sa"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Inililipat ang media sa %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Liwanag"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"I-adjust ang screen para sa mahinang ilaw"</string>
     <string name="units_settings" msgid="402325305096925886">"Mga Unit"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Ipakita ang system"</string>
     <string name="hide_system" msgid="8845453295584638040">"Itago ang system"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Itago ang mga app ng system"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Mga alarm at paalala"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Baguhin ang setting ng system"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Nagbibigay-daan ang pahintulot na ito sa isang app na baguhin ang mga setting ng system."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Access sa notification"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Kanselahin"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Negatibo ang nagiging epekto ng mga app na ito sa performance ng system at pinigilan ang mga ito sa pagtakbo sa background.\nIsapriyoridad ang app para payagan ang paggamit ng background at alisin ito sa listahang ito."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Isapriyoridad ang app"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Access sa Premium SMS"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Premium na SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Puwedeng kailanganin mong magbayad para sa Premium SMS at isasama ito sa mga singilin ng iyong carrier. Kung ie-enable mo ang pahintulot para sa isang app, magagawa mong magpadala ng premium SMS gamit ang app na iyon."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Access sa paggamit"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Ang access sa paggamit ay nagbibigay-daan sa isang app na subaybayan kung ano ang iba pang app na ginagamit mo at kung gaano kadalas, pati ang iyong carrier, mga setting ng wika, at iba pang detalye."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Lokasyon"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Gumamit ng lokasyon"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Gamitin ang lokasyon ng iyong kotse sa anumang app na tinukoy mo."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Mga infotainment app"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Payagan ang mga app na magkaroon ng access sa iyong lokasyon"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Kung io-off mo ito, maaalis ang access sa lokasyon para sa lahat ng app maliban sa mga kailangan para sa tulong sa driver"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Kung io-off mo ito, madi-disable ang mga app ng tulong sa driver na dumedepende sa impormasyon ng lokasyon"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"I-off pa rin"</string>
@@ -643,26 +652,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"I-delete ang iyong profile"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Burahin ang iyong profile at mga account mula sa infotainment system"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Hindi available ang pagkilos na ito para sa iyong profile"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Access sa mikropono"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Piliin kung puwedeng i-access ng mga app ang mga mikropono ng iyong kotse"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Mga infotainment app"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Payagan ang mga infotainment app na mag-record ng audio"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Access sa camera"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Piliin kung puwedeng i-access ng mga app ang camera ng iyong kotse"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Gamitin ang mga camera ng iyong kotse sa:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Anumang App"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Anumang app na pinayagan mong i-access ang iyong camera"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Walang App"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Wala sa iyong mga app"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Mga app na tumutulong sa iyong magmaneho"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Mga app na tumutulong sa mga bagay tulad ng pagpapakita ng iyong kapaligiran kapag nagpaparada"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Mga kinakailangang app lang"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Mga app na kinakailangan lang ng manufacturer ng iyong kotse"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Mga app na tumutulong sa iyong magmaneho"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Mga app na tumutulong sa mga bagay tulad ng pagpapakita ng iyong kapaligiran kapag nagpaparada, at mga kinakailangang app"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Mga app na tumutulong sa iyong magmaneho"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Maa-access ng mga app na ito ang iyong camera para tumulong sa pagmamaneho"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Mga kinakailangang app"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Kinakailangan ang mga app na ito para matulungan ang iyong kotse na gumana nang ligtas"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Patakaran"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Posibleng may access pa rin ang manufacturer ng iyong kotse sa camera ng kotse mo. Puwede mong suriin ang mga patakaran nila para sa higit pang impormasyon."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Matuto pa tungkol sa kung paano ginagamit ng bawat app ang iyong Camera sa pamamagitan ng pagsusuri sa Patakaran sa Privacy nito."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Mga nire-require na app"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Mga app na nire-require ng manufacturer ng iyong kotse para tulungan kang magmaneho"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Patakaran"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Posibleng may access pa rin ang manufacturer ng iyong kotse sa camera ng kotse mo"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Mga infotainment app"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Payagan ang mga infotainment app na kumuha ng mga larawan at mag-record ng video"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Pinapahintulutan"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Palagi"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Hindi pinapahintulutan"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Habang ginagamit lang ang app"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Tanungin palagi"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Seguridad"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Lock ng screen"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Wala"</string>
@@ -776,7 +782,7 @@
     <string name="assistant_and_voice_use_screenshot_summary" msgid="3738474919393817950">"Payagan ang assistant na i-access ang larawan ng screen"</string>
     <string name="notifications_recently_sent" msgid="9051696542615302799">"Naipadala kamakailan"</string>
     <string name="notifications_all_apps" msgid="3557079551048958846">"Lahat ng app"</string>
-    <string name="profiles_and_accounts_settings_title" msgid="2672643892127659812">"Mga profile at account"</string>
+    <string name="profiles_and_accounts_settings_title" msgid="2672643892127659812">"Profile at account"</string>
     <string name="manage_other_profiles_button_text" msgid="2262188413455510828">"Pamahalaan ang iba pang profile"</string>
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"Magdagdag ng profile"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"I-delete ang profile na ito"</string>
@@ -910,11 +916,15 @@
     <string name="camera_toggle_title" msgid="1990732328673068456">"Gamitin ang camera"</string>
     <string name="camera_toggle_summary" msgid="5751159996822627567">"Payagan ang lahat ng app na i-access ang iyong camera"</string>
     <string name="camera_manage_permissions" msgid="9005596413781984368">"Pamahalaan ang mga pahintulot sa camera"</string>
-    <string name="camera_recently_accessed" msgid="8084100710444691977">"Kamakailang na-access"</string>
+    <string name="camera_recently_accessed" msgid="8084100710444691977">"Kamakailang in-access"</string>
     <string name="camera_no_recent_access" msgid="965105023454777859">"Walang kamakailang app"</string>
     <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"0 app ang may access"</string>
     <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{# sa {total_count} app ang may access}one{# sa {total_count} app ang may access}other{# sa {total_count} na app ang may access}}"</string>
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Kamakailang na-access"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Tingnan lahat"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Naglo-load…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Tingnan ang mga plan"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Nag-expire na ang iyong internet plan"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Tingnan ang mga plan"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Tapos na"</string>
 </resources>

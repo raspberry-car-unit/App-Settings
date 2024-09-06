@@ -19,10 +19,11 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="settings_label" msgid="5147911978211079839">"ဆက်တင်များ"</string>
     <string name="more_settings_label" msgid="3867559443480110616">"နောက်ထပ်"</string>
-    <string name="display_settings" msgid="5325515247739279185">"မျက်နှာပြင်ပြသမှု"</string>
+    <string name="display_settings" msgid="5325515247739279185">"ပြကွက်"</string>
     <string name="brightness" msgid="2919605130898772866">"တောက်ပမှု"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"အလိုက်သင့် တောက်ပမှု"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"ဖန်သားပြင်တောက်ပမှုကို ပတ်ဝန်းကျင်နှင့် ချိန်ညှိနိုင်သည်"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"အပြင်အဆင်"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"\'ညအလင်းရောင်\' ကို ဖွင့်ထားသည်"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"ကွန်ရက်နှင့် အင်တာနက်"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"မိုဘိုင်းကွန်ရက်"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5.0 GHz လိုင်း ဦးစားပေး"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"၂.၄ GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"၅.၀ GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"၂.၄ နှင့် ၅ GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Wi‑Fi ဟော့စပေါ့ လိုင်း-"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi ဟော့စပေါ့"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"ဟော့စပေါ့"</string>
-    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi‑Fi ဟော့စပေါ့ သုံးခြင်း"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi‑Fi ဟော့စပေါ့ သုံးရန်"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"ပိတ်"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"ဟော့စပေါ့ကို အလိုအလျောက် ပိတ်ခြင်း"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"မည်သည့် စက်ပစ္စည်းကိုမျှ ချိတ်ဆက်ထားခြင်း မရှိလျှင် Wi‑Fi ဟော့စပေါ့ ပိတ်သွားပါမည်"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"မောင်းနှင်မုဒ်အားလုံးအတွက် ဟော့စပေါ့သုံးရန်"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"ကားစက်နှိုးထားချိန်တိုင်း ဟော့စပေါ့ရရှိအောင် ပြုလုပ်နိုင်သည်"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\" သို့ ချိတ်ဆက်ရန် ဤ QR ကုဒ်ကို စကင်ဖတ်ပါ"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"ဟော့စပေါ့စကားဝှက်- %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> က Wi-Fi ဖွင့်လိုသည်"</string>
@@ -211,11 +213,14 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"ယခင်က ချိတ်ဆက်ထားသည်များ"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s ကို ချိတ်ဆက်ထားသည်"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s ကို ချိတ်ဆက်မထားပါ"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"ကားနှင့် စက်ပစ္စည်း ချိတ်ဆက်မှုများ"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultra‑Wideband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"သင့်ကားကို UWB စက်ပစ္စည်းများ၏ တည်နေရာ ရှာဖွေသတ်မှတ်ရာတွင် ကူညီပေးသည်"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"ဘလူးတုသ်တွဲချိတ်ရန် တောင်းဆိုချက်"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"တွဲချိတ်ပြီးနောက် ချိတ်ဆက်ရန်"</string>
-    <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ဘလူးတုသ် တွဲချိတ်ခြင်းကုဒ်"</string>
+    <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ဘလူးတုသ် တွဲချိတ်ကုဒ်"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"ပင်နံပါတ်တွင် စာလုံး သို့မဟုတ် သင်္ကေတများပါဝင်သည်"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"တွဲချိတ်ရန်ကုဒ်ကို ထည့်ပြီး Return သို့မဟုတ် Enter ကို နှိပ်ပါ"</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"တွဲချိတ်ကုဒ်ကို ရိုက်ထည့်ပြီး Return ခလုတ် (သို့) Enter ခလုတ်ကို နှိပ်ပါ"</string>
     <string name="bluetooth_pairing_request" msgid="4769675459526556801">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> နှင့် တွဲချိတ်လိုပါသလား။"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"သင်၏ အဆက်အသွယ်များနှင့် ခေါ်ဆိုမှုမှတ်တမ်းကို <xliff:g id="DEVICE_NAME">%1$s</xliff:g> အား ကြည့်ခွင့်ပြုသည်"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"ဤပင်နံပါတ်ကို အခြား စက်ပစ္စည်းတွင်လည်း ထည့်သွင်းရန် လိုအပ်နိုင်သည်။"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"သတိပေးချက် အသံများ"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"ဖုန်းမြည်သံ၊ အကြောင်းကြားချက်များ၊ နှိုးစက်"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"မီဒီယာကို ဖွင့်ထားရန်"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"မီဒီယာကို %1$s သို့ ပြောင်းနေသည်"</string>
     <string name="display_brightness" msgid="5718970880488110840">"တောက်ပမှု"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"အလင်းရောင်နည်းချိန်အတွက် ဖန်သားပြင်ကို ချိန်ညှိနိုင်သည်"</string>
     <string name="units_settings" msgid="402325305096925886">"ယူနစ်များ"</string>
@@ -357,7 +363,7 @@
     <string name="direct_boot_unaware_dialog_message_car" msgid="2857599310518724080">"မှတ်ချက်- ပြန်လည်စတင်ပြီးနောက် သင့်ယာဉ်ကို လော့ခ်မဖွင့်မချင်း ဤအက်ပ်ကို အသုံးပြု၍မရပါ။"</string>
     <string name="assist_and_voice_input_settings" msgid="8813195157136637132">"အကူနှင့် အသံဖြင့်စာရိုက်ခြင်း"</string>
     <string name="assist_app_settings" msgid="9085261410166776497">"အကူအညီ အက်ပ်"</string>
-    <string name="assist_access_context_title" msgid="8034851731390785301">"ဖန်သားပြင်မှ စာသားကိုသုံးခြင်း"</string>
+    <string name="assist_access_context_title" msgid="8034851731390785301">"ဖန်သားပြင်မှ စာသားကိုသုံးရန်"</string>
     <string name="assist_access_context_summary" msgid="2374281280599443774">"ဖန်သားပြင်မှအကြောင်းအရာများကို စာသားအဖြစ်ရယူရန် အကူအညီအက်ပ်ကို ခွင့်ပြုသည်"</string>
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"ဖန်သားပြင်ဓာတ်ပုံ သုံးခြင်း"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"ဖန်သားပြင်၏ပုံ အသုံးပြုရန် အကူအညီအက်ပ်ကို ခွင့်ပြုသည်"</string>
@@ -392,10 +398,11 @@
     <string name="apps_default_apps_summary" msgid="2017792579839972926">"Assistant နှင့် အခြားအရာများအတွက်"</string>
     <string name="performance_impacting_apps_summary" msgid="7762122057244111162">"{count,plural, =1{စွမ်းဆောင်ရည်ပေါ် သက်ရောက်သော အက်ပ် # ခု}other{စွမ်းဆောင်ရည်ပေါ် သက်ရောက်သော အက်ပ် # ခု}}"</string>
     <string name="apps_special_app_access_summary" msgid="6464767436309742163">"စနစ်နှင့် အခြားဆက်တင်များသို့"</string>
-    <string name="special_access" msgid="5730278220917123811">"အထူးအက်ပ်များ သုံးခွင့်ရှိသည်"</string>
+    <string name="special_access" msgid="5730278220917123811">"အက်ပ် အထူးအသုံးပြုခွင့်"</string>
     <string name="show_system" msgid="4401355756969485287">"စနစ်ကိုပြသရန်"</string>
     <string name="hide_system" msgid="8845453295584638040">"စနစ်ကို ဖျောက်ရန်"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"စနစ်အက်ပ်များ ဖျောက်ထားရန်"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"နှိုးစက်နှင့် သတိပေးချက်များ"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"စနစ်ဆက်တင်များ ပြန်ပြင်ခြင်း"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ဤခွင့်ပြုချက်က အက်ပ်ကို စနစ်ဆက်တင်များ ပြင်ခွင့်ပေးသည်။"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"အကြောင်းကြားချက် ရယူခြင်း"</string>
@@ -406,7 +413,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"မလုပ်တော့"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"ဤအက်ပ်များသည် စနစ်စွမ်းဆောင်ရည်ကို ထိခိုက်စေပြီး ၎င်းတို့ကို နောက်ခံတွင်လုပ်ဆောင်ခြင်းမှ တားဆီးလိုက်သည်။\nနောက်ခံတွင်သုံးခွင့်ပြုရန် အက်ပ်ကို ဦးစားပေးပြီး ဤစာရင်းမှဖယ်ရှားနိုင်သည်။"</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"အက်ပ်ကို ဦးစားပေးရန်"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"ပရီမီယံ SMS သုံးခွင့်ရှိခြင်း"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"ပရီမီယံ SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"ပရီမီယံ SMS သည်ငွေကြေးကုန်ကျနိုင်ပြီး သင့်ဖုန်းကုမ္ပဏီ၏ ငွေတောင်းခံလွှာသို့ ပေါင်း၍ ထည့်သွင်းပါမည်။ အက်ပ်တစ်ခုကို သင်ခွင့်ပြုလိုက်လျှင် ၎င်းအက်ပ်ကိုအသုံးပြုပြီး ပရီမီယံ SMS ပို့နိုင်မည်ဖြစ်သည်။"</string>
     <string name="usage_access_title" msgid="7153427122072303254">"အသုံးပြုမှု ကြည့်ခြင်း"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"ဝင်ရောက်အသုံးပြုခွင့်သည် အက်ပ်တစ်ခုအား သင်အသုံးပြုနေသော အခြားအက်ပ်များနှင့် သုံးသည့် အကြိမ်ရေနှင့်တကွ သင့်ဖုန်း၏ ဝန်ဆောင်မှုဌာန၊ ဘာသာစကား ဆက်တင်နှင့် အခြားအသေးစိတ်များကို ခြေရာခံရန် ခွင့်ပြုသည်။"</string>
@@ -416,6 +423,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"တည်နေရာ"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"တည်နေရာကို သုံးရန်"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"သင်သတ်မှတ်ထားသော အက်ပ်များတွင် ကားတည်နေရာကို သုံးနိုင်သည်။"</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"သတင်းနှင့် ဖျော်ဖြေရေးအက်ပ်များ"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"အက်ပ်များအား သင့်တည်နေရာကို သုံးခွင့်ပြုနိုင်သည်"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"ပိတ်လိုက်ပါက ယာဉ်မောင်းသူ အထောက်အကူကို လိုအပ်သောအက်ပ်များမှအပ အက်ပ်အားလုံးအတွက် တည်နေရာသုံးခွင့်ကို ဖယ်ရှားပါမည်"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"ပိတ်လိုက်ပါက တည်နေရာအချက်အလက်အပေါ် အားထားရသော ယာဉ်မောင်းသူအထောက်အကူပြုအက်ပ်များ ပိတ်သွားပါမည်"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"မည်သို့ဖြစ်စေ ပိတ်ရန်"</string>
@@ -490,8 +499,8 @@
     <string name="settings_license_activity_unavailable" msgid="6104592821991010350">"လိုင်စင်များကို ဖွင့်ရာတွင် ပြသနာရှိနေသည်။"</string>
     <string name="settings_license_activity_loading" msgid="6163263123009681841">"ဖွင့်နေသည်…"</string>
     <string name="show_dev_countdown" msgid="7416958516942072383">"{count,plural, =1{သင် ဆော့ဖ်ဝဲအင်ဂျင်နီယာဖြစ်ရန် ယခုအခါ အဆင့် # ဆင့်သာလိုပါသည်။}other{သင် ဆော့ဖ်ဝဲအင်ဂျင်နီယာဖြစ်ရန် ယခုအခါ အဆင့် # ဆင့်သာလိုပါသည်။}}"</string>
-    <string name="show_dev_on" msgid="5339077400040834808">"သင်သည် ယခု ဆော့ဖ်ဝဲအင်ဂျင်နီယာ တစ်ဦး ဖြစ်နေပါပြီ။"</string>
-    <string name="show_dev_already" msgid="1678087328973865736">"မလိုပါ၊ သင်က ဆော့ဖ်ဝဲအင်ဂျင်နီယာ ဖြစ်ပြီးသားပါ။"</string>
+    <string name="show_dev_on" msgid="5339077400040834808">"သင်သည် ယခု ဆော့ဖ်ဝဲရေးသူ ဖြစ်နေပါပြီ။"</string>
+    <string name="show_dev_already" msgid="1678087328973865736">"မလိုတော့ပါ။ သင်သည် ဆော့ဖ်ဝဲရေးသူ ဖြစ်ပြီးသားပါ။"</string>
     <string name="developer_options_settings" msgid="1530739225109118480">"ဆော့ဝဲရေးသူ ရွေးစရာများ"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"ပြင်ဆင်သတ်မှတ်ရန် ရွေးစရာများ"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"ကွန်ရက်၊ အက်ပ်များ (သို့) စက်ပစ္စည်း ပြင်ဆင်သတ်မှတ်ခြင်း"</string>
@@ -632,7 +641,7 @@
     <string name="sync_button_sync_now" msgid="5767643057970371315">"ယခု စင့်ခ်လုပ်ရန်"</string>
     <string name="sync_button_sync_cancel" msgid="7739510554513641393">"စင့်ခ် ပယ်ဖျက်ရန်"</string>
     <string name="sync_is_failing" msgid="5766255460901806206">"စင့်ခ်လုပ်ရန် လက်ရှိတွင် ပြဿနာရှိနေပါသည်။ ခဏကြာလျှင် ပြန်လည်ရရှိပါမည်။"</string>
-    <string name="privacy_settings_title" msgid="3150145262029229572">"ကန့်သတ်ဆက်တင်"</string>
+    <string name="privacy_settings_title" msgid="3150145262029229572">"ကိုယ်ရေးအချက်အလက်လုံခြုံမှု"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"သတင်းနှင့်ဖျော်ဖြေရေး စနစ်ဒေတာ"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"အက်ပ်၏ သင့်တည်နေရာသုံးခွင့်ကို ထိန်းချုပ်မည်"</string>
     <string name="mute_camera_title" msgid="215494079895460172">"ကင်မရာ"</string>
@@ -644,26 +653,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"သင့်ပရိုဖိုင်ကို ဖျက်ရန်"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"သတင်းနှင့်ဖျော်ဖြေရေး စနစ်မှ သင့်ပရိုဖိုင်နှင့် အကောင့်များကို ဖျက်မည်"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"ဤလုပ်ဆောင်ချက်ကို သင့်ပရိုဖိုင်အတွက် မရနိုင်ပါ"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"မိုက်ခရိုဖုန်းသုံးခွင့်"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"အက်ပ်များက သင့်ကားမိုက်ခရိုဖုန်းကို သုံးခွင့် ရှိ၊ မရှိ ရွေးချယ်ပါ"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"သတင်းနှင့် ဖျော်ဖြေရေးအက်ပ်များ"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"သတင်းနှင့် ဖျော်ဖြေရေးအက်ပ်များအား အသံဖမ်းခွင့်ပြုသည်"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"ကင်မရာသုံးခွင့်"</string>
-    <string name="camera_access_settings_summary" msgid="8820488359585532496">"သင့်ကားတည်နေရာကို အက်ပ်များ ဝင်ကြည့်ခွင့် ရှိ၊ မရှိ ရွေးချယ်ပါ"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"ကားကင်မရာကို ၎င်းဖြင့် သုံးရန်-"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"မည်သည့်အက်ပ်မဆို"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"ကင်မရာကို သင်အသုံးပြုခွင့်ပေးထားသော မည်သည့်အက်ပ်မဆို"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"အက်ပ်မရှိပါ"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"မည်သည့်အက်ပ်ကိုမျှ"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"ကားမောင်းရာတွင် ကူညီသော အက်ပ်များ"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"ယာဉ်ရပ်နားသည့်အခါ ပတ်ဝန်းကျင်ကို ပြခြင်း စသည်တို့အတွက် ကူညီသောအက်ပ်များ"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"လိုအပ်သော အက်ပ်များသာ"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"သင့်ကားထုတ်လုပ်သူက သတ်မှတ်ထားသော အက်ပ်များသာ"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"ကားမောင်းရာတွင် ကူညီသော အက်ပ်များ"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"ကားရပ်သည့်အခါ ပတ်ဝန်းကျင်ကို ပြခြင်း စသည်တို့အတွက် ကူညီသောအက်ပ်များနှင့် လိုအပ်သောအက်ပ်များ"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"ကားမောင်းရာတွင် ကူညီသော အက်ပ်များ"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"ဤအက်ပ်များသည် ယာဉ်မောင်းရာတွင် ကူညီရန် သင့်ကင်မရာကို သုံးနိုင်သည်"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"လိုအပ်သော အက်ပ်များ"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"ဤအက်ပ်များသည် သင့်ကား ဘေးကင်းစွာ မောင်းနှင်နိုင်ရန် လိုအပ်သည်"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"မူဝါဒ"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"သင်၏ ကားထုတ်လုပ်သူက ကားကင်မရာကို သုံးခွင့်ရှိနိုင်သေးသည်။ အသေးစိတ်အချက်များအတွက် ၎င်းတို့၏မူဝါဒများကို ဖတ်ရှုနိုင်ပါသည်။"</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"အက်ပ်တစ်ခုစီ၏ ‘ကိုယ်ရေးအချက်အလက်လုံခြုံမှုဆိုင်ရာ မူဝါဒ’ ကို ဖတ်ရှုခြင်းဖြင့် ၎င်းက သင်၏ကင်မရာကို မည်သို့အသုံးပြုကြောင်း ပိုမိုလေ့လာပါ။"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"ကားကင်မရာကို အက်ပ်များ ဝင်ကြည့်ခွင့် ရှိ၊ မရှိ ရွေးချယ်ပါ"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"လိုအပ်သော အက်ပ်များ"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"ကားမောင်းရာတွင် ကူညီရန် သင့်ကားထုတ်လုပ်သူက သတ်မှတ်ထားသော အက်ပ်များ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"မူဝါဒ"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"သင်၏ ကားထုတ်လုပ်သူက ကားကင်မရာကို သုံးခွင့်ရှိနိုင်သေးသည်"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"သတင်းနှင့် ဖျော်ဖြေရေးအက်ပ်များ"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"သတင်းနှင့် ဖျော်ဖြေရေးအက်ပ်များအား ဓာတ်ပုံရိုက်ခွင့်နှင့် ဗီဒီယိုမှတ်တမ်းတင်ခွင့်ပေးသည်"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"ခွင့်ပြုထားသည်"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"အချိန်တိုင်း"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"ခွင့်မပြုပါ"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"အက်ပ်သုံးနေစဉ်တွင်သာ"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"အကြိမ်တိုင်း မေးရန်"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"လုံခြုံရေး"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"ဖန်သားပြင်လော့ခ်"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"မရှိ"</string>
@@ -744,7 +750,7 @@
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"ငယ်စဉ်ကြီးလိုက်၊ ကြီးစဉ်ငယ်လိုက် သို့မဟုတ် ထပ်နေသည့် နံပါတ်စဉ်များကို ခွင့်မပြုပါ"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"မျက်နှာပြင်လော့ခ်ချခြင်း ရွေးချယ်စရာများ"</string>
     <string name="credentials_reset" msgid="873900550885788639">"အထောက်အထားများကို ရှင်းလင်းခြင်း"</string>
-    <string name="credentials_reset_summary" msgid="6067911547500459637">"အသိအမှတ်ပြုလက်မှတ်အားလုံးကို ဖယ်ရှားရန်"</string>
+    <string name="credentials_reset_summary" msgid="6067911547500459637">"အသိအမှတ်ပြုလက်မှတ်အားလုံးကို ဖယ်ရှားသည်"</string>
     <string name="credentials_reset_hint" msgid="3459271621754137661">"အကြောင်းအရာအားလုံးကို ဖယ်ရှားမလား။"</string>
     <string name="credentials_erased" msgid="2515915439705550379">"ယုံကြည်စိတ်ချရသောသိုလှောင်ရာနေရာအား ဖျက်လိုက်ပါပြီ။"</string>
     <string name="credentials_not_erased" msgid="6118567459076742720">"သိုလှောင်ရာနေရာအား ဖျက်၍မရပါ။"</string>
@@ -896,7 +902,7 @@
     <string name="captions_settings_text_size_large" msgid="5198207220911360512">"ကြီး"</string>
     <string name="captions_settings_text_size_very_large" msgid="949511539689307969">"အလွန်ကြီး"</string>
     <string name="captions_text_style_title" msgid="8547777957403577760">"စာတန်းပုံစံ"</string>
-    <string name="captions_settings_text_style_by_app" msgid="7014882290456996444">"အက်ပ်က သတ်မှတ်ထားသည်"</string>
+    <string name="captions_settings_text_style_by_app" msgid="7014882290456996444">"အက်ပ်သတ်မှတ်ချက်"</string>
     <string name="captions_settings_text_style_white_on_black" msgid="5758084000323596070">"အမည်းပေါ်အဖြူ"</string>
     <string name="captions_settings_text_style_black_on_white" msgid="3906140601916221220">"အဖြူပေါ်အမည်း"</string>
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"အမည်းပေါ်အဝါ"</string>
@@ -918,4 +924,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"လတ်တလော သုံးထားသည်များ"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"အားလုံးကြည့်ခြင်း"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"ဖွင့်နေသည်…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"အစီအစဉ်များ ကြည့်ရန်"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"သင့်အင်တာနက်အစီအစဉ်များ သက်တမ်းကုန်သွားပါပြီ"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"အစီအစဉ်များ ကြည့်ရန်"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"ပြီးပြီ"</string>
 </resources>

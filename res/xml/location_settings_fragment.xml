@@ -25,9 +25,7 @@
         android:fragment="com.android.car.settings.location.LocationAccessFragment"
         android:title="@string/location_access_settings_title"
         android:summary="@string/location_access_settings_summary"
-        settings:controller="com.android.car.settings.location.LocationAccessPreferenceController"
-        settings:occupant_front_passenger="hidden"
-        settings:occupant_rear_passenger="hidden"/>
+        settings:controller="com.android.car.settings.location.LocationAccessPreferenceController"/>
     <com.android.car.settings.common.ColoredSwitchPreference
         android:key="@string/pk_location_state_switch"
         android:title="@string/location_toggle_title"

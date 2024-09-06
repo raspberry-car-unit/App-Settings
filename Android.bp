@@ -46,7 +46,10 @@ android_library {
         "car-admin-ui-lib",
         "car-helper-lib",
         "car-qc-lib",
+        "com_android_car_settings_flags_lib",
         "services.core",
+        "car-data-subscription-lib",
+        "car-resource-common",
     ],
 
     libs: [
@@ -115,22 +118,7 @@ android_app {
     ],
 
     static_libs: [
-        "androidx.lifecycle_lifecycle-common-java8",
-        "androidx.lifecycle_lifecycle-extensions",
-        "androidx.preference_preference",
-        "androidx-constraintlayout_constraintlayout",
-        "androidx.test.core",
-        "car-apps-common",
-        "car-setup-wizard-lib-utils",
-        "WifiTrackerLib",
-        "SettingsLib",
-        "SettingsLib-search",
-        "androidx-constraintlayout_constraintlayout-solver",
-        "jsr305",
-        "car-ui-lib-testing-support",
-        "car-admin-ui-lib",
-        "car-helper-lib",
-        "car-qc-lib",
+        "CarSettings-core",
     ],
 
     // Testing only resources must be applied last so they take precedence.
@@ -195,6 +183,8 @@ android_library {
         "car-admin-ui-lib",
         "car-helper-lib",
         "car-qc-lib",
+        "com_android_car_settings_flags_lib",
+        "car-data-subscription-lib",
     ],
 
     // Testing only resources must be applied last so they take precedence.
