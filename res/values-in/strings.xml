@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Tingkat kecerahan"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Kecerahan adaptif"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Menyesuaikan kecerahan layar dengan lingkungan"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Tema"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Mode Cahaya Malam aktif"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Jaringan &amp; internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Jaringan seluler"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Disarankan Band 5,0 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 dan 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Pilih minimal satu band untuk hotspot Wi‑Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Hotspot Wi‑Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Gunakan hotspot Wi-Fi"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Nonaktif"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Otomatis nonaktifkan hotspot"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Hotspot Wi-Fi akan dinonaktifkan jika tidak ada perangkat yang terhubung"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Gunakan hotspot setiap kali berkendara"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Sediakan hotspot setiap kali mobil dinyalakan"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Pindai kode QR ini untuk bergabung \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Sandi hotspot: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> ingin mengaktifkan Wi-Fi"</string>
@@ -211,11 +213,14 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Perangkat yang terhubung sebelumnya"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s terhubung"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s terputus"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Koneksi perangkat dengan mobil Anda"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultra-Wideband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Bantu mobil Anda mengidentifikasi posisi perangkat UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Permintaan penyambungan Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Sambungkan &amp; hubungkan"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Kode penyambungan Bluetooth"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"PIN berisi huruf atau simbol"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"Ketik kode penghubung, lalu tekan Kembali atau Enter"</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"Ketik kode penyambungan lalu tekan Return atau Enter"</string>
     <string name="bluetooth_pairing_request" msgid="4769675459526556801">"Hubungkan dengan <xliff:g id="DEVICE_NAME">%1$s</xliff:g>?"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"Izinkan <xliff:g id="DEVICE_NAME">%1$s</xliff:g> mengakses kontak dan histori panggilan"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"Anda mungkin juga perlu mengetikkan PIN ini ke perangkat lain."</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Suara notifikasi"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Nada dering, notifikasi, alarm"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Putar media di"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Mengalihkan media ke %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Kecerahan"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Menyesuaikan layar untuk cahaya redup"</string>
     <string name="units_settings" msgid="402325305096925886">"Unit"</string>
@@ -354,7 +360,7 @@
     <string name="app_data_usage_background_data_summary" msgid="4445472217737386826">"Hanya gunakan data seluler saat aplikasi berada di latar depan"</string>
     <string name="computing_size" msgid="5791407621793083965">"Menghitung..."</string>
     <string name="runtime_permissions_additional_count" msgid="3920383880473283764">"{count,plural, =1{# izin tambahan}other{# izin tambahan}}"</string>
-    <string name="direct_boot_unaware_dialog_message_car" msgid="2857599310518724080">"Catatan: Setelah reboot, aplikasi ini tidak dapat dimulai hingga kunci kendaraan dibuka."</string>
+    <string name="direct_boot_unaware_dialog_message_car" msgid="2857599310518724080">"Catatan: Setelah perangkat dimulai ulang, aplikasi ini tidak dapat mulai berjalan hingga kunci kendaraan dibuka"</string>
     <string name="assist_and_voice_input_settings" msgid="8813195157136637132">"Bantuan &amp; masukan suara"</string>
     <string name="assist_app_settings" msgid="9085261410166776497">"Aplikasi bantuan"</string>
     <string name="assist_access_context_title" msgid="8034851731390785301">"Gunakan teks dari layar"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Tampilkan sistem"</string>
     <string name="hide_system" msgid="8845453295584638040">"Sembunyikan sistem"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Sembunyikan aplikasi sistem"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarm &amp; pengingat"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Ubah setelan sistem"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Izin ini memungkinkan aplikasi mengubah setelan sistem."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Akses notifikasi"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Batal"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Aplikasi ini berdampak negatif pada performa sistem dan telah dihentikan agar tidak berjalan di latar belakang.\nPrioritaskan aplikasi untuk mengizinkan penggunaan di latar belakang dan menghapusnya dari daftar ini."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Prioritaskan apl"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Akses SMS Premium"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS Premium"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS Premium mungkin memerlukan biaya dan akan menambah tagihan operator. Jika izin aplikasi diaktifkan, Anda dapat mengirim SMS premium menggunakan aplikasi tersebut."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Akses penggunaan"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Akses penggunaan memungkinkan aplikasi melacak aplikasi lain yang Anda gunakan dan frekuensi penggunaannya, serta operator, setelan bahasa, dan detail lainnya."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Lokasi"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Gunakan lokasi"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Gunakan lokasi mobil Anda di aplikasi yang Anda tentukan."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Aplikasi infotainment"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Izinkan aplikasi mengakses lokasi Anda"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Jika Anda menonaktifkannya, fitur ini akan menghapus akses lokasi untuk semua aplikasi kecuali aplikasi yang diperlukan untuk bantuan bagi pengemudi"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Jika Anda menonaktifkannya, aplikasi bantuan bagi pengemudi yang mengandalkan informasi lokasi akan dinonaktifkan"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Tetap nonaktifkan"</string>
@@ -489,8 +498,8 @@
     <string name="settings_license_activity_unavailable" msgid="6104592821991010350">"Ada masalah saat memuat lisensi."</string>
     <string name="settings_license_activity_loading" msgid="6163263123009681841">"Memuat…"</string>
     <string name="show_dev_countdown" msgid="7416958516942072383">"{count,plural, =1{Anda perlu menyelesaikan # langkah lagi untuk menjadi developer.}other{Anda perlu menyelesaikan # langkah lagi untuk menjadi developer.}}"</string>
-    <string name="show_dev_on" msgid="5339077400040834808">"Sekarang Anda adalah seorang developer!"</string>
-    <string name="show_dev_already" msgid="1678087328973865736">"Tidak perlu, Anda sudah menjadi developer."</string>
+    <string name="show_dev_on" msgid="5339077400040834808">"Anda sekarang berada di mode developer!"</string>
+    <string name="show_dev_already" msgid="1678087328973865736">"Tidak perlu, Anda sudah berada di mode developer."</string>
     <string name="developer_options_settings" msgid="1530739225109118480">"Opsi developer"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"Opsi reset"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"Mereset jaringan, aplikasi, atau perangkat"</string>
@@ -643,26 +652,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Hapus profil"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Menghapus profil dan akun Anda dari sistem infotainmen"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Tindakan ini tidak tersedia untuk profil Anda"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Akses mikrofon"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Pilih apakah aplikasi dapat mengakses mikrofon mobil Anda"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Aplikasi infotainment"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Izinkan aplikasi infotainment merekam audio"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Akses kamera"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Pilih apakah aplikasi dapat mengakses kamera mobil Anda"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Gunakan kamera mobil Anda dengan:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Aplikasi Apa Pun"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Aplikasi apa pun yang telah Anda izinkan untuk mengakses kamera Anda"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Jangan gunakan kamera dengan aplikasi"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Jangan gunakan kamera mobil dengan aplikasi Anda"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Aplikasi yang membantu Anda mengemudi"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Aplikasi yang membantu berbagai hal seperti menunjukkan lingkungan sekitar Anda saat parkir"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Hanya aplikasi yang diperlukan"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Hanya aplikasi yang diperlukan produsen mobil Anda"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Aplikasi yang membantu Anda mengemudi"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Aplikasi yang membantu berbagai hal seperti menunjukkan lingkungan sekitar Anda saat parkir, dan aplikasi yang diwajibkan"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Aplikasi yang membantu Anda mengemudi"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Aplikasi ini dapat mengakses kamera Anda untuk membantu Anda mengemudi"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Aplikasi yang diperlukan"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Aplikasi ini diperlukan agar mobil Anda dapat berfungsi dengan aman"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Kebijakan"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Produsen mobil Anda mungkin masih memiliki akses ke kamera mobil Anda. Anda dapat meninjau kebijakan mereka untuk mengetahui info lebih lanjut."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Pelajari lebih lanjut cara setiap aplikasi menggunakan Kamera Anda dengan meninjau Kebijakan Privasinya."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Aplikasi yang diperlukan"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Aplikasi yang diperlukan produsen mobil Anda untuk membantu Anda saat mengemudi"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Kebijakan"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Produsen mobil Anda mungkin masih memiliki akses ke kamera mobil Anda"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Aplikasi infotainment"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Izinkan aplikasi infotainment mengambil gambar dan merekam video"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Diizinkan"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Sepanjang waktu"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Tidak diizinkan"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Hanya saat menggunakan aplikasi"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Selalu tanya"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Keamanan"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Kunci layar"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Tidak ada"</string>
@@ -895,7 +901,7 @@
     <string name="captions_settings_text_size_large" msgid="5198207220911360512">"Besar"</string>
     <string name="captions_settings_text_size_very_large" msgid="949511539689307969">"Sangat besar"</string>
     <string name="captions_text_style_title" msgid="8547777957403577760">"Gaya teks"</string>
-    <string name="captions_settings_text_style_by_app" msgid="7014882290456996444">"Disetel oleh aplikasi"</string>
+    <string name="captions_settings_text_style_by_app" msgid="7014882290456996444">"Ikut setelan aplikasi"</string>
     <string name="captions_settings_text_style_white_on_black" msgid="5758084000323596070">"Putih berlatar hitam"</string>
     <string name="captions_settings_text_style_black_on_white" msgid="3906140601916221220">"Hitam berlatar putih"</string>
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"Kuning berlatar hitam"</string>
@@ -917,4 +923,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Diakses baru-baru ini"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Lihat semua"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Memuat…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Lihat paket"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Masa berlaku paket internet Anda telah berakhir"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Lihat paket"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Selesai"</string>
 </resources>

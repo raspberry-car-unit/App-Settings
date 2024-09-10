@@ -116,8 +116,6 @@ public class DataUsageEntryPreferenceControllerTest {
                 .thenReturn(mMockNetworkCapabilities);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(true);
-
-        mPreferenceController.onCreate(mLifecycleOwner);
     }
 
     @After
@@ -129,6 +127,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_noMobileNetwork_isUnsupported() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(false);
 
@@ -137,6 +136,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_noMobileNetwork_isUnsupported_zoneWrite() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(false);
         mPreferenceController.setAvailabilityStatusForZone("write");
@@ -147,6 +147,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_noMobileNetwork_isUnsupported_zoneRead() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(false);
         mPreferenceController.setAvailabilityStatusForZone("read");
@@ -157,6 +158,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_noMobileNetwork_isUnsupported_zoneHidden() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(false);
         mPreferenceController.setAvailabilityStatusForZone("hidden");
@@ -167,6 +169,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_hasMobileNetwork_isAvailable() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(true);
 
@@ -175,6 +178,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_hasMobileNetwork_isAvailable_zoneWrite() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(true);
         mPreferenceController.setAvailabilityStatusForZone("write");
@@ -185,6 +189,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_hasMobileNetwork_isAvailable_zoneRead() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(true);
         mPreferenceController.setAvailabilityStatusForZone("read");
@@ -195,6 +200,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void getAvailabilityStatus_hasMobileNetwork_isAvailable_zoneHidden() {
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockNetworkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))
                 .thenReturn(true);
         mPreferenceController.setAvailabilityStatusForZone("hidden");
@@ -205,10 +211,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void refreshUi_noDefaultSubscriptionId_noSummarySet() {
-        when(mContext.getSystemService(SubscriptionManager.class))
-                .thenReturn(mMockSubscriptionManager);
-        ExtendedMockito.when(SubscriptionManager.getDefaultSubscriptionId())
-                .thenReturn(INVALID_SUBSCRIPTION_ID);
+        mockSubscriptionManager(INVALID_SUBSCRIPTION_ID, /* subscriptionPlan= */ null);
 
         mPreferenceController.refreshUi();
         assertThat(mPreference.getSummary()).isNull();
@@ -216,12 +219,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void refreshUi_noPrimaryPlan_noSummarySet() {
-        when(mContext.getSystemService(SubscriptionManager.class))
-                .thenReturn(mMockSubscriptionManager);
-        ExtendedMockito.when(SubscriptionManager.getDefaultSubscriptionId())
-                .thenReturn(SUBSCRIPTION_ID);
-        when(mMockSubscriptionManager.getSubscriptionPlans(SUBSCRIPTION_ID))
-                .thenReturn(Lists.newArrayList());
+        mockSubscriptionManager(SUBSCRIPTION_ID, /* subscriptionPlan= */ null);
 
         mPreferenceController.refreshUi();
         assertThat(mPreference.getSummary()).isNull();
@@ -229,12 +227,7 @@ public class DataUsageEntryPreferenceControllerTest {
 
     @Test
     public void refreshUi_hasPrimaryPlan_setsSummary() {
-        when(mContext.getSystemService(SubscriptionManager.class))
-                .thenReturn(mMockSubscriptionManager);
-        ExtendedMockito.when(SubscriptionManager.getDefaultSubscriptionId())
-                .thenReturn(SUBSCRIPTION_ID);
-        when(mMockSubscriptionManager.getSubscriptionPlans(SUBSCRIPTION_ID))
-                .thenReturn(Lists.newArrayList(mMockSubscriptionPlan));
+        mockSubscriptionManager(SUBSCRIPTION_ID, mMockSubscriptionPlan);
         when(mMockSubscriptionPlan.getDataLimitBytes()).thenReturn(100L);
         when(mMockSubscriptionPlan.getDataUsageBytes()).thenReturn(10L);
         when(mMockSubscriptionPlan.getCycleRule()).thenReturn(mMockRecurrenceRule);
@@ -255,5 +248,21 @@ public class DataUsageEntryPreferenceControllerTest {
 
         mPreferenceController.refreshUi();
         assertThat(mPreference.getSummary().length()).isGreaterThan(0);
+    }
+
+    private void mockSubscriptionManager(int subscriptionId, SubscriptionPlan subscriptionPlan) {
+        when(mContext.getSystemService(SubscriptionManager.class))
+                .thenReturn(mMockSubscriptionManager);
+        ExtendedMockito.when(SubscriptionManager.getDefaultSubscriptionId())
+                .thenReturn(subscriptionId);
+        if (subscriptionPlan == null) {
+            when(mMockSubscriptionManager.getSubscriptionPlans(subscriptionId))
+                    .thenReturn(Lists.newArrayList());
+        } else {
+            when(mMockSubscriptionManager.getSubscriptionPlans(subscriptionId))
+                    .thenReturn(Lists.newArrayList(mMockSubscriptionPlan));
+        }
+
+        mPreferenceController.onCreate(mLifecycleOwner);
     }
 }

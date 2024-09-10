@@ -78,8 +78,8 @@ public class HotspotRowWorker extends SettingsQCBackgroundWorker<HotspotRow> {
                     new HandlerExecutor(mHandler), mTetheringEventCallback);
             if (mWifiManager != null) {
                 mWifiManager.registerSoftApCallback(
-                    getContext().getMainExecutor(), mSoftApCallback);
-            mCallbacksRegistered = true;
+                        getContext().getMainExecutor(), mSoftApCallback);
+                mCallbacksRegistered = true;
             }
         }
     }

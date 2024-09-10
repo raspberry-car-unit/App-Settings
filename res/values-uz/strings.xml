@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Yorqinlik darajasi"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Moslashuvchan yorqinlik"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Ekran yorqinligini atrof-muhitga qarab moslash"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Mavzu"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Tungi rejim yoqilgan"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Tarmoq va Internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobil tarmoq"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5,0 GGs (tavsiya etiladi)"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GGs"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GGs"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 va 5 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Wi‑Fi hotspot uchun kamida bitta chastota tanlang:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi hotspot"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
-    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi‑Fi hotspotdan foydalanish"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi‑Fi hotspot ishlatish"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Oʻchiq"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Hotspotni avtomatik faolsizlantirish"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Hech qanday qurilma ulanmasa, Wi-Fi hotspot faolsizlantiriladi"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Hotspotni barcha safarlarda ishlatish"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Avtomobil yoqilganida hotspotni ishlatish mumkin"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"“%s” tarmoqqa qoʻshilish uchun QR kodni skanerlang"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Hotspot paroli: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> Wi-Fi aloqasini yoqmoqchi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Avval ulangan qurilmalar"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s ulandi"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s uzildi"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Avtomobil bilan qurilma ulanishi"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultra keng polosali aloqa (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Avtomobilga UWB qurilmalari joylashishini aniqlashga yordam beradi"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Bluetooth orqali ulanish so‘rovi"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Juftlash va ulash"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth orqali ulanish kodi"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Signal tovushlari"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Rington, bildirishnoma, signal"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Media ijro qurilmasi"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Media almashmoqda: %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Yorqinlik"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Ekran yorqinligini past salqin muhitga moslash"</string>
     <string name="units_settings" msgid="402325305096925886">"Birliklar"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Tizimga oid jarayonlar"</string>
     <string name="hide_system" msgid="8845453295584638040">"Tizimga oid jarayonlarni berkitish"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Tizim ilovalarini yashirish"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Signal va eslatmalar"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Tizim sozlamalarini almashtirish"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Bu ruxsatnoma ilovaga tizim sozlamalarini oʻzgaritish uchun ruxsat beradi."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Bildirishnomalarga ruxsat"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Bekor qilish"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Ushbu ilovalar tizimning ishlashiga salbiy taʼsir qiladi va fonda ishlashi taqiqlanadi.\nFonda foydalanishga ruxsat berish uchun ilovani asosiy qilib belgilang va uni ushbu roʻyxatdan olib tashlang."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Ilovaga ustunlik berish"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Pulli SMS yuborish"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Pulli SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS uchun sizdan haq olinishi va operatorga qoʻshimcha to‘lov amalga oshirilishi mumkin. Agar ilova uchun ruxsatnoma taqdim etsangiz, oʻsha ilovadan SMS yuborishingiz mumkin boʻladi."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Foydalanish tarixiga kirish"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Foydalanish tarixiga kirish huquqi qanday ilovalardan va qancha muddatda foydalanishingiz, shuningdek, tarmoq operatori, til va boshqa parametrlarni kuzatish imkonini beradi."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Joylashuv"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Geolokatsiyani yoqish"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Siz belgilagan har qanday ilova yordamida avtomobilingiz joylashuvidan foydalaning."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Axborot-hordiq ilovalari"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Ilovalarga joylashuvingizga kirish uchun ruxsat bering"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Bu parametrni faolsizlantirsangiz, barcha ilovalar uchun joylashuvdan foydalanish bekor qilinadi, faqat haydovchiga yordam uchun zarurlari faolsizlantirilmaydi"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Bu parametrni faolsizlantirsangiz, joylashuv axborotini talab qiladigan haydovchiga yordam funksiyalari oʻchiriladi"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Baribir oʻchirilsin"</string>
@@ -643,26 +652,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Profilimni oʻchirish"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Axborot-hordiq tizimidan profil va hisoblarni oʻchirib tashlash"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Profilingizda bu amal ishlamaydi."</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Mikrofonga ruxsat"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Ilovalar avtomobilingiz mikrofonidan foydalanishi yoki foydalanmasligini tanlang"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Axborot-hordiq ilovalari"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Axborot-hordiq ilovalari audio yozib olishiga ruxsat berish"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Kameraga ruxsat"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Ilovalar avtomobilingiz kamerasidan foydalanishi yoki foydalanmasligini tanlang"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Avtomobilingiz kameralardan qaysi ilovalar foydalanishini tanlang"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Har qanday ilova"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Kameradan foydalanish huquqi berilgan har qanday ilova"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Hech qanday ilova"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Hech qaysi ilovangiz"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Mashinani boshqarish uchun ilovalar"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Masalan, avtoturargohda mashina atrofidagi boʻsh joyni koʻrsatuvchi ilovalar"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Faqat kerakli ilovalar"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Faqat avtomobil ishlab chiqaruvchisi ruxsat bergan ilovalar"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Mashinani boshqarish uchun ilovalar"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Avtoturargohda mashina atrofidagi boʻsh joyni koʻrsatuvchi va kerakli ilovalar"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Mashinani boshqarish uchun ilovalar"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Avtomobilda sizga yordam berish uchun ushbu ilovalarga kameralardan foydalanish imkoniyati beriladi."</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Kerakli ilovalar"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Bu ilovalar avtomobilingizning xavfsiz ishlashi uchun kerak."</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Siyosat"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Avtomobil ishlab chiqaruvchisi avtomobil kamerasini hali ham koʻrishi mumkin. Batafsil axborot uchun ularning qoidalari bilan tanishing."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Maxfiylik siyosatini tekshirish orqali har bir ilova kameradan qanday foydalanishi haqida batafsil axborot oling."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Kerakli ilovalar"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Haydashda yordam berish uchun avtomobil ishlab chiqaruvchisi talab qilgan ilovalar"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Siyosat"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Avtomobil ishlab chiqaruvchisi avtomobil kamerasini hali ham koʻrishi mumkin"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Axborot-hordiq ilovalari"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Axborot-hordiq ilovalari surat va video yozib olishiga ruxsat berish"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Ruxsat berilgan"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Doimiy"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Ruxsat berilmagan"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Faqat ilovadan foydalanayotganda"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Har safar soʻralsin"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Xavfsizlik"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Ekran qulfi"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Hech qanday"</string>
@@ -917,4 +923,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Yaqinda ishlatilgan"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Hammasi"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Yuklanmoqda…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Tarif rejalari"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Internet tarifingiz muddati tugadi"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Tarif rejalari"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Tayyor"</string>
 </resources>
