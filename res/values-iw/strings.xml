@@ -534,7 +534,7 @@
     <string name="factory_reset_progress_text" msgid="7704636573522634757">"יש להמתין…"</string>
     <string name="date_and_time_settings_title" msgid="4058492663544475485">"תאריך ושעה"</string>
     <string name="date_and_time_settings_summary" msgid="7669856855390804666">"הגדרת תאריך, שעה, אזור זמן ופורמטים"</string>
-    <string name="date_time_auto" msgid="6018635902717385962">"הגדרת השעה באופן אוטומטי"</string>
+    <string name="date_time_auto" msgid="6018635902717385962">"הגדרת הזמן באופן אוטומטי"</string>
     <string name="zone_auto" msgid="4174874778459184605">"הגדרת אזור הזמן באופן אוטומטי"</string>
     <string name="date_time_24hour_title" msgid="3025576547136168692">"פורמט 24 שעות"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"פורמט 24 שעות"</string>
@@ -686,7 +686,7 @@
     <string name="set_screen_lock" msgid="5239317292691332780">"הגדרת מסך נעילה"</string>
     <string name="lockscreen_choose_your_pin" msgid="1645229555410061526">"בחירת קוד גישה"</string>
     <string name="lockscreen_choose_your_password" msgid="4487577710136014069">"בחירת סיסמה"</string>
-    <string name="current_screen_lock" msgid="637651611145979587">"נעילת המסך הנוכחית"</string>
+    <string name="current_screen_lock" msgid="637651611145979587">"השיטה הנוכחית לביטול הנעילה"</string>
     <string name="choose_lock_pattern_message" msgid="6242765203541309524">"מטעמי אבטחה, יש להגדיר קו ביטול נעילה"</string>
     <string name="lockpattern_retry_button_text" msgid="4655398824001857843">"ניקוי"</string>
     <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"ביטול"</string>

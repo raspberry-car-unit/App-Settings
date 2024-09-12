@@ -315,7 +315,7 @@
     <string name="all_applications" msgid="7798210477486822168">"Wys alle programme"</string>
     <string name="default_applications" msgid="1558183275638697087">"Verstekapps"</string>
     <string name="performance_impacting_apps" msgid="3439260699394720569">"Apps wat werkverrigting beïnvloed"</string>
-    <string name="app_permissions" msgid="32799922508313948">"Programtoestemmings"</string>
+    <string name="app_permissions" msgid="32799922508313948">"Apptoestemmings"</string>
     <string name="app_permissions_summary" msgid="5402214755935368418">"Beheer apptoegang tot jou data"</string>
     <string name="applications_settings" msgid="794261395191035632">"Appinligting"</string>
     <string name="force_stop" msgid="1616958676171167028">"Stop app"</string>

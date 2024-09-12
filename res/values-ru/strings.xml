@@ -686,7 +686,7 @@
     <string name="set_screen_lock" msgid="5239317292691332780">"Блокировка экрана"</string>
     <string name="lockscreen_choose_your_pin" msgid="1645229555410061526">"Выберите PIN-код"</string>
     <string name="lockscreen_choose_your_password" msgid="4487577710136014069">"Выберите пароль"</string>
-    <string name="current_screen_lock" msgid="637651611145979587">"Текущий способ блокировки"</string>
+    <string name="current_screen_lock" msgid="637651611145979587">"Текущий способ разблокировки"</string>
     <string name="choose_lock_pattern_message" msgid="6242765203541309524">"Для защиты системы создайте граф. ключ."</string>
     <string name="lockpattern_retry_button_text" msgid="4655398824001857843">"Очистить"</string>
     <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"Отмена"</string>
