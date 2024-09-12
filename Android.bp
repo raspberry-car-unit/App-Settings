@@ -60,6 +60,11 @@ android_library {
     resource_dirs: ["res"],
     // TODO(b/319708040): re-enable use_resource_processor
     use_resource_processor: false,
+    lint: {
+        warning_checks: [
+            "FlaggedApi",
+        ],
+    },
 }
 
 android_app {
@@ -135,6 +140,11 @@ android_app {
     dxflags: ["--multi-dex"],
     // TODO(b/319708040): re-enable use_resource_processor
     use_resource_processor: false,
+    lint: {
+        warning_checks: [
+            "FlaggedApi",
+        ],
+    },
 }
 
 android_library {
@@ -194,6 +204,11 @@ android_library {
     aaptflags: ["--extra-packages com.android.car.settings"],
     // TODO(b/319708040): re-enable use_resource_processor
     use_resource_processor: false,
+    lint: {
+        warning_checks: [
+            "FlaggedApi",
+        ],
+    },
 }
 
 filegroup {
