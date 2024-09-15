@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"উজ্জ্বলতার স্তর"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"অভিযোজিত উজ্জ্বলতা"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"পরিবেশ অনুযায়ী স্ক্রিনের উজ্জ্বলতা অ্যাডজাস্ট করুন"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"থিম"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"নাইট লাইট চালু আছে"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"নেটওয়ার্ক এবং ইন্টারনেট"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"মোবাইল নেটওয়ার্ক"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"বেছে নেওয়া ৫.০ GHz ব্যান্ড"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"২.৪ GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"৫.০ GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"২.৪ ও ৫.০ GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"ওয়াই-ফাই হটস্পটের জন্য অন্তত একটি ব্যান্ড বেছে নিন:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"ওয়াই-ফাই হটস্পট"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"হটস্পট"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"ওয়াই-ফাই হটস্পট ব্যবহার করুন"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"বন্ধ করা আছে"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"নিজে থেকে হটস্পট বন্ধ করুন"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"কোনও ডিভাইস কানেক্ট করা না থাকলে ওয়াই-ফাই হটস্পট বন্ধ হয়ে যাবে"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"সব রকমের ড্রাইভের জন্য হটস্পট ব্যবহার করুন"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"আপনার গাড়ি যখনই চালু করবেন, তখনই হটস্পট অটোমেটিক চালু করুন"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\"-এ যোগ দিতে QR কোড স্ক্যান করুন"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"হটস্পটের পাসওয়ার্ড: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> ওয়াই-ফাই বন্ধ করতে চান"</string>
@@ -211,11 +213,14 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"আগে কানেক্ট করা আছে"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s কানেক্ট করা আছে"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s কানেক্ট করা নেই"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"আপনার গাড়িতে থাকা ডিভাইস কানেকশন"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"আলট্রা-ওয়াইডব্যান্ড (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"এটি আপনার গাড়িকে UWB ডিভাইসের পজিশন শনাক্ত করতে সাহায্য করে"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"ব্লুটুথ পেয়ার করার অনুরোধ"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"পেয়ার এবং কানেক্ট করুন"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ব্লুটুথ-এর সাথে পেয়ার করার কোড"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"পিনে অক্ষর বা চিহ্ন রয়েছে"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"যুক্ত করার কোড লিখে রিটার্ন অথবা এন্টার টিপুন"</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"কানেক্ট করার কোড লিখে Return অথবা Enter টিপুন"</string>
     <string name="bluetooth_pairing_request" msgid="4769675459526556801">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> এর সাথে পেয়ার করবেন?"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>কে আপনার পরিচিতি এবং কলের ইতিহাস অ্যাক্সেস করতে দিন"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"আপনাকে অন্য ডিভাইসে এই পিন টাইপ করতে হতে পারে।"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"সতর্কতা বিজ্ঞপ্তির সাউন্ড"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"রিংটোন, বিজ্ঞপ্তি, সতর্কতা"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"এই ডিভাইসে মিডিয়া চালান"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"%1$s-এ মিডিয়া পরিবর্তন করা হচ্ছে"</string>
     <string name="display_brightness" msgid="5718970880488110840">"উজ্জ্বলতা"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"কম আলোর জন্য স্ক্রিন অ্যাডজাস্ট করুন"</string>
     <string name="units_settings" msgid="402325305096925886">"একক"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"সিস্টেম অ্যাপ দেখুন"</string>
     <string name="hide_system" msgid="8845453295584638040">"সিস্টেম লুকান"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"সিস্টেম অ্যাপ আড়াল করুন"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"অ্যালার্ম ও রিমাইন্ডার"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"সিস্টেম সেটিংস পরিবর্তন করুন"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"এই অনুমতিটি কোনও অ্যাপকে সিস্টেম সেটিংস পরিবর্তন করার অনুমতি দেয়।"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"বিজ্ঞপ্তি অ্যাক্সেস"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"বাতিল করুন"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"এইসব অ্যাপ সিস্টেম পারফর্ম্যান্সের উপরে নেতিবাচক প্রভাব ফেলে এবং ব্যাকগ্রাউন্ডে রান করা থেকে এগুলিকে আটকানো হয়েছে।\nব্যাকগ্রাউন্ডে চলার জন্য অ্যাপকে অগ্রাধিকার দিন ও এই তালিকা থেকে সেটি সরিয়ে দিন।"</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"অ্যাপকে অগ্রাধিকার দিন"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"প্রিমিয়াম এসএমএস অ্যাক্সেস"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"প্রিমিয়াম এসএমএস"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"প্রিমিয়াম এসএমএসের জন্য অর্থ খরচ হতে পারে এবং আপনার পরিষেবা প্রদানকারীর বিলে যোগ করা হবে৷ আপনি যদি কোনও অ্যাপের জন্য অনুমতি চালু করেন তাহলে আপনি সেই অ্যাপ ব্যবহার করে প্রিমিয়াম এসএমএস পাঠাতে পারবেন।"</string>
     <string name="usage_access_title" msgid="7153427122072303254">"ব্যবহারের তথ্যে অ্যাক্সেস"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"ব্যবহার অ্যাক্সেস ফিচারের মাধ্যমে কোনও অ্যাপ, আপনি কী কী অ্যাপ ব্যবহার করছেন এবং কত ঘন ঘন ব্যবহার করছেন তা ট্র্যাক করতে পারে, এর পাশাপাশি আপনার পরিষেবা প্রদানকারী, ভাষা সেটিংস, এবং অন্যান্য বিষয়ে বিবরণ দেখতে পারে।"</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"লোকেশন"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"লোকেশন ব্যবহার করুন"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"আপনার নির্দিষ্ট করা যেকোনও অ্যাপ দিয়ে আপনার গাড়ির লোকেশন ব্যবহার করুন।"</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"ইনফোটেইনমেন্ট অ্যাপ"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"অ্যাপকে আপনার লোকেশন অ্যাক্সেস করার অনুমতি দিন"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"আপনি এটি বন্ধ করলে, \'ড্রাইভার অ্যাসিস্ট্যান্স\'-এর জন্য প্রয়োজনীয় অ্যাপ বাদে বাকি সব অ্যাপের ক্ষেত্রে লোকেশন অ্যাক্সেস সংক্রান্ত অনুমতি এটি সরিয়ে দেবে"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"আপনি এটি বন্ধ করলে, লোকেশন সংক্রান্ত তথ্যের উপরে নির্ভর করে কাজ করা ড্রাইভার অ্যাসিস্ট্যান্স অ্যাপ বন্ধ হয়ে যাবে"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"যাইহোক বন্ধ করুন"</string>
@@ -643,26 +652,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"আপনার প্রোফাইল মুছুন"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ইনফোটেইনমেন্ট সিস্টেম থেকে আপনার প্রোফাইল এবং অ্যাকাউন্ট মুছুন"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"আপনার প্রোফাইলে অ্যাকশনটি উপলভ্য নেই"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"মাইক্রোফোন অ্যাক্সেস করা"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"কোনও অ্যাপ আপনার গাড়ির মাইক্রোফোন অ্যাক্সেস করতে পারবে কিনা তা বেছে নিন"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"ইনফোটেইনমেন্ট অ্যাপ"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"অডিও রেকর্ড করতে ইনফোটেইনমেন্ট অ্যাপে অনুমতি দিন"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"ক্যামেরা অ্যাক্সেস"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"কোনও অ্যাপ আপনার গাড়ির ক্যামেরা অ্যাক্সেস করতে পারবে কিনা তা বেছে নিন"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"এর সাথে আপনার গাড়ির ক্যামেরা ব্যবহার করুন:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"যে কোনও অ্যাপ"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"যেকোনও অ্যাপকে আপনার ক্যামেরা অ্যাক্সেস করার অনুমতি দিন"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"কোনও অ্যাপের কাছে ক্যামেরা অ্যাক্সেস নেই"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"আপনার কোনও অ্যাপের কাছে ক্যামেরা অ্যাক্সেস নেই"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"আপনার গাড়ি চালানোর সহায়ক অ্যাপ"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"পার্ক করার সময় আশেপাশের জিনিস দেখায় এমন অ্যাপ"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"শুধুমাত্র প্রয়োজনীয় অ্যাপ"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"শুধুমাত্র গাড়ি প্রস্তুতকারীর প্রয়োজনীয় অ্যাপ"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"আপনার গাড়ি চালানোর সহায়ক অ্যাপ"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"পার্ক করার সময় আশেপাশের জিনিস দেখায় এমন অ্যাপ ও প্রয়োজনীয় অ্যাপ"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"আপনার গাড়ি চালানোর সহায়ক অ্যাপ"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"গাড়ি চালানোর ক্ষেত্রে সাহায্য করার জন্য এইসব অ্যাপ আপনার ক্যামেরা অ্যাক্সেস করতে পারে"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"প্রয়োজনীয় অ্যাপ"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"গাড়ি যাতে নিরাপদে কাজ করে সেক্ষেত্রে সাহায্য করার জন্য এইসব অ্যাপ প্রয়োজন"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"নীতি"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"আপনার গাড়ি প্রস্তুতকারীর কাছে এখনও হয়ত গাড়ির ক্যামেরার অ্যাক্সেস আছে। আপনি আরও তথ্যের জন্য তাদের নীতি পর্যালোচনা করতে পারবেন।"</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"প্রতিটি অ্যাপ কীভাবে তার গোপনীয়তা নীতি পর্যালোচনা করে আপনার ক্যামেরা ব্যবহার করে, সেই সম্পর্কে আরও জানুন।"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"প্রয়োজনীয় অ্যাপ"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"আপনাকে গাড়ি চালাতে সহায়তা করতে, গাড়ি প্রস্তুতকারকের জন্য প্রয়োজনীয় অ্যাপ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"নীতি"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"আপনার গাড়ি প্রস্তুতকারীর কাছে এখনও হয়ত গাড়ির ক্যামেরার অ্যাক্সেস আছে"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"ইনফোটেইনমেন্ট অ্যাপ"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ইনফোটেইনমেন্ট অ্যাপকে ছবি তোলার ও ভিডিও রেকর্ড করার অনুমতি দিন"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"অনুমোদিত"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"সব সময়ের জন্য"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"অননুমোদিত"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"শুধুমাত্র অ্যাপ ব্যবহারের সময়"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"প্রত্যেকবার জিজ্ঞাসা করো"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"নিরাপত্তা"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"স্ক্রিন লক"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"কোনওটিই নয়"</string>
@@ -917,4 +923,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"সম্প্রতি অ্যাক্সেস করা হয়েছে"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"সব দেখুন"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"লোড হচ্ছে…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"প্ল্যান দেখুন"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"আপনার ইন্টারনেট প্ল্যানের মেয়াদ শেষ হয়ে গেছে"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"প্ল্যান দেখুন"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"হয়ে গেছে"</string>
 </resources>

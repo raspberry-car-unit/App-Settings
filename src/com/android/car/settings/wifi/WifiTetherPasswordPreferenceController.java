@@ -137,6 +137,7 @@ public class WifiTetherPasswordPreferenceController extends
         if (mSecurityType == SoftApConfiguration.SECURITY_TYPE_OPEN) {
             return null;
         }
+
         SoftApConfiguration config = getCarSoftApConfig();
         if (config != null) {
             String passphrase = config.getPassphrase();

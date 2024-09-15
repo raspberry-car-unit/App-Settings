@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Επίπεδο φωτεινότητας"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Προσαρμοστική φωτεινότητα"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Προσαρμογή φωτεινότητας οθόνης στο περιβάλλον"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Θέμα"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Νυχτερινός φωτισμός ενεργός"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Δίκτυο και διαδίκτυο"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Δίκτυο κινητής τηλεφωνίας"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Προτιμάται εύρος 5,0 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 and 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Επιλέξτε τουλ. ένα εύρος για το ΣΠ Wi‑Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Σημείο πρόσβασης Wi-Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Σημείο πρόσβασης Wi-Fi"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Χρήση σημείου πρόσβασης Wi-Fi"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Ανενεργό"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Αυτόματη απενεργοποίηση σημείου πρόσβασης Wi-Fi"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Το σημείο πρόσβασης Wi‑Fi θα απενεργοποιηθεί εάν δεν υπάρχουν συνδεδεμένες συσκευές"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Χρήση σημ. πρόσβασης Wi-Fi σε όλες τις διαδρομές"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Να είναι διαθέσιμο το σημείο πρόσβασης Wi-Fi κάθε φορά που είναι αναμμένη η μηχανή του αυτοκινήτου"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Σαρώστε αυτόν τον κωδικό QR για σύνδεση στο \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Κωδικός πρόσβασης του σημείου πρόσβασης Wi-Fi: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"Η εφαρμογή <xliff:g id="REQUESTER">%s</xliff:g> θέλει να ενεργοποιήσει το Wi-Fi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Συνδέθηκαν στο παρελθόν"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Η συσκευή %1$s συνδέθηκε"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Η συσκευή %1$s αποσυνδέθηκε"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Συνδέσεις συσκευών με το αυτοκίνητό σας"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Υπερευρεία ζώνη (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Βοηθάει το αυτοκίνητό σας να προσδιορίσει τη θέση των συσκευών UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Αίτημα σύζευξης Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Σύζευξη και σύνδεση"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Κωδικός σύζευξης Bluetooth"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Ήχοι ειδοποιήσεων"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Ήχος κλήσης, ειδοποιήσεις, ξυπνητήρια"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Αναπαραγωγή μέσων σε"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Γίνεται εναλλαγή των μέσων σε %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Φωτεινότητα"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Προσαρμογή οθόνης για χαμηλό φωτισμό"</string>
     <string name="units_settings" msgid="402325305096925886">"Μονάδες"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Εμφάνιση συστήματος"</string>
     <string name="hide_system" msgid="8845453295584638040">"Απόκρυψη συστήματος"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Απόκρυψη εφαρμογών συστήματος"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Ξυπνητήρια και υπενθυμίσεις"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Τροποποίηση ρυθμ. συστήματος"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Αυτή η άδεια επιτρέπει σε μια εφαρμογή την τροποποίηση των ρυθμίσεων συστήματος."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Πρόσβαση ειδοποιήσεων"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Ακύρωση"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Αυτές οι εφαρμογές επηρεάζουν αρνητικά την απόδοση του συστήματος και η εκτέλεσή τους στο παρασκήνιο έχει αποτραπεί.\nΔώστε προτεραιότητα στην εφαρμογή για να επιτρέψετε τη χρήση στο παρασκήνιο και καταργήστε την από τη λίστα."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Προτερ. εφαρμογής"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Πρόσβαση σε SMS επιπλέον χρέωσης"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS με επιπλέον χρέωση"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Τα SMS επιπλέον χρέωσης ενδέχεται να κοστίζουν χρήματα και θα αυξήσουν το συνολικό ποσό των λογαριασμών της εταιρείας κινητής τηλεφωνίας. Εάν ενεργοποιήσετε την πρόσβαση για μια εφαρμογή, θα μπορείτε να στέλνετε SMS επιπλέον χρέωσης χρησιμοποιώντας τη συγκεκριμένη εφαρμογή."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Πρόσβαση χρήσης"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Η πρόσβαση χρήσης επιτρέπει σε μια εφαρμογή να παρακολουθεί τις άλλες εφαρμογές που χρησιμοποιείτε, τη συχνότητα χρήσης τους, καθώς και την εταιρεία κινητής τηλεφωνίας σας, τις ρυθμίσεις γλώσσας και άλλες λεπτομέρειες."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Τοποθεσία"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Χρήση τοποθεσίας"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Χρησιμοποιήστε την τοποθεσία του αυτοκινήτου σας με οποιαδήποτε εφαρμογή έχετε καθορίσει."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Εφαρμογές ενημέρωσης και ψυχαγωγίας"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Να επιτρέπεται στις εφαρμογές να έχουν πρόσβαση στην τοποθεσία σας"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Αν απενεργοποιήσετε αυτήν τη επιλογή, θα καταργηθεί η πρόσβαση στην τοποθεσία για όλες τις εφαρμογές, εκτός από αυτές που απαιτούνται για υποβοήθηση οδηγού"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Αν απενεργοποιήσετε αυτήν τη επιλογή, οι εφαρμογές υποβοήθησης οδηγού που βασίζονται στις πληροφορίες τοποθεσίας θα απενεργοποιηθούν"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Απενεργοποίηση ούτως ή άλλως"</string>
@@ -515,7 +524,7 @@
     <string name="factory_reset_title" msgid="4019066569214122052">"Διαγραφή δεδομένων (επαναφ. εργ. ρυθ.)"</string>
     <string name="factory_reset_summary" msgid="854815182943504327">"Διαγραφή όλων των δεδομένων και προφίλ του συστήματος ενημέρωσης και ψυχαγωγίας"</string>
     <string name="factory_reset_desc" msgid="2774024747279286354">"Αυτή η ενέργεια θα διαγράψει όλα τα δεδομένα από το σύστημα ενημέρωσης και ψυχαγωγίας του οχήματος, συμπεριλαμβανομένων των εξής:\n\n"<li>"Του λογαριασμού και των προφίλ σας"</li>\n<li>"Των δεδομένων και των ρυθμίσεων του συστήματος και των εφαρμογών"</li>\n<li>"Των εφαρμογών που έχετε κατεβάσει"</li></string>
-    <string name="factory_reset_accounts" msgid="5523956654938834209">"Αυτήν τη στιγμή είστε συνδεδεμένοι στους παρακάτω λογαριασμούς:"</string>
+    <string name="factory_reset_accounts" msgid="5523956654938834209">"Αυτή τη στιγμή είστε συνδεδεμένοι στους παρακάτω λογαριασμούς:"</string>
     <string name="factory_reset_other_users_present" msgid="3852324375352090570">"Έχουν ρυθμιστεί άλλα προφίλ για αυτό το όχημα."</string>
     <string name="factory_reset_button_text" msgid="2626666247051368256">"Διαγραφή όλων των δεδομένων"</string>
     <string name="factory_reset_confirm_title" msgid="3354542161765761879">"Διαγραφή όλων των δεδομένων;"</string>
@@ -643,26 +652,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Διαγραφή του προφίλ σας"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Διαγράψτε το προφίλ και τους λογαριασμούς σας από το σύστημα ενημέρωσης και ψυχαγωγίας"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Αυτή η ενέργεια δεν είναι δυνατή για το προφίλ σας"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Πρόσβαση μικροφώνου"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Επιλέξτε αν οι εφαρμογές θα έχουν πρόσβαση στα μικρόφωνα του αυτοκινήτου σας"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Εφαρμογές ενημέρωσης και ψυχαγωγίας"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Να επιτρέπεται η εγγραφή ήχου από εφαρμογές ενημέρωσης και ψυχαγωγίας"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Πρόσβαση κάμερας"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Επιλέξτε αν οι εφαρμογές θα έχουν πρόσβαση στις κάμερες του αυτοκινήτου σας"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Χρησιμοποιήστε τις κάμερες του αυτοκινήτου:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Με οποιαδήποτε εφαρμογή"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Οποιαδήποτε εφαρμογή στην οποία έχετε επιτρέψει να έχει πρόσβαση στην κάμερα"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Με καμία εφαρμογή"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Καμία από τις εφαρμογές σας"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Με εφαρμογές που βοηθούν στην οδήγηση"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Εφαρμογές που σας βοηθούν με διάφορα πράγματα, όπως αυτές που δείχνουν τον περιβάλλοντα χώρο όταν παρκάρετε"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Με απαιτούμενες εφαρμογές μόνο"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Εφαρμογές που απαιτεί ο κατασκευαστής του αυτοκινήτου και μόνο με αυτές"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Με εφαρμογές που βοηθούν στην οδήγηση"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Εφαρμογές που σας βοηθούν με διάφορα πράγματα, όπως αυτές που δείχνουν τον περιβάλλοντα χώρο όταν παρκάρετε, και με απαιτούμενες εφαρμογές"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Με εφαρμογές που βοηθούν στην οδήγηση"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Αυτές οι εφαρμογές μπορούν να έχουν πρόσβαση στην κάμερά σας για να σας βοηθούν στην οδήγηση"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Απαιτούμενες εφαρμογές"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Αυτές οι εφαρμογές είναι απαραίτητες καθώς συμβάλλουν στην ασφαλή λειτουργία του αυτοκινήτου"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Πολιτική"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Ο κατασκευαστής του αυτοκινήτου ενδέχεται να εξακολουθεί να έχει πρόσβαση στην κάμερα του αυτοκινήτου σας. Ελέγξτε τις πολιτικές του κατασκευαστή για περισσότερες πληροφορίες."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Ανατρέξτε στην Πολιτική απορρήτου κάθε εφαρμογής, για να μάθετε περισσότερα σχετικά με το πώς χρησιμοποιεί την κάμερα."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Απαιτούμενες εφαρμογές"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Εφαρμογές που απαιτούνται από τον κατασκευαστή του αυτοκινήτου σας, οι οποίες βοηθούν στην οδήγηση"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Πολιτική"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Ο κατασκευαστής του αυτοκινήτου ενδέχεται να εξακολουθεί να έχει πρόσβαση στην κάμερα του αυτοκινήτου σας"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Εφαρμογές ενημέρωσης και ψυχαγωγίας"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Επιτρέψτε στις εφαρμογές ενημέρωσης και ψυχαγωγίας να τραβούν φωτογραφίες και να εγγράφουν βίντεο"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Επιτρέπεται"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Να επιτρέπεται πάντα"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Δεν επιτρέπεται"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Μόνο κατά τη χρήση της εφαρμογής"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Ερώτηση κάθε φορά"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Ασφάλεια"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Κλείδωμα οθόνης"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Κανένα"</string>
@@ -917,4 +923,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Πρόσφατη πρόσβαση"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Προβολή όλων"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Φόρτωση…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Δείτε τα προγράμματα"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Τα διαδικτυακά προγράμματα έληξαν"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Δείτε τα προγράμματα"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Τέλος"</string>
 </resources>

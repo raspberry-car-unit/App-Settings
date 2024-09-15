@@ -16,6 +16,7 @@
 
 package com.android.car.settings.wifi;
 
+import android.annotation.FlaggedApi;
 import android.content.Context;
 import android.net.wifi.SoftApConfiguration;
 import android.net.wifi.WifiManager;
@@ -23,12 +24,13 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.MainThread;
+import androidx.annotation.Nullable;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
+import com.android.car.settings.Flags;
 import com.android.wifitrackerlib.WifiEntry;
 import com.android.wifitrackerlib.WifiPickerTracker;
 
@@ -162,7 +164,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      * Returns {@code true} if Wifi is enabled
      */
     public boolean isWifiEnabled() {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             return mWifiManager.isWifiEnabled();
         }
         return false;
@@ -172,7 +174,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      * Returns {@code true} if Wifi tethering is enabled
      */
     public boolean isWifiApEnabled() {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             return mWifiManager.isWifiApEnabled();
         }
         return false;
@@ -183,7 +185,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      */
     @Nullable
     public SoftApConfiguration getSoftApConfig() {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             return mWifiManager.getSoftApConfiguration();
         }
         return null;
@@ -193,7 +195,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      * Sets {@link SoftApConfiguration} for tethering
      */
     public void setSoftApConfig(SoftApConfiguration config) {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             mWifiManager.setSoftApConfiguration(config);
         }
     }
@@ -203,7 +205,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      */
     @Nullable
     public String getCountryCode() {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             return mWifiManager.getCountryCode();
         }
         return null;
@@ -213,7 +215,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
      * Checks if the chipset supports 5GHz frequency band.
      */
     public boolean is5GhzBandSupported() {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             return mWifiManager.is5GHzBandSupported();
         }
         return false;
@@ -221,7 +223,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
 
     /** Gets the wifi state from {@link WifiManager}. */
     public int getWifiState() {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             return mWifiManager.getWifiState();
         }
         return WifiManager.WIFI_STATE_UNKNOWN;
@@ -229,7 +231,7 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
 
     /** Sets whether wifi is enabled. */
     public boolean setWifiEnabled(boolean enabled) {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             return mWifiManager.setWifiEnabled(enabled);
         }
         return false;
@@ -237,16 +239,27 @@ public class CarWifiManager implements WifiPickerTracker.WifiPickerTrackerCallba
 
     /** Adds callback for Soft AP */
     public void registerSoftApCallback(Executor executor, WifiManager.SoftApCallback callback) {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             mWifiManager.registerSoftApCallback(executor, callback);
         }
     }
 
     /** Removes callback for Soft AP */
     public void unregisterSoftApCallback(WifiManager.SoftApCallback callback) {
-        if (mWifiManager != null ) {
+        if (mWifiManager != null) {
             mWifiManager.unregisterSoftApCallback(callback);
         }
+    }
+
+    /**
+     * Returns whether Wi-Fi Dual Band is supported or not.
+     */
+    @FlaggedApi(Flags.FLAG_HOTSPOT_UI_SPEED_UPDATE)
+    public boolean isDualBandSupported() {
+        if (mWifiManager != null) {
+            return mWifiManager.isBridgedApConcurrencySupported();
+        }
+        return false;
     }
 
     @Override

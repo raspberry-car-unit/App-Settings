@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Nivel de luminozitate"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Luminozitate adaptivă"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Ajustează luminozitatea ecranului în funcție de mediu"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Temă"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Lumina de noapte este activată"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Rețea și internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Rețea mobilă"</string>
@@ -103,7 +104,7 @@
     <string name="wifi_show_password" msgid="8423293211933521097">"Afișează parola"</string>
     <string name="wifi_no_network_name" msgid="6819604337231313594">"Introdu numele unei rețele"</string>
     <string name="wifi_ssid" msgid="488604828159458741">"Numele rețelei"</string>
-    <string name="wifi_ssid_hint" msgid="3170608752313710099">"Introdu identificatorul SSID"</string>
+    <string name="wifi_ssid_hint" msgid="3170608752313710099">"Introdu SSID-ul"</string>
     <string name="wifi_security" msgid="158358046038876532">"Securitate"</string>
     <string name="wifi_signal_strength" msgid="8507318230553042817">"Puterea semnalului"</string>
     <string name="wifi_status" msgid="5688013206066543952">"Stare"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Se preferă banda de 5,0 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 și 5 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Alege cel puțin o bandă pentru hotspot Wi-Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Hotspot Wi-Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Folosește un hotspot Wi‑Fi"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Dezactivat"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Dezactivează automat hotspotul"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Hotspotul Wi-Fi se va dezactiva dacă nu se conectează niciun dispozitiv"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Folosește hotspotul pentru toate unitățile"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Fă hotspotul disponibil când mașina este pornită"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Scanează acest cod QR pentru a te conecta la %s"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Parola hotspotului: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> încearcă să activeze Wi-Fi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Conectate anterior"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s s-a conectat"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s s-a deconectat"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Conexiuni între dispozitive și mașină"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Bandă ultralargă (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Ajută mașina să identifice poziția dispozitivelor UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Solicitare de conectare prin Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Asociază și conectează"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Cod de conectare prin Bluetooth"</string>
@@ -234,7 +239,7 @@
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"Toate limbile"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"Tastatură"</string>
     <string name="manage_keyboard" msgid="4045394766282200132">"Gestionează tastaturile"</string>
-    <string name="text_to_speech_settings" msgid="811985746199507343">"Rezultatul redării vocale a textului"</string>
+    <string name="text_to_speech_settings" msgid="811985746199507343">"Setări pentru redarea vocală a textului"</string>
     <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Motor preferat"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"Motor actual"</string>
     <string name="tts_speech_rate" msgid="4512944877291943133">"Ritmul vorbirii"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Sunetele alertelor"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Ton de apel, notificări, alarmă"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Redă conținut media pe"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Se comută conținutul media la %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Luminozitate"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Ajustează ecranul pentru condiții de lumină slabă"</string>
     <string name="units_settings" msgid="402325305096925886">"Unități"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Afișează procesele de sistem"</string>
     <string name="hide_system" msgid="8845453295584638040">"Ascunde procesele de sistem"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Ascunde aplicațiile de sistem"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarme și mementouri"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Modifică setările de sistem"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Având această permisiune, o aplicație poate să modifice setările de sistem."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Acces la notificări"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Anulează"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Aceste aplicații afectează negativ performanța sistemului și nu s-a permis rularea lor în fundal.\nPrioritizează aplicația pentru a permite folosirea în fundal și elimin-o din listă."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Prioritizează aplicația"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Acces la SMS-uri premium"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS premium"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS-urile premium pot genera costuri care se vor adăuga la factura operatorului. Dacă activezi permisiunea pentru o aplicație, vei putea trimite SMS-uri premium folosind acea aplicație."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Acces la datele de utilizare"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Cu accesul la datele de utilizare, o aplicație poate să înregistreze ce alte aplicații folosești și cât de des le folosești, precum și operatorul, setările de limbă și alte detalii."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Locație"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Folosește locația"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Folosește locația mașinii pentru toate aplicațiile selectate."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Aplicațiile de infotainment"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Permite-le aplicațiilor acces la locația ta"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Dacă dezactivezi opțiunea, permisiunea de acces la locație va fi eliminată pentru toate aplicațiile, cu excepția celor necesare în asistența pentru șofer."</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Dacă dezactivezi opțiunea, aplicațiile de asistență pentru șofer care se bazează pe informațiile despre locație se vor dezactiva"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Dezactivează oricum"</string>
@@ -643,26 +652,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Șterge profilul"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Șterge profilul și conturile de pe sistemul de infotainment"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Acțiunea nu este disponibilă pentru profilul tău"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Acces la microfon"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Alege dacă aplicațiile pot accesa microfoanele mașinii"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Aplicații de infotainment"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Permite ca aplicațiile de infotainment să înregistreze conținut audio"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Acces la camere"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Alege dacă aplicațiile pot accesa camerele mașinii"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Folosește camerele mașinii cu:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Orice aplicație"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Orice aplicație căreia i-ai acordat acces la cameră"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Nicio aplicație"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Nicio aplicație."</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Aplicații care te ajută să conduci."</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Aplicații care te ajută, de exemplu, arătându-ți împrejurimile când parchezi."</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Doar aplicațiile necesare"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Doar aplicațiile solicitate de producătorul mașinii"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Aplicații care te ajută să conduci."</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Aplicații care te ajută, de exemplu, arătându-ți împrejurimile când parchezi, și aplicații necesare."</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Aplicații care te ajută să conduci."</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Aceste aplicații pot accesa camera pentru a te ajuta la condus"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Aplicații necesare"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Aceste aplicații sunt necesare pentru ca mașina să funcționeze în siguranță"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Politică"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Producătorul mașinii poate avea în continuare acces la camera mașinii. Poți consulta politicile acestuia pentru mai multe informații."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Consultă Politica de confidențialitate și află mai multe despre modul în care fiecare aplicație folosește camera."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Aplicațiile necesare"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Aplicații cerute de producătorul mașinii ca să te ajute să conduci"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Politica"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Producătorul mașinii poate avea în continuare acces la camera mașinii"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Aplicațiile de infotainment"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Permite ca aplicațiile de infotainment să facă fotografii și să înregistreze conținut video"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Permisă"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Tot timpul"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Nepermisă"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Numai când folosești aplicația"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Întreabă de fiecare dată"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Securitate"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Blocarea ecranului"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Fără"</string>
@@ -923,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Accesate recent"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Afișează tot"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Se încarcă…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Vezi planurile"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Planurile tale de internet au expirat"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Vezi planurile"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Gata"</string>
 </resources>

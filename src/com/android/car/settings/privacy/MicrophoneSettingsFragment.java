@@ -16,6 +16,7 @@
 
 package com.android.car.settings.privacy;
 
+import com.android.car.settings.Flags;
 import com.android.car.settings.R;
 import com.android.car.settings.common.SettingsFragment;
 
@@ -26,6 +27,10 @@ public class MicrophoneSettingsFragment extends SettingsFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
+        // TODO(b/340636015): Update the name of the xml file when the flag is removed.
+        if (Flags.microphonePrivacyUpdates()) {
+            return R.xml.privacy_microphone_settings_fragment_updated;
+        }
         return R.xml.privacy_microphone_settings_fragment;
     }
 }

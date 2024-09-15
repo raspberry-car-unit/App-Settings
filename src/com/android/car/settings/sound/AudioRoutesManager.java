@@ -16,8 +16,10 @@
 
 package com.android.car.settings.sound;
 
+import static android.car.media.CarAudioManager.AUDIO_FEATURE_DYNAMIC_ROUTING;
 import static android.media.AudioDeviceInfo.TYPE_BLUETOOTH_A2DP;
 
+import android.bluetooth.BluetoothProfile;
 import android.car.media.AudioZoneConfigurationsChangeCallback;
 import android.car.media.CarAudioManager;
 import android.car.media.CarAudioZoneConfigInfo;
@@ -28,11 +30,14 @@ import android.media.AudioAttributes;
 import android.media.AudioDeviceAttributes;
 import android.media.AudioDeviceInfo;
 import android.util.ArrayMap;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 import androidx.core.content.ContextCompat;
 
 import com.android.car.settings.CarSettingsApplication;
+import com.android.car.settings.R;
 import com.android.car.settings.common.Logger;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
@@ -56,6 +61,7 @@ public class AudioRoutesManager {
     private AudioZoneConfigUpdateListener mUpdateListener;
     private List<String> mAddressList;
     private Map<String, AudioRouteItem> mAudioRouteItemMap;
+    private Toast mToast;
 
     /**
      * A listener for when the AudioZoneConfig is updated.
@@ -81,7 +87,9 @@ public class AudioRoutesManager {
             (zoneConfig, isSuccessful) -> {
                 if (isSuccessful) {
                     mActiveDeviceAddress = mFutureActiveDeviceAddress;
-                    mUpdateListener.onAudioZoneConfigUpdated();
+                    if (mUpdateListener != null) {
+                        mUpdateListener.onAudioZoneConfigUpdated();
+                    }
                 } else {
                     LOG.d("Switch audio zone failed.");
                 }
@@ -97,10 +105,13 @@ public class AudioRoutesManager {
         mUsage = usage;
         mAudioRouteItemMap = new ArrayMap<>();
         mAddressList = new ArrayList<>();
-        mCarAudioManager.clearAudioZoneConfigsCallback();
-        mCarAudioManager.setAudioZoneConfigsChangeCallback(ContextCompat.getMainExecutor(mContext),
-                mAudioZoneConfigurationsChangeCallback);
-        updateAudioRoutesList();
+        if (isAudioRoutingEnabled()) {
+            mCarAudioManager.clearAudioZoneConfigsCallback();
+            mCarAudioManager.setAudioZoneConfigsChangeCallback(
+                    ContextCompat.getMainExecutor(mContext),
+                    mAudioZoneConfigurationsChangeCallback);
+            updateAudioRoutesList();
+        }
     }
 
     private void updateAudioRoutesList() {
@@ -136,11 +147,17 @@ public class AudioRoutesManager {
         List<CachedBluetoothDevice> bluetoothDevices =
                 mBluetoothManager.getCachedDeviceManager().getCachedDevicesCopy().stream().toList();
         for (CachedBluetoothDevice bluetoothDevice : bluetoothDevices) {
-            if (bluetoothDevice.isConnectedA2dpDevice()
-                    && (!mAudioRouteItemMap.containsKey(bluetoothDevice.getAddress()))) {
-                AudioRouteItem audioRouteItem = new AudioRouteItem(bluetoothDevice);
-                mAddressList.add(audioRouteItem.getAddress());
-                mAudioRouteItemMap.put(audioRouteItem.getAddress(), audioRouteItem);
+            if (bluetoothDevice.isConnectedA2dpDevice()) {
+                if (mAudioRouteItemMap.containsKey(bluetoothDevice.getAddress())) {
+                    mAudioRouteItemMap.get(bluetoothDevice.getAddress())
+                            .setBluetoothDevice(bluetoothDevice);
+                    mAudioRouteItemMap.get(bluetoothDevice.getAddress())
+                            .setAudioRouteType(TYPE_BLUETOOTH_A2DP);
+                } else {
+                    AudioRouteItem audioRouteItem = new AudioRouteItem(bluetoothDevice);
+                    mAddressList.add(audioRouteItem.getAddress());
+                    mAudioRouteItemMap.put(audioRouteItem.getAddress(), audioRouteItem);
+                }
             }
         }
 
@@ -164,7 +181,15 @@ public class AudioRoutesManager {
         return mAddressList;
     }
 
-    public Map<String, AudioRouteItem> getAudioRouteItemMap() {
+    public String getDeviceNameForAddress(String address) {
+        if (mAudioRouteItemMap.containsKey(address)) {
+            return mAudioRouteItemMap.get(address).getName();
+        }
+        return address;
+    }
+
+    @VisibleForTesting
+    Map<String, AudioRouteItem> getAudioRouteItemMap() {
         return mAudioRouteItemMap;
     }
 
@@ -174,6 +199,14 @@ public class AudioRoutesManager {
 
     public CarAudioManager getCarAudioManager() {
         return mCarAudioManager;
+    }
+
+    public boolean isAudioRoutingEnabled() {
+        if (mCarAudioManager != null
+                && getCarAudioManager().isAudioFeatureEnabled(AUDIO_FEATURE_DYNAMIC_ROUTING)) {
+            return true;
+        }
+        return false;
     }
 
     public void tearDown() {
@@ -186,11 +219,16 @@ public class AudioRoutesManager {
      * Update to a new audio destination of the provided address.
      */
     public AudioRouteItem updateAudioRoute(String address) {
+        showToast(address);
         mFutureActiveDeviceAddress = address;
         AudioRouteItem audioRouteItem = mAudioRouteItemMap.get(address);
         if (audioRouteItem.getAudioRouteType() == TYPE_BLUETOOTH_A2DP) {
             CachedBluetoothDevice bluetoothDevice = audioRouteItem.getBluetoothDevice();
-            bluetoothDevice.setActive();
+            if (bluetoothDevice.isActiveDevice(BluetoothProfile.A2DP)) {
+                setAudioRouteActive();
+            } else {
+                bluetoothDevice.setActive();
+            }
         } else {
             setAudioRouteActive();
         }
@@ -228,5 +266,16 @@ public class AudioRoutesManager {
                 }
             }
         }
+    }
+
+    private void showToast(String address) {
+        if (mToast != null) {
+            mToast.cancel();
+        }
+        String deviceName = getDeviceNameForAddress(address);
+        String text = mContext.getString(R.string.audio_route_selector_toast, deviceName);
+        int duration = mContext.getResources().getInteger(R.integer.audio_route_toast_duration);
+        mToast = Toast.makeText(mContext, text, duration);
+        mToast.show();
     }
 }

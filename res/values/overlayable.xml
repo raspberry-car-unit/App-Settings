@@ -61,6 +61,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="attr" name="min"/>
       <item type="attr" name="minLabel"/>
       <item type="attr" name="mute_icon"/>
+      <item type="attr" name="normalTextColor"/>
       <item type="attr" name="occupant_driver"/>
       <item type="attr" name="occupant_front_passenger"/>
       <item type="attr" name="occupant_rear_passenger"/>
@@ -77,6 +78,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="attr" name="titleColor"/>
       <item type="attr" name="titleText"/>
       <item type="attr" name="usage"/>
+      <item type="attr" name="warningTextColor"/>
       <item type="attr" name="wifiSignalColor"/>
       <item type="bool" name="config_allow_adas_location_switch_clickable"/>
       <item type="bool" name="config_allow_audio_destination_selection"/>
@@ -84,6 +86,8 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="bool" name="config_automatic_brightness_available"/>
       <item type="bool" name="config_enable_home_settings_icon"/>
       <item type="bool" name="config_global_force_single_pane"/>
+      <item type="bool" name="config_show_camera_required_apps_toggle"/>
+      <item type="bool" name="config_show_location_required_apps_toggle"/>
       <item type="bool" name="config_show_premium_sms"/>
       <item type="bool" name="config_show_regulatory_info"/>
       <item type="bool" name="config_show_settings_root_exit_icon"/>
@@ -111,6 +115,11 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="color" name="icon_color_default"/>
       <item type="color" name="qc_default_icon_color"/>
       <item type="color" name="text_color_accent_with_disable"/>
+      <item type="color" name="theme_toggle_button_background"/>
+      <item type="color" name="theme_toggle_button_foreground"/>
+      <item type="color" name="theme_toggle_button_icon_color_checked"/>
+      <item type="color" name="theme_toggle_button_icon_color_unchecked"/>
+      <item type="color" name="theme_toggle_button_off_background_color"/>
       <item type="color" name="top_level_accessibility_background"/>
       <item type="color" name="top_level_accessibility_icon"/>
       <item type="color" name="top_level_applications_background"/>
@@ -253,6 +262,9 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="dimen" name="suggestions_text_padding_bottom"/>
       <item type="dimen" name="suggestions_text_padding_top"/>
       <item type="dimen" name="suggestions_top_bottom_margin"/>
+      <item type="dimen" name="theme_toggle_button_foreground_icon_inset"/>
+      <item type="dimen" name="theme_toggle_button_radius"/>
+      <item type="dimen" name="theme_toggle_button_size"/>
       <item type="dimen" name="tile_icon_margin_bottom"/>
       <item type="dimen" name="tile_margin_bottom"/>
       <item type="dimen" name="tile_margin_end"/>
@@ -353,6 +365,12 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="drawable" name="ic_qc_brightness"/>
       <item type="drawable" name="ic_qc_hotspot"/>
       <item type="drawable" name="ic_qc_mobile_data"/>
+      <item type="drawable" name="ic_qc_restricted_wifi_signal_0"/>
+      <item type="drawable" name="ic_qc_restricted_wifi_signal_1"/>
+      <item type="drawable" name="ic_qc_restricted_wifi_signal_2"/>
+      <item type="drawable" name="ic_qc_restricted_wifi_signal_3"/>
+      <item type="drawable" name="ic_qc_restricted_wifi_signal_4"/>
+      <item type="drawable" name="ic_qc_speaker_group"/>
       <item type="drawable" name="ic_qc_ui_mode_auto"/>
       <item type="drawable" name="ic_qc_ui_mode_day"/>
       <item type="drawable" name="ic_qc_ui_mode_night"/>
@@ -365,6 +383,11 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="drawable" name="ic_qc_wifi_level_4"/>
       <item type="drawable" name="ic_remove_circle"/>
       <item type="drawable" name="ic_restore"/>
+      <item type="drawable" name="ic_restricted_wifi_signal_0"/>
+      <item type="drawable" name="ic_restricted_wifi_signal_1"/>
+      <item type="drawable" name="ic_restricted_wifi_signal_2"/>
+      <item type="drawable" name="ic_restricted_wifi_signal_3"/>
+      <item type="drawable" name="ic_restricted_wifi_signal_4"/>
       <item type="drawable" name="ic_screen_reader_settings"/>
       <item type="drawable" name="ic_settings_about"/>
       <item type="drawable" name="ic_settings_auto_wifi"/>
@@ -386,6 +409,9 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="drawable" name="ic_sync_cancel"/>
       <item type="drawable" name="ic_sync_problem"/>
       <item type="drawable" name="ic_system_update"/>
+      <item type="drawable" name="ic_theme_toggle_auto_button"/>
+      <item type="drawable" name="ic_theme_toggle_day_button"/>
+      <item type="drawable" name="ic_theme_toggle_night_button"/>
       <item type="drawable" name="ic_top_level_accessibility"/>
       <item type="drawable" name="ic_top_level_applications"/>
       <item type="drawable" name="ic_top_level_assistant_and_voice"/>
@@ -401,6 +427,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="drawable" name="ic_top_level_system"/>
       <item type="drawable" name="ic_translate"/>
       <item type="drawable" name="ic_units"/>
+      <item type="drawable" name="ic_uwb"/>
       <item type="drawable" name="ic_video_settings"/>
       <item type="drawable" name="ic_warning"/>
       <item type="drawable" name="ic_wifi_signal_0"/>
@@ -419,10 +446,13 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="drawable" name="profile_add_circle"/>
       <item type="drawable" name="profile_avatar_bg_circle"/>
       <item type="drawable" name="rectangle_ripple_mask"/>
+      <item type="drawable" name="restricted_wifi_signal"/>
+      <item type="drawable" name="theme_toggle_button_rotary_background"/>
       <item type="drawable" name="top_level_preference_background"/>
       <item type="drawable" name="top_level_preference_highlight"/>
       <item type="drawable" name="user_disclaimer_action_button_background"/>
       <item type="drawable" name="wifi_signal"/>
+      <item type="id" name="action_text"/>
       <item type="id" name="alphanumeric_pin"/>
       <item type="id" name="bottomDivider"/>
       <item type="id" name="button1"/>
@@ -443,6 +473,11 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="id" name="car_settings_activity_wrapper"/>
       <item type="id" name="carrier_info_text"/>
       <item type="id" name="checkbox"/>
+      <item type="id" name="colored_preference_divider"/>
+      <item type="id" name="colored_preference_first_action_container"/>
+      <item type="id" name="colored_preference_second_action_container"/>
+      <item type="id" name="colored_preference_secondary_action"/>
+      <item type="id" name="colored_preference_secondary_action_concrete"/>
       <item type="id" name="current_profile_frame"/>
       <item type="id" name="cycle_reset_day_of_month"/>
       <item type="id" name="data_usage_edit_text"/>
@@ -528,6 +563,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="id" name="up_arrow_container"/>
       <item type="id" name="widget_summary"/>
       <item type="integer" name="audio_route_selector_usage"/>
+      <item type="integer" name="audio_route_toast_duration"/>
       <item type="integer" name="button_max_ems"/>
       <item type="integer" name="clear_content_timeout_ms"/>
       <item type="integer" name="config_networkAvoidBadWifi"/>
@@ -559,6 +595,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="layout" name="choose_lock_password"/>
       <item type="layout" name="choose_lock_pattern"/>
       <item type="layout" name="choose_lock_pin"/>
+      <item type="layout" name="colored_two_action_switch_preference"/>
       <item type="layout" name="confirm_lock_password"/>
       <item type="layout" name="confirm_lock_pattern"/>
       <item type="layout" name="confirm_lock_pin"/>
@@ -639,6 +676,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="admin_profile_owner_user_message"/>
       <item type="string" name="alarm_ringtone_title"/>
       <item type="string" name="alarm_volume_title"/>
+      <item type="string" name="alarms_and_reminders_title"/>
       <item type="string" name="all_applications"/>
       <item type="string" name="allow"/>
       <item type="string" name="app_data_usage"/>
@@ -691,7 +729,9 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="assistant_and_voice_use_text_from_screen_summary"/>
       <item type="string" name="assistant_and_voice_use_text_from_screen_title"/>
       <item type="string" name="assistant_security_warning"/>
+      <item type="string" name="audio_route_dialog_neutral_button_text"/>
       <item type="string" name="audio_route_selector_title"/>
+      <item type="string" name="audio_route_selector_toast"/>
       <item type="string" name="auto_brightness_summary"/>
       <item type="string" name="auto_brightness_title"/>
       <item type="string" name="auto_launch_disable_text"/>
@@ -759,30 +799,15 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="brightness"/>
       <item type="string" name="build_number"/>
       <item type="string" name="camera_access_disclaimer_summary"/>
-      <item type="string" name="camera_access_radio_any_app_summary"/>
-      <item type="string" name="camera_access_radio_any_app_title"/>
-      <item type="string" name="camera_access_radio_group_title"/>
-      <item type="string" name="camera_access_radio_helpful_apps_summary"/>
-      <item type="string" name="camera_access_radio_helpful_apps_title"/>
-      <item type="string" name="camera_access_radio_helpful_required_apps_summary"/>
-      <item type="string" name="camera_access_radio_helpful_required_apps_title"/>
-      <item type="string" name="camera_access_radio_no_apps_summary"/>
-      <item type="string" name="camera_access_radio_no_apps_title"/>
-      <item type="string" name="camera_access_radio_required_apps_summary"/>
-      <item type="string" name="camera_access_radio_required_apps_title"/>
       <item type="string" name="camera_access_settings_summary"/>
       <item type="string" name="camera_access_settings_title"/>
       <item type="string" name="camera_app_permission_summary_camera_off"/>
       <item type="string" name="camera_app_permission_summary_camera_on"/>
-      <item type="string" name="camera_helpful_apps_list_summary"/>
-      <item type="string" name="camera_helpful_apps_list_title"/>
+      <item type="string" name="camera_infotainment_apps_toggle_summary"/>
+      <item type="string" name="camera_infotainment_apps_toggle_title"/>
       <item type="string" name="camera_manage_permissions"/>
       <item type="string" name="camera_no_recent_access"/>
-      <item type="string" name="camera_privacy_policy_button_text"/>
-      <item type="string" name="camera_privacy_policy_info_summary"/>
       <item type="string" name="camera_recently_accessed"/>
-      <item type="string" name="camera_required_apps_list_summary"/>
-      <item type="string" name="camera_required_apps_list_title"/>
       <item type="string" name="camera_settings_loading_app_permission_stats"/>
       <item type="string" name="camera_settings_recent_requests_title"/>
       <item type="string" name="camera_settings_recent_requests_view_all_title"/>
@@ -835,6 +860,8 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="confirm_your_pin_header"/>
       <item type="string" name="connect"/>
       <item type="string" name="connected_settings_title"/>
+      <item type="string" name="connectivity_inactive_action_text"/>
+      <item type="string" name="connectivity_inactive_prompt"/>
       <item type="string" name="continue_button_text"/>
       <item type="string" name="continue_confirmation"/>
       <item type="string" name="contributors_title"/>
@@ -851,6 +878,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="cycle_reset_day_of_month_picker_subtitle"/>
       <item type="string" name="cycle_reset_day_of_month_picker_title"/>
       <item type="string" name="data_limit"/>
+      <item type="string" name="data_subscription_explore_options"/>
       <item type="string" name="data_usage_all_apps_title"/>
       <item type="string" name="data_usage_app_restricted"/>
       <item type="string" name="data_usage_app_summary_title"/>
@@ -915,6 +943,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="device_admin_deactivated_apps"/>
       <item type="string" name="device_admin_status"/>
       <item type="string" name="device_admin_warning"/>
+      <item type="string" name="device_connections_category_title"/>
       <item type="string" name="device_info_not_available"/>
       <item type="string" name="device_status"/>
       <item type="string" name="device_status_activity_title"/>
@@ -1019,6 +1048,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="hk_AboutSettingsActivity"/>
       <item type="string" name="hk_AccessibilitySettingsActivity"/>
       <item type="string" name="hk_AddWifiActivity"/>
+      <item type="string" name="hk_AlarmsAndRemindersActivity"/>
       <item type="string" name="hk_ApplicationsDetailsActivity"/>
       <item type="string" name="hk_ApplicationsSettingsActivity"/>
       <item type="string" name="hk_AppsActivity"/>
@@ -1087,6 +1117,8 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="location_adas_app_info_summary"/>
       <item type="string" name="location_adas_apps_list_title"/>
       <item type="string" name="location_driver_assistance_privacy_policy_button_text"/>
+      <item type="string" name="location_infotainment_apps_toggle_summary"/>
+      <item type="string" name="location_infotainment_apps_toggle_title"/>
       <item type="string" name="location_no_recent_access"/>
       <item type="string" name="location_recently_accessed"/>
       <item type="string" name="location_settings_app_permissions_summary"/>
@@ -1095,7 +1127,6 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="location_settings_recently_accessed_view_all_title"/>
       <item type="string" name="location_settings_services_title"/>
       <item type="string" name="location_settings_title"/>
-      <item type="string" name="location_state_switch_content_description"/>
       <item type="string" name="location_toggle_off_warning"/>
       <item type="string" name="location_toggle_summary"/>
       <item type="string" name="location_toggle_title"/>
@@ -1158,8 +1189,12 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="media_volume_summary"/>
       <item type="string" name="media_volume_title"/>
       <item type="string" name="memory_calculating_size"/>
+      <item type="string" name="microphone_access_settings_summary"/>
+      <item type="string" name="microphone_access_settings_title"/>
       <item type="string" name="microphone_app_permission_summary_microphone_off"/>
       <item type="string" name="microphone_app_permission_summary_microphone_on"/>
+      <item type="string" name="microphone_infotainment_apps_toggle_summary"/>
+      <item type="string" name="microphone_infotainment_apps_toggle_title"/>
       <item type="string" name="microphone_manage_permissions"/>
       <item type="string" name="microphone_no_recent_access"/>
       <item type="string" name="microphone_recently_accessed"/>
@@ -1238,6 +1273,11 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="performance_impacting_apps_button_label"/>
       <item type="string" name="performance_impacting_apps_description"/>
       <item type="string" name="performance_impacting_apps_summary"/>
+      <item type="string" name="permission_grant_allowed"/>
+      <item type="string" name="permission_grant_always"/>
+      <item type="string" name="permission_grant_ask"/>
+      <item type="string" name="permission_grant_in_use"/>
+      <item type="string" name="permission_grant_never"/>
       <item type="string" name="permissions_label"/>
       <item type="string" name="power_component_disabled"/>
       <item type="string" name="premium_sms_access_description"/>
@@ -1268,6 +1308,9 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="remove_device_admin"/>
       <item type="string" name="remove_screen_lock_message"/>
       <item type="string" name="remove_screen_lock_title"/>
+      <item type="string" name="required_apps_group_summary"/>
+      <item type="string" name="required_apps_group_title"/>
+      <item type="string" name="required_apps_privacy_policy_button_text"/>
       <item type="string" name="reset_app_pref_button_text"/>
       <item type="string" name="reset_app_pref_complete_toast"/>
       <item type="string" name="reset_app_pref_desc"/>
@@ -1389,6 +1432,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="text_to_speech_current_engine"/>
       <item type="string" name="text_to_speech_preferred_engine_settings"/>
       <item type="string" name="text_to_speech_settings"/>
+      <item type="string" name="theme_toggle_title"/>
       <item type="string" name="three"/>
       <item type="string" name="time_picker_title"/>
       <item type="string" name="tts_pitch"/>
@@ -1500,6 +1544,8 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="user_summary_not_set_up"/>
       <item type="string" name="user_switch"/>
       <item type="string" name="users_list_title"/>
+      <item type="string" name="uwb_toggle_summary"/>
+      <item type="string" name="uwb_toggle_title"/>
       <item type="string" name="vehicle_data_delete_user_summary"/>
       <item type="string" name="vehicle_data_delete_user_title"/>
       <item type="string" name="vehicle_data_summary"/>
@@ -1509,6 +1555,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="wallpaper_attributions_values"/>
       <item type="string" name="webview_license_title"/>
       <item type="string" name="wifi_ap_2G"/>
+      <item type="string" name="wifi_ap_2G_5G"/>
       <item type="string" name="wifi_ap_5G"/>
       <item type="string" name="wifi_ap_band_config"/>
       <item type="string" name="wifi_ap_band_select_one"/>
@@ -1535,8 +1582,8 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="wifi_frequency"/>
       <item type="string" name="wifi_gateway"/>
       <item type="string" name="wifi_hotspot_ap_band_title"/>
-      <item type="string" name="wifi_hotspot_auto_off_summary"/>
-      <item type="string" name="wifi_hotspot_auto_off_title"/>
+      <item type="string" name="wifi_hotspot_keep_on_summary"/>
+      <item type="string" name="wifi_hotspot_keep_on_title"/>
       <item type="string" name="wifi_hotspot_name_summary_connected"/>
       <item type="string" name="wifi_hotspot_name_summary_connecting"/>
       <item type="string" name="wifi_hotspot_name_title"/>
@@ -1588,6 +1635,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="zone_list_menu_sort_alphabetically"/>
       <item type="string" name="zone_list_menu_sort_by_timezone"/>
       <item type="style" name="ActionDialogTheme"/>
+      <item type="style" name="AlertDialogTheme"/>
       <item type="style" name="CarSettingTheme"/>
       <item type="style" name="CarSettingsActivityDividerStyle"/>
       <item type="style" name="CarSettingsFragmentContainerStyle"/>
@@ -1595,6 +1643,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="style" name="CarSettingsPreferenceTheme"/>
       <item type="style" name="ColoredAccentPreferenceStyle"/>
       <item type="style" name="ColoredSwitchPreferenceStyle"/>
+      <item type="style" name="ColoredTwoActionSwitchPreferenceStyle"/>
       <item type="style" name="DataUsageSummaryCarrierInfoTextAppearance"/>
       <item type="style" name="DataUsageSummaryCarrierInfoWarningTextAppearance"/>
       <item type="style" name="FallbackHome"/>
@@ -1611,6 +1660,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="xml" name="account_details_fragment"/>
       <item type="xml" name="account_sync_details_fragment"/>
       <item type="xml" name="add_wifi_fragment"/>
+      <item type="xml" name="alarms_and_reminders_fragment"/>
       <item type="xml" name="app_data_usage_fragment"/>
       <item type="xml" name="app_specific_data_usage_fragment"/>
       <item type="xml" name="app_storage_settings_details_fragment"/>
@@ -1657,9 +1707,12 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="xml" name="languages_and_input_fragment"/>
       <item type="xml" name="legal_information_fragment"/>
       <item type="xml" name="location_access_fragment"/>
+      <item type="xml" name="location_access_required_infotainment_fragment"/>
       <item type="xml" name="location_recent_accessed_view_all_fragment"/>
       <item type="xml" name="location_settings_fragment"/>
+      <item type="xml" name="location_settings_required_infotainment_fragment"/>
       <item type="xml" name="manage_domain_urls_fragment"/>
+      <item type="xml" name="microphone_access_fragment"/>
       <item type="xml" name="microphone_recent_requests_view_all_fragment"/>
       <item type="xml" name="mobile_network_fragment"/>
       <item type="xml" name="mobile_network_list_fragment"/>
@@ -1672,6 +1725,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="xml" name="premium_sms_access_fragment"/>
       <item type="xml" name="privacy_camera_settings_fragment"/>
       <item type="xml" name="privacy_microphone_settings_fragment"/>
+      <item type="xml" name="privacy_microphone_settings_fragment_updated"/>
       <item type="xml" name="privacy_settings_fragment"/>
       <item type="xml" name="profile_details_fragment"/>
       <item type="xml" name="profile_details_permissions_fragment"/>
