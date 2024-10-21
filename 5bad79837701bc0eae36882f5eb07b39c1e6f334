@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a095eba0_07eebd2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1538942
+      },
+      "writtenOn": "2024-10-21T04:31:28Z",
+      "side": 1,
+      "message": "Hi, please help do Code-Review the patch from the partner. Thank you.",
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
