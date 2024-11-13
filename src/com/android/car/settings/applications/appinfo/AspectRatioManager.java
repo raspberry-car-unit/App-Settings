@@ -63,6 +63,16 @@ public final class AspectRatioManager {
     }
 
     /**
+     * @return {@link PackageManager.UserMinAspectRatio} override for an app
+     */
+    @PackageManager.UserMinAspectRatio
+    public int getUserMinAspectRatioValue(@NonNull String packageName, int uid)
+            throws RemoteException {
+        int aspectRatio = mIPm.getUserMinAspectRatio(packageName, uid);
+        return aspectRatio;
+    }
+
+    /**
      * Sets user-specified {@link PackageManager.UserMinAspectRatio} override for an app
      */
     public void setUserMinAspectRatio(@NonNull String packageName, int uid,
