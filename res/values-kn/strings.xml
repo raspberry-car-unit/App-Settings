@@ -364,7 +364,7 @@
     <string name="assist_and_voice_input_settings" msgid="8813195157136637132">"ಅಸಿಸ್ಟೆಂಟ್ ಮತ್ತು ಧ್ವನಿ ಇನ್‌ಪುಟ್"</string>
     <string name="assist_app_settings" msgid="9085261410166776497">"ಅಸಿಸ್ಟೆಂಟ್ ಆ್ಯಪ್‌"</string>
     <string name="assist_access_context_title" msgid="8034851731390785301">"ಪರದೆಯಿಂದ ಪಠ್ಯವನ್ನು ಬಳಸಿ"</string>
-    <string name="assist_access_context_summary" msgid="2374281280599443774">"ಅಸಿಸ್ಟೆಂಟ್ ಆ್ಯಪ್‌ಗೆ ಪರದೆ ವಿಷಯಗಳನ್ನು ಪಠ್ಯದಂತೆ ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಸಿ"</string>
+    <string name="assist_access_context_summary" msgid="2374281280599443774">"ಅಸಿಸ್ಟೆಂಟ್ ಆ್ಯಪ್‌ಗೆ ಸ್ಕ್ರೀನ್ ವಿಷಯಗಳನ್ನು ಪಠ್ಯದಂತೆ ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಸಿ"</string>
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಬಳಸಿ"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"ಅಸಿಸ್ಟೆಂಟ್ ಆ್ಯಪ್‌ಗೆ ಪರದೆಯ ಚಿತ್ರವನ್ನು ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಸಿ"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"ಧ್ವನಿ ಇನ್‌ಪುಟ್‌"</string>
@@ -372,7 +372,7 @@
     <string name="app_list_preference_none" msgid="7753357799926715901">"ಯಾವುದೂ ಬೇಡ"</string>
     <string name="default_app_selected_app" msgid="5289396663745484773">"ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ"</string>
     <string name="assistant_security_warning" msgid="1844807956967428012">"ನಿಮ್ಮ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ ಗೋಚರಿಸುವ ಅಥವಾ ಆ್ಯಪ್‌ಗಳಲ್ಲಿಯೇ ಪ್ರವೇಶಿಸಬಹುದಾದಂತಹ ಮಾಹಿತಿ ಸೇರಿದಂತೆ, ನಿಮ್ಮ ಸಿಸ್ಟಂನಲ್ಲಿ ಬಳಕೆಯಲ್ಲಿರುವ ಆ್ಯಪ್‌ಗಳ ಕುರಿತು ಮಾಹಿತಿಯನ್ನು ಓದಲು ಅಸಿಸ್ಟೆಂಟ್‌ಗೆ ಸಾಧ್ಯವಾಗುತ್ತದೆ."</string>
-    <string name="autofill_confirmation_message" msgid="1832984461556991378">"&lt;b&gt;ನಿಮಗೆ ಈ ಅಪ್ಲಿಕೇಶನ್ ಮೇಲೆ ವಿಶ್ವಾಸವಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ &lt;/b&gt; &lt;br/&gt; &lt;br/&gt; ಯಾವ ಕ್ಷೇತ್ರಗಳನ್ನು ಸ್ವಯಂ-ಭರ್ತಿ ಮಾಡಬಹುದು ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸಲು &lt;xliff:g id=app_name example=Google Autofill&gt;%1$s&lt;/xliff:g&gt; ನಿಮ್ಮ ಪರದೆಯಲ್ಲಿರುವ ಮಾಹಿತಿಯನ್ನು ಬಳಸಿಕೊಳ್ಳುತ್ತದೆ."</string>
+    <string name="autofill_confirmation_message" msgid="1832984461556991378">"&lt;b&gt;ನಿಮಗೆ ಈ ಆ್ಯಪ್‌ ಮೇಲೆ ವಿಶ್ವಾಸವಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ &lt;/b&gt; &lt;br/&gt; &lt;br/&gt; ಯಾವ ಕ್ಷೇತ್ರಗಳನ್ನು ಸ್ವಯಂ-ಭರ್ತಿ ಮಾಡಬಹುದು ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸಲು &lt;xliff:g id=app_name example=Google Autofill&gt;%1$s&lt;/xliff:g&gt; ನಿಮ್ಮ ಪರದೆಯಲ್ಲಿರುವ ಮಾಹಿತಿಯನ್ನು ಬಳಸಿಕೊಳ್ಳುತ್ತದೆ."</string>
     <string name="autofill_add_service" msgid="6413893366443609951">"ಸೇವೆಯನ್ನು ಸೇರಿಸಿ"</string>
     <string name="app_launch_domain_links_title" msgid="774480184927726651">"ಲಿಂಕ್‍‍ಗಳನ್ನು ತೆರೆಯುವುದು"</string>
     <string name="domain_url_section_title" msgid="9070403140947787214">"ಇನ್‌ಸ್ಟಾಲ್‌ ಮಾಡಲಾದ ಆ್ಯಪ್‌ಗಳು"</string>
@@ -543,7 +543,7 @@
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"ಸಮಯ ವಲಯ"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"ಸಮಯ ವಲಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"ದಿನಾಂಕ"</string>
-    <string name="date_time_set_date" msgid="2537494485643283230">"ದಿನಾಂಕವನ್ನು ಹೊಂದಿಸಿ"</string>
+    <string name="date_time_set_date" msgid="2537494485643283230">"ದಿನಾಂಕವನ್ನು ಸೆಟ್ ಮಾಡಿ"</string>
     <string name="zone_list_menu_sort_alphabetically" msgid="7041628618528523514">"ವರ್ಣಮಾಲೆಯಾನುಸಾರ ವಿಂಗಡಿಸಿ"</string>
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"ಸಮಯ ವಲಯದ ಅನುಸಾರ ವಿಂಗಡಿಸಿ"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"ದಿನಾಂಕ"</string>
@@ -670,7 +670,7 @@
     <string name="permission_grant_in_use" msgid="2314262542396732455">"ಆ್ಯಪ್ ಅನ್ನು ಬಳಸುವಾಗ ಮಾತ್ರ"</string>
     <string name="permission_grant_ask" msgid="1613256400438907973">"ಪ್ರತಿ ಬಾರಿ ಕೇಳಿ"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"ಭದ್ರತೆ"</string>
-    <string name="security_settings_subtitle" msgid="2244635550239273229">"ಪರದೆ ಲಾಕ್"</string>
+    <string name="security_settings_subtitle" msgid="2244635550239273229">"ಸ್ಕ್ರೀನ್ ಲಾಕ್"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"ಯಾವುದೂ ಇಲ್ಲ"</string>
     <string name="security_lock_pattern" msgid="1174352995619563104">"ಪ್ಯಾಟರ್ನ್"</string>
     <string name="security_lock_pin" msgid="4891899974369503200">"ಪಿನ್"</string>

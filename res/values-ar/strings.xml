@@ -221,7 +221,7 @@
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"رمز إقران البلوتوث"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"يشتمل رقم التعريف الشخصي على أحرف أو رموز."</string>
     <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"اكتب رمز الإقران، ثم اضغط على \"رجوع\" أو \"إدخال\"."</string>
-    <string name="bluetooth_pairing_request" msgid="4769675459526556801">"هل تريد الإقران مع <xliff:g id="DEVICE_NAME">%1$s</xliff:g>؟"</string>
+    <string name="bluetooth_pairing_request" msgid="4769675459526556801">"هل المطلوب إقران جهازك مع <xliff:g id="DEVICE_NAME">%1$s</xliff:g>؟"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"السماح للجهاز <xliff:g id="DEVICE_NAME">%1$s</xliff:g> بالدخول إلى جهات الاتصال وسجلّ المكالمات"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"قد يلزم أيضًا كتابة رقم التعريف الشخصي هذا على الجهاز الآخر."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="7147248221018865922">"قد يلزم أيضًا كتابة مفتاح المرور هذا على الجهاز الآخر."</string>
@@ -562,7 +562,7 @@
     <string name="uninstall_apps_permission_title" msgid="8448422340567430659">"إلغاء تثبيت التطبيقات"</string>
     <string name="user_add_user_menu" msgid="4125869008006021799">"إضافة ملف شخصي"</string>
     <string name="user_new_user_name" msgid="906698527658609819">"ملف شخصي جديد"</string>
-    <string name="user_add_user_title" msgid="6296827596015729982">"هل تريد إضافة ملف شخصي جديد؟"</string>
+    <string name="user_add_user_title" msgid="6296827596015729982">"هل المطلوب إنشاء ملف شخصي جديد؟"</string>
     <string name="user_add_user_message_setup" msgid="812616230454605159">"بعد إنشاء ملف شخصي جديد لأحد المستخدمين، يكون على هذا المستخدم تخصيص إعدادات الملف الشخصي."</string>
     <string name="user_add_user_message_update" msgid="3836353291078729240">"يمكن تحديث التطبيقات من أي ملف شخصي لكي تستخدمها كل الملفات الشخصية الأخرى."</string>
     <string name="user_limit_reached_title" msgid="5677729355746623293">"تم بلوغ أقصى عدد للملفات الشخصية"</string>
@@ -782,7 +782,7 @@
     <string name="assistant_and_voice_use_screenshot_summary" msgid="3738474919393817950">"السماح لتطبيق المساعد بالوصول إلى صورة الشاشة"</string>
     <string name="notifications_recently_sent" msgid="9051696542615302799">"الإشعارات التي تم إرسالها مؤخرًا"</string>
     <string name="notifications_all_apps" msgid="3557079551048958846">"جميع التطبيقات"</string>
-    <string name="profiles_and_accounts_settings_title" msgid="2672643892127659812">"الحسابات والملفات الشخصية"</string>
+    <string name="profiles_and_accounts_settings_title" msgid="2672643892127659812">"الحساب والملف الشخصي"</string>
     <string name="manage_other_profiles_button_text" msgid="2262188413455510828">"إدارة الملفات الشخصية الأخرى"</string>
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"إنشاء ملف شخصي"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"حذف هذا الملف الشخصي"</string>
@@ -790,7 +790,7 @@
     <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"هذا الملف الشخصي مسجّلٌ الدخول حاليًا كسائق. أعِد المحاولة عندما لا يكون الملف الشخصي قيد الاستخدام كسائق"</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"سطوع الشاشة"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"لرؤية أجهزتك، يجب تفعيل البلوتوث."</string>
-    <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"لإقران جهاز، افتح إعدادات البلوتوث."</string>
+    <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"لإقران جهاز، يجب فتح إعدادات البلوتوث."</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"المظهر"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"مشرف \"نظام الترفيه والمعلومات\""</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"التطبيقات المفعّلة"</string>

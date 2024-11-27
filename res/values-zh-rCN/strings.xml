@@ -407,7 +407,7 @@
     <string name="notification_access_title" msgid="1467340098885813473">"通知访问权限"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"要允许<xliff:g id="SERVICE">%1$s</xliff:g>访问通知吗？"</string>
     <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>将可读取所有通知（包括联系人姓名和您收到的消息正文等个人信息），而且还能关闭通知或触发通知中的操作按钮。\n\n此外，该应用将因此能够开启或关闭勿扰模式，以及更改相关设置。"</string>
-    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"如果您停用<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>的通知访问权限，勿扰模式的访问权限可能也会遭到停用。"</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"如果您关闭“<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>”的通知使用权，勿扰模式的使用权可能也会关闭。"</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"关闭"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"取消"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"这些应用会对系统性能造成负面影响，已被禁止在后台运行。\n将应用设为优先运行即可允许在后台使用相应应用，并将其从此列表中移出。"</string>

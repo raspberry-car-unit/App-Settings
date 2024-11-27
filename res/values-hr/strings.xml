@@ -178,7 +178,7 @@
     <string name="network_connection_timeout_dialog_ok" msgid="2228662561126434792">"Pokušajte ponovo"</string>
     <string name="network_connection_errorstate_dialog_message" msgid="4268321315241218483">"Došlo je do pogreške. Aplikacija je otkazala zahtjev za odabir uređaja."</string>
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Povezivanje je uspjelo"</string>
-    <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Pokaži sve"</string>
+    <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Prikaži sve"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Pretraživanje"</string>
     <string name="connected_settings_title" msgid="8868738903280658151">"Povezani uređaji"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
@@ -312,7 +312,7 @@
     <string name="units_unit_name_kilometers_per_liter" msgid="8769902235588571155">"Kilometara po litri"</string>
     <string name="units_unit_name_liter_per_hundred_kilometers" msgid="4867647387452453552">"Litara na stotinu kilometara"</string>
     <string name="apps_and_notifications_settings" msgid="8704585874333781975">"Aplikacije i obavijesti"</string>
-    <string name="all_applications" msgid="7798210477486822168">"Pokaži sve aplikacije"</string>
+    <string name="all_applications" msgid="7798210477486822168">"Prikaži sve aplikacije"</string>
     <string name="default_applications" msgid="1558183275638697087">"Zadane aplikacije"</string>
     <string name="performance_impacting_apps" msgid="3439260699394720569">"Aplikacije koje utječu na izvedbu"</string>
     <string name="app_permissions" msgid="32799922508313948">"Dopuštenja za aplikacije"</string>
@@ -584,7 +584,7 @@
     <string name="current_user_name" msgid="3813671533249316823">"Vi (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"Ime"</string>
     <string name="user_summary_not_set_up" msgid="1473688119241224145">"Nije postavljen"</string>
-    <string name="edit_user_name_title" msgid="1118500707473139995">"Uređivanje naziva profila"</string>
+    <string name="edit_user_name_title" msgid="1118500707473139995">"Uredite naziv profila"</string>
     <string name="name_input_blank_error" msgid="2088850865880984123">"Polje ne može biti prazno."</string>
     <string name="name_input_invalid_error" msgid="4355625213535164704">"Uneseni naziv profila nije važeći."</string>
     <string name="users_list_title" msgid="770764290290240909">"Korisnici"</string>
