@@ -368,7 +368,7 @@
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Brug screenshot"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Giv assistanceappen adgang til et billede af skærmen"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"Indtaling"</string>
-    <string name="autofill_settings_title" msgid="1188754272680049972">"AutoFyld-tjeneste"</string>
+    <string name="autofill_settings_title" msgid="1188754272680049972">"Autofyld-tjeneste"</string>
     <string name="app_list_preference_none" msgid="7753357799926715901">"Ingen"</string>
     <string name="default_app_selected_app" msgid="5289396663745484773">"Valgt"</string>
     <string name="assistant_security_warning" msgid="1844807956967428012">"Assistenten kan læse oplysninger om, hvilke apps der bruges i dit system, herunder oplysninger, der er synlige på din skærm eller tilgængelige i dine apps."</string>

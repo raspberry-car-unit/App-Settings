@@ -563,7 +563,7 @@
     <string name="user_add_user_menu" msgid="4125869008006021799">"Profil ekle"</string>
     <string name="user_new_user_name" msgid="906698527658609819">"Yeni profil"</string>
     <string name="user_add_user_title" msgid="6296827596015729982">"Yeni profil eklensin mi?"</string>
-    <string name="user_add_user_message_setup" msgid="812616230454605159">"Yeni profili oluşturmanızdan sonra bu kişi, profilini özelleştirmelidir."</string>
+    <string name="user_add_user_message_setup" msgid="812616230454605159">"Yeni profil oluşturulduktan sonra profil sahibi tarafından özelleştirilmelidir."</string>
     <string name="user_add_user_message_update" msgid="3836353291078729240">"Uygulamalar, diğer tüm profillerin kullanabilmesi için herhangi bir profilden güncellenebilir."</string>
     <string name="user_limit_reached_title" msgid="5677729355746623293">"Profil sınırına ulaşıldı"</string>
     <string name="user_limit_reached_message" msgid="2773441357248819721">"{count,plural, =1{Yalnızca tek bir profil oluşturulabilir.}other{En fazla # profil oluşturabilirsiniz.}}"</string>

@@ -186,7 +186,7 @@
     <string name="bluetooth_device" msgid="3178478829314083240">"ਬੇਨਾਮ ਡੀਵਾਈਸ"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"ਜੋੜਾਬੱਧ ਕੀਤੇ ਡੀਵਾਈਸ"</string>
     <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"ਨਵਾਂ ਡੀਵਾਈਸ ਜੋੜਾਬੱਧ ਕਰੋ"</string>
-    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"ਜੋੜਾਬੱਧ ਕਰਨ ਲਈ ਬਲੂਟੁੱਥ ਚਾਲੂ ਹੋਵੇਗਾ"</string>
+    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"ਜੋੜਾਬੱਧ ਕਰਨ ਲਈ ਬਲੂਟੁੱਥ ਚਾਲੂ ਹੋ ਜਾਵੇਗਾ"</string>
     <string name="bluetooth_disconnect_title" msgid="7675271355910637528">"ਕੀ ਡੀਵਾਈਸ ਡਿਸਕਨੈਕਟ ਕਰਨਾ ਹੈ?"</string>
     <string name="bluetooth_disconnect_all_profiles" msgid="2017519733701757244">"ਤੁਹਾਡਾ ਵਾਹਨ <xliff:g id="DEVICE_NAME">%1$s</xliff:g> ਤੋਂ ਡਿਸਕਨੈਕਟ ਹੋ ਜਾਵੇਗਾ।"</string>
     <string name="bluetooth_vehicle_mac_address" msgid="7069234636525805937">"ਵਾਹਨ ਦਾ ਬਲੂਟੁੱਥ ਪਤਾ: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>

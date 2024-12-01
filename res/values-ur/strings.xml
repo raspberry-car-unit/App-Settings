@@ -563,7 +563,7 @@
     <string name="user_add_user_menu" msgid="4125869008006021799">"پروفائل شامل کریں"</string>
     <string name="user_new_user_name" msgid="906698527658609819">"نئی پروفائل"</string>
     <string name="user_add_user_title" msgid="6296827596015729982">"نئی پروفائل شامل کریں؟"</string>
-    <string name="user_add_user_message_setup" msgid="812616230454605159">"آپ کے ایک نئی پروفائل کو منتخب کرنے کے بعد، اس شخص کو اسے خود کے ليے حسب ضرورت بنانا چاہیے۔"</string>
+    <string name="user_add_user_message_setup" msgid="812616230454605159">"آپ کے ایک نئی پروفائل کو تخلیق کرنے کے بعد، اس شخص کو اسے خود کے ليے حسب ضرورت بنانا چاہیے۔"</string>
     <string name="user_add_user_message_update" msgid="3836353291078729240">"کسی بھی پروفائل سے دیگر سبھی پروفائلز کے ذریعے استعمال کے لیے ایپس کو اپ ڈیٹ کیا جا سکتا ہے۔"</string>
     <string name="user_limit_reached_title" msgid="5677729355746623293">"پروفائل کی حد مکمل ہوگئی"</string>
     <string name="user_limit_reached_message" msgid="2773441357248819721">"{count,plural, =1{صرف ایک پروفائل تخلیق کی جا سکتی ہے۔}other{آپ # پروفائلز تک تخلیق کر سکتے ہیں۔}}"</string>
@@ -706,7 +706,7 @@
     <string name="remove_screen_lock_message" msgid="6675850371585564965">"اس سے کسی کو بھی آپ کے اکاؤنٹ تک رسائی کی اجازت ہوگی"</string>
     <string name="security_profile_lock_title" msgid="3082523481292617350">"پروفائل قفل"</string>
     <string name="security_unlock_profile_summary" msgid="6742592419759865631">"خود کار غیر مقفل کرنا سیٹ اپ کریں"</string>
-    <string name="lock_settings_enter_pin" msgid="1669172111244633904">"اپنا PIN درج کریں"</string>
+    <string name="lock_settings_enter_pin" msgid="1669172111244633904">"‫اپنا PIN درج کریں"</string>
     <string name="lock_settings_enter_password" msgid="2636669926649496367">"اپنا پاس ورڈ درج کریں"</string>
     <string name="choose_lock_pin_message" msgid="2963792070267774417">"سیکیورٹی کیلئے PIN سیٹ کریں"</string>
     <string name="confirm_your_pin_header" msgid="9096581288537156102">"اپنا PIN دوبارہ درج کریں"</string>

@@ -164,7 +164,7 @@
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Valige WiFi-kuumkohale vähemalt üks riba:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"WiFi-kuumkoht"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Kuumkoht"</string>
-    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"WiFi-kuumkoha kasutamine"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Kasuta WiFi-kuumkohta"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Väljas"</string>
     <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Kasuta kuumkohta kõigi sõitude puhul"</string>
     <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Kuumkoht muudetakse kättesaadavaks alati, kui auto on sisse lülitatud"</string>
@@ -464,7 +464,7 @@
     <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"Auto teabe ja meelelahutuse süsteemi taaskäivitamiseks võib kuluda mitu minutit. Kas soovite jätkata?"</string>
     <string name="continue_confirmation" msgid="1598892163951467191">"Jätka"</string>
     <string name="firmware_version" msgid="8491753744549309333">"Androidi versioon"</string>
-    <string name="security_patch" msgid="4794276590178386903">"Androidi turvapaiga tase"</string>
+    <string name="security_patch" msgid="4794276590178386903">"Androidi turbepaiga tase"</string>
     <string name="hardware_info" msgid="3973165746261507658">"Mudel ja riistvara"</string>
     <string name="hardware_info_summary" msgid="8262576443254075921">"Mudel: <xliff:g id="MODEL">%1$s</xliff:g>"</string>
     <string name="baseband_version" msgid="2370088062235041897">"Põhiribaversioon"</string>
@@ -610,7 +610,7 @@
     <string name="storage_unmount_success" msgid="1553591517580407021">"Üksus <xliff:g id="NAME">%1$s</xliff:g> eemaldati ohutult"</string>
     <string name="storage_unmount_failure" msgid="4591934911541762883">"Üksust <xliff:g id="NAME">%1$s</xliff:g> ei saanud ohutult eemaldada"</string>
     <string name="accounts_settings_title" msgid="436190037084293471">"Kontod"</string>
-    <string name="user_add_account_menu" msgid="6625351983590713721">"Lisa konto"</string>
+    <string name="user_add_account_menu" msgid="6625351983590713721">"Konto lisamine"</string>
     <string name="no_accounts_added" msgid="5148163140691096055">"Kontosid pole lisatud"</string>
     <string name="account_list_title" msgid="7631588514613843065">"Kasutaja <xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g> kontod"</string>
     <string name="account_auto_sync_title" msgid="3238816995364191432">"Sünkrooni andmed automaatselt"</string>
