@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24‑ಗಂಟೆಯ ಫಾರ್ಮ್ಯಾಟ್‌"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24-ಗಂಟೆಯ ಫಾರ್ಮ್ಯಾಟ್‌‌ ಬಳಸಿ"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"ಸಮಯ"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"ಸಮಯವನ್ನು ಹೊಂದಿಸಿ"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ಗಡಿಯಾರವನ್ನು ಸೆಟ್‌ ಮಾಡಿ"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"ಸಮಯ ವಲಯ"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"ಸಮಯ ವಲಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"ದಿನಾಂಕ"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"ಸಮಯ ವಲಯದ ಅನುಸಾರ ವಿಂಗಡಿಸಿ"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"ದಿನಾಂಕ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"ಸಮಯ"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"ದಿನಾಂಕ, ಸಮಯ ಮತ್ತು ಸಮಯ ವಲಯವನ್ನು ನಿರ್ಧರಿಸಲು ಸ್ವಯಂಚಾಲಿತ ದಿನಾಂಕ ಮತ್ತು ಸಮಯವು ಸ್ಥಳ ಮತ್ತು ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳಂತಹ ಮೂಲಗಳನ್ನು ಬಳಸಬಹುದು."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸೆಟ್‌ ಮಾಡಲು ನಿಮ್ಮ ಕಾರಿನ ಸ್ಥಳವನ್ನು ಬಳಸಿ. ಸ್ಥಳ ಆನ್ ಆಗಿದ್ದರೆ ಮಾತ್ರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"ಮುಂದುವರಿಸಿ"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"ಸೆಟ್ಟಿಂಗ್‌‌ಗಳಲ್ಲಿ ಬದಲಾಯಿಸಿ"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"ನಿಮ್ಮ ಸ್ಥಳ ಆಫ್ ಆಗಿದೆ. ಸ್ವಯಂಚಾಲಿತ ಸಮಯ ಕೆಲಸ ಮಾಡದಿರಬಹುದು."</string>
     <string name="user_admin" msgid="1535484812908584809">"ನಿರ್ವಾಹಕರು"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"ನಿರ್ವಾಹಕರಾಗಿ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"ನಿರ್ವಾಹಕರ ಅನುಮತಿಗಳನ್ನು ನೀಡಬೇಕೇ?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"ನಿಮ್ಮ ಸಾಧನಗಳನ್ನು ನೋಡಲು, ಬ್ಲೂಟೂತ್ ಆನ್ ಮಾಡಿ"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"ಸಾಧನವನ್ನು ಜೋಡಿಸಲು, ಬ್ಲೂಟೂತ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"ಥೀಮ್"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"ಲೇಔಟ್ ಪರಿಮಿತಿಗಳನ್ನು ತೋರಿಸು"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"ಇನ್‌ಫೋಟೈನ್‌ಮೆಂಟ್ ಸಿಸ್ಟಂ ನಿರ್ವಾಹಕರು"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"ಸಕ್ರಿಯಗೊಂಡ ಆ್ಯಪ್‌ಗಳು"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"ನಿಷ್ಕ್ರಿಯಗೊಂಡ ಆ್ಯಪ್‌ಗಳು"</string>

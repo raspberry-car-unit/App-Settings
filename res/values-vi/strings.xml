@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Định dạng 24 giờ"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Sử dụng định dạng 24 giờ"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Thời gian"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Đặt giờ"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Thiết lập đồng hồ"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Múi giờ"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Chọn múi giờ"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Ngày"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Sắp xếp theo múi giờ"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Ngày"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Thời gian"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Tính năng Ngày và giờ tự động có thể sử dụng những nguồn như thông tin vị trí và mạng di động để xác định ngày, giờ và múi giờ."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Sử dụng dịch vụ vị trí của ô tô để tự động thiết lập ngày và giờ. Tính năng này chỉ hoạt động khi dịch vụ vị trí đang bật."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Tiếp tục"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Thay đổi trong phần cài đặt"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Bạn đang tắt dịch vụ vị trí. Chế độ tự động phát hiện giờ/múi giờ có thể sẽ không hoạt động."</string>
     <string name="user_admin" msgid="1535484812908584809">"Quản trị viên"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Đã đăng nhập là quản trị viên"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Cấp quyền quản trị viên?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Để xem các thiết bị của bạn, hãy bật Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Để ghép nối thiết bị, hãy mở phần cài đặt Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Giao diện"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Hiện ranh giới bố cục"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Quản trị hệ thống thông tin giải trí"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Ứng dụng đã kích hoạt"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Ứng dụng đã hủy kích hoạt"</string>

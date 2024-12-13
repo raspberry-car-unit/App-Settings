@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24 小时制"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"使用 24 小时制"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"时间"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"设置时间"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"设置时钟"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"时区"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"选择时区"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"日期"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"按时区排序"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"日期"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"时间"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"自动日期和时间检测功能可能会利用位置信息、移动网络等数据来源确定日期、时间和时区。"</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"根据汽车的位置信息自动设置日期和时间。仅当位置信息功能处于开启状态时，才能正常运作。"</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"继续"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"在设置中更改"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"位置信息功能已关闭。自动时间检测功能可能无法正常运作。"</string>
     <string name="user_admin" msgid="1535484812908584809">"管理员"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"目前登录的是管理员账号"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"要授予管理员权限吗？"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"要想看到您的设备，请开启蓝牙"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"要想配对设备，请打开蓝牙设置"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"主题"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"显示布局边界"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"信息娱乐系统管理"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"已启用的应用"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"已停用的应用"</string>

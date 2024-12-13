@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Формат од 24 часа"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Користи 24-часовен формат"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Време"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Постави време"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Поставете часовник"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Часовна зона"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Изберете часовна зона"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Датум"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Подреди по временска зона"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Датум"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Време"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Автоматскиот датум и време може да користат извори како локација и мобилни мрежи за одредување на датумот, времето и временската зона."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Користете ја локацијата на вашиот автомобил за автоматско поставување на датумот и времето. Функционира само ако е вклучена локацијата."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Продолжете"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Променете во „Поставки“"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Вашата локација е исклучена. Автоматското време можеби нема да функционира."</string>
     <string name="user_admin" msgid="1535484812908584809">"Администратор"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Најавени сте како: администратор"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Да се доделат администраторски дозволи?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"За да ги видите уредите, вклучете Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"За да спарите уред, отворете ги поставките за Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Тема"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Прикажи граници на слој"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Администратор на системот за информации и забава"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Активирани апликации"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Деактивирани апликации"</string>

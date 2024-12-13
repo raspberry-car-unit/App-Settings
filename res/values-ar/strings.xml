@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"تنسيق ٢٤ ساعة"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"استخدام تنسيق ٢٤ ساعة"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"الوقت"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"ضبط الوقت"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ضبط الساعة"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"المنطقة الزمنية"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"اختيار المنطقة الزمنية"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"التاريخ"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"ترتيب بحسب المنطقة الزمنية"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"التاريخ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"الوقت"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"قد تستخدم ميزة التعرّف التلقائي على التاريخ والوقت مصادر، مثل الموقع الجغرافي وشبكات الجوّال لتحديد التاريخ والوقت والمنطقة الزمنية."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"استخدِم الموقع الجغرافي لسيارتك من أجل ضبط التاريخ والوقت تلقائيًا. لا تعمل هذه الميزة إلا إذا كانت خدمة الموقع الجغرافي مفعَّلة."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"متابعة"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"التغيير من \"الإعدادات\""</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"خدمة الموقع الجغرافي غير مفعَّلة. قد لا تعمل ميزة التعرّف التلقائي على الوقت."</string>
     <string name="user_admin" msgid="1535484812908584809">"المشرف"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"تمّ تسجيل الدخول كمشرف."</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"هل تريد منح المستخدم أذونات المشرف؟"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"لرؤية أجهزتك، يجب تفعيل البلوتوث."</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"لإقران جهاز، يجب فتح إعدادات البلوتوث."</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"المظهر"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"إظهار حدود المخطط"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"مشرف \"نظام الترفيه والمعلومات\""</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"التطبيقات المفعّلة"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"التطبيقات غير المفعّلة"</string>

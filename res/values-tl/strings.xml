@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24 na oras na format"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Gamitin ang 24 na oras na format"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Oras"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Itakda ang oras"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Itakda ang oras"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Time zone"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Pumili ng time zone"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Petsa"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Pagbukud-bukurin ayon sa time zone"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Petsa"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Oras"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Posibleng gumamit ang awtomatikong petsa at oras ng mga source tulad ng lokasyon at mga mobile network para matukoy ang petsa, oras, at time zone."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Gamitin ang lokasyon ng iyong kotse para awtomatikong itakda ang petsa at oras. Gagana lang ito kung naka-on ang lokasyon."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Magpatuloy"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Baguhin sa mga setting"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Naka-off ang iyong lokasyon. Posibleng hindi gumana ang awtomatikong oras."</string>
     <string name="user_admin" msgid="1535484812908584809">"Admin"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Naka-sign in bilang admin"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Bigyan ng mga pahintulot ng admin?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Para makita ang iyong mga device, i-on ang Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Para magpares ng device, buksan ang mga setting ng Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Tema"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Ipakita ang mga hangganan ng layout"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Admin ng infotainment system"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Mga na-activate na app"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Mga na-deactivate na app"</string>

@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24-timers format"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Bruk 24-timers format"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Klokkeslett"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Angi klokkeslett"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Still klokken"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Tidssone"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Velg tidssone"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Dato"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Sorter etter tidssone"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Dato"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Klokkeslett"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Automatisk dato og klokkeslett kan bruke kilder som posisjon og mobilnettverk til å fastslå dato, klokkeslett og tidssone."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Still inn dato og klokkeslett automatisk etter bilens posisjon. Fungerer kun hvis posisjon er på."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Fortsett"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Endre i innstillingene"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Posisjon er av. Det kan hende at Automatisk klokkeslett ikke fungerer."</string>
     <string name="user_admin" msgid="1535484812908584809">"Administrator"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Logget på som administrator"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Vil du gi administratorrettigheter?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Slå på Bluetooth for å se enhetene dine"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Åpne Bluetooth-innstillingene for å koble til enheter"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Tema"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Vis layoutgrenser"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Infotainmentsystem-admin"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktiverte apper"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Deaktiverte apper"</string>
