@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Format 24 heures"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Utiliser le format 24 heures"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Heure"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Définir l\'heure"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Régler la date et l\'heure"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Fuseau horaire"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Définir le fuseau horaire"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Date"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Trier par fuseau horaire"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Date"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Heure"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"La détection automatique de la date et de l\'heure peut utiliser des sources telles que la localisation et les réseaux mobiles pour déterminer la date, l\'heure et le fuseau horaire."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Utilisez la localisation de votre voiture pour régler automatiquement la date et l\'heure. Ne fonctionne que si la localisation est activée."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Continuer"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Modifier dans les paramètres"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Votre localisation est désactivée. La détection automatique du fuseau horaire peut ne pas fonctionner."</string>
     <string name="user_admin" msgid="1535484812908584809">"Administrateur"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Connecté en tant qu\'administrateur"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Accorder les droits d\'administrateur ?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Pour voir vos appareils, activez le Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Pour associer un appareil, ouvrez les paramètres du Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Thème"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Afficher les contours"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Administration du système d\'infoloisirs"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Applis activées"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Applis désactivées"</string>

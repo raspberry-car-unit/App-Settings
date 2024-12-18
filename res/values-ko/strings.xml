@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24시간 형식"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24시간 형식 사용"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"시간"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"시간 설정"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"시계 설정"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"시간대"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"시간대 선택"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"날짜"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"시간대 순으로 정렬"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"날짜"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"시간"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"자동 날짜 및 시간은 날짜, 시간, 시간대를 결정하기 위해 위치 및 모바일 네트워크와 같은 소스를 사용할 수 있습니다."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"차량의 위치를 사용하여 날짜와 시간을 자동으로 설정하세요. 위치가 켜져 있는 경우에만 작동합니다."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"계속"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"설정에서 변경하기"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"위치가 꺼져 있습니다. 자동 시간 설정이 작동하지 않을 수 있습니다."</string>
     <string name="user_admin" msgid="1535484812908584809">"관리자"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"관리자로 로그인했습니다."</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"관리자 권한을 부여하시겠습니까?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"기기를 표시하려면 블루투스를 사용 설정하세요."</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"기기를 페어링하려면 블루투스 설정을 여세요."</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"테마"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"레이아웃 범위 표시"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"인포테인먼트 시스템 관리자"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"활성화된 앱"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"비활성화된 앱"</string>

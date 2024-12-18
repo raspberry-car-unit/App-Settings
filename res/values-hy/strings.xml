@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24-ժամյա ձևաչափ"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Օգտագործել 24-ժամյա ձևաչափը"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Ժամ"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Սահմանել ժամը"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Ժամացույցի կարգավորում"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Ժամային գոտի"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Ընտրել ժամային գոտի"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Ամսաթիվ"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Դասավորել ըստ ժամային գոտու"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Ամսաթիվ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Ժամանակ"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Ամսաթվի և ժամի գործառույթը կարող է օգտագործել այնպիսի աղբյուրներ, ինչպիսիք են վայրը և բջջային ցանցերը՝ ամսաթիվը, ժամը և ժամային գոտին որոշելու համար։"</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Օգտագործել մեքենայի տեղադրությունը՝ ամսաթիվն ու ժամը ավտոմատ սահմանելու համար։ Աշխատում է, միայն երբ տեղորոշումը միացված է։"</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Շարունակել"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Փոխել կարգավորումներում"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Ձեր տեղորոշումն անջատված է։ Ժամանակի ավտոմատ որոշումը կարող է չաշխատել։"</string>
     <string name="user_admin" msgid="1535484812908584809">"Ադմինիստրատոր"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Դուք մտել եք որպես ադմինիստրատոր"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Տրամադրե՞լ ադմինիստրատորի թույլտվություններ"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Ձեր սարքերը տեսնելու համար միացրեք Bluetooth-ը"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Սարք զուգակցելու համար բացեք Bluetooth-ի կարգավորումները"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Թեմա"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Ցույց տալ դասավորության սահմանները"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Տեղեկատվաժամանցային համակարգի ադմինիստրատոր"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Ակտիվացված հավելվածներ"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Ապակտիվացված հավելվածներ"</string>
