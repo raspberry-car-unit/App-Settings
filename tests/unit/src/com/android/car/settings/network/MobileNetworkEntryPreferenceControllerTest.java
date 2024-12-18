@@ -55,11 +55,12 @@ import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 
+import com.android.car.datasubscription.DataSubscription;
 import com.android.car.settings.R;
+import com.android.car.settings.common.ColoredTwoActionSwitchPreference;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceControllerTestUtil;
 import com.android.car.settings.testutils.TestLifecycleOwner;
-import com.android.car.ui.preference.CarUiTwoActionSwitchPreference;
 import com.android.dx.mockito.inline.extended.ExtendedMockito;
 import com.android.settingslib.utils.StringUtil;
 
@@ -103,7 +104,9 @@ public class MobileNetworkEntryPreferenceControllerTest {
     @Mock
     private ContentResolver mMockContentResolver;
     @Mock
-    private CarUiTwoActionSwitchPreference mMockPreference;
+    private DataSubscription mDataSubscription;
+    @Mock
+    private ColoredTwoActionSwitchPreference mMockPreference;
 
     @Before
     @UiThreadTest
@@ -144,6 +147,9 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
         mPreferenceController = new MobileNetworkEntryPreferenceController(mContext,
                 "key", mFragmentController, mCarUxRestrictions);
+
+        mPreferenceController.setSubscription(mDataSubscription);
+
         PreferenceControllerTestUtil.assignPreference(mPreferenceController, mMockPreference);
     }
 
@@ -336,10 +342,13 @@ public class MobileNetworkEntryPreferenceControllerTest {
     }
 
     @Test
-    public void onCreate_noSubscriptions_disabled() {
+    public void onCreate_noSubscriptionInfo_InactiveData_validSummary() {
+        when(mDataSubscription.isDataSubscriptionInactive()).thenReturn(true);
+
         mPreferenceController.onCreate(mLifecycleOwner);
 
-        verify(mMockPreference).setEnabled(false);
+        verify(mMockPreference).setSummary(mContext.getResources().getString(
+                R.string.connectivity_inactive_prompt));
     }
 
     @Test
@@ -362,7 +371,6 @@ public class MobileNetworkEntryPreferenceControllerTest {
         when(mSubscriptionManager.getSelectableSubscriptionInfoList()).thenReturn(selectable);
 
         mPreferenceController.onCreate(mLifecycleOwner);
-
         verify(mMockPreference).setSummary(TEST_NETWORK_NAME);
     }
 
@@ -401,6 +409,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
                 /* simSlotIndex= */ 2, TEST_NETWORK_NAME);
         List<SubscriptionInfo> selectable = Lists.newArrayList(info1, info2);
         when(mSubscriptionManager.getSelectableSubscriptionInfoList()).thenReturn(selectable);
+        when(mDataSubscription.isDataSubscriptionInactive()).thenReturn(false);
 
         mPreferenceController.onCreate(mLifecycleOwner);
 
@@ -420,13 +429,22 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
     @Test
     @UiThreadTest
+    public void performClick_noSubscriptionInfo_noFragmentStarted() {
+        when(mDataSubscription.isDataSubscriptionInactive()).thenReturn(true);
+        mPreferenceController.onCreate(mLifecycleOwner);
+        mPreferenceController.handlePreferenceClicked(mMockPreference);
+
+        verify(mContext).startActivity(any());
+    }
+
+    @Test
+    @UiThreadTest
     public void performClick_oneSim_startsMobileNetworkFragment() {
         int subId = 1;
         SubscriptionInfo info = createSubscriptionInfo(subId, /* simSlotIndex= */ 1,
                 TEST_NETWORK_NAME);
         List<SubscriptionInfo> selectable = Lists.newArrayList(info);
         when(mSubscriptionManager.getSelectableSubscriptionInfoList()).thenReturn(selectable);
-
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.handlePreferenceClicked(mMockPreference);
 

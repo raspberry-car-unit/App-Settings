@@ -56,11 +56,9 @@ public class CameraAccessPreferenceController extends PreferenceController<Prefe
 
     @Override
     protected int getDefaultAvailabilityStatus() {
-        if (Flags.cameraPrivacyAllowlist()) {
-            return mSensorPrivacyManager.getCameraPrivacyAllowlist().isEmpty()
-                    ? CONDITIONALLY_UNAVAILABLE
-                    : AVAILABLE;
-        }
-        return CONDITIONALLY_UNAVAILABLE;
+        boolean hasFeatureCameraToggle = mSensorPrivacyManager.supportsSensorToggle(
+                SensorPrivacyManager.Sensors.CAMERA);
+        return Flags.cameraPrivacyAllowlist() && hasFeatureCameraToggle
+                ? AVAILABLE : CONDITIONALLY_UNAVAILABLE;
     }
 }

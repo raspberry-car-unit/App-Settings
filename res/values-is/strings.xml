@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Birtustig"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Aðlögun birtustigs"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Stilla skjábirtu eftir umhverfinu"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Þema"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Kveikt á næturljósi"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Netkerfi og internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Farsímakerfi"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5.0 GHz tíðnisvið í forgangi"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 og 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Veldu a.m.k. eitt svið fyrir heitan Wi‑Fi reit:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Heitur WiFi-reitur"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Heitur reitur"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Nota heitan WiFi-reit"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Slökkt"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Slökkva á heitum reit sjálfkrafa"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Slökkt verður á heitum Wi‑Fi reit ef engin tæki eru tengd"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Nota heitan reit fyrir öll drif"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Gerir heitan reit aðgengilegan hvenær sem kveikt er á bílnum"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Skannaðu þennan QR-kóða til að tengjast „%s“"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Aðgangsorð fyrir heitan reit: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> vill kveikja á Wi-Fi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Áður tengt"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s tengt"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s aftengt"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Tengingar tækis við bílinn þinn"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ofurbreiðband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Hjálpar bílnum þínum að bera kennsl á afstöðu UWB-tækja"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Beiðni um Bluetooth-pörun"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Pörun og tenging"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth-pörunarkóði"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Viðvörunarhljóð"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Hringitónn, tilkynningar, viðvörun"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Spila efni í"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Skipti efni yfir í %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Birtustig"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Stilla skjá fyrir litla birtu"</string>
     <string name="units_settings" msgid="402325305096925886">"Mælieining"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Sýna kerfi"</string>
     <string name="hide_system" msgid="8845453295584638040">"Fela kerfi"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Fela kerfisforrit"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Vekjarar og áminningar"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Breyta kerfisstillingum"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Þessi heimild leyfir forriti að breyta kerfisstillingum."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Tilkynningaaðgangur"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Hætta við"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Þessi forrit hafa neikvæð áhrif á afköst kerfisins og komið hefur verið í veg fyrir að þau keyri í bakgrunni.\nTil að leyfa bakgrunnsnotkun forrits skaltu setja það í forgang og fjarlægja það af þessum lista."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Forgangsraða forriti"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Sérstakur SMS-aðgangur"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Sérstakt SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Sérstök SMS-skilaboð geta kostað þig peninga og munu bætast við símreikninginn þinn. Ef þú virkjar leyfi fyrir forrit geturðu sent sérstök SMS með því forriti."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Notkunaraðgangur"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Aðgangur að notkun gerir forriti kleift að fylgjast með því hvaða önnur forrit þú notar og hversu oft, sem og símafyrirtækinu þínu, tungumálastillingum og öðrum upplýsingum."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Staðsetning"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Nota staðsetningu"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Notaðu staðsetningu bílsins með hvaða forriti sem þú tilgreinir."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Upplýsinga- og afþreyingarkerfisforrit"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Leyfa forritum að fá aðgang að staðsetningu þinni"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Ef þú slekkur á þessu verður lokað fyrir aðgang allra forrita að staðsetningu, nema þeirra sem notuð eru við akstursaðstoð"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Ef þú slekkur á þessu verða akstursaðstoðarforrit sem reiða sig á staðsetningarupplýsingar óvirk"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Slökkva samt"</string>
@@ -454,7 +463,7 @@
     <string name="restart_infotainment_system_title" msgid="5174129167446756511">"Endurræsa upplýsinga- og afþreyingarkerfi"</string>
     <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"Endurræsing á upplýsinga- og afþreyingarkerfi bílsins getur tekið nokkrar mínútur. Viltu halda áfram?"</string>
     <string name="continue_confirmation" msgid="1598892163951467191">"Áfram"</string>
-    <string name="firmware_version" msgid="8491753744549309333">"Android útgáfa"</string>
+    <string name="firmware_version" msgid="8491753744549309333">"Android-útgáfa"</string>
     <string name="security_patch" msgid="4794276590178386903">"Stig Android öryggisplásturs"</string>
     <string name="hardware_info" msgid="3973165746261507658">"Gerð og vélbúnaður"</string>
     <string name="hardware_info_summary" msgid="8262576443254075921">"Gerð: <xliff:g id="MODEL">%1$s</xliff:g>"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24 tíma snið"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Nota 24 tíma snið"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Tími"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Stilla tíma"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Stilla klukku"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Tímabelti"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Velja tímabelti"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Dagsetning"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Raða eftir tímabelti"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Dagsetning"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Tími"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Sjálfvirk dag- og tímasetning kann að nota tækni á borð við staðsetningu og farsímakerfi til að ákvarða dagsetningu, tíma og tímabelti."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Notaðu staðsetningu bílsins til að stilla dags- og tímasetningu sjálfkrafa. Virkar aðeins ef kveikt er á staðsetningu."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Áfram"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Breyta í stillingum"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Slökkt er á staðsetningu. Sjálfvirk tímasetning virkar hugsanlega ekki."</string>
     <string name="user_admin" msgid="1535484812908584809">"Stjórnandi"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Skráð(ur) inn sem stjórnandi"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Veita stjórnandaheimildir?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Eyða prófílnum þínum"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Eyða prófílnum og reikningum þínum úr upplýsinga- og afþreyingarkerfinu"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Þessi aðgerð er ekki í boði fyrir prófílinn þinn"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Aðgangur að hljóðnema"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Veldu hvort forrit hefur aðgang að hljóðnemum bílsins"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Upplýsinga- og afþreyingarkerfisforrit"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Leyfa upplýsinga- og afþreyingarkerfisforritum að taka upp hljóð"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Aðgangur að myndavél"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Veldu hvort forrit hafi aðgang að myndavélum bílsins"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Notaðu myndavélar bílsins með:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Hvaða forrit sem er"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Öll forrit sem þú hefur veitt aðgang að myndavélinni"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Engin forrit"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Engin af forritunum þínum"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Forritum sem aðstoða þig við akstur"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Forritum sem aðstoða þig við hluti á borð við að sjá umhverfið þegar þú leggur í stæði"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Aðeins áskilin forrit"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Aðeins forrit sem framleiðandi bílsins áskilur"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Forritum sem aðstoða þig við akstur"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Áskildum forritum og forritum sem aðstoða þig við hluti á borð við að sjá umhverfið þegar þú leggur í stæði"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Forritum sem aðstoða þig við akstur"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Þessi forrit hafa aðgang að myndavélinni til að aðstoða þig við akstur"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Áskilin forrit"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Þessi forrit eru áskilin svo að bíllinn geti starfað á öruggan hátt"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Reglur"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Framleiðandi bílsins hefur hugsanlega enn aðgang að myndavél bílsins. Þú getur skoðað reglur viðkomandi til að fá frekari upplýsingar."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Skoðaðu persónuverndarstefnu forrits til að kynna þér hvernig það notar myndavélina"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Áskilin forrit"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Akstursaðstoðarforrit sem framleiðandi bílsins krefst"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Reglur"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Framleiðandi bílsins hefur hugsanlega enn aðgang að myndavél bílsins"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Upplýsinga- og afþreyingarkerfisforrit"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Leyfa upplýsinga- og afþreyingarkerfisforritum að taka myndir og vídeó"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Heimilað"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Alltaf"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Ekki heimilað"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Aðeins á meðan forritið er í notkun"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Spyrja í hvert skipti"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Öryggi"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Skjálás"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Enginn"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Kveiktu á Bluetooth til að sjá tækin þín"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Opnaðu stillingar Bluetooth til að para tæki"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Þema"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Sýna uppsetningarmörk"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Stjórnandi upplýsinga- og afþreyingarkerfis"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Virk forrit"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Óvirk forrit"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Nýlega opnað"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Skoða allt"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Hleður…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Sjá áskriftir"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Netáskriftirnar þínar runnu út"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Sjá áskriftir"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Lokið"</string>
 </resources>

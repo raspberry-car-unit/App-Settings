@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"දීප්ති මට්ටම"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"අනුවර්තක දීප්තිය"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"තිර දීප්තිය පරිසරයට ගළපන්න"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"තේමාව"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"රාත්‍රී ආලෝකය ක්‍රියාත්මකයි"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"ජාලය සහ අන්තර්ජාලය"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"ජංගම ජාලය"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5.0 GHz කලාපය වඩාත් කැමතිය"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2.4 සහ 5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Wi‑Fi හොට්ස්පොට් සඳහා අවම වශයෙන් එක් කලාපයක් තෝරන්න:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi හොට්ස්පොට්"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"හොට්ස්පොට්"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi-Fi හොට්ස්පොට් භාවිත කරන්න"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"ක්‍රියාවිරහිතයි"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"හොට්ස්පොට් ස්වයංක්‍රීයව ක්‍රියාවිරහිත කරන්න"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"උපාග සම්බන්ධ කර නැතිනම් Wi‑Fi හොට්ස්පොට් ක්‍රියාවිරහිත වනු ඇත"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"සියලු ධාවක සඳහා හොට්ස්පොට් භාවිතා කරන්න"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"මෝටර් රථය ක්‍රියාත්මක වන විට හොට්ස්පොට් ලබා ගත හැකි බවට පත් කරන්න"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\" වෙත එකතු වීමට මෙම QR කේතය ස්කෑන් කරන්න"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"හොට්ස්පොට් මුරපදය: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> හට Wi-Fi සක්‍රීය කිරීමට අවශ්‍යයි"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"පෙර සම්බන්ධිත"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s සම්බන්ධ විය"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s විසන්ධි විය"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"ඔබේ මෝටර් රථය සමග උපාංග සම්බන්ධතා"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"අති-පුළුල් කලාප (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"UWB උපාංගවල පිහිටීම හඳුනා ගැනීමට ඔබේ මෝටර් රථයට උදවු කරයි"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"බ්ලූටූත් යුගලන ඉල්ලීම"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"යුගලනය සහ සබැඳීම"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"බ්ලූටූත් යුගල කේතය"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"ඇඟවීම් හඬවල්"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"රින්ග්ටෝන්, දැනුම්දීම්, එලාමය"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"මාධ්‍ය වාදනය කරන්නේ"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"මාධ්‍ය %1$s වෙත මාරු කරමින්"</string>
     <string name="display_brightness" msgid="5718970880488110840">"දීප්තිය"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"අඩු ආලෝකය සඳහා තිරය ගළපන්න"</string>
     <string name="units_settings" msgid="402325305096925886">"ඒකක"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"පද්ධතිය පෙන්වන්න"</string>
     <string name="hide_system" msgid="8845453295584638040">"පද්ධතිය සඟවන්න"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"පද්ධති යෙදුම් සඟවන්න"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"එලාම සහ සිහිකැඳවීම්"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"පද්ධති සැකසීම් විකරණය"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"මෙම අවසරය යෙදුමකට පද්ධති සැකසීම් විකරණයට ඉඩ දෙයි."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"දැනුම්දීම් ප්‍රවේශය"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"අවලංගු කරන්න"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"මෙම යෙදුම් පද්ධතියේ ක්‍රියාකාරිත්වයට සෘණාත්මකව බලපාන අතර පසුබිමේ ක්‍රියාත්මක වීම වළක්වා ඇත.\nපසුබිම් භාවිතයට ඉඩ දීමට සහ මෙම ලැයිස්තුවෙන් එය ඉවත් කිරීමට යෙදුමට ප්‍රමුඛත්වය දෙන්න."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"යෙදුම ප්‍රමුඛ කරන්න"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"පාරිතෝෂික කෙටිපණිවුඩ ප්‍රවේශය"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"ප්‍රිමියම් SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"පාරිතෝෂික කෙටිපණිවුඩ ඔබෙන් මුදල් අය කළ හැකි අතර ඔබේ වාහක බිල්පත්වලට එක් කරනු ඇත. ඔබ යෙදුමක් සඳහා අවසරය සබල කරන්නේ නම්, ඔබට එම යෙදුම භාවිතයෙන් පාරිතෝෂික කෙටිපණිවුඩ යැවීමට හැකි වනු ඇත."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"පරිශීලන ප්‍රවේශය"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"ඔබ භාවිත කරන වෙනත් යෙදුම් මොනවාද යන්න සහ ඒවා කොතරම් භාවිත කරන්නේද යන්න මෙන්ම, ඔබේ වාහකය, භාෂා සැකසීම්, සහ වෙනත් විස්තර පිළිබඳව හඹා යාමට පරිශීලන ප්‍රවේශය යෙදුමකට ඉඩ දෙයි."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"ස්ථානය"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"ස්ථානය භාවිත කරන්න"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"ඔබ සඳහන් කර ඇති ඕනෑම යෙදුමක් සමග ඔබේ මෝටර් රථයේ ස්ථානය භාවිතා කරන්න."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"තොරතුරු විනෝදාස්වාද යෙදුම්"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"ඔබේ ස්ථානයට ප්‍රවේශ වීමට යෙදුම් වලට ඉඩ දෙන්න"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"ඔබ මෙය ක්‍රියාවිරහිත කරන්නේ නම්, එය රියැදුරු සහාය සඳහා අවශ්‍ය ඒවා හැර අනෙකුත් සියලු යෙදුම් සඳහා ස්ථාන ප්‍රවේශය ඉවත් කරනු ඇත"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"ඔබ මෙය ක්‍රියාවිරහිත කරන්නේ නම්, ස්ථාන තොරතුරු මත යැපෙන රියැදුරු සහායක යෙදුම් අබල කරනු ඇත"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"කෙසේ වෙතත් ක්‍රියාවිරහිත කරන්න"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"පැය 24 ආකෘතිය"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"පැය 24 ආකෘතිය භාවිතා කරන්න"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"වේලාව"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"වේලාව සකසන්න"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ඔරලෝසුව සකසන්න"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"වේලා කලාපය"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"වේලා කලාපය තෝරන්න"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"දිනය"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"වේලා කලාපය අනුව පෙළගස්වන්න"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"දිනය"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"වේලාව"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"ස්වයංක්‍රීය දිනය සහ වේලාව දිනය, වේලාව සහ වේලා කලාපය තීරණය කිරීමට ස්ථානය සහ ජංගම ජාල වැනි මූලාශ්‍ර භාවිත කළ හැක."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"ස්වයංක්‍රීයව දිනය සහ වේලාව සැකසීමට ඔබේ මෝටර් රථයේ ස්ථානය භාවිත කරන්න. ස්ථානය ක්‍රියාත්මක නම් පමණක් ක්‍රියා කරයි."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"ඉදිරියට යන්න"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"සැකසීම් තුළ වෙනස් කරන්න"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"ඔබේ ස්ථානය ක්‍රියාවිරහිතයි. ස්වයංක්‍රීය කාලය ක්‍රියා නොකරනු ඇත."</string>
     <string name="user_admin" msgid="1535484812908584809">"පරිපාලක"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"පරිපාලක ලෙස පුරනය වී ඇත"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"පරිපාලක අවසර ලබා දෙන්නද?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"ඔබගේ පැතිකඩ මකන්න"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ඔබ‍ගේ පැතිකඩ සහ ගිණුම් විනෝදාස්වාද පද්ධතියෙන් මකන්න"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"මෙම ක්‍රියාව ඔබගේ පැතිකඩ සඳහා ලබා ගත නොහැකිය"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"මයික්‍රොෆෝන් ප්‍රවේශය"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"යෙදුම්වලට ඔබේ මෝටර් රථයේ මයික්‍රෆෝන වෙත ප්‍රවේශ විය හැකි ද යන්න තෝරා ගන්න"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"තොරතුරු විනෝදාස්වාද යෙදුම්"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ශ්‍රව්‍ය පටිගත කිරීමට තොරතුරු විනෝදාස්වාද යෙදුම්වලට ඉඩ දෙන්න"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"කැමරා ප්‍රවේශය"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"යෙදුම් හට ඔබේ මෝටර් රථයේ කැමරා වෙත ප්‍රවේශ විය හැකි ද යන්න තෝරා ගන්න"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"ඔබේ මෝටර් රථයේ කැමරා මේ සමග භාවිතා කරන්න:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"ඕනෑම යෙදුමක්"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"ඔබ ඔබේ කැමරාවට ප්‍රවේශ වීමට ඉඩ දී ඇති ඕනෑම යෙදුමක්"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"යෙදුම් නැත"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"ඔබේ යෙදුම් කිසිවක් නොවේ"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"ඔබට ධාවනය කිරීමට උදවු වන යෙදුම්"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"වාහන නැවැත්වීමේ දී ඔබේ වටපිටාව පෙන්වීම වැනි දේවල් සඳහා සහාය වන යෙදුම්"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"අවශ්‍ය යෙදුම් පමණි"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"ඔබේ මෝටර් රථයේ නිෂ්පාදකයාට අවශ්‍ය යෙදුම් පමණි"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"ඔබට ධාවනය කිරීමට උදවු වන යෙදුම්"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"වාහන නැවැත්වීමේ දී ඔබේ වටපිටාව පෙන්වීම, සහ අවශ්‍ය යෙදුම් වැනි දේවල් සඳහා සහාය වන යෙදුම්"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"ඔබට ධාවනය කිරීමට උදවු වන යෙදුම්"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"මෙම යෙදුම් හට රිය පැදවීමට සහාය වීමට ඔබේ කැමරාවට ප්‍රවේශ විය හැක"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"අවශ්‍ය යෙදුම්"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"ඔබේ මෝටර් රථය ආරක්ෂිතව ක්‍රියා කිරීමට උදවු කිරීමට මෙම යෙදුම් අවශ්‍ය වේ"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"ප්‍රතිපත්තිය"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"ඔබේ මෝටර් රථ නිෂ්පාදකයාට තවමත් ඔබේ මෝටර් රථයේ කැමරාවට ප්‍රවේශය තිබිය හැක. ඔබට වැඩිදුර තතු සඳහා ඔවුන්ගේ ප්‍රතිපත්ති සමාලෝචනය කළ හැක."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"එක් එක් යෙදුම එහි රහස්‍යතා ප්‍රතිපත්තිය සමාලෝචනය කිරීමෙන් ඔබේ කැමරාව භාවිත කරන ආකාරය පිළිබඳව තව දැන ගන්න."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"අවශ්‍ය යෙදුම්"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"ඔබට ධාවනය කිරීමට උදවු කිරීමට ඔබේ මෝටර් රථයේ නිෂ්පාදකයාට අවශ්‍ය යෙදුම්"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"ප්‍රතිපත්තිය"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"ඔබේ මෝටර් රථ නිෂ්පාදකයාට තවමත් ඔබේ මෝටර් රථයේ කැමරාවට ප්‍රවේශය තිබිය හැක"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"තොරතුරු විනෝදාස්වාද යෙදුම්"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ඡායාරූප ගැනීමට සහ වීඩියෝ පටිගත කිරීමට තොරතුරු රසාස්වාදය යෙදුම්වලට ඉඩ දෙන්න"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"ඉඩ දුන්"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"සෑම විට ම"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"ඉඩ නොදෙයි"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"යෙදුම භාවිත කරන අතරේ පමණයි"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"සෑම වේලාවේම අසන්න"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"ආරක්ෂාව"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"තිර අගුල"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"කිසිවක් නැත"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"ඔබගේ උපාංග බැලීමට, බ්ලූටූත් ක්‍රියාත්මක කරන්න"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"උපාංගයක් යුගල කිරීමට, බ්ලූටූත් සැකසීම් විවෘත කරන්න"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"තේමාව"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"පිරිසැලසුම් සීමා පෙන්වන්න"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"තොරතුරු විනෝදාස්වාද පද්ධති පරිපාලක"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"සක්‍රිය කළ යෙදුම්"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"අක්‍රිය කළ යෙදුම්"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"මෑතකදී පිවිසි"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"සියල්ල බලන්න"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"පූරණය වේ…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"සැලසුම් බලන්න"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"ඔබේ අන්තර්ජාල සැලසුම් කල් ඉකුත් විය"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"සැලසුම් බලන්න"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"නිමයි"</string>
 </resources>

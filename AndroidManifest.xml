@@ -23,10 +23,6 @@
           android:versionCode="1"
           android:versionName="1.0">
 
-    <uses-sdk
-        android:minSdkVersion="24"
-        android:targetSdkVersion="33"/>
-
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.BACKUP"/>
@@ -42,6 +38,7 @@
     <uses-permission android:name="android.permission.CAR_VENDOR_EXTENSION"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.CONTROL_DISPLAY_BRIGHTNESS"/>
     <uses-permission android:name="android.permission.CONTROL_DISPLAY_UNITS"/>
     <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
     <uses-permission android:name="android.permission.DUMP"/>
@@ -68,13 +65,16 @@
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
     <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"/>
     <uses-permission android:name="android.permission.START_FOREGROUND"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
     <uses-permission android:name="android.permission.START_VIEW_APP_FEATURES" />
     <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
     <uses-permission android:name="android.permission.SUGGEST_MANUAL_TIME_AND_ZONE"/>
+    <uses-permission android:name="android.permission.UWB_PRIVILEGED"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
     <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_SETTINGS"/>
     <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME"/>
+    <uses-permission android:name="android.car.permission.READ_PERSIST_TETHERING_SETTINGS"/>
 
     <permission android:name="com.android.car.settings.SET_INITIAL_LOCK"
         android:protectionLevel="signature|setup"/>
@@ -359,6 +359,10 @@
             android:name=".common.CarSettingActivities$WifiTetherActivity"
             android:windowSoftInputMode="adjustPan"
             android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.settings.WIFI_TETHER_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
             <meta-data android:name="com.android.car.settings.TOP_LEVEL_HEADER_KEY"
                        android:value="@string/hk_WifiTetherActivity" />
             <meta-data android:name="distractionOptimized" android:value="true"/>
@@ -633,6 +637,24 @@
             </intent-filter>
             <meta-data android:name="com.android.car.settings.TOP_LEVEL_HEADER_KEY"
                        android:value="@string/hk_TextToSpeechOutputActivity" />
+            <meta-data android:name="distractionOptimized" android:value="true"/>
+        </activity>
+
+        <activity
+            android:name=".common.CarSettingActivities$AlarmsAndRemindersActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.REQUEST_SCHEDULE_EXACT_ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.REQUEST_SCHEDULE_EXACT_ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <meta-data android:name="com.android.car.settings.TOP_LEVEL_HEADER_KEY"
+                       android:value="@string/hk_AlarmsAndRemindersActivity" />
             <meta-data android:name="distractionOptimized" android:value="true"/>
         </activity>
 
@@ -956,7 +978,24 @@
             <meta-data android:name="distractionOptimized" android:value="true"/>
         </activity>
 
-        <service android:name=".bluetooth.BluetoothPairingService" />
+        <activity
+            android:name=".sound.AudioRouteSelectionActivity"
+            android:theme="@style/AlertDialogTheme"
+            android:permission="android.car.permission.CAR_CONTROL_AUDIO_SETTINGS"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="com.android.car.settings.AUDIO_ROUTE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="distractionOptimized" android:value="true"/>
+        </activity>
+
+    <service android:name=".bluetooth.BluetoothPairingService"
+        android:foregroundServiceType="connectedDevice"/>
 
         <service android:name=".setupservice.InitialLockSetupService"
                  android:exported="true"

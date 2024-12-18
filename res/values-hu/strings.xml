@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Fényerőszint"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Alkalmazkodó fényerő"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Képernyő hozzáigazítása a környezethez"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Téma"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Éjszakai fény bekapcsolva"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Hálózat és internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobilhálózat"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Előnyben részesített sáv: 5 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 és 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Válasszon sávot a Wi-Fi-hotspotnak:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi-hotspot"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi‑Fi-hotspot használata"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Kikapcsolva"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Wi-Fi-hotspot automatikus kikapcsolása"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"A Wi-Fi-hotspot kikapcsol, ha nincsenek csatlakoztatott eszközök"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Hotspot használata minden vezetés során"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Hotspot hozzáférhetővé tétele az autó elindításakor"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\" – ha csatlakozna hozzá, olvassa be a QR-kódot"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Hotspot jelszava: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"A(z) <xliff:g id="REQUESTER">%s</xliff:g> szeretné bekapcsolni a Wi-Fi-t"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Korábban csatlakoztatva"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s csatlakoztatva"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s leválasztva"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Az autó eszközkapcsolatai"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultraszélessáv (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Segít az autónak meghatározni az UWB-eszközök helyzetét"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Bluetooth párosítási kérelem"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Párosítás és csatlakozás"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth-párosítókód"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Figyelmeztető hangok"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Csengőhang, értesítések, ébresztés"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Médiatartalom lejátszása itt:"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Médialejátszás váltása a következőre: %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Fényerő"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Fényerő korrigálása rossz fényviszonyoknál"</string>
     <string name="units_settings" msgid="402325305096925886">"Egységek"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Rendszer megjelenítése"</string>
     <string name="hide_system" msgid="8845453295584638040">"Rendszerfolyamatok elrejtése"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Rendszeralkalmazások elrejtése"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Ébresztések és emlékeztetők"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Rendszerbeállítások módosítása"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Ez az engedély lehetővé teszi az alkalmazás számára a rendszerbeállítások módosítását."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Hozzáférés az értesítésekhez"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Mégse"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Ezek az alkalmazások negatív hatással vannak a rendszer teljesítményére, ezért a rendszer megakadályozta, hogy a háttérben fussanak.\nAz alkalmazás priorizálásával engedélyezheti a háttérbeli használatot, és eltávolíthatja az appot erről a listáról."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"App priorizálása"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Emelt díjas SMS küldése"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Emelt díjas SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"A Prémium SMS-ek használata pénzbe kerülhet Önnek, és a szolgáltatója által kiállított számlák végösszegét növeli. Ha engedélyt ad valamelyik alkalmazásnak, akkor azzal lehetősége lesz prémium SMS-eket küldeni."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Használati hozzáférés"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"A használati hozzáférés lehetővé teszi az alkalmazás számára a következők nyomon követését: Ön milyen más alkalmazásokat használ, milyen gyakran használja őket, valamint szolgáltatóit, nyelvi beállításit és egyéb részleteket."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Hely"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Hely használata"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Az autó helyadatainak használata az Ön által megadott alkalmazásokkal."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Infotainmentappok"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Hozzáférés engedélyezése a helyadatokhoz az alkalmazások számára"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"A beállítás kikapcsolásával megszünteti a helyadatokhoz való hozzáférést is az összes alkalmazás esetében; kivéve azoknál, amelyek szükségesek a sofőrtámogatáshoz."</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Ha kikapcsolja ezt a beállítást, letiltja a helyadatokra támaszkodó sofőrtámogató alkalmazásokat is."</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Kikapcsolás mindenképp"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24 órás formátum"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24 órás formátum használata"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Idő"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Idő beállítása"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Óra beállítása"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Időzóna"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Időzóna kiválasztása"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Dátum"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Rendezés időzóna szerint"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Dátum"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Idő"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"A dátum és idő automatikus beállítása funkció olyan forrásokat használhat a dátum, az idő és az időzóna meghatározásához, mint a helyadatok és a mobilhálózatok."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Az autó helyadatainak használata dátum és idő automatikus beállításához. Csak akkor működik, ha be vannak kapcsolva a helyadatok."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Tovább"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Módosítás a beállításokban"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"A helyadatai ki vannak kapcsolva. Előfordulhat, hogy az idő automatikus beállítása nem működik."</string>
     <string name="user_admin" msgid="1535484812908584809">"Rendszergazda"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Rendszergazdaként bejelentkezve"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Rendszergazdai engedélyeket ad?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Profil törlése"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Profil és fiókok törlése az infotainmentrendszerről"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Ez a művelet nem végezhető el az Ön profiljával"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Hozzáférés a mikrofonhoz"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Válassza ki, hogy az alkalmazások hozzáférhetnek-e az autó mikrofonjaihoz"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Infotainment típusú appok"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Infotainment típusú appok engedélyezése hangrögzítéshez"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Hozzáférés a kamerákhoz"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Válassza ki, hogy az alkalmazások hozzáférhetnek-e az autó kameráihoz."</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"A következőkkel használhatja autója kameráit:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Bármely alkalmazás"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Minden olyan alkalmazás, amely számára engedélyezte a kamerához való hozzáférést"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Egyik alkalmazás sem"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Az egyik alkalmazásával sem"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Vezetésben segítő appok"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Olyan alkalmazások, amelyek segítenek bizonyos dolgokban, például a környezete megjelenítésében parkolás közben"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Csak a szükséges appok"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Csak a gyártó számára szükséges alkalmazásokkal"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Vezetésben segítő appok"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Olyan alkalmazások, amelyek segítenek bizonyos dolgokban, például a környezete megjelenítésében parkolás közben, valamint a szükséges alkalmazások"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Vezetésben segítő appok"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Ezek az alkalmazások férhetnek hozzá a kamerához, hogy segíteni tudjanak a vezetésben."</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Szükséges alkalmazások"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Ezekre az alkalmazásokra szükség van ahhoz, hogy autója biztonságosan üzemelhessen."</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Irányelvek"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Előfordulhat, hogy az autó gyártója továbbra is hozzáfér az autó kamerájához. További információkat a gyártó irányelveiben találhat."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Az egyes alkalmazások adatvédelmi irányelveiben további információt találhat a kamera adott appok általi használatáról."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Szükséges alkalmazások"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Az autó gyártója által a vezetés támogatásához megkövetelt alkalmazások"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Irányelvek"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Előfordulhat, hogy az autó gyártója továbbra is hozzáfér az autó kamerájához"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Infotainmentappok"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Fotók és videók készítésének engedélyezése infotainmentappok számára"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Engedélyezve"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Mindig"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Nincs engedélyezve"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Csak az alkalmazás használata közben"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Mindig kérdezzen rá"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Biztonság"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Képernyőzár"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Egyik sem"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Eszközei megtekintéséhez kapcsolja be a Bluetootht"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Eszköz párosításához nyissa meg a Bluetooth-beállításokat"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Téma"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Elrendezéshatárok megjelenítése"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Infotainment-rendszergazda"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktivált alkalmazások"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Deaktivált alkalmazások"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"A közelmúltban hozzáférő alkalmazások"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Összes megtekintése"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Betöltés…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Csomagok megtekintése"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Lejártak az Ön internetcsomagjai"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Csomagok megtekintése"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Kész"</string>
 </resources>

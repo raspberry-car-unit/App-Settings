@@ -16,23 +16,23 @@
 
 package com.android.car.settings.privacy;
 
+import static com.android.car.settings.enterprise.EnterpriseUtils.getAvailabilityStatusRestricted;
+import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByDpm;
+import static com.android.car.settings.enterprise.EnterpriseUtils.onClickWhileDisabled;
+
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
 import android.hardware.SensorPrivacyManager;
+import android.os.UserManager;
 
 import com.android.car.settings.common.ColoredSwitchPreference;
 import com.android.car.settings.common.FragmentController;
-import com.android.car.settings.common.PreferenceController;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.camera.flags.Flags;
 
 /** Business logic for controlling the mute camera toggle. */
 public class CameraTogglePreferenceController
-        extends PreferenceController<ColoredSwitchPreference> {
-
-    private final SensorPrivacyManager mSensorPrivacyManager;
-    private final SensorPrivacyManager.OnSensorPrivacyChangedListener mListener =
-            (sensor, enabled) -> refreshUi();
+        extends CameraPrivacyBasePreferenceController<ColoredSwitchPreference> {
 
     public CameraTogglePreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController,
@@ -45,8 +45,7 @@ public class CameraTogglePreferenceController
     CameraTogglePreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions,
             SensorPrivacyManager sensorPrivacyManager) {
-        super(context, preferenceKey, fragmentController, uxRestrictions);
-        mSensorPrivacyManager = sensorPrivacyManager;
+        super(context, preferenceKey, fragmentController, uxRestrictions, sensorPrivacyManager);
     }
 
     @Override
@@ -55,25 +54,13 @@ public class CameraTogglePreferenceController
     }
 
     @Override
-    protected void onStartInternal() {
-        mSensorPrivacyManager.addSensorPrivacyListener(
-                SensorPrivacyManager.Sensors.CAMERA, mListener);
-    }
-
-    @Override
-    protected void onStopInternal() {
-        mSensorPrivacyManager.removeSensorPrivacyListener(SensorPrivacyManager.Sensors.CAMERA,
-                mListener);
-    }
-
-    @Override
     protected boolean handlePreferenceChanged(ColoredSwitchPreference preference,
             Object newValue) {
         boolean isChecked = (Boolean) newValue;
-        boolean isCameraMuted = mSensorPrivacyManager.isSensorPrivacyEnabled(
+        boolean isCameraMuted = getSensorPrivacyManager().isSensorPrivacyEnabled(
                 SensorPrivacyManager.Sensors.CAMERA);
         if (isChecked == isCameraMuted) {
-            mSensorPrivacyManager.setSensorPrivacyForProfileGroup(
+            getSensorPrivacyManager().setSensorPrivacyForProfileGroup(
                     SensorPrivacyManager.Sources.SETTINGS,
                     SensorPrivacyManager.Sensors.CAMERA,
                     !isChecked);
@@ -83,20 +70,24 @@ public class CameraTogglePreferenceController
 
     @Override
     protected int getDefaultAvailabilityStatus() {
-        boolean hasFeatureCameraToggle = mSensorPrivacyManager.supportsSensorToggle(
-                SensorPrivacyManager.Sensors.CAMERA);
-        if (Flags.cameraPrivacyAllowlist()) {
-            boolean emptyCameraPrivacyAllowlist =
-                    mSensorPrivacyManager.getCameraPrivacyAllowlist().isEmpty();
-            return hasFeatureCameraToggle && emptyCameraPrivacyAllowlist
-                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        if (Flags.cameraPrivacyAllowlist() || !getSensorPrivacyManager()
+                .supportsSensorToggle(SensorPrivacyManager.Sensors.CAMERA)) {
+            // Hide preference if feature flag is enabled or system doesn't have a camera
+            return UNSUPPORTED_ON_DEVICE;
+        } else {
+            return getAvailabilityStatusRestricted(getContext(),
+                    UserManager.DISALLOW_CAMERA_TOGGLE);
         }
-        return hasFeatureCameraToggle ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     protected void updateState(ColoredSwitchPreference preference) {
-        preference.setChecked(!mSensorPrivacyManager.isSensorPrivacyEnabled(
+        preference.setChecked(!getSensorPrivacyManager().isSensorPrivacyEnabled(
                 SensorPrivacyManager.Sensors.CAMERA));
+        if (hasUserRestrictionByDpm(getContext(), UserManager.DISALLOW_CAMERA_TOGGLE)) {
+            setClickableWhileDisabled(preference, /* clickable= */ true, p ->
+                    onClickWhileDisabled(getContext(), getFragmentController(),
+                            UserManager.DISALLOW_CAMERA_TOGGLE));
+        }
     }
 }

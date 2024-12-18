@@ -19,10 +19,11 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="settings_label" msgid="5147911978211079839">"Mipangilio"</string>
     <string name="more_settings_label" msgid="3867559443480110616">"Zaidi"</string>
-    <string name="display_settings" msgid="5325515247739279185">"Onyesho"</string>
+    <string name="display_settings" msgid="5325515247739279185">"Mwonekano"</string>
     <string name="brightness" msgid="2919605130898772866">"Hali ya mwangaza"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Ung\'aavu unaojirekebisha"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Rekebisha mwangaza wa skrini kulingana na mazingira"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Mandhari"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Mwanga wa Usiku umewashwa"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Mtandao na intaneti"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mtandao wa simu"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Bendi ya GHz 5.0 (inapendelewa)"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"GHz 2.4"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"GHz 5.0"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"GHz 2.4 na 5.0"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Chagua angalau bendi moja ya mtandaopepe wa Wi‑Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Mtandao pepe wa Wi-Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Mtandaopepe"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Tumia mtandao pepe wa Wi-Fi"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Imezimwa"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Zima mtandaopepe kiotomatiki"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Mtandaopepe wa Wi-Fi utazimwa ikiwa hakuna vifaa vilivyounganishwa"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Tumia mtandao pepe katika hali zote za uendeshaji"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Fanya mtandao pepe upatikane wakati wowote gari likiwa limewashwa"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Changanua msimbo huu wa QR ili ujiunge kwenye \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Nenosiri la mtandao pepe: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> inataka kuwasha Wi-Fi"</string>
@@ -184,7 +186,7 @@
     <string name="bluetooth_device" msgid="3178478829314083240">"Kifaa kisichokuwa na jina"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"Vifaa vilivyooanishwa"</string>
     <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"Unganisha kifaa kipya"</string>
-    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"Bluetooth itawaka ili ioanishe"</string>
+    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"Bluetooth itawaka ili iunganishe"</string>
     <string name="bluetooth_disconnect_title" msgid="7675271355910637528">"Ungependa kuondoa kifaa?"</string>
     <string name="bluetooth_disconnect_all_profiles" msgid="2017519733701757244">"Gari lako litatenganishwa na <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_vehicle_mac_address" msgid="7069234636525805937">"Anwani ya Bluetooth ya gari: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Vilivyounganishwa awali"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s imeunganishwa"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s imetenganishwa"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Miunganisho ya vifaa kwenye gari lako"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Bendi Pana Zaidi (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Husaidia gari lako litambue mahali vifaa vya Bendi Pana Zaidi (UWB) vilipo"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Ombi la kuoanisha Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Oanisha kisha uunganishe"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Msimbo wa kuoanisha Bluetooth"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Sauti za arifa"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Mlio, arifa, kengele"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Cheza maudhui kwenye"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Inabadilisha njia ya sauti kuwa %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Ung\'aavu"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Rekebisha skrini iwe na mwangaza wa chini"</string>
     <string name="units_settings" msgid="402325305096925886">"Vizio"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Onyesha mfumo"</string>
     <string name="hide_system" msgid="8845453295584638040">"Ficha mfumo"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Ficha programu za mfumo"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Ving\'ora na vikumbusho"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Badilisha mipangilio ya mfumo"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Idhini hii huruhusu programu kubadilisha mipangilio ya mfumo"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Kufikia arifa"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Ghairi"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Programu hizi huathiri vibaya mfumo wa utendaji na zimezuiliwa kufanya kazi katika hali ya chinichini.\nIpe programu kipaumbele ili kuruhusu matumizi katika hali ya chinichini na uiondoe kwenye orodha hii."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Ipe programu kipaumbele"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Kufikia huduma ya SMS zinazolipiwa"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS inayotozwa ada ya ziada"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Gharama ya huduma ya SMS zinazolipiwa itajumuishwa kwenye bili yako ya mtoa huduma. Ikiwa utaipa programu fulani ruhusa, utaweza kutuma SMS zinazolipiwa ukitumia programu hiyo."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Kufikia matumizi"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Ufikiaji wa matumizi huruhusu programu kufuatilia programu zingine unazotumia na mara ngapi unazitumia, pamoja na mtoa huduma, mipangilio ya lugha na maelezo yako mengine."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Mahali"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Tumia data ya mahali"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Tumia maelezo ya mahali gari lako lipo kwenye programu yoyote uliyobainisha."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Programu za habari na burudani"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Ruhusu programu zifikie maelezo ya mahali ulipo"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Ukizima kipengle hiki, ufikiaji wa data ya mahali kwenye programu zote utaondolewa isipokuwa zile zinazohitajika katika usaidizi kwa dereva"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Ukizima kipengele hiki, programu za usaidizi kwa dereva zinazotegemea taarifa za mahali zitazimwa"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Zima licha ya hayo"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Mfumo wa saa 24"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Tumia mpangilio wa saa 24"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Saa"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Weka saa"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Weka mipangilio ya saa"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Saa za eneo"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Chagua saa za eneo"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Tarehe"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Panga kulingana na saa za eneo"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Tarehe"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Saa"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Kipengele cha tarehe na saa za kiotomatiki kinaweza kutumia vyanzo kama vile data ya mahali na mitandao ya simu kubaini tarehe, saa na saa za eneo."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Tumia data ya mahali lilipo gari lako ili kuweka kiotomatiki mipangilio ya tarehe na saa. Inafanya kazi tu ikiwa mipangilio ya mahali imewashwa."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Endelea"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Badilisha katika mipangilio"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Umezima mipangilio ya mahali. Huenda saa ya kiotomatiki isifanye kazi."</string>
     <string name="user_admin" msgid="1535484812908584809">"Msimamizi"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Umeingia katika akaunti ya msimamizi"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Ungependa kumpa ruhusa za msimamizi?"</string>
@@ -555,7 +569,7 @@
     <string name="user_new_user_name" msgid="906698527658609819">"Wasifu mpya"</string>
     <string name="user_add_user_title" msgid="6296827596015729982">"Utaweka wasifu mpya?"</string>
     <string name="user_add_user_message_setup" msgid="812616230454605159">"Baada ya kutengeneza wasifu mpya, mtu huyo anapaswa kuuwekea mapendeleo ili uwe jinsi apendavyo."</string>
-    <string name="user_add_user_message_update" msgid="3836353291078729240">"Programu zinaweza kusasishwa kwenye wasifu wowote wa kutumiwa na wasifu nyingine zote."</string>
+    <string name="user_add_user_message_update" msgid="3836353291078729240">"Programu zinaweza kusasishwa kwenye wasifu wowote ili zitumiwe na wasifu mwingine wowote."</string>
     <string name="user_limit_reached_title" msgid="5677729355746623293">"Umefikisha kikomo cha wasifu"</string>
     <string name="user_limit_reached_message" msgid="2773441357248819721">"{count,plural, =1{Unaweza kuweka wasifu mmoja pekee.}other{Unaweza kuweka hadi wasifu #.}}"</string>
     <string name="add_user_error_title" msgid="7589792057846396341">"Imeshindwa kutengeneza wasifu mpya"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Futa wasifu wako"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Futa wasifu na akaunti zako kwenye mfumo wa burudani na habari"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Kitendo hiki hakipatikani kwa wasifu wako"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Ufikiaji wa maikrofoni"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Chagua iwapo programu zinaweza kufikia maikrofoni za gari lako"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Programu za habari na burudani"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Ruhusu programu za habari na burudani zirekodi sauti"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Ufikiaji wa kamera"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Chagua iwapo programu zinaweza kufikia kamera ya gari lako"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Kutumia kamera ya gari lako pamoja na:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Programu Yoyote"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Programu yoyote ambayo umeruhusu ifikie kamera yako"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Hakuna Programu"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Hamna kati ya programu zako"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Programu zinazokusaidia kuendesha gari"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Programu zinazosaidia na mambo kama vile kuonyesha yaliyo kwenye mazingira yako unapoegesha gari"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Programu zinazohitajika pekee"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Programu zinazohitajika na kampuni iliyotengeneza gari lako pekee"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Programu zinazokusaidia kuendesha gari"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Programu zinazokusaidia kufanya mambo kama vile kukuonyesha yaliyo kwenye mazingira yako unapoegesha gari na programu zinazohitajika"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Programu zinazokusaidia kuendesha gari"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Programu hizi zinaweza kufikia kamera yako ili kukusaidia katika kuendesha gari"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Programu zinazohitajika"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Programu hizi zinahitajika ili kusaidia gari lako kufanya kazi kwa usalama"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Sera"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Huenda kampuni iliyotengeneza gari lako bado ina uwezo wa kufikia kamera ya gari lako. Unaweza kusoma sera zake ili upate maelezo zaidi."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Pata maelezo zaidi kuhusu jinsi kila programu hutumia Kamera yako kwa kusoma Sera yake ya Faragha."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Programu zinazohitajika"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Programu zinazotakiwa na mtengenezaji wa gari lako ili kukusaidia kuendesha gari"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Sera"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Huenda mtengenezaji wa gari lako bado ana uwezo wa kufikia kamera ya gari lako"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Programu za habari na burudani"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Ruhusu programu za habari na burudani zipige picha na kurekodi video"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Zilizoruhusiwa"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Kila wakati"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Zisizoruhusiwa"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Unapotumia programu tu"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Uliza kila wakati"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Usalama"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Kufunga skrini"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Hamna"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Ili uone vifaa vyako, washa Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Ili uoanishe kifaa, fungua mipangilio ya Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Mandhari"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Onyesha mipaka ya mpangilio"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Msimamizi wa mfumo wa burudani na habari"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Programu zilizowashwa"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Programu zilizozimwa"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Ilifikiwa hivi karibuni"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Angalia zote"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Inapakia…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Angalia mipango"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Muda wa mipango yako ya intaneti umekwisha"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Angalia mipango"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Nimemaliza"</string>
 </resources>

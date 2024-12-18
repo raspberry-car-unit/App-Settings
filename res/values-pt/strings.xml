@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Nível de brilho"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Brilho adaptável"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Ajustar o brilho da tela para o ambiente"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Tema"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"O Modo noturno está ativado"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Rede e Internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Rede móvel"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Banda de 5 GHz preferencial"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 e 5 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Escolha pelo menos uma banda para o ponto de acesso Wi-Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Ponto de acesso Wi-Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Ponto de acesso"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Usar o ponto de acesso Wi-Fi"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Desativado"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Desativar ponto de acesso automaticamente"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"O ponto de acesso Wi‑Fi será desativado se nenhum dispositivo for conectado"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Usar o ponto de acesso para todos os deslocamentos"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Tornar o ponto de acesso disponível sempre que o carro estiver ligado"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Leia este QR code para entrar em \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Senha do ponto de acesso: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> quer ativar o Wi-Fi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Conectados anteriormente"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s conectado"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s desconectado"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Conexões do dispositivo com seu carro"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Banda ultralarga (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Ajuda seu carro a identificar a posição de dispositivos UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Solicitação de pareamento Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Parear e conectar"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Código de pareamento Bluetooth"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Sons de alerta"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Toque, notificações, alarme"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Abrir mídia em"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"A mídia foi alterada para %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Brilho"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Ajustar a tela para locais com pouca luz"</string>
     <string name="units_settings" msgid="402325305096925886">"Unidades"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Mostrar sistema"</string>
     <string name="hide_system" msgid="8845453295584638040">"Ocultar sistema"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Ocultar os apps do sistema"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarmes e lembretes"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Mudar configuração do sistema"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Permite que um app modifique configurações do sistema."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Acesso a notificações"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Cancelar"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Esses apps prejudicam o desempenho do sistema e tiveram a execução em segundo plano impedida.\nPriorize o app para permitir o uso em segundo plano e o remover desta lista."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Priorizar app"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Acesso a SMS premium"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS premium"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"O SMS premium pode gerar custos e será adicionado à sua conta da operadora. Se você conceder permissão para um app, será possível enviar SMS premium usando esse app."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Acesso ao uso"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"O acesso ao uso permite que um app monitore quais outros apps você está usando e com que frequência, bem como sua operadora, suas configurações de idioma e outros detalhes."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Local"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Usar local"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Usar a localização do carro com qualquer app que você especificar."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Apps de infoentretenimento"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Permita que os apps acessem sua localização"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Se você desativar essa configuração, o acesso à localização de todos os apps vai ser removido, exceto nos que são necessários para assistência ao motorista"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Se você não usar essa configuração, os apps de assistência ao motorista que precisam de informações de localização vão ser desativados"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Desativar mesmo assim"</string>
@@ -473,7 +482,7 @@
     <string name="legal_information" msgid="1838443759229784762">"Informações legais"</string>
     <string name="contributors_title" msgid="7698463793409916113">"Colaboradores"</string>
     <string name="manual" msgid="4819839169843240804">"Manual"</string>
-    <string name="regulatory_labels" msgid="3165587388499646779">"Informações regulatórias"</string>
+    <string name="regulatory_labels" msgid="3165587388499646779">"Selos de conformidade"</string>
     <string name="safety_and_regulatory_info" msgid="1204127697132067734">"Manual de segurança e regulamentação"</string>
     <string name="copyright_title" msgid="4220237202917417876">"Direitos autorais"</string>
     <string name="license_title" msgid="936705938435249965">"Licença"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Formato de 24 horas"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Usar formato de 24 horas"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Hora"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Definir hora"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Configurar relógio"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Fuso horário"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Selecionar fuso horário"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Data"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Ordenar por fuso horário"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Data"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Hora"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"A detecção automática pode usar fontes como localização e redes móveis para determinar automaticamente a data, hora e fuso horário."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Use o local do carro para definir automaticamente a data e hora. Isso só funciona se a localização estiver ativada."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Continuar"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Mudar nas configurações"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Sua localização está desativada. A detecção automática de fuso horário pode não funcionar."</string>
     <string name="user_admin" msgid="1535484812908584809">"Administrador"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Conectado como administrador"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Conceder permissões de administrador?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Excluir seu perfil"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Apague seu perfil e contas do sistema de infoentretenimento"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Esta ação não está disponível para seu perfil"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Acesso ao microfone"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Escolha se os apps podem acessar os microfones do carro"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Apps de infoentretenimento"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Permitir que apps de infoentretenimento gravem áudio"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Acesso às câmeras"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Escolha se os apps podem acessar as câmeras do carro"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Use a câmera do carro com os seguintes apps:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Qualquer app"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Qualquer app que tem permissão para acessar a câmera"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Nenhum app"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Nenhum dos seus apps"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Apps que ajudam você a dirigir"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Apps que ajudam em funções como mostrar o que há ao redor do carro na hora de estacionar"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Somente os apps necessários"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Somente os apps exigidos pelo fabricante do carro"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Apps que ajudam você a dirigir"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Apps que ajudam em funções como mostrar o que há ao redor do carro na hora de estacionar e apps necessários"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Apps que ajudam você a dirigir"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Estes apps podem acessar a câmera para ajudar você a dirigir"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Apps necessários"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Estes apps são necessários para ajudar o carro a funcionar de maneira segura"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Política"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"O fabricante talvez ainda tenha acesso à câmera do seu carro. Para saber mais informações, consulte as políticas dele."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Revise a Política de Privacidade dos apps para saber mais sobre como eles usam a câmera."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Apps necessários"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Apps exigidos pelo fabricante do carro para ajudar você a dirigir"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Política"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"O fabricante talvez ainda tenha acesso à câmera do seu carro"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Apps de infoentretenimento"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Permitir que apps de infoentretenimento tirem fotos e gravem vídeos"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Com permissão"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"O tempo todo"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Não permitido"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Apenas durante o uso do app"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Perguntar sempre"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Segurança"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Bloqueio de tela"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Nenhum"</string>
@@ -768,7 +779,7 @@
     <string name="restricted_for_driver" msgid="3364388937671526800">"Não é possível realizar esta ação"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"Não é possível adicionar perfis enquanto você dirige"</string>
     <string name="default_search_query" msgid="3137420627428857068">"Pesquisa"</string>
-    <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistente e Voice"</string>
+    <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistente e voz"</string>
     <string name="assistant_and_voice_assistant_app_title" msgid="5981647244625171285">"App assistente digital"</string>
     <string name="assistant_and_voice_use_text_from_screen_title" msgid="5851460943413795599">"Usar texto da tela"</string>
     <string name="assistant_and_voice_use_text_from_screen_summary" msgid="4161751708121301541">"Permitir que o Assistente acesse os conteúdos da tela"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Para acessar seus dispositivos, ative o Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Para parear um dispositivo, abra as configurações do Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Tema"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Mostrar limites de layout"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Administrador do sistema de infoentretenimento"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Apps ativados"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Apps desativados"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Acessos recentes"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Ver tudo"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Carregando…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Ver planos"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Seus planos de Internet expiraram"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Ver planos"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Concluir"</string>
 </resources>

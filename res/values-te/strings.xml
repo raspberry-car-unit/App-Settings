@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"ప్రకాశం స్థాయి"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"పరిసర అనుకూల ప్రకాశం"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"స్క్రీన్ ప్రకాశాన్ని పరిసరాలకు అనుగుణంగా సర్దుబాటు చేయండి"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"థీమ్"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"రాత్రి కాంతి ఆన్‌లో ఉంది"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"నెట్‌వర్క్ &amp; ఇంటర్నెట్"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"మొబైల్ నెట్‌వర్క్"</string>
@@ -73,7 +74,7 @@
     <string name="set_data_limit" msgid="7136539812414500084">"డేటా పరిమితిని సెట్ చేయండి"</string>
     <string name="data_limit" msgid="227338836292511425">"డేటా పరిమితి"</string>
     <string name="data_usage_limit_dialog_title" msgid="1864716658371721883">"డేటా వినియోగాన్ని పరిమితం చేయడం"</string>
-    <string name="data_usage_limit_dialog_mobile" msgid="3633960011913085089">"మీరు సెట్ చేసిన పరిమితిని చేరుకున్న తర్వాత మీ వాహనం యొక్క మొబైల్ డేటా ఆఫ్ చేయబడుతుంది.\n\nడేటా వినియోగాన్ని మీ ఫోన్ ఒక పద్ధతిలో గణిస్తే, అదే వినియోగ పరిమాణాన్ని మీ క్యారియర్ వేరే పద్ధతిలో గణించవచ్చు, కనుక కనిష్ట పరిమితిని సెట్ చేయడం మంచిది."</string>
+    <string name="data_usage_limit_dialog_mobile" msgid="3633960011913085089">"మీరు సెట్ చేసిన పరిమితిని చేరుకున్న తర్వాత మీ వెహికల్‌ యొక్క మొబైల్ డేటా ఆఫ్ చేయబడుతుంది.\n\nడేటా వినియోగాన్ని మీ ఫోన్ ఒక పద్ధతిలో గణిస్తే, అదే వినియోగ పరిమాణాన్ని మీ క్యారియర్ వేరే పద్ధతిలో గణించవచ్చు, కనుక కనిష్ట పరిమితిని సెట్ చేయడం మంచిది."</string>
     <string name="data_usage_warning_editor_title" msgid="2041517150169038813">"డేటా వినియోగ హెచ్చరికను సెట్ చేయండి"</string>
     <string name="data_usage_limit_editor_title" msgid="133468242379286689">"డేటా వినియోగ పరిమితిని సెట్ చేయండి"</string>
     <string name="data_usage_settings_footer" msgid="681881387909678237">"మీ పరికరం డేటా వినియోగాన్ని గణిస్తుంది. మీ మొబైల్ క్యారియర్ డేటాను బట్టి ఇది మారవచ్చు."</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5.0 GHz బ్యాండ్‌కు ప్రాధాన్యత"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2.4, 5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"హాట్‌స్పాట్‌కు బ్యాండ్:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi హాట్‌స్పాట్"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"హాట్‌స్పాట్"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi‑Fi హాట్‌స్పాట్‌ను ఉపయోగించండి"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"ఆఫ్‌లో ఉంది"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"హాట్‌స్పాట్‌ని ఆటోమేటిక్‌గా ఆఫ్ చేయండి"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"పరికరాలు ఏవీ కనెక్ట్ కాకపోతే Wi‑Fi హాట్‌స్పాట్‌ ఆఫ్ అవుతుంది"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"డ్రైవ్‌లన్నింటికీ హాట్‌స్పాట్‌ను ఉపయోగించండి"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"కారు ప్రారంభమైనప్పుడు హాట్‌స్పాట్ అందుబాటులో ఉండేలా చూసుకోండి"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\"లో చేరడానికి ఈ QR కోడ్‌ను స్కాన్ చేయండి"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"హాట్‌స్పాట్ పాస్‌వర్డ్: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> Wi-Fiని ఆన్ చేయాలనుకుంటుంది"</string>
@@ -183,10 +185,10 @@
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"బ్లూటూత్‌ను ఉపయోగించండి"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"పేరులేని పరికరం"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"జత చేయబడిన పరికరాలు"</string>
-    <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"కొత్త పరికరాన్ని జత చేయి"</string>
+    <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"కొత్త పరికరాన్ని పెయిర్ చేయండి"</string>
     <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"పెయిర్ చేయడం కోసం బ్లూటూత్ ఆన్ చేయబడుతుంది"</string>
     <string name="bluetooth_disconnect_title" msgid="7675271355910637528">"పరికరాన్ని డిస్‌కనెక్ట్ చేయాలా?"</string>
-    <string name="bluetooth_disconnect_all_profiles" msgid="2017519733701757244">"మీ వాహనం <xliff:g id="DEVICE_NAME">%1$s</xliff:g> నుండి డిస్‌కనెక్ట్ అవుతుంది."</string>
+    <string name="bluetooth_disconnect_all_profiles" msgid="2017519733701757244">"మీ వెహికల్‌ <xliff:g id="DEVICE_NAME">%1$s</xliff:g> నుండి డిస్‌కనెక్ట్ అవుతుంది."</string>
     <string name="bluetooth_vehicle_mac_address" msgid="7069234636525805937">"వాహనం బ్లూటూత్ అడ్రస్‌: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_device_mac_address" msgid="3949829271575045069">"పరికర బ్లూటూత్ అడ్రస్: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_name" msgid="2609869978821094114">"వాహనం పేరు"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"గతంలో కనెక్ట్ చేయబడినవి"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s కనెక్ట్ చేయబడింది"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s డిస్‌కనెక్ట్ చేయబడింది"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"మీ కారుతో పరికర కనెక్షన్‌లు"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"అల్ట్రా-వైడ్ బ్యాండ్ (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"UWB పరికరాల స్థానాలను గుర్తించడంలో మీ కారుకు సహాయపడుతుంది"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"బ్లూటూత్ జత చేయడానికి రిక్వెస్ట్‌"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"జత చేసి, కనెక్ట్ చేయి"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"బ్లూటూత్ పెయిరింగ్ కోడ్"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"అలర్ట్ సౌండ్‌లు"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"రింగ్‌టోన్, నోటిఫికేషన్, అలారం"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"ఇందులో మీడియా ప్లే చేయండి"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"మీడియా %1$sకు మారుతోంది"</string>
     <string name="display_brightness" msgid="5718970880488110840">"ప్రకాశం"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"స్క్రీన్‌ను తక్కువ కాంతికి సర్దుబాటు చేయండి"</string>
     <string name="units_settings" msgid="402325305096925886">"యూనిట్‌లు"</string>
@@ -324,7 +330,7 @@
     <string name="enable_text" msgid="1794971777861881238">"ప్రారంభించండి"</string>
     <string name="uninstall_text" msgid="277907956072833012">"అన్ఇన్‌స్టాల్ చేయండి"</string>
     <string name="app_disable_dialog_text" msgid="7731155411006654025">"మీరు ఈ యాప్‌ను నిలిపివేస్తే, Android మరియు ఇతర యాప్‌లు ఇకపై ఉద్దేశించిన రీతిలో పని చేయకపోవచ్చు."</string>
-    <string name="app_disable_dialog_positive" msgid="4448684722791563349">"యాప్‌ను నిలిపివేయి"</string>
+    <string name="app_disable_dialog_positive" msgid="4448684722791563349">"యాప్‌ను డిజేబుల్‌ చేయండి"</string>
     <string name="not_installed" msgid="4163454337822508007">"ఈ ప్రొఫైల్‌లో ఇన్‌స్టాల్ చేయబడలేదు"</string>
     <string name="permissions_label" msgid="2701446753515612685">"అనుమతులు"</string>
     <string name="app_info_all_services_label" msgid="6495363975322723452">"అన్ని సర్వీస్‌లు"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"సిస్టమ్‌ను చూపు"</string>
     <string name="hide_system" msgid="8845453295584638040">"సిస్టమ్‌ను దాచు"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"సిస్టమ్ యాప్‌లను దాచు"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"అలారాలు &amp; రిమైండర్‌లు"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"సిస్టమ్ సెట్టింగ్‌ల సవరణ"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"సిస్టమ్ సెట్టింగ్‌లను ఎడిట్ చేయడానికి ఈ అనుమతి యాప్‌కు వీలు కల్పిస్తుంది."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"నోటిఫికేషన్ యాక్సెస్"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"రద్దు చేయండి"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"ఈ యాప్‌లు సిస్టమ్ పనితీరును ప్రతికూలంగా ప్రభావితం చేస్తాయి, అలాగే బ్యాక్‌గ్రౌండ్‌లో రన్ అవ్వకుండా నిరోధించబడ్డాయి.\nబ్యాక్‌గ్రౌండ్ వినియోగాన్ని అనుమతించడానికి యాప్‌నకు ప్రాధాన్యత ఇవ్వండి, అలాగే ఈ జాబితా నుండి దాన్ని తీసివేయండి."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"యాప్‌నకు ప్రాధాన్యత"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"ప్రీమియం SMS యాక్సెస్"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"ప్రీమియం SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"ప్రీమియం SMSతో మీకు డబ్బు ఖర్చు కావచ్చు, ఈ ఛార్జీ మీ క్యారియర్ బిల్లులలో విధించబడుతుంది. మీరు ఒక యాప్‌కు అనుమతిని ఇస్తే, ఆ యాప్‌ను ఉపయోగించి మీరు ప్రీమియం SMSను పంపగలరు."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"వినియోగ యాక్సెస్"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"\'వినియోగ యాక్సెస్\' ద్వారా యాప్, మీరు ఏయే ఇతర యాప్‌లను ఉపయోగిస్తున్నారో, వాటిని ఎంత తరచుగా ఉపయోగిస్తున్నారో, అలాగే మీ క్యారియర్, భాష సెట్టింగ్‌లు, ఇతర వివరాలను ట్రాక్ చేయగలదు."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"లొకేషన్"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"లొకేషన్‌ను ఉపయోగించండి"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"మీరు పేర్కొన్న ఏదైనా యాప్‌తో మీ కారు లొకేషన్‌ను ఉపయోగించండి."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"సమాచారంతో కూడిన వినోదం అందించే యాప్‌లు"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"మీ లొకేషన్‌కు సంబంధించిన యాక్సెస్‌ను పొందటానికి యాప్‌లను అనుమతించండి"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"మీరు దీన్ని ఆఫ్ చేస్తే, డ్రైవర్ సహాయం కోసం అవసరమైన యాప్‌లు మినహా అన్ని యాప్‌ల కోసం ఇది లొకేషన్ యాక్సెస్‌ను తీసివేస్తుంది"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"మీరు దీన్ని ఆఫ్ చేస్తే, లొకేషన్ సమాచారంపై ఆధారపడే డ్రైవర్ సహాయ యాప్‌లు డిజేబుల్ చేయబడతాయి"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"ఏదేమైనా ఆఫ్ చేయండి"</string>
@@ -473,8 +482,8 @@
     <string name="legal_information" msgid="1838443759229784762">"చట్టబద్ధమైన సమాచారం"</string>
     <string name="contributors_title" msgid="7698463793409916113">"సహకారులు"</string>
     <string name="manual" msgid="4819839169843240804">"మాన్యువల్"</string>
-    <string name="regulatory_labels" msgid="3165587388499646779">"నియంత్రణ లేబుళ్లు"</string>
-    <string name="safety_and_regulatory_info" msgid="1204127697132067734">"భద్రత &amp; amp; నియంత్రణ మాన్యువల్"</string>
+    <string name="regulatory_labels" msgid="3165587388499646779">"రెగ్యులేటరీ లేబుళ్లు"</string>
+    <string name="safety_and_regulatory_info" msgid="1204127697132067734">"భద్రత &amp; నియంత్రణా చట్టాల మాన్యువల్"</string>
     <string name="copyright_title" msgid="4220237202917417876">"కాపీరైట్"</string>
     <string name="license_title" msgid="936705938435249965">"లైసెన్స్"</string>
     <string name="terms_title" msgid="5201471373602628765">"నిబంధనలు మరియు షరతులు"</string>
@@ -492,7 +501,7 @@
     <string name="show_dev_on" msgid="5339077400040834808">"మీరు ఇప్పుడు డెవలపర్!"</string>
     <string name="show_dev_already" msgid="1678087328973865736">"అవసరం లేదు, మీరు ఇప్పటికే డెవలపర్‌గా ఉన్నారు."</string>
     <string name="developer_options_settings" msgid="1530739225109118480">"డెవలపర్ ఎంపికలు"</string>
-    <string name="reset_options_title" msgid="4388902952861833420">"రీసెట్ ఎంపికలు"</string>
+    <string name="reset_options_title" msgid="4388902952861833420">"రీసెట్ ఆప్షన్లు"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"నెట్‌వర్క్, యాప్‌లు లేదా పరికరాన్ని రీసెట్ చేయండి"</string>
     <string name="reset_network_title" msgid="3077846909739832734">"Wi‑Fi, బ్లూటూత్‌ని రీసెట్ చేయండి"</string>
     <string name="reset_network_desc" msgid="3332203703135823033">"ఇది Wi‑Fi, బ్లూటూత్ సెట్టింగ్‌లను రీసెట్ చేస్తుంది, గతంలో కనెక్ట్ చేయబడిన మెమరీని తీసివేస్తుంది:"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24‑గంటల ఫార్మాట్"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24-గంటల ఫార్మాట్‌ని ఉపయోగించండి"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"సమయం"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"సమయాన్ని సెట్ చేయండి"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"గడియారంలో తేదీ, టైమ్ సెట్ చేయండి"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"సమయ మండలి"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"సమయ మండలిని ఎంచుకోండి"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"తేదీ"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"సమయ మండలి ప్రకారం క్రమీకరించు"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"తేదీ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"సమయం"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"ఆటోమేటిక్ తేదీ, టైమ్ అనేవి తేదీ, టైమ్, అలాగే టైమ్ జోన్‌ను గుర్తించడానికి లొకేషన్, మొబైల్ నెట్‌వర్క్‌ల వంటి సోర్స్‌లను ఉపయోగించవచ్చు."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"తేదీ, టైమ్‌ను ఆటోమేటిక్‌గా సెట్ చేయడానికి మీ కారు లొకేషన్‌ను ఉపయోగించండి. మీ పరికరంలో లొకేషన్ ఆన్‌లో ఉంటే మాత్రమే పని చేస్తుంది."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"కొనసాగించండి"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"సెట్టింగ్‌లలో మార్చండి"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"మీ పరికరంలో లొకేషన్ ఆఫ్‌లో ఉంది. ఆటోమేటిక్‌గా టైమ్ అప్‌డేట్ అనేది పని చేయకపోవచ్చు."</string>
     <string name="user_admin" msgid="1535484812908584809">"నిర్వాహకుడు"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"నిర్వాహకుడిగా సైన్ ఇన్ చేశారు"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"అడ్మిన్ అనుమతులను మంజూరు చేయాలా?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"మీ ప్రొఫైల్‌ను తొలగించండి"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"సమాచారంతో కూడిన వినోదం సిస్టమ్ నుండి మీ ప్రొఫైల్, ఖాతాలను ఫ్యాక్టరీ రీసెట్ చేయండి"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"ఈ చర్య మీ ప్రొఫైల్ కోసం అందుబాటులో లేదు"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"మైక్రోఫోన్ యాక్సెస్"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"యాప్‌లు మీ కారు మైక్రోఫోన్‌లను యాక్సెస్ చేయగలవో లేదో ఎంచుకోండి"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"సమాచారంతో కూడిన వినోదం అందించే యాప్‌లు"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ఆడియోను రికార్డ్ చేయడానికి సమాచారంతో కూడిన వినోదం అందించే యాప్‌లను అనుమతించండి"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"కెమెరా యాక్సెస్"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"యాప్‌లు మీ కారు కెమెరాలను యాక్సెస్ చేయగలవో లేదో ఎంచుకోండి"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"దీనితో మీ కారు కెమెరాలను ఉపయోగించండి:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"ఏదైనా యాప్"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"మీ కెమెరాను యాక్సెస్ చేయడానికి మీరు అనుమతించిన ఏదైనా యాప్"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"యాప్‌లు ఏవి లేవు"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"మీ యాప్‌లు ఏవీ లేవు"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"మీరు డ్రైవ్ చేయడంలో సహాయపడే యాప్‌లు"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"పార్కింగ్ చేసేటప్పుడు మీ పరిసరాలను చూపడం వంటి విషయాలలో సహాయపడే యాప్‌లు"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"అవసరమైన యాప్‌లు మాత్రమే"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"మీ కారు తయారీదారుకి అవసరమైన యాప్‌లు మాత్రమే"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"మీరు డ్రైవ్ చేయడంలో సహాయపడే యాప్‌లు"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"పార్కింగ్ చేస్తున్నప్పుడు మీ పరిసరాలను చూపడం, అవసరమైన యాప్‌లు వంటి విషయాలలో సహాయపడే యాప్‌లు"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"మీరు డ్రైవ్ చేయడంలో సహాయపడే యాప్‌లు"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"డ్రైవింగ్ చేసేటప్పుడు సహాయం చేయడానికి ఈ యాప్‌లు మీ కెమెరాను యాక్సెస్ చేయగలవు"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"అవసరమైన యాప్‌లు"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"మీ కారు సురక్షితంగా పనిచేయడానికి ఈ యాప్‌లు అవసరం"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"పాలసీ"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"మీ కారు తయారీదారు ఇప్పటికీ మీ కారు కెమెరా‌కు యాక్సెస్ కలిగి ఉండవచ్చు. మరింత సమాచారం కోసం మీరు వారి పాలసీలను రివ్యూ చేయవచ్చు."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"ప్రతి యాప్ దాని గోప్యతా పాలసీని రివ్యూ చేయడం ద్వారా మీ కెమెరాను ఎలా ఉపయోగిస్తుందనే దాని గురించి మరింత తెలుసుకోండి."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"అవసరమైన యాప్‌లు"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"డ్రైవింగ్ చేయడంలో మీకు సహాయపడటానికి మీ కారు తయారీదారుకు (మ్యానుఫ్యాక్చరర్‌కు) కావాల్సిన యాప్‌లు"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"పాలసీ"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"మీ కారు తయారీదారుకు ఇప్పటికీ మీ కారు కెమెరా‌కు యాక్సెస్ ఉండవచ్చు"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"సమాచారంతో కూడిన వినోదం అందించే యాప్‌లు"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ఫోటోలు తీయడానికి, వీడియోను రికార్డ్ చేయడానికి సమాచారంతో కూడిన వినోదం అందించే యాప్‌లను అనుమతించండి"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"అనుమతించినవి"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"అన్ని సమయాలలో అనుమతించండి"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"అనుమతించనివి"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"యాప్‌ను ఉపయోగిస్తున్నప్పుడు మాత్రమే"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"ప్రతిసారీ అడగండి"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"సెక్యూరిటీ"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"స్క్రీన్ లాక్"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"ఏదీ కాదు"</string>
@@ -749,7 +760,7 @@
     <string name="credentials_not_erased" msgid="6118567459076742720">"ఆధారాల నిల్వను తొలగించడం సాధ్యపడలేదు."</string>
     <string name="forget" msgid="3971143908183848527">"విస్మరించు"</string>
     <string name="connect" msgid="5861699594602380150">"కనెక్ట్ చేయండి"</string>
-    <string name="disconnect" msgid="6140789953324820336">"డిస్‌కనెక్ట్ చేయి"</string>
+    <string name="disconnect" msgid="6140789953324820336">"డిస్‌కనెక్ట్ చేయండి"</string>
     <string name="delete_button" msgid="5840500432614610850">"తొలగించండి"</string>
     <string name="remove_button" msgid="6664656962868194178">"తీసివేయండి"</string>
     <string name="cancel" msgid="750286395700355455">"రద్దు చేయండి"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"మీ పరికరాలను చూడటానికి, బ్లూటూత్‌ను ఆన్ చేయండి"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"పరికరాన్ని పెయిర్ చేయడానికి, బ్లూటూత్ సెట్టింగ్‌లను తెరవండి"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"రూపం"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"లేఅవుట్ హద్దులను చూపండి"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"సమాచారంతో కూడిన వినోదం సిస్టమ్ అడ్మిన్"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"యాక్టివేట్ చేయబడిన యాప్‌లు"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"యాక్టివేట్ చేయబడని యాప్‌లు"</string>
@@ -910,11 +922,15 @@
     <string name="camera_toggle_title" msgid="1990732328673068456">"కెమెరాను ఉపయోగించండి"</string>
     <string name="camera_toggle_summary" msgid="5751159996822627567">"మీ కెమెరాను యాక్సెస్ చేయడానికి అన్ని యాప్‌లను అనుమతించండి"</string>
     <string name="camera_manage_permissions" msgid="9005596413781984368">"కెమెరా అనుమతులను మేనేజ్ చేయండి"</string>
-    <string name="camera_recently_accessed" msgid="8084100710444691977">"ఇటీవల యాక్సెస్ చేయబడినవి"</string>
+    <string name="camera_recently_accessed" msgid="8084100710444691977">"ఇటీవల యాక్సెస్ చేసినవి"</string>
     <string name="camera_no_recent_access" msgid="965105023454777859">"ఇటీవలి యాప్‌లు ఏవీ లేవు"</string>
     <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"ఏ యాప్‌లకు యాక్సెస్ లేదు"</string>
-    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{{total_count}లో # యాప్‌లకు యాక్సెస్ ఉంది}other{{total_count}లో # యాప్‌లకు యాక్సెస్ ఉంది}}"</string>
-    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"ఇటీవల యాక్సెస్ చేయబడినవి"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{{total_count}లో # యాప్‌నకు యాక్సెస్ ఉంది}other{{total_count}లో # యాప్‌లకు యాక్సెస్ ఉంది}}"</string>
+    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"ఇటీవల యాక్సెస్ చేసినవి"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"అన్నీ చూడండి"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"లోడ్ అవుతోంది…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"ప్లాన్‌లను చూడండి"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"మీ ఇంటర్నెట్ ప్లాన్‌ గడువు ముగిసింది"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"ప్లాన్‌లను చూడండి"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"పూర్తయింది"</string>
 </resources>

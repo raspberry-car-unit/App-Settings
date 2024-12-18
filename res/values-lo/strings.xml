@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"ລະດັບຄວາມສະຫວ່າງ"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"ຄວາມສະຫວ່າງແບບປັບອັດຕະໂນມັດ"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"ປັບຄວາມສະຫວ່າງຂອງໜ້າຈໍຕາມສະພາບແວດລ້ອມ"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"ຮູບແບບສີສັນ"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"ເປີດແສງກາງຄືນແລ້ວ"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"ເຄືອຂ່າຍ ແລະ ອິນເຕີເນັດ"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"ເຄືອຂ່າຍມືຖື"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"ເລືອກຄື້ນ 5.0 GHz ກ່ອນ"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2.4 ແລະ 5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"ເລືອກຢ່າງໜ້ອຍໜຶ່ງຄື້ນສຳລັບ Wi‑Fi ຮັອດສະປອດ:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi ຮັອດສະປອດ"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"ຮັອດສະປອດ"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"ໃຊ້ Wi‑Fi ຮັອດສະປອດ"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"ປິດ"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"ປິດຮັອດສະປອດອັດຕະໂນມັດ"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"ຮັອດສະປອດ Wi‑Fi ຈະປິດຖ້າບໍ່ມີອຸປະກອນເຊື່ອມຕໍ່"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"ໃຊ້ຮັອດສະປອດສຳລັບທຸກການຂັບຂີ່"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"ເຮັດໃຫ້ຮັອດສະປອດພ້ອມນຳໃຊ້ທຸກເທື່ອທີ່ເປີດລົດ"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"ສະແກນລະຫັດ QR ນີ້ເພື່ອເຂົ້າຮ່ວມ \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"ລະຫັດຜ່ານຮັອດສະປອດ: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> ຕ້ອງການເປີດໃຊ້ Wi-Fi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"ເຊື່ອມຕໍ່ກ່ອນໜ້ານີ້"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"ເຊື່ອມຕໍ່ %1$s ແລ້ວ"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"ຕັດການເຊື່ອມຕໍ່ %1$s ແລ້ວ"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"ການເຊື່ອມຕໍ່ອຸປະກອນກັບລົດຂອງທ່ານ"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"ultra-wideband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"ຊ່ວຍລົດຂອງທ່ານລະບຸຕຳແໜ່ງຂອງອຸປະກອນ UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"ຄຳຂໍຈັບຄູ່ Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"ຈັບຄູ່ ແລະ ເຊື່ອມຕໍ່"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ລະຫັດຈັບຄູ່ Bluetooth"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"ສຽງແຈ້ງເຕືອນ"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"ສຽງຣິງໂທນ, ການແຈ້ງເຕືອນ, ໂມງປຸກ"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"ຫຼິ້ນມີເດຍໃນ"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"ກຳລັງສະຫຼັບສື່ເປັນ %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"ຄວາມສະຫວ່າງ"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"ປັບໜ້າຈໍສຳລັບແສງນ້ອຍ"</string>
     <string name="units_settings" msgid="402325305096925886">"ຫົວໜ່ວຍ"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"ສະແດງລະບົບ"</string>
     <string name="hide_system" msgid="8845453295584638040">"ເຊື່ອງລະບົບ"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"ເຊື່ອງແອັບລະບົບໄວ້"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"ໂມງປຸກ ແລະ ການແຈ້ງເຕືອນ"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"ແກ້ໄຂການຕັ້ງຄ່າລະບົບ"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ການອະນຸຍາດນີ້ອະນຸຍາດໃຫ້ແອັບແກ້ໄຂການຕັ້ງຄ່າລະບົບໄດ້."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"ການເຂົ້າເຖິງການແຈ້ງເຕືອນ"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"ຍົກເລີກ"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"ແອັບເຫຼົ່ານີ້ສົ່ງຜົນເສຍຕໍ່ປະສິດທິພາບຂອງລະບົບ ແລະ ຖືກປ້ອງກັນບໍ່ໃຫ້ເອີ້ນໃຊ້ໃນພື້ນຫຼັງ.\nກະລຸນາໃຫ້ຄວາມສຳຄັນແອັບເພື່ອເຮັດໃຫ້ໃຊ້ໃນພື້ນຫຼັງໄດ້ ແລະ ລຶບມັນອອກຈາກລາຍຊື່ນີ້."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"ໃຫ້ຄວາມສຳຄັນແອັບ"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"ການເຂົ້າເຖິງ SMS ແບບພຣີມຽມ"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS ພຣີມຽມ"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS ແບບພຣີມຽມອາດຈະເຮັດໃຫ້ທ່ານເສຍເງິນ ແລະ ຈະເພີ່ມໃສ່ໃບບິນຜູ້ໃຫ້ບໍລິການຂອງທ່ານ. ຖ້າທ່ານເປີດໃຊ້ການອະນຸຍາດສຳລັບແອັບໃດໜຶ່ງ, ທ່ານຈະສາມາດສົ່ງ SMS ແບບພຣີມຽມໂດຍໃຊ້ແອັບນັ້ນໄດ້."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"ການເຂົ້າເຖິງການນຳໃຊ້"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"ການເຂົ້າເຖິງການນຳໃຊ້ອະນຸຍາດໃຫ້ແອັບຕິດຕາມເບິ່ງວ່າທ່ານກຳລັງໃຊ້ແອັບອື່ນໃດແດ່ ແລະ ໃຊ້ເລື້ອຍໆສໍ່າໃດ, ເຊັ່ນດຽວກັນກັບຜູ້ໃຫ້ບໍລິການ, ການຕັ້ງຄ່າພາສາ ແລະ ລາຍລະອຽດອື່ນໆຂອງທ່ານ."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"ສະຖານທີ່"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"ໃຊ້ສະຖານທີ່"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"ໃຊ້ສະຖານທີ່ຂອງລົດຂອງທ່ານກັບແອັບໃດກໍໄດ້ທີ່ທ່ານໄດ້ລະບຸໄວ້."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"ແອັບສາລະບັນເທີງ"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"ອະນຸຍາດໃຫ້ແອັບມີສິດເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານ"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"ຖ້າທ່ານປິດສິ່ງນີ້, ມັນຈະລຶບສິດເຂົ້າເຖິງສະຖານທີ່ຂອງແອັບທັງໝົດອອກ ຍົກເວັ້ນສິດເຂົ້າເຖິງທີ່ຈຳເປັນສຳລັບຕົວຊ່ວຍຜູ້ຂັບ"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"ຫາກທ່ານປິດການຕັ້ງຄ່ານີ້, ລະບົບຈະປິດການນຳໃຊ້ແອັບຕົວຊ່ວຍຜູ້ຂັບທີ່ໃຊ້ຂໍ້ມູນສະຖານທີ່"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"ຢືນຢັນການປິດ"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"ຮູບແບບເວລາ 24 ຊົ່ວໂມງ"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"ໃຊ້ຮູບແບບ 24 ຊົ່ວໂມງ"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"ເວລາ"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"ຕັ້ງເວລາ"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ຕັ້ງໂມງ"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"ເຂດເວລາ"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"ເລືອກເຂດເວລາ"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"ວັນທີ"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"ລຽງລຳດັບຕາມເຂດເວລາ"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"ວັນທີ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"ເວລາ"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"ວັນທີ ແລະ ເວລາອັດຕະໂນມັດອາດໃຊ້ຂໍ້ມູນຈາກແຫຼ່ງທີ່ມາຕ່າງໆ ເຊັ່ນ: ສະຖານທີ່ ແລະ ເຄືອຂ່າຍມືຖືເພື່ອລະບຸວັນທີ, ເວລາ ແລະ ເຂດເວລາ."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"ໃຊ້ສະຖານທີ່ຂອງລົດຂອງທ່ານເພື່ອຕັ້ງຄ່າວັນທີ ແລະ ເວລາໂດຍອັດຕະໂນມັດ. ຈະນຳໃຊ້ໄດ້ເມື່ອສະຖານທີ່ເປີດຢູ່."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"ສືບຕໍ່"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"ປ່ຽນໃນການຕັ້ງຄ່າ"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"ສະຖານທີ່ຂອງທ່ານປິດຢູ່. ເວລາອັດຕະໂນມັດອາດບໍ່ເຮັດວຽກ."</string>
     <string name="user_admin" msgid="1535484812908584809">"ຜູ້ເບິ່ງແຍງລະບົບ"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"ເຂົ້າສູ່ລະບົບເປັນຜູ້ເບິ່ງແຍງລະບົບ"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"ໃຫ້ສິດອະນຸຍາດແກ່ຜູ້ເບິ່ງແຍງລະບົບບໍ?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"ລຶບໂປຣໄຟລ໌ຂອງທ່ານ"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ລຶບໂປຣໄຟລ໌ ແລະ ບັນຊີຂອງທ່ານຈາກລະບົບສາລະບັນເທີງ"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"ຄຳສັ່ງນີ້ບໍ່ມີໃຫ້ສຳລັບໂປຣໄຟລ໌ຂອງທ່ານ"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"ສິດເຂົ້າເຖິງໄມໂຄຣໂຟນ"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"ເລືອກວ່າຈະໃຫ້ແອັບເຂົ້າເຖິງໄມໂຄຣໂຟນໃນລົດຂອງທ່ານຫຼືບໍ່"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"ແອັບສາລະບັນເທີງ"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ອະນຸຍາດໃຫ້ແອັບສາລະບັນເທີງບັນທຶກສຽງ"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"ສິດເຂົ້າເຖິງກ້ອງ"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"ເລືອກວ່າຈະໃຫ້ແອັບເຂົ້າເຖິງກ້ອງໃນລົດຂອງທ່ານຫຼືບໍ່"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"ໃຊ້ກ້ອງໃນລົດຂອງທ່ານກັບ:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"ທຸກແອັບ"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"ທຸກແອັບທີ່ທ່ານອະນຸຍາດໃຫ້ເຂົ້າເຖິງກ້ອງຂອງທ່ານ"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"ບໍ່ມີແອັບ"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"ບໍ່ມີແອັບຂອງທ່ານ"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"ແອັບທີ່ຊ່ວຍທ່ານຂັບລົດ"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"ແອັບທີ່ຊ່ວຍໃນເລື່ອງຕ່າງໆ ເຊັ່ນ: ການສະແດງພື້ນທີ່ອ້ອມຂ້າງຂອງທ່ານເມື່ອຈອດລົດ"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"ສະເພາະແອັບທີ່ຈຳເປັນເທົ່ານັ້ນ"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"ສະເພາະແອັບທີ່ຜູ້ຜະລິດລົດຂອງທ່ານຕ້ອງການເທົ່ານັ້ນ"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"ແອັບທີ່ຊ່ວຍທ່ານຂັບລົດ"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"ແອັບທີ່ຊ່ວຍໃນເລື່ອງຕ່າງໆ ເຊັ່ນ ການສະແດງພື້ນທີ່ອ້ອມຂ້າງຂອງທ່ານເມື່ອຈອດລົດ ແລະ ແອັບຕ່າງໆທີ່ຈຳເປັນ"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"ແອັບທີ່ຊ່ວຍທ່ານຂັບລົດ"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"ແອັບເຫຼົ່ານີ້ສາມາດເຂົ້າເຖິງກ້ອງຂອງທ່ານເພື່ອຊ່ວຍໃນການຂັບລົດໄດ້"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"ແອັບທີ່ຈຳເປັນ"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"ແອັບເຫຼົ່ານີ້ຈຳເປັນຕໍ່ການຊ່ວຍໃຫ້ລົດຂອງທ່ານເຮັດວຽກໄດ້ຢ່າງປອດໄພ"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"ນະໂຍບາຍ"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"ຜູ້ຜະລິດລົດຂອງທ່ານອາດຍັງຄົງມີສິດເຂົ້າເຖິງກ້ອງໃນລົດຂອງທ່ານ. ທ່ານສາມາດເບິ່ງຂໍ້ມູນເພີ່ມເຕີມໄດ້ຈາກນະໂຍບາຍຂອງເຂົາເຈົ້າ."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"ສຶກສາເພີ່ມເຕີມກ່ຽວກັບວິທີທີ່ແຕ່ລະແອັບໃຊ້ກ້ອງຂອງທ່ານໂດຍການອ່ານນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"ແອັບທີ່ຈຳເປັນ"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"ແອັບທີ່ຜູ້ຜະລິດລົດຂອງທ່ານຕ້ອງໃຊ້ເພື່ອຊ່ວຍທ່ານຂັບລົດ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"ນະໂຍບາຍ"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"ຜູ້ຜະລິດລົດຂອງທ່ານອາດຍັງຄົງມີສິດເຂົ້າເຖິງກ້ອງໃນລົດຂອງທ່ານ"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"ແອັບສາລະບັນເທີງ"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ອະນຸຍາດໃຫ້ແອັບສາລະບັນເທີງຖ່າຍຮູບ ແລະ ບັນທຶກວິດີໂອ"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"ອະນຸຍາດ"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"ຕະຫຼອດເວລາ"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"ບໍ່ອະນຸຍາດ"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"ໃນຂະນະທີ່ໃຊ້ແອັບເທົ່ານັ້ນ"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"ຖາມທຸກເທື່ອ"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"ຄວາມປອດໄພ"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"ການລັອກໜ້າຈໍ"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"ບໍ່ມີ"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"ເພື່ອເຫັນອຸປະກອນຂອງທ່ານ, ກະລຸນາເປີດ Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"ເພື່ອຈັບຄູ່ອຸປະກອນ, ກະລຸນາເປີດການຕັ້ງຄ່າ Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"ຮູບແບບສີສັນ"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"ສະແດງຂອບຂອງໂຄງຮ່າງ"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"ຜູ້ເບິ່ງແຍງລະບົບສາລະບັນເທີງ"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"ແອັບທີ່ເປີດນຳໃຊ້"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"ແອັບທີ່ປິດນຳໃຊ້"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"ເຂົ້າໃຊ້ຫຼ້າສຸດ"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"ເບິ່ງທັງໝົດ"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"ກຳລັງໂຫລດ…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"ເບິ່ງແພັກເກດ"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"ແພັກເກດອິນເຕີເນັດຂອງທ່ານໝົດອາຍຸແລ້ວ"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"ເບິ່ງແພັກເກດ"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"ແລ້ວໆ"</string>
 </resources>

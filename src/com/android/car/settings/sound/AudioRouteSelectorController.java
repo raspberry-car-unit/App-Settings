@@ -16,11 +16,9 @@
 
 package com.android.car.settings.sound;
 
-import static android.car.media.CarAudioManager.AUDIO_FEATURE_DYNAMIC_ROUTING;
-
 import android.car.drivingstate.CarUxRestrictions;
-import android.content.Context;
 import android.car.feature.Flags;
+import android.content.Context;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.ListPreference;
@@ -82,8 +80,8 @@ public class AudioRouteSelectorController extends PreferenceController<ListPrefe
             return CONDITIONALLY_UNAVAILABLE;
         }
         if (getContext().getResources().getBoolean(R.bool.config_allow_audio_destination_selection)
-                && mAudioRoutesManager.getCarAudioManager()
-                .isAudioFeatureEnabled(AUDIO_FEATURE_DYNAMIC_ROUTING)) {
+                && mAudioRoutesManager.isAudioRoutingEnabled()
+                && mAudioRoutesManager.getAudioRouteList().size() > 1) {
             return AVAILABLE;
         }
         return CONDITIONALLY_UNAVAILABLE;
@@ -96,14 +94,14 @@ public class AudioRouteSelectorController extends PreferenceController<ListPrefe
         List<String> entryValues = mAudioRoutesManager.getAudioRouteList();
         List<String> entries = new ArrayList<>();
         entryValues.stream().forEach(
-                v -> entries.add(mAudioRoutesManager.getAudioRouteItemMap().get(v).getName()));
+                v -> entries.add(mAudioRoutesManager.getDeviceNameForAddress(v)));
 
         getPreference().setTitle(getContext().getString(R.string.audio_route_selector_title));
         getPreference().setEntries(entries.toArray(new CharSequence[entries.size()]));
         getPreference().setEntryValues(entryValues.toArray(new CharSequence[entries.size()]));
         String entryValue = mAudioRoutesManager.getActiveDeviceAddress();
-        CharSequence entry = mAudioRoutesManager.getAudioRouteItemMap().get(
-                mAudioRoutesManager.getActiveDeviceAddress()).getName();
+        CharSequence entry = mAudioRoutesManager.getDeviceNameForAddress(
+                mAudioRoutesManager.getActiveDeviceAddress());
         getPreference().setValue(entryValue);
         getPreference().setSummary(entry);
     }

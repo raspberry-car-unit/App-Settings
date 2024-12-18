@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Ниво на яркостта"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Адаптивна яркост"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Коригиране на яркостта на екрана спрямо околната среда"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Тема"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Нощно осветление: Включено"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Мрежа и интернет"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Мобилна мрежа"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Предпочита се честота от 5 ГХц"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 ГХц"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5 ГХц"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 и 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Изберете поне една честота за точката за достъп до Wi‑Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Точка за достъп до Wi‑Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Точка за достъп"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Използване на точка за достъп до Wi-Fi"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Изкл."</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Автоматично изключване на точката за достъп"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Точката за достъп до Wi‑Fi ще се изключва, когато няма свързани устройства"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Ползване на точката за достъп за всички шофирания"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Точката за достъп да е налице, когато автомобилът работи"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Сканирайте QR кода, за да се присъедините към „%s“"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Парола за точката за достъп: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> иска да включи Wi-Fi"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"По-рано свързвани"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Установена е връзка с(ъс) %1$s"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s – връзката е прекратена"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Връзки на устройството с автомобила ви"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ултрашироколентов сигнал (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Помага на автомобила ви да идентифицира позицията на устройствата с UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Заявка за сдвояване чрез Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Сдвояване и свързване"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Код за сдвояване с Bluetooth"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Звук на сигналите"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Мелодия, известия и будилници"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Възпроизвеждане на мултимедията на"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Мултимедията се превключва към %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Яркост"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Коригиране на яркостта на екрана при слаба светлина"</string>
     <string name="units_settings" msgid="402325305096925886">"Мерни ед."</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Системни процеси"</string>
     <string name="hide_system" msgid="8845453295584638040">"Скриване на системните процеси"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Скриване на системните приложения"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Будилници и напомняния"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Промяна на сист. настройки"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Това разрешение позволява на дадено приложение да променя системни настройки."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Достъп до известията"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Отказ"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Тези приложения се отразяват отрицателно на ефективността на системата и работата им на заден план е спряна.\nПриоритизирайте приложението, за да разрешите използването му на заден план, и го премахнете от този списък."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Прил.: Приоритизир."</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Достъп до SMS, за които получателят заплаща"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS с допълнителна такса"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS съобщенията, за които се таксува получателят, може да ви въвлекат в разходи и ще увеличат сметката към оператора ви. Ако дадете разрешението на дадено приложение, ще можете да изпращате такива съобщения чрез него."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Достъп до данни за ползването"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Достъпът до данните за ползването разрешава на приложението да проследява какви други приложения използвате и колко често, както и оператора ви, настройките ви за езика и други подробности."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Местоположение"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Използване на местоположението"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Използване на местоположението на автомобила ви с всяко приложение, което сте посочили."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Приложения за основното устройство"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Разрешаване на приложенията да имат достъп до местоположението ви"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Ако изключите тази настройка, достъпът до местоположението ще бъде премахнат за всички приложения освен за тези, които са нужни за помощ за шофьорите"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Ако изключите тази настройка, приложенията за помощ за шофьорите, които разчитат на данните за местоположението, ще бъдат деактивирани"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Изключване въпреки това"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24-часов формат"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Използване на 24-часов формат"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Час"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Задаване на час"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Сверяване на часовника"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Часова зона"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Избор на часова зона"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Дата"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Сортиране по часова зона"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Дата"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Час"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"За автоматичното задаване на датата и часа може да се използват различни източници, като например местоположението и мобилните мрежи, на базата на които се определят датата, часът и часовата зона."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Използване на местоположението на автомобила ви за автоматично задаване на датата и часа. Работи само ако местоположението е включено."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Напред"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Промяна от настройките"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Местоположението ви е изключено. Автоматичното задаване на часа може да не работи."</string>
     <string name="user_admin" msgid="1535484812908584809">"Администратор"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Влезли сте като администратор"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Да се предоставят ли администраторски разрешения?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Изтриване на потр. ви профил"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Изтриване на потребителския ви профил от информационно-развлекателната система"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Това действие не е налице за потребителския ви профил"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Достъп до микрофона"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Изберете дали приложенията могат да осъществяват достъп до микрофоните на автомобила ви"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Приложения за основното устройство"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Разрешаване на приложенията за основното устройство да записват аудио"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Достъп до камерата"</string>
-    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Изберете дали приложенията да могат да осъществяват достъп до камерата на автомобила ви"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Използване на камерата на автомобила със:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Всяко приложение"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Всяко приложение, на което сте предоставили достъп до камерата си"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Без приложения"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Нито едно от приложенията ви"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Приложения, които ви помагат да шофирате"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Приложенията, които ви съдействат – например чрез показване на заобикалящата ви среда при паркиране"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Само задължителните приложения"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Само приложенията, които се изискват от производителя на автомобила ви"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Приложения, които ви помагат да шофирате"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Приложенията, които ви съдействат – например чрез показване на заобикалящата ви среда при паркиране, и задължителните приложения"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Приложения, които ви помагат да шофирате"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Тези приложения имат достъп до камерата, за да ви съдействат при шофиране"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Задължителни приложения"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Тези приложения са необходими за безопасната работа на автомобила ви"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Декларация"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Производителят на автомобила ви пак може да има достъп до камерата на колата ви. За повече информация можете да прегледате правилата му."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Научете повече за това как всяко приложение използва камерата ви, като прегледате съответната декларация за поверителност."</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Изберете дали приложенията ще могат да осъществяват достъп до камерите на автомобила ви"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Задължителни приложения"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Приложения, които се изискват от производителя на автомобила ви, за да ви помагат да шофирате"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Декларация"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Производителят на автомобила ви пак може да има достъп до камерата на колата ви"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Приложения за основното устройство"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Разрешаване на приложенията за основното устройство да правят снимки и да записват видеоклипове"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Разрешено"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"През цялото време"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Не е разрешено"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Само при използване на приложението"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Извеждане на запитване всеки път"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Сигурност"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Заключване на екрана"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Без"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"За да видите устройствата си, включете Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"За да сдвоите устройство, отворете настройките за Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Тема"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Показване на границите на оформлението"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Администратор на основното устройство"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Активирани приложения"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Деактивирани приложения"</string>
@@ -909,7 +921,7 @@
     <string name="camera_settings_title" msgid="2837785830355288903">"Камера"</string>
     <string name="camera_toggle_title" msgid="1990732328673068456">"Използване на камерата"</string>
     <string name="camera_toggle_summary" msgid="5751159996822627567">"Разрешаване на всички приложения да осъществяват достъп до камерата ви"</string>
-    <string name="camera_manage_permissions" msgid="9005596413781984368">"Управление на разрешенията за камерата"</string>
+    <string name="camera_manage_permissions" msgid="9005596413781984368">"Управление на разрешенията за камерите"</string>
     <string name="camera_recently_accessed" msgid="8084100710444691977">"Със скорошен достъп"</string>
     <string name="camera_no_recent_access" msgid="965105023454777859">"Няма скорошни приложения"</string>
     <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"0 приложения имат достъп"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Със скорошен достъп"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Преглед на всички"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Зарежда се…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Вижте плановете"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Плановете ви за интернет са изтекли"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Вижте плановете"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Готово"</string>
 </resources>

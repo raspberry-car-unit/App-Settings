@@ -15,9 +15,9 @@ android_test {
     ],
 
     libs: [
-        "android.test.runner",
-        "android.test.base",
-        "android.test.mock",
+        "android.test.runner.stubs.system",
+        "android.test.base.stubs.system",
+        "android.test.mock.stubs.system",
     ],
 
     static_libs: [
@@ -28,6 +28,7 @@ android_test {
         "androidx.test.rules",
         "androidx.test.ext.junit",
         "androidx.test.ext.truth",
+        "flag-junit",
         "mockito-kotlin2",
         "mockito-target-extended-minus-junit4",
         "platform-test-annotations",

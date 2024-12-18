@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"רמת בהירות"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"בהירות מותאמת"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"התאמת בהירות המסך לסביבה"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"עיצוב"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"\'תאורת לילה\' פועלת"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"רשת ואינטרנט"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"רשת סלולרית"</string>
@@ -105,7 +106,7 @@
     <string name="wifi_ssid" msgid="488604828159458741">"שם הרשת"</string>
     <string name="wifi_ssid_hint" msgid="3170608752313710099">"הזנת ה-SSID"</string>
     <string name="wifi_security" msgid="158358046038876532">"אבטחה"</string>
-    <string name="wifi_signal_strength" msgid="8507318230553042817">"עוצמת אות"</string>
+    <string name="wifi_signal_strength" msgid="8507318230553042817">"עוצמת האות"</string>
     <string name="wifi_status" msgid="5688013206066543952">"סטטוס"</string>
     <string name="wifi_speed" msgid="1650692446731850781">"מהירות קישור"</string>
     <string name="wifi_frequency" msgid="8951455949682864922">"תדר"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"עדיפות לתדר של ‎5.0 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"‎2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"‎5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"‫‎2.4GHz ו-5.0GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"יש לבחור תדר אחד לפחות לנקודת Wi‑Fi לשיתוף אינטרנט:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"נקודת Wi‑Fi לשיתוף אינטרנט"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"נקודת אינטרנט"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"שימוש בנקודת Wi-Fi לשיתוף אינטרנט"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"כבויה"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"כיבוי אוטומטי של הנקודה לשיתוף אינטרנט"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"נקודת ה-Wi‑Fi לשיתוף אינטרנט תיכבה כשאין אף מכשיר מחובר"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"שימוש בנקודה לשיתוף אינטרנט (Hotspot) בכל הנסיעות"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"הנקודה לשיתוף אינטרנט (Hotspot) תהיה זמינה לאחר הפעלת ההצתה ברכב"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"אפשר לסרוק את קוד ה-QR הזה כדי להיכנס אל \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"הסיסמה של נקודת האינטרנט: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> רוצה להפעיל את ה-Wi-Fi"</string>
@@ -184,7 +186,7 @@
     <string name="bluetooth_device" msgid="3178478829314083240">"מכשיר ללא שם"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"מכשירים מותאמים"</string>
     <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"התאמת מכשיר חדש"</string>
-    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"Bluetooth יופעל לצורך התאמה"</string>
+    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"ה-Bluetooth יופעל כדי להתאים את המכשיר"</string>
     <string name="bluetooth_disconnect_title" msgid="7675271355910637528">"לנתק את המכשיר?"</string>
     <string name="bluetooth_disconnect_all_profiles" msgid="2017519733701757244">"הרכב יתנתק מ-<xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_vehicle_mac_address" msgid="7069234636525805937">"כתובת ה-Bluetooth של הרכב: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>
@@ -206,17 +208,20 @@
     <string name="bluetooth_ask_discovery_no_name" msgid="164397600370102369">"אפליקציה מסוימת מבקשת להפוך את מערכת הסטריאו שלך לגלויה בפני מכשירי Bluetooth אחרים למשך <xliff:g id="TIMEOUT">%1$d</xliff:g> שניות."</string>
     <string name="bluetooth_ask_enablement_and_discovery" msgid="5487502083015708674">"האפליקציה <xliff:g id="APP_NAME">%1$s</xliff:g> מבקשת להפעיל את ה-Bluetooth ולהפוך את מערכת הסטריאו שלך לגלויה בפני מכשירים אחרים למשך <xliff:g id="TIMEOUT">%2$d</xliff:g> שניות."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" msgid="907153034209916282">"אפליקציה מסוימת מבקשת להפעיל את ה-Bluetooth ולהפוך את מערכת הסטריאו שלך לגלויה בפני מכשירים אחרים למשך <xliff:g id="TIMEOUT">%1$d</xliff:g> שניות."</string>
-    <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"גלוי בתור %1$s למכשירים אחרים"</string>
+    <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"גלוי למכשירים אחרים בתור %1$s"</string>
     <string name="bluetooth_my_devices" msgid="6352010339607939612">"המכשירים שלי"</string>
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"מכשירים שחוברו בעבר"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s מחובר"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s מנותק"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"חיבורי המכשיר לרכב"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"‫Ultra Wideband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"כך הרכב יכול לזהות את המיקומים של מכשירי UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"בקשה להתאמת Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"התאמה וחיבור"</string>
-    <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"קוד התאמת Bluetooth"</string>
+    <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"קוד ההתאמה ל-Bluetooth"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"קוד הגישה מכיל אותיות או סמלים"</string>
     <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"יש להקליד את קוד ההתאמה ולאחר מכן ללחוץ על Return או Enter"</string>
-    <string name="bluetooth_pairing_request" msgid="4769675459526556801">"האם להתאים עם <xliff:g id="DEVICE_NAME">%1$s</xliff:g>?"</string>
+    <string name="bluetooth_pairing_request" msgid="4769675459526556801">"לבצע התאמה עם <xliff:g id="DEVICE_NAME">%1$s</xliff:g>?"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"ל-<xliff:g id="DEVICE_NAME">%1$s</xliff:g> תהיה גישה אל אנשי הקשר ואל היסטוריית השיחות שלך"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"ייתכן שיהיה צורך להקליד את קוד הגישה הזה גם במכשיר השני."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="7147248221018865922">"ייתכן שיהיה צורך להקליד את המפתח הזה גם במכשיר השני."</string>
@@ -249,12 +254,13 @@
     <string name="media_volume_summary" msgid="2961762827637127239">"הגדרת עוצמת קול למוזיקה ולסרטונים"</string>
     <string name="alarm_volume_title" msgid="840384014895796587">"התראה"</string>
     <string name="ringtone_title" msgid="8370531086214517972">"רינגטון לשיחת טלפון"</string>
-    <string name="notification_ringtone_title" msgid="8661716239594010288">"צליל ברירת מחדל להתראות"</string>
+    <string name="notification_ringtone_title" msgid="8661716239594010288">"צליל ברירת מחדל להתראה"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"צליל ברירת מחדל לשעון מעורר"</string>
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"שמירה"</string>
     <string name="sound_alert_sounds" msgid="6838044721739163867">"צלילי ההתראות"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"רינגטון, התראות, שעון מעורר"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"הפעלה של מדיה ב-"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"החלפת המדיה ל-%1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"בהירות"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"התאמת המסך לתאורה חלשה"</string>
     <string name="units_settings" msgid="402325305096925886">"יחידות"</string>
@@ -311,7 +317,7 @@
     <string name="performance_impacting_apps" msgid="3439260699394720569">"אפליקציות שמשפיעות על הביצועים"</string>
     <string name="app_permissions" msgid="32799922508313948">"הרשאות הניתנות לאפליקציה"</string>
     <string name="app_permissions_summary" msgid="5402214755935368418">"שליטה בגישת האפליקציה לנתונים שלך"</string>
-    <string name="applications_settings" msgid="794261395191035632">"פרטי אפליקציה"</string>
+    <string name="applications_settings" msgid="794261395191035632">"פרטי האפליקציה"</string>
     <string name="force_stop" msgid="1616958676171167028">"עצירת האפליקציה"</string>
     <string name="force_stop_dialog_title" msgid="4481858344628934971">"לעצור את האפליקציה?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"אם סוגרים אפליקציה ידנית, ייתכן שהיא לא תפעל כהלכה."</string>
@@ -322,7 +328,7 @@
     <string name="prioritize_app_performance_dialog_action_off" msgid="2813324718753199319">"לא תודה"</string>
     <string name="disable_text" msgid="4358165448648990820">"השבת"</string>
     <string name="enable_text" msgid="1794971777861881238">"הפעלה"</string>
-    <string name="uninstall_text" msgid="277907956072833012">"הסרת התקנה"</string>
+    <string name="uninstall_text" msgid="277907956072833012">"הסרה"</string>
     <string name="app_disable_dialog_text" msgid="7731155411006654025">"אם האפליקציה הזו תושבת, ייתכן ש-Android ואפליקציות אחרות לא יפעלו כצפוי."</string>
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"השבתת האפליקציה"</string>
     <string name="not_installed" msgid="4163454337822508007">"לא מותקנת בפרופיל הזה"</string>
@@ -358,7 +364,7 @@
     <string name="assist_and_voice_input_settings" msgid="8813195157136637132">"קלט אסיסטנט וקלט קולי"</string>
     <string name="assist_app_settings" msgid="9085261410166776497">"אפליקציית עזרה"</string>
     <string name="assist_access_context_title" msgid="8034851731390785301">"שימוש בטקסט המופיע במסך"</string>
-    <string name="assist_access_context_summary" msgid="2374281280599443774">"אפליקציית העזרה תוכל לגשת לתוכן במסך, למשל לטקסט"</string>
+    <string name="assist_access_context_summary" msgid="2374281280599443774">"אפליקציית העזרה תוכל לגשת לטקסט במסך"</string>
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"שימוש בצילום מסך"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"אפליקציית העזרה תוכל לגשת לצילום של המסך"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"קלט קולי"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"הצגת המערכת"</string>
     <string name="hide_system" msgid="8845453295584638040">"הסתרת המערכת"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"הסתרת אפליקציות מערכת"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"התראות ותזכורות"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"שינוי הגדרות המערכת"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ההרשאה הזו מתירה לאפליקציה לשנות את הגדרות המערכת."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"גישה להתראות"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"ביטול"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"האפליקציות האלה משפיעות לרעה על ביצועי המערכת ולכן הן נחסמו להפעלה ברקע.\nכדי לאפשר לאפליקציה לפעול ברקע יש לקבוע לה עדיפות ולהסיר אותה מהרשימה הזו."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"עדיפות לאפליקציה"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"שליחת הודעות SMS בתשלום"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"‫SMS פרימיום"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"החיובים תמורת שליחה של הודעות SMS בתשלום, אם יהיו, יצורפו לחשבונות הספק שלך. לאחר שמפעילים את ההרשאה לאפליקציה כלשהי, ניתן לשלוח באמצעותה הודעות SMS בתשלום."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"גישה לנתוני השימוש"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"גישה לנתוני השימוש מאפשרת לאפליקציה לעקוב אחר האפליקציות האחרות שנעשה בהן שימוש ואחר תדירות השימוש בהן. המידע כולל גם את זהות הספק, הגדרות השפה ופרטים אחרים."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"מיקום"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"שימוש במיקום"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"האפליקציות שציינת יכולות להשתמש במיקום הרכב."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"אפליקציות מידע ובידור"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"ההגדרה הזו מעניקה לאפליקציות גישה למיקום שלך"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"אם משביתים את האפשרות הזו, מסירים את הגישה למיקום עבור כל האפליקציות מלבד אלה שדרושות לעזרה לנהג"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"אם משביתים את האפשרות הזו, משביתים את אפליקציות העזרה לנהג שמתבססות על פרטי המיקום"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"השבתה בכל זאת"</string>
@@ -525,12 +534,12 @@
     <string name="factory_reset_progress_text" msgid="7704636573522634757">"יש להמתין…"</string>
     <string name="date_and_time_settings_title" msgid="4058492663544475485">"תאריך ושעה"</string>
     <string name="date_and_time_settings_summary" msgid="7669856855390804666">"הגדרת תאריך, שעה, אזור זמן ופורמטים"</string>
-    <string name="date_time_auto" msgid="6018635902717385962">"הגדרת השעה באופן אוטומטי"</string>
+    <string name="date_time_auto" msgid="6018635902717385962">"הגדרת הזמן באופן אוטומטי"</string>
     <string name="zone_auto" msgid="4174874778459184605">"הגדרת אזור הזמן באופן אוטומטי"</string>
     <string name="date_time_24hour_title" msgid="3025576547136168692">"פורמט 24 שעות"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"פורמט 24 שעות"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"שעה"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"הגדרת שעה"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"הגדרת השעון"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"אזור זמן"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"אזור זמן"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"תאריך"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"מיון לפי אזור זמן"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"תאריך"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"שעה"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"הזיהוי האוטומטי של אזור הזמן מתבסס על מקורות מידע כמו נתוני המיקום ורשתות סלולריות כדי לקבוע את התאריך, השעה ואזור הזמן."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"אפשר להשתמש במיקום של הרכב כדי להגדיר אוטומטית את התאריך והשעה. הפעולה הזו עובדת רק אם שירות המיקום מופעל."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"המשך"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"לשינוי ב\'הגדרות\'"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"המיקום שלך מושבת. יכול להיות שהזיהוי האוטומטי של אזור הזמן לא יפעל."</string>
     <string name="user_admin" msgid="1535484812908584809">"מנהל מערכת"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"כניסה בתור מנהל מערכת"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"להעניק הרשאות של מנהל מערכת?"</string>
@@ -554,8 +568,8 @@
     <string name="user_add_user_menu" msgid="4125869008006021799">"הוספת פרופיל"</string>
     <string name="user_new_user_name" msgid="906698527658609819">"פרופיל חדש"</string>
     <string name="user_add_user_title" msgid="6296827596015729982">"להוסיף פרופיל חדש?"</string>
-    <string name="user_add_user_message_setup" msgid="812616230454605159">"לאחר יצירה של פרופיל חדש, המשתמש של הפרופיל הזה צריך להתאים אותו אישית בעצמו."</string>
-    <string name="user_add_user_message_update" msgid="3836353291078729240">"עדכון אפליקציות מפרופיל כלשהו יחיל את העדכונים בכל יתר הפרופילים."</string>
+    <string name="user_add_user_message_setup" msgid="812616230454605159">"אחרי שיוצרים פרופיל חדש, המשתמש שהפרופיל שייך לו צריך להתאים אותו אישית."</string>
+    <string name="user_add_user_message_update" msgid="3836353291078729240">"אם מעדכנים אפליקציות בפרופיל כלשהו, העדכון חלים על כל הפרופילים."</string>
     <string name="user_limit_reached_title" msgid="5677729355746623293">"הגעת למספר הפרופילים המרבי"</string>
     <string name="user_limit_reached_message" msgid="2773441357248819721">"{count,plural, =1{ניתן ליצור רק פרופיל אחד.}one{ניתן ליצור רק # פרופילים.}two{ניתן ליצור רק # פרופילים.}other{ניתן ליצור רק # פרופילים.}}"</string>
     <string name="add_user_error_title" msgid="7589792057846396341">"לא ניתן היה ליצור את הפרופיל החדש"</string>
@@ -603,7 +617,7 @@
     <string name="accounts_settings_title" msgid="436190037084293471">"חשבונות"</string>
     <string name="user_add_account_menu" msgid="6625351983590713721">"הוספת חשבון"</string>
     <string name="no_accounts_added" msgid="5148163140691096055">"לא נוספו חשבונות"</string>
-    <string name="account_list_title" msgid="7631588514613843065">"חשבונות עבור <xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g>"</string>
+    <string name="account_list_title" msgid="7631588514613843065">"חשבונות של: <xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g>"</string>
     <string name="account_auto_sync_title" msgid="3238816995364191432">"סנכרון נתונים באופן אוטומטי"</string>
     <string name="account_auto_sync_summary" msgid="6963837893148304128">"אפליקציות יוכלו לרענן נתונים באופן אוטומטי"</string>
     <string name="data_usage_auto_sync_on_dialog_title" msgid="8068513213445588532">"לאפשר את סנכרון הנתונים האוטומטי?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"מחיקת הפרופיל שלך"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"מחיקת כל הפרופילים והחשבונות ממערכת המידע והבידור"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"הפעולה הזו לא זמינה לפרופיל שלך"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"גישה למיקרופון"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"אפשר לבחור אם לאפליקציות תהיה גישה למיקרופונים של הרכב"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"אפליקציות מידע ובידור"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"מתן הרשאה לאפליקציות מידע ובידור להקליט אודיו"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"גישה למצלמה"</string>
-    <string name="camera_access_settings_summary" msgid="8820488359585532496">"אפשר לבחור אם לאפליקציות תהיה גישה למצלמה של הרכב"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"אפשר להשתמש במצלמה של הרכב עם:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"אפליקציה כלשהי"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"כל אפליקציה שנתת לה גישה למצלמה"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"אף אפליקציה"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"אף אחת מהאפליקציות"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"אפליקציות שעוזרות בנהיגה"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"אפליקציות שעוזרות בדברים כמו הצגת הסביבה בזמן חנייה"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"רק אפליקציות נדרשות"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"רק אפליקציות שנדרשות על ידי יצרן הרכב"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"אפליקציות שעוזרות בנהיגה"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"אפליקציות שעוזרות בדברים כמו הצגת הסביבה בזמן חנייה, ואפליקציות נדרשות"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"אפליקציות שעוזרות בנהיגה"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"האפליקציות האלה יכולות לגשת למצלמה ולעזור לך בנהיגה"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"אפליקציות נדרשות"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"האפליקציות האלה דרושות כדי לעזור לרכב לתפקד בצורה בטיחותית"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"מדיניות"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"יכול להיות שליצרן הרכב עדיין יש גישה למצלמה של הרכב. לקבלת מידע נוסף, אפשר לעיין במדיניות של היצרן."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"למידע נוסף על האופן שבו כל אפליקציה משתמשת במצלמה, כדאי לעיין במדיניות הפרטיות שלה."</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"אפשר לבחור אם לאפליקציות תהיה גישה למצלמות של הרכב"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"אפליקציות נדרשות"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"האפליקציות שנדרשות על ידי יצרן הרכב שלך לעזרה בנהיגה"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"מדיניות"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"יכול להיות שליצרן הרכב עדיין יש גישה למצלמה של הרכב"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"אפליקציות מידע ובידור"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"אפליקציות מידע ובידור יכולות לצלם תמונות ולהקליט סרטונים"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"יש הרשאה"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"כל הזמן"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"אין הרשאה"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"רק בזמן השימוש באפליקציה"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"אני רוצה לבחור בכל פעם"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"אבטחה"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"נעילת מסך"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"ללא"</string>
@@ -680,7 +691,7 @@
     <string name="set_screen_lock" msgid="5239317292691332780">"הגדרת מסך נעילה"</string>
     <string name="lockscreen_choose_your_pin" msgid="1645229555410061526">"בחירת קוד גישה"</string>
     <string name="lockscreen_choose_your_password" msgid="4487577710136014069">"בחירת סיסמה"</string>
-    <string name="current_screen_lock" msgid="637651611145979587">"נעילת המסך הנוכחית"</string>
+    <string name="current_screen_lock" msgid="637651611145979587">"השיטה הנוכחית לביטול הנעילה"</string>
     <string name="choose_lock_pattern_message" msgid="6242765203541309524">"מטעמי אבטחה, יש להגדיר קו ביטול נעילה"</string>
     <string name="lockpattern_retry_button_text" msgid="4655398824001857843">"ניקוי"</string>
     <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"ביטול"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"כדי להציג את המכשירים שלך, צריך להפעיל את Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"כדי להתאים מכשיר, צריך לפתוח את הגדרות Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"עיצוב"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"הצגת גבולות הפריסה"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"המנהל של מערכת המידע והבידור"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"אפליקציות מופעלות"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"אפליקציות מושבתות"</string>
@@ -923,4 +935,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"בקשות הגישה האחרונות למצלמה"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"הצגת הכול"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"בטעינה…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"להצגת חבילות הגלישה"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"התוקף של חבילות הגלישה שלך פג"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"להצגת חבילות הגלישה"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"סיום"</string>
 </resources>

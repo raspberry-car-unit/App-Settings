@@ -26,6 +26,8 @@
     <string name="auto_brightness_title">Adaptive brightness</string>
     <!-- Sound & display settings screen, setting option summary to enable adaptive brightness [CHAR LIMIT=100] -->
     <string name="auto_brightness_summary">Adjust screen brightness to environment</string>
+    <!-- Display settings screen, settings option name to change the system theme (day/night/auto) [CHAR LIMIT=30] -->
+    <string name="theme_toggle_title">Theme</string>
     <!-- Title of condition that night display is on (renamed "Night Light" with title caps) [CHAR LIMIT=30] -->
     <string name="condition_night_display_title">Night Light is on</string>
     <string name="keywords_display" translatable="false">screen, touchscreen</string>
@@ -335,6 +337,8 @@
     <string name="wifi_ap_2G">2.4 GHz</string>
     <!-- Label for adding to the list of selected bands when 5.0 GHz is selected [CHAR LIMIT=15]-->
     <string name="wifi_ap_5G">5.0 GHz</string>
+    <!-- Label for adding to the list of selected bands when 2.4 and 5.0 GHz is selected [CHAR LIMIT=15]-->
+    <string name="wifi_ap_2G_5G">2.4 and 5.0 GHz</string>
     <!-- Label that is shown as a dialog summary informing users they must pick at LEAST one band for their hotspot [CHAR LIMIT=25]-->
     <string name="wifi_ap_band_select_one">Choose at least one band for Wi\u2011Fi hotspot:</string>
     <!-- Tethering controls, item title to go into the tethering settings when USB, Bluetooth and Wifi tethering are available [CHAR LIMIT=60]-->
@@ -346,9 +350,9 @@
     <!-- Subtitle for when Wi-Fi hotspot is toggled off [CHAR LIMIT=45] -->
     <string name="wifi_hotspot_state_off">Off</string>
     <!-- Title for the toggle to turn off hotspot automatically [CHAR LIMIT=50]-->
-    <string name="wifi_hotspot_auto_off_title">Turn off hotspot automatically</string>
+    <string name="wifi_hotspot_keep_on_title">Use hotspot for all drives</string>
     <!-- Summary for the toggle to turn off hotspot automatically [CHAR LIMIT=100]-->
-    <string name="wifi_hotspot_auto_off_summary">Wi\u2011Fi hotspot will turn off if no devices are connected</string>
+    <string name="wifi_hotspot_keep_on_summary">Make hotspot available whenever car is on</string>
     <!-- Content description for the hotspot state switch. [CHAR LIMIT=NONE] -->
     <string name="wifi_hotspot_state_switch_content_description" translatable="false">Hotspot toggle switch</string>
     <!-- Text for the hotspot QR code related information. [CHAR LIMIT=50] -->
@@ -445,6 +449,12 @@
     <string name="bluetooth_device_connected_toast">%1$s connected</string>
     <!-- Popup indicating that the user's bluetooth device has been disconnected [CHAR LIMIT=30] -->
     <string name="bluetooth_device_disconnected_toast">%1$s disconnected</string>
+    <!-- Title of device connections category [CHAR LIMIT=40] -->
+    <string name="device_connections_category_title">Device connections with your car</string>
+    <!-- Title of the UWB toggle [CHAR LIMIT=40] -->
+    <string name="uwb_toggle_title">Ultra\u2011Wideband &#40;UWB&#41;</string>
+    <!-- Summary of the UWB toggle [CHAR LIMIT=NONE]-->
+    <string name="uwb_toggle_summary">Helps your car identify the position of UWB devices</string>
 
     <!-- Bluetooth pairing --><skip/>
     <!-- Notification ticker text (shown in the status bar) when a Bluetooth device wants to pair with us -->
@@ -540,6 +550,8 @@
     <string name="sound_alert_sounds_summary">Ringtone, notifications, alarm</string>
     <!-- Title for the audio routes selector. [CHAR LIMIT=40] -->
     <string name="audio_route_selector_title">Play media on</string>
+    <!-- Toast informing the audio route is being changed. [CHAR LIMIT=80] -->
+    <string name="audio_route_selector_toast">Switching media to %1$s</string>
 
     <!-- Display settings --><skip/>
     <!-- Display settings screen, setting option name to manage display brightness [CHAR LIMIT=60] -->
@@ -881,6 +893,8 @@
     <string name="hide_system">Hide system</string>
     <!-- Text for toggle switch to control whether system processes are hidden in app lists. [CHAR_LIMIT=40] -->
     <string name="hide_system_apps">Hide system apps</string>
+    <!-- Title for alarm and reminders. [CHAR_LIMIT=40] -->
+    <string name="alarms_and_reminders_title">Alarms &amp; reminders</string>
     <!-- Title for managing apps which can modify system settings. [CHAR_LIMIT=40] -->
     <string name="modify_system_settings_title">Modify system settings</string>
     <!-- Description of modifying system settings. [CHAR_LIMIT=NONE] -->
@@ -902,7 +916,7 @@
     <!-- Button label for prioritizing an app in the Performance-impacting app settings. [CHAR_LIMIT=20] -->
     <string name="performance_impacting_apps_button_label">Prioritize app</string>
     <!-- Title for screen controlling which apps have access to send premium sms messages. [CHAR_LIMIT=60] -->
-    <string name="premium_sms_access_title">Premium SMS access</string>
+    <string name="premium_sms_access_title">Premium SMS</string>
     <!-- Message shown for option to enable Premium SMS for an app. [CHAR_LIMIT=NONE] -->
     <string name="premium_sms_access_description">Premium SMS may cost you money and will add up to your carrier bills. If you enable permission for an app, you will be able to send premium SMS using that app.</string>
     <!-- Title for managing apps which can query usage data. [CHAR_LIMIT=30] -->
@@ -924,6 +938,12 @@
     <!-- Summary of location toggle setting [CHAR LIMIT=NONE] -->
     <string name="location_toggle_summary">
         Use your car\u2019s location with any app you\u2019ve specified.
+    </string>
+    <!-- Title of infotainment apps accessing location [CHAR LIMIT=40] -->
+    <string name="location_infotainment_apps_toggle_title">Infotainment apps</string>
+    <!--  Summary of infotainment apps accessing location [CHAR LIMIT=NONE] -->
+    <string name="location_infotainment_apps_toggle_summary">
+        Allow apps to have access to your location
     </string>
     <!-- Warning message when users try to toggle location off [CHAR LIMIT=NONE] -->
     <string name="location_toggle_off_warning">
@@ -978,8 +998,6 @@
     </string>
     <!-- Title of Location Services category [CHAR LIMIT=60] -->
     <string name="location_settings_services_title">Location Services</string>
-    <!-- Content description for the location state switch. [CHAR LIMIT=NONE] -->
-    <string name="location_state_switch_content_description" translatable="false">Location toggle switch</string>
     <!-- Location settings screen, setting option name to enable location tracking [CHAR LIMIT=60] -->
     <string name="location_use_location_title">Use location</string>
     <!-- Title of location access page [CHAR LIMIT=40]-->
@@ -1235,7 +1253,7 @@
     <!-- Date & time setting screen setting option title [CHAR LIMIT=30] -->
     <string name="date_time_set_time_title">Time</string>
     <!-- Date & time setting screen setting option title -->
-    <string name="date_time_set_time">Set time</string>
+    <string name="date_time_set_time">Set clock</string>
     <!-- Date & time setting screen setting option title [CHAR LIMIT=30] -->
     <string name="date_time_set_timezone_title">Time zone</string>
     <!-- Date & time setting screen setting option title -->
@@ -1252,6 +1270,22 @@
     <string name="date_picker_title">Date</string>
     <!-- Title string shown above TimePicker, letting a user select system time [CHAR LIMIT=20] -->
     <string name="time_picker_title">Time</string>
+    <!-- Date & time auto time detection disclaimer-->
+    <string name="auto_local_time_disclaimer_summary">
+        Automatic date and time may use sources like location and mobile networks to determine date, time and time zone.
+    </string>
+    <!-- Toggle summary string shown when user tried to enable auto time and time zone detection without location enabled.-->
+    <string name="auto_local_time_toggle_summary">
+        Use your car\u2019s location to automatically set date and time. Only works if location is on.
+    </string>
+    <!-- Dialog's negative button string shown when user tried to enable auto time and time zone detection without location enabled.-->
+    <string name="auto_local_time_dialog_negative_button_text">Continue</string>
+    <!-- Dialog's positive button string shown when user tried to enable auto time and time zone detection without location enabled.-->
+    <string name="auto_local_time_dialog_positive_button_text">Change in settings</string>
+    <!-- Dialog string shown when user tried to enable auto time and time zone detection without location enabled.-->
+    <string name="auto_local_time_dialog_msg">
+        Your location is off. Automatic time may not work.
+    </string>
 
     <!-- Admin user management --><skip/>
     <!-- Title for Admin user [CHAR LIMIT=35] -->
@@ -1489,50 +1523,44 @@
     <string name="vehicle_data_delete_user_summary">Erase your profile and accounts from the infotainment system</string>
     <!-- Privacy settings screen, text that shows when a user tries to take an action that is unavailable to the current user. [CHAR LIMIT=60] -->
     <string name="action_unavailable">This action is unavailable for your profile</string>
+    <!-- Title of microphone access page [CHAR LIMIT=40]-->
+    <string name="microphone_access_settings_title">Microphone access</string>
+    <!-- Summary of microphone access page [CHAR LIMIT=NONE]-->
+    <string name="microphone_access_settings_summary">Choose if apps can access your car\u2019s microphones</string>
+    <!-- Title of infotainment apps accessing microphone [CHAR LIMIT=40]-->
+    <string name="microphone_infotainment_apps_toggle_title">Infotainment apps</string>
+    <!-- Summary of infotainment apps accessing microphone [CHAR LIMIT=NONE]-->
+    <string name="microphone_infotainment_apps_toggle_summary">Allow infotainment apps to record audio</string>
     <!-- Title of camera access page [CHAR LIMIT=40]-->
     <string name="camera_access_settings_title">Camera access</string>
     <!-- Summary of camera access page [CHAR LIMIT=NONE]-->
     <string name="camera_access_settings_summary">Choose if apps can access your car\u2019s cameras</string>
-    <!-- Title of camera access radio group [CHAR LIMIT=NONE]-->
-    <string name="camera_access_radio_group_title">Use your car\u2019s cameras with:</string>
-    <!-- Title of camera access radio button any app [CHAR LIMIT=40]-->
-    <string name="camera_access_radio_any_app_title">Any App</string>
-    <!-- Summary of camera access radio button any app [CHAR LIMIT=NONE]-->
-    <string name="camera_access_radio_any_app_summary">Any app you\u2019ve allowed to access your camera</string>
-     <!-- Title of camera access radio button no apps [CHAR LIMIT=40]-->
-    <string name="camera_access_radio_no_apps_title">No Apps</string>
-    <!-- Summary of camera access radio button no apps [CHAR LIMIT=NONE]-->
-    <string name="camera_access_radio_no_apps_summary">None of your apps</string>
-     <!-- Title of camera access radio button helpful apps [CHAR LIMIT=40]-->
-    <string name="camera_access_radio_helpful_apps_title">Apps that help you drive</string>
-    <!-- Summary of camera access radio button helpful apps [CHAR LIMIT=NONE]-->
-    <string name="camera_access_radio_helpful_apps_summary">Apps that assist with things like showing your surroundings when parking</string>
-    <!-- Title of camera access radio button required apps [CHAR LIMIT=40]-->
-    <string name="camera_access_radio_required_apps_title">Only required apps</string>
-    <!-- Summary of camera access radio button required apps [CHAR LIMIT=NONE]-->
-    <string name="camera_access_radio_required_apps_summary">Only apps required by your car\u2019s manufacturer</string>
-     <!-- Title of camera access radio button helpful and required apps [CHAR LIMIT=40]-->
-    <string name="camera_access_radio_helpful_required_apps_title">Apps that help you drive</string>
-    <!-- Summary of camera access radio button helpful and required apps [CHAR LIMIT=NONE]-->
-    <string name="camera_access_radio_helpful_required_apps_summary">Apps that assist with things like showing your surroundings when parking, and required apps</string>
-    <!-- Title of helpful apps accessing camera-->
-    <string name="camera_helpful_apps_list_title">Apps that help you drive</string>
-    <!-- Summary of helpful apps accessing camera-->
-    <string name="camera_helpful_apps_list_summary">These apps can access your camera to assist with driving</string>
-    <!-- Title of required apps accessing camera-->
-    <string name="camera_required_apps_list_title">Required apps</string>
-    <!-- Summary of required apps accessing camera-->
-    <string name="camera_required_apps_list_summary">These apps are needed to help your car function safely</string>
-    <string name="camera_privacy_policy_button_text">Policy</string>
+    <!-- Title of required apps [CHAR LIMIT=40]-->
+    <string name="required_apps_group_title">Required apps</string>
+    <!-- Summary of required apps [CHAR LIMIT=NONE]-->
+    <string name="required_apps_group_summary">
+        Apps that are required by your car\u2019s manufacturer to help you drive
+    </string>
+    <!-- Title of privacy policy for the required app [CHAR LIMIT=40]-->
+    <string name="required_apps_privacy_policy_button_text">Policy</string>
     <!-- Camera access page disclaimer summary [CHAR LIMIT=NONE] -->
     <string name="camera_access_disclaimer_summary">
-        Your car manufacturer may still have access to your car\u2019s camera. You can review
-        their policies for more info.
+        Your car manufacturer may still have access to your car\u2019s camera
     </string>
-     <!-- Camera access privacy policy info summary [CHAR LIMIT=NONE] -->
-    <string name="camera_privacy_policy_info_summary">
-        Learn more about how each app uses your Camera by reviewing its Privacy Policy.
-    </string>
+    <!-- Title of infotainment apps accessing camera [CHAR LIMIT=40]-->
+    <string name="camera_infotainment_apps_toggle_title">Infotainment apps</string>
+    <!-- Summary of infotainment apps accessing camera [CHAR LIMIT=NONE]-->
+    <string name="camera_infotainment_apps_toggle_summary">Allow infotainment apps to take pictures and record video</string>
+    <!-- Summary for the apps which have been granted permission [CHAR LIMIT=40] -->
+    <string name="permission_grant_allowed">Allowed</string>
+    <!-- Summary for the apps which have been granted permission in the foreground and the background [CHAR LIMIT=40]-->
+    <string name="permission_grant_always">All the time</string>
+    <!-- Summary for the apps which have been denied permission [CHAR LIMIT=40]-->
+    <string name="permission_grant_never">Not allowed</string>
+    <!-- Summary for the apps which have been granted permission only for foreground use [CHAR LIMIT=40]-->
+    <string name="permission_grant_in_use">Only while using the app</string>
+    <!-- Summary for the apps which have been granted permission for one-time use [CHAR LIMIT=40]-->
+    <string name="permission_grant_ask">Ask every time</string>
 
     <!-- security lock --><skip/>
     <!-- Title for security settings [CHAR LIMIT=20] -->
@@ -1893,6 +1921,9 @@
     <string name="qc_bluetooth_on_no_devices_info">To pair a device, open Bluetooth settings</string>
     <!-- UI Mode quick control, control name to change display UI mode (auto/day/night) [CHAR LIMIT=40] -->
     <string name="qc_ui_mode_title">Theme</string>
+    <!-- A quick control entry to control whether to show the layout bounds [CHAR LIMIT=40] -->
+    <string name="show_layout_bounds_title">Show layout bounds</string>
+
 
     <!-- Device Policy Management --><skip/>
     <!-- Device admin add activity title -->
@@ -2221,4 +2252,10 @@
     <string name="camera_settings_recent_requests_view_all_title">View all</string>
     <!-- Camera settings, loading the number of apps which have camera permission [CHAR LIMIT=30] -->
     <string name="camera_settings_loading_app_permission_stats">Loading\u2026</string>
+
+    <string name="data_subscription_explore_options">See plans</string>
+    <string name="connectivity_inactive_prompt">Your internet plans expired</string>
+    <string name="connectivity_inactive_action_text">See plans</string>
+
+    <string name="audio_route_dialog_neutral_button_text">Done</string>
 </resources>

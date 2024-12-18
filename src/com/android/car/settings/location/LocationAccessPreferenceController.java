@@ -18,10 +18,10 @@ package com.android.car.settings.location;
 
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
-import android.location.LocationManager;
 
 import androidx.preference.Preference;
 
+import com.android.car.settings.Flags;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceController;
 
@@ -30,12 +30,9 @@ import com.android.car.settings.common.PreferenceController;
  */
 public class LocationAccessPreferenceController extends PreferenceController<Preference> {
 
-    private final LocationManager mLocationManager;
-
     public LocationAccessPreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mLocationManager = context.getSystemService(LocationManager.class);
     }
 
     @Override
@@ -45,8 +42,12 @@ public class LocationAccessPreferenceController extends PreferenceController<Pre
 
     @Override
     protected int getDefaultAvailabilityStatus() {
-        return mLocationManager.getAdasAllowlist().isEmpty()
-                ? CONDITIONALLY_UNAVAILABLE
-                : AVAILABLE;
+        if (Flags.requiredInfotainmentAppsSettingsPage()) {
+            return AVAILABLE;
+        } else {
+            return LocationUtil.isDriverWithAdasApps(getContext())
+                    ? AVAILABLE
+                    : CONDITIONALLY_UNAVAILABLE;
+        }
     }
 }

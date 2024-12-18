@@ -23,9 +23,10 @@
     <string name="brightness" msgid="2919605130898772866">"Гэрэлтүүлгийн түвшин"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Дасан зохицох боломжтой гэрэлтүүлэг"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Дэлгэцийн гэрэлтүүлгийг орчинтой тохируулах"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Загвар"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Шөнийн гэрэл асаалттай байна"</string>
-    <string name="network_and_internet" msgid="4229023630498537530">"Сүлжээ &amp; интернэт"</string>
-    <string name="mobile_network_settings" msgid="1708621113321368597">"Мобайл сүлжээ"</string>
+    <string name="network_and_internet" msgid="4229023630498537530">"Сүлжээ, интернэт"</string>
+    <string name="mobile_network_settings" msgid="1708621113321368597">"Хөдөлгөөнт холбооны сүлжээ"</string>
     <string name="mobile_network_summary_count" msgid="760865625847664029">"{count,plural, =1{# SIM}other{# SIM}}"</string>
     <string name="mobile_network_active_sim" msgid="1901674954229832811">"Идэвхтэй / SIM"</string>
     <string name="mobile_network_inactive_sim" msgid="3644984830926224318">"Идэвхгүй / SIM"</string>
@@ -33,8 +34,8 @@
     <string name="mobile_network_inactive_esim" msgid="7273712403773327964">"Идэвхгүй / eSIM"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"Бусдыг нэмэх"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"Мобайл дата"</string>
-    <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Мобайл сүлжээг ашиглан датад хандах"</string>
-    <string name="mobile_network_mobile_network_toggle_title" msgid="3087288149339116597">"Мобайл сүлжээ"</string>
+    <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Хөдөлгөөнт холбооны сүлжээг ашиглан датад хандах"</string>
+    <string name="mobile_network_mobile_network_toggle_title" msgid="3087288149339116597">"Хөдөлгөөнт холбооны сүлжээ"</string>
     <string name="mobile_network_mobile_network_toggle_summary" msgid="1679917666306941420">"Мобайл датаг ашиглах"</string>
     <string name="mobile_network_state_off" msgid="471795861420831748">"Унтраалттай"</string>
     <string name="confirm_mobile_data_disable" msgid="826493998804496639">"Мобайл датаг унтраах уу?"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5,0 Гц мессежийг тохиромжтой гэж үздэг"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 Гц"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 Гц"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 ба 5,0 ГГц"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Wi-Fi сүлжээний цэгт хамгийн багадаа нэг мессеж сонгоно уу:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi сүлжээний цэг"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Сүлжээний цэг"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi-Fi сүлжээний цэгийг ашиглах"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Унтраалттай байна"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Сүлжээний цэгийг автоматаар унтраах"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Хэрэв төхөөрөмж холбогдоогүй бол Wi‑Fi сүлжээний цэг унтарна"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Бүх драйвт сүлжээний цэгийг ашиглах"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Машин асаалттай үед сүлжээний цэгийг боломжтой болгох"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\"-д нэгдэхийн тулд энэ QR кодыг скан хийнэ үү"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Сүлжээний цэгийн нууц үг: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> Wi-Fi-г асаах хүсэлтэй байна"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Өмнө нь холбогдсон"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s холбогдсон"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s салсан"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Таны машины төхөөрөмжийн холболтууд"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Хэт өргөн зурвас (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Таны машинд UWB төхөөрөмжүүдийн байрлалыг танихад тусалдаг"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Bluetooth-г хослуулах хүсэлт"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Хослуулах ба холбох"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth-н хослуулах код"</string>
@@ -229,7 +234,7 @@
     <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"Утас"</string>
     <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"Медиа"</string>
     <string name="language_settings" msgid="2079258598337245546">"Хэл"</string>
-    <string name="languages_and_input_settings" msgid="3672322610529408248">"Хэл &amp; оролт"</string>
+    <string name="languages_and_input_settings" msgid="3672322610529408248">"Хэл, оролт"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"Санал болгосон"</string>
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"Бүх хэл"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"Гар"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Сэрэмжлүүлгийн дуу"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Хонхны ая, мэдэгдэл, сэрүүлэг"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Медиаг дараах дээр тоглуулах"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Медиаг %1$s руу сэлгэж байна"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Гэрэлтүүлэг"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Дэлгэцийг бүдэг гэрэлд тохируулах"</string>
     <string name="units_settings" msgid="402325305096925886">"Нэгж"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Систем харуулах"</string>
     <string name="hide_system" msgid="8845453295584638040">"Систем нуух"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Системийн аппуудыг нуух"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Сэрүүлэг, сануулагч"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Системийн тохиргоог өөрчлөх"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Энэ зөвшөөрөл аппад системийн тохиргоог өөрчлөхийг зөвшөөрдөг."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Мэдэгдлийн хандалт"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Цуцлах"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Эдгээр аппууд нь системийн гүйцэтгэлд сөргөөр нөлөөлдөг ба ард ажиллуулахаас сэргийлсэн.\nАрын хэрэглээг зөвшөөрөхийн тулд аппыг эрэмбэлээд, энэ жагсаалтаас хасна уу."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Аппыг эрэмбэлэх"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Premium SMS хандалт"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Премиум SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Premium SMS-н төлбөрийг таны оператор компанийн төлбөр дээр нэмэхийг анхаарна уу. Та энэ аппын зөвшөөрлийг идэвхжүүлсэн тохиолдолд энэ аппыг ашиглан premium SMS илгээх боломжтой болно."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Ашиглалтын хандалт"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Ашиглалтын хандалт нь аппад таны хэрэглэж буй бусад апп болон хэрэглээний давтамж, мөн оператор компани, хэлний тохиргоо болон бусад дэлгэрэнгүй мэдээллийг хянахыг зөвшөөрдөг."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Байршил"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Байршлыг ашиглах"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Та заасан дурын апптайгаа автомашины байршлаа ашиглаарай."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Инфотэйнмент аппууд"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Аппуудад таны байршилд хандахыг зөвшөөрнө үү"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Хэрэв та үүнийг унтраавал энэ нь жолоочийн туслахад шаардлагатайгаас бусад бүх аппын байршилд хандах эрхийг хасна"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Хэрэв та үүнийг унтраавал байршлын мэдээлэлд тулгуурласан жолоочийн туслах аппуудыг идэвхгүй болно"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Ямартай ч унтраах"</string>
@@ -523,14 +532,14 @@
     <string name="factory_reset_confirm_button_text" msgid="1797490544756481809">"Бүгдийг устгах"</string>
     <string name="factory_reset_progress_title" msgid="4580937077054738173">"Устгаж байна"</string>
     <string name="factory_reset_progress_text" msgid="7704636573522634757">"Түр хүлээнэ үү..."</string>
-    <string name="date_and_time_settings_title" msgid="4058492663544475485">"Огноо &amp; цаг"</string>
+    <string name="date_and_time_settings_title" msgid="4058492663544475485">"Огноо, цаг"</string>
     <string name="date_and_time_settings_summary" msgid="7669856855390804666">"Огноо, цаг, цагийн бүс &amp; форматуудыг тохируулах"</string>
     <string name="date_time_auto" msgid="6018635902717385962">"Цагийг автоматаар тохируулах"</string>
     <string name="zone_auto" msgid="4174874778459184605">"Цагийн бүсийг автоматаар тохируулах"</string>
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24 цагийн формат"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24 цагийн форматыг ашиглах"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Цаг"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Цаг тохируулах"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Цаг тохируулах"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Цагийн бүс"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Цагийн бүсийг сонгох"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Огноо"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Цагийн бүсээр эрэмбэлэх"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Огноо"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Цаг"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Автомат огноо болон цаг нь огноо, цаг, цагийн бүсийг тодорхойлоход байршил болон хөдөлгөөнт холбооны сүлжээ зэрэг эх сурвалжийг ашиглаж магадгүй."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Огноо болон цагийг автоматаар тохируулахын тулд машиныхаа байршлыг ашиглана уу. Зөвхөн байршил асаалттай тохиолдолд ажилладаг."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Үргэлжлүүлэх"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Тохиргоонд өөрчлөх"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Таны байршил унтраалттай байна. Автомат цаг ажиллахгүй байж магадгүй."</string>
     <string name="user_admin" msgid="1535484812908584809">"Админ"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Админаар нэвтэрсэн"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Админы зөвшөөрөл олгох уу?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Профайлаа устгах"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Профайл, бүртгэлээ инфотэйнмент системээс устгах"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Энэ үйлдэл таны профайлд боломжгүй"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Микрофоны хандалт"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Аппууд таны машины микрофонд хандаж болох эсэхийг сонгоно уу"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Инфотэйнментийн аппууд"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Инфотэйнментийн аппуудад аудио бичихийг зөвшөөрнө үү"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Камерын хандалт"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Аппууд таны машины камеруудад хандаж болох эсэхийг сонгоно уу"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Машиныхаа камеруудыг дараахтай ашиглана уу:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Дурын апп"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Таны камертаа хандахыг зөвшөөрсөн дурын апп"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Ямар ч апп байхгүй"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Таны аппуудын аль нь ч биш"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Танд жолоо барихад туслах аппууд"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Зогсоолд тавих үед таны эргэн тойрныг харуулах зэрэг зүйлсэд туслах аппууд"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Зөвхөн шаардлагатай аппууд"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Зөвхөн танай машин үйлдвэрлэгчээс шаарддаг аппууд"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Танд жолоо барихад туслах аппууд"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Зогсоолд тавих үед таны эргэн тойрныг харуулах зэрэг зүйлсэд туслах апп болон шаардлагатай аппууд"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Танд жолоо барихад туслах аппууд"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Эдгээр апп жолоо барихад туслахын тулд таны камерт хандах боломжтой"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Шаардлагатай аппууд"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Эдгээр апп таны машиныг аюулгүй ажиллахад туслахад шаардлагатай"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Бодлого"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Таны машин үйлдвэрлэгч машины тань камерт хандах эрхтэй хэвээр байж магадгүй. Та дэлгэрэнгүй мэдээлэл авах бол түүний бодлогыг шалгах боломжтой."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Апп бүрийн нууцлалын бодлогыг шалгаснаар тус бүр нь таны Камерыг хэрхэн ашигладаг талаар нэмэлт мэдээлэл авна уу."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Шаардлагатай аппууд"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Таны машин үйлдвэрлэгчээс шаарддаг, жолоо барихад тань туслах аппууд"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Бодлого"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Таны машин үйлдвэрлэгч машины тань камерт хандах эрхтэй хэвээр байж магадгүй"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Инфотэйнментийн аппууд"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Инфотэйнментийн аппуудад зураг авч, видео бичихийг зөвшөөрнө үү"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Зөвшөөрсөн"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Үргэлж"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Зөвшөөрөөгүй"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Зөвхөн аппыг ашиглаж байхад"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Тухай бүрд асуух"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Нууцлал"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Дэлгэцийн түгжээ"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Байхгүй"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Төхөөрөмжүүдээ харахын тулд Bluetooth-г асаана уу"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Төхөөрөмжийг хослуулахын тулд Bluetooth тохиргоог нээнэ үү"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Загвар"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Бүдүүвчийн хүрээг харуулах"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Инфотэйнмент системийн админ"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Аппуудыг идэвхжүүлсэн"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Аппуудыг идэхгүй болгосон"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Саяхан хандсан"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Бүгдийг харах"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Ачаалж байна…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Багцыг харах"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Таны интернэт багцын хугацаа дууссан"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Багцыг харах"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Болсон"</string>
 </resources>

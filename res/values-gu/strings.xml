@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"બ્રાઇટનેસ લેવલ"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"અનુકૂલનશીલ બ્રાઇટનેસ"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"સ્ક્રીનની બ્રાઇટનેસ વાતાવરણ મુજબ ગોઠવો"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"થીમ"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"રાત્રિ પ્રકાશ ચાલુ છે"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"નેટવર્ક અને ઇન્ટરનેટ"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"મોબાઇલ નેટવર્ક"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5.0 GHz બૅન્ડ પસંદ કર્યું"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2.4 અને 5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"વાઇ-ફાઇ હૉટસ્પૉટ માટે ઓછામાં ઓછું એક બૅન્ડ પસંદ કરો:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"વાઇ-ફાઇ હૉટસ્પૉટ"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"હૉટસ્પૉટ"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"વાઇ-ફાઇ હૉટસ્પૉટનો ઉપયોગ કરો"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"બંધ છે"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"હૉટસ્પૉટ ઑટોમૅટિક રીતે બંધ કરો"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"જો કોઈ ડિવાઇસ કનેક્ટ કરેલું ન હોય, તો વાઇ-ફાઇ હૉટસ્પૉટ બંધ થઈ જશે"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"બધા ડિવાઇસ માટે હૉટસ્પૉટનો ઉપયોગ કરો"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"જ્યારે પણ કાર ચાલુ હોય ત્યારે હૉટસ્પૉટ ઉપલબ્ધ બનાવો"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\"માં જોડાવા માટે આ QR કોડ સ્કૅન કરો"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"હૉટસ્પૉટનો પાસવર્ડ: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g>, વાઇ-ફાઇ ચાલુ કરવા માગે છે"</string>
@@ -206,11 +208,14 @@
     <string name="bluetooth_ask_discovery_no_name" msgid="164397600370102369">"ઍપ, તમારા હેડયૂનિટને અન્ય બ્લૂટૂથ ડિવાઇસ પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ સુધી દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_enablement_and_discovery" msgid="5487502083015708674">"<xliff:g id="APP_NAME">%1$s</xliff:g>, બ્લૂટૂથ ચાલુ કરવા અને તમારા હેડયૂનિટને અન્ય ડિવાઇસ પર <xliff:g id="TIMEOUT">%2$d</xliff:g> સેકન્ડ સુધી દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" msgid="907153034209916282">"ઍપ, બ્લૂટૂથ ચાલુ કરવા અને તમારા હેડયૂનિટને અન્ય ડિવાઇસ પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ સુધી દૃશ્યક્ષમ બનાવવા માગે છે."</string>
-    <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"અન્ય ડિવાઇસ પર %1$s તરીકે દેખાય"</string>
+    <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"અન્ય ડિવાઇસ પર %1$s તરીકે દેખાય છે"</string>
     <string name="bluetooth_my_devices" msgid="6352010339607939612">"મારાં ડિવાઇસ"</string>
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"પહેલાં કનેક્ટ કરેલાં"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s કનેક્ટ કરેલું છે"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s ડિસ્કનેક્ટ કરેલું છે"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"તમારી કાર સાથેના ડિવાઇસ કનેક્શન"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"અલ્ટ્રા-વાઇડબૅન્ડ (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"તમારી કારને UWB ડિવાઇસની સ્થિતિ ઓળખવામાં સહાય કરે છે"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"બ્લૂટૂથ જોડાણ બનાવવાની વિનંતી"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"જોડી બનાવો અને કનેક્ટ કરો"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"બ્લૂટૂથનો જોડાણ કરવાનો કોડ"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"અલર્ટનો સાઉન્ડ"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"રિંગટોન, નોટિફિકેશન, અલાર્મ"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"આના પર મીડિયા વગાડો"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"મીડિયાને %1$s પર સ્વિચ કરી રહ્યા છીએ"</string>
     <string name="display_brightness" msgid="5718970880488110840">"બ્રાઇટનેસ"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"સ્ક્રીનમાં ઓછી લાઇટની ગોઠવણ કરો"</string>
     <string name="units_settings" msgid="402325305096925886">"યુનિટ"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"સિસ્ટમ બતાવો"</string>
     <string name="hide_system" msgid="8845453295584638040">"સિસ્ટમ છુપાવો"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"સિસ્ટમ ઍપ છુપાવો"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"અલાર્મ અને રિમાઇન્ડર"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"સિસ્ટમ સેટિંગમાં ફેરફાર કરો"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"આ પરવાનગી ઍપને સિસ્ટમ સેટિંગમાં ફેરફાર કરવાની મંજૂરી આપે છે."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"નોટિફિકેશનનો ઍક્સેસ"</string>
@@ -405,16 +412,18 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"રદ કરો"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"આ ઍપ સિસ્ટમના કાર્યપ્રદર્શન પર નકારાત્મક અસર કરે છે અને તેથી તેને બૅકગ્રાઉન્ડમાં ચાલતા અટકાવવામાં આવી છે.\nઍપનો ઉપયોગ બૅકગ્રાઉન્ડમાં ચલાવવા માટે કરવામાં આવે તેની મંજૂરી આપવા, તેને પ્રાધાન્યતા આપો અને આ સૂચિમાંથી તેને કાઢી નાખો."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"ઍપને પ્રાધાન્યતા આપો"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"પ્રીમિયમ SMSનો ઍક્સેસ"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"પ્રીમિયમ SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"તમને પ્રીમિયમ SMS માટે શુલ્ક લાગી શકે છે અને તે તમારા કૅરિઅર બિલમાં ઉમેરવામાં આવશે. જો તમે કોઇ ઍપ માટે પરવાનગી ચાલુ કરો છો, તો તમે તે ઍપનો ઉપયોગ કરીને પ્રીમિયમ SMS મોકલી શકશો."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"વપરાશનો ઍક્સેસ"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"વપરાશનો ઍક્સેસ કોઈ ઍપને તમે કઈ અન્ય ઍપનો અને કેટલીવાર ઉપયોગ કરી રહ્યાં છો, તેમજ તમારા કૅરિઅર, ભાષા સેટિંગ અને અન્ય વિગતોને ટ્રૅક કરવાની મંજૂરી આપે છે."</string>
     <string name="wifi_control_title" msgid="5660436566907731929">"વાઇ-ફાઇ નિયંત્રણ"</string>
     <string name="wifi_control_description" msgid="6021926850423169261">"વાઇ-ફાઇ નિયંત્રણ ઍપને વાઇ-ફાઇ ચાલુ અથવા બંધ કરવાની, વાઇ-ફાઇ નેટવર્કને સ્કૅન કરીને કનેક્ટ કરવાની, નેટવર્ક ઉમેરવાની કે કાઢી નાખવાની અથવા માત્ર-સ્થાનિક હૉટસ્પૉટ શરૂ કરવાની મંજૂરી આપે છે."</string>
     <string name="more_special_access_title" msgid="166115485446645971">"વધુ"</string>
-    <string name="location_settings_title" msgid="901334356682423679">"સ્થાન"</string>
+    <string name="location_settings_title" msgid="901334356682423679">"લોકેશન"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"સ્થાનનો ઉપયોગ કરો"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"તમે ઉલ્લેખિત કરેલી કોઈપણ ઍપ સાથે તમારી કારના લોકેશનનો ઉપયોગ કરો."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"ઇન્ફોટેનમેન્ટ ઍપ"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"બધી ઍપને તમારા લોકેશનનો ઍક્સેસ આપો"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"જો તમે આને બંધ કરશો, તો તે \'ડ્રાઇવર માટે સહાયતા\' માટે જરૂરી હોય તે સિવાયની તમામ ઍપ માટે સ્થાનનો ઍક્સેસ કાઢી નાખશે"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"જો તમે આને બંધ કરશો તો લોકેશનની માહિતી પર નિર્ભર કરતી, ડ્રાઇવર માટે સહાયતા માટેની ઍપ બંધ કરવામાં આવશે"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"કોઈપણ રીતે બંધ કરો"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24‑કલાકનું ફૉર્મેટ"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24-કલાકના ફૉર્મેટનો ઉપયોગ કરો"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"સમય"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"સમય સેટ કરો"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ઘડિયાળ સેટ કરો"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"સમય ઝોન"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"સમય ઝોન પસંદ કરો"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"તારીખ"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"સમય ઝોન પ્રમાણે સૉર્ટ કરો"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"તારીખ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"સમય"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"તારીખ, સમય અને સમય ઝોન નક્કી કરવા માટે ઑટોમૅટિક તારીખ અને સમય દ્વારા લોકેશન અને મોબાઇલ નેટવર્ક જેવા સૉર્સનો ઉપયોગ કરવામાં આવી શકે છે."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"તારીખ અને સમય ઑટોમૅટિક રીતે સેટ કરવા માટે, તમારી કારના લોકેશનનો ઉપયોગ કરો. લોકેશન ચાલુ હોય તો જ કામ કરે છે."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"ચાલુ રાખો"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"સેટિંગમાં બદલો"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"તમારું લોકેશન બંધ છે. ઑટોમૅટિક સમય કામ કરી શકશે નહીં."</string>
     <string name="user_admin" msgid="1535484812908584809">"વ્યવસ્થાપક"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"વ્યવસ્થાપક તરીકે સાઇન ઇન થયા"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"વ્યવસ્થાપકને પરવાનગીઓ આપીએ?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"તમારી પ્રોફાઇલ ડિલીટ કરો"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ઇન્ફોટેનમેન્ટ સિસ્ટમમાંથી તમારી પ્રોફાઇલ અને એકાઉન્ટ કાઢી નાખો"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"આ ક્રિયા તમારી પ્રોફાઇલ માટે ઉપલબ્ધ નથી"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"માઇક્રોફોનનો ઍક્સેસ"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"ઍપ તમારી કારના માઇક્રોફોનને ઍક્સેસ કરી શકશે કે નહીં તે પસંદ કરો"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"ઇન્ફોટેનમેન્ટ ઍપ"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ઇન્ફોટેનમેન્ટ ઍપને ઑડિયો રેકોર્ડ કરવાની મંજૂરી આપો"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"કૅમેરાનો ઍક્સેસ"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"ઍપ તમારી કારના કૅમેરાનો ઍક્સેસ કરી શકશે કે નહીં તે પસંદ કરો"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"તમારી કારના કૅમેરાનો આની સાથે ઉપયોગ કરો:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"કોઈપણ ઍપ"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"તને તમારા કૅમેરાનો ઍક્સેસ આપ્યો હોય એવી કોઈપણ ઍપ"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"કોઈ ઍપ નહીં"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"તમારી ઍપમાંથી કોઈ નહીં"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"ડ્રાઇવિંગ કરવામાં તમારી સહાય કરતી ઍપ"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"કાર પાર્ક કરતી વખતે તમને આસપાસની જગ્યા બતાવવા જેવી વસ્તુઓ કરવામાં સહાય કરતી ઍપ"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"ફક્ત આવશ્યક ઍપ"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"ફક્ત કારના નિર્માતા માટે આવશ્યક હોય એવી ઍપ"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"ડ્રાઇવિંગ કરવામાં તમારી સહાય કરતી ઍપ"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"કાર પાર્ક કરતી વખતે તમને આસપાસની જગ્યા બતાવવા જેવી વસ્તુઓ કરવામાં સહાય કરતી ઍપ અને આવશ્યક ઍપ"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"ડ્રાઇવિંગ કરવામાં તમારી સહાય કરતી ઍપ"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"ડ્રાઇવિંગ કરતી વખતે તમારી સહાય કરવા માટે આ ઍપ તમારા કૅમેરાનો ઍક્સેસ કરી શકે છે"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"આવશ્યક ઍપ"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"તમારી કારને સલામત રીતે કાર્ય કરવામાં સહાય કરવા માટે આ ઍપ જરૂરી છે"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"પૉલિસી"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"તમારી કારના નિર્માતા પાસે હજી પણ તમારી કારના કૅમેરાનો ઍક્સેસ હોઈ શકે છે. તમે વધુ માહિતી માટે તેમની પૉલિસીઓનો રિવ્યૂ કરી શકો છો."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"પ્રત્યેક ઍપ તમારા કૅમેરાનો ઉપયોગ કેવી રીતે કરે છે, એ વિશે તેની પ્રાઇવસી પૉલિસીનો રિવ્યૂ કરીને વધુ જાણો."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"આવશ્યક ઍપ"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"તમારી કારના નિર્માતા દ્વારા ડ્રાઇવ કરવામાં તમારી સહાય માટે જરૂરી ઍપ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"પૉલિસી"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"તમારી કારના નિર્માતા હજી પણ તમારી કારના કૅમેરાનો ઍક્સેસ ધરાવતા હોઈ શકે છે"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"ઇન્ફોટેનમેન્ટ ઍપ"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ઇન્ફોટેનમેન્ટ ઍપને ફોટા લેવાની અને વીડિયો રેકોર્ડ કરવાની મંજૂરી આપો"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"મંજૂરી છે"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"હંમેશાં"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"મંજૂરી નથી"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"માત્ર ઍપનો ઉપયોગ કરતી વખતે"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"દર વખતે પૂછો"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"સુરક્ષા"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"સ્ક્રીન લૉક"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"કોઈ લૉક નથી"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"તમારા ડિવાઇસ જોવા માટે, બ્લૂટૂથ ચાલુ કરો"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"ડિવાઇસનું જોડાણ કરવા માટે, બ્લૂટૂથ સેટિંગ ખોલો"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"થીમ"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"લેઆઉટ બાઉન્ડ બતાવો"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"ઇન્ફોટેનમેન્ટ સિસ્ટમ વ્યવસ્થાપક"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"સક્રિય ઍપ"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"નિષ્ક્રિય કરેલી ઍપ"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"તાજેતરમાં ઍક્સેસ કર્યો"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"તમામ જુઓ"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"લોડ કરી રહ્યાં છીએ…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"પ્લાન જુઓ"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"તમારો ઇન્ટરનેટ પ્લાન સમાપ્ત થઈ ગયો છે"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"પ્લાન જુઓ"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"થઈ ગયું"</string>
 </resources>

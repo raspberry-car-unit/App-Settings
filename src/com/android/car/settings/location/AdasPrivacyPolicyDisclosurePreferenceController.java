@@ -16,17 +16,17 @@
 
 package com.android.car.settings.location;
 
+import android.Manifest;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.location.LocationManager;
 import android.os.Process;
 
+import com.android.car.settings.Flags;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.LogicalPreferenceGroup;
-import com.android.car.settings.common.PreferenceController;
+import com.android.car.settings.privacy.RequiredInfotainmentAppsUtils;
 import com.android.car.ui.preference.CarUiTwoActionTextPreference;
-import com.android.internal.annotations.VisibleForTesting;
 
 import java.util.Collection;
 
@@ -35,36 +35,16 @@ import java.util.Collection;
  * settings.
  */
 public final class AdasPrivacyPolicyDisclosurePreferenceController
-        extends PreferenceController<LogicalPreferenceGroup> {
-
+        extends LocationStateListenerBasePreferenceController<LogicalPreferenceGroup> {
     private final PackageManager mPackageManager;
-    private final LocationManager mLocationManager;
 
     public AdasPrivacyPolicyDisclosurePreferenceController(
             Context context,
             String preferenceKey,
             FragmentController fragmentController,
             CarUxRestrictions uxRestrictions) {
-        this(
-                context,
-                preferenceKey,
-                fragmentController,
-                uxRestrictions,
-                context.getPackageManager(),
-                context.getSystemService(LocationManager.class));
-    }
-
-    @VisibleForTesting
-    public AdasPrivacyPolicyDisclosurePreferenceController(
-            Context context,
-            String preferenceKey,
-            FragmentController fragmentController,
-            CarUxRestrictions uxRestrictions,
-            PackageManager packageManager,
-            LocationManager locationManager) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mPackageManager = packageManager;
-        mLocationManager = locationManager;
+        mPackageManager = context.getPackageManager();
     }
 
     @Override
@@ -73,21 +53,35 @@ public final class AdasPrivacyPolicyDisclosurePreferenceController
     }
 
     @Override
-    public void updateState(LogicalPreferenceGroup preference) {
-        super.updateState(preference);
+    protected void onCreateInternal() {
+        if (Flags.requiredInfotainmentAppsSettingsPage()) {
+            addDefaultBypassLocationStateListener();
+        }
+    }
+
+    @Override
+    protected void updateState(LogicalPreferenceGroup preference) {
         loadAppsWithLocationPermission();
     }
 
     private void loadAppsWithLocationPermission() {
         getPreference().removeAll();
 
-        Collection<String> adasApps = mLocationManager.getAdasAllowlist().getPackages();
+        Collection<String> adasApps = getLocationManager().getAdasAllowlist().getPackages();
+        boolean showSummary = getLocationManager().isAdasGnssLocationEnabled();
         for (String adasApp : adasApps) {
-            CarUiTwoActionTextPreference perf =
-                    AdasPrivacyPolicyUtil.createPrivacyPolicyPreference(
-                            getContext(), mPackageManager, adasApp, Process.myUserHandle());
-            if (perf != null) {
-                getPreference().addPreference(perf);
+            CarUiTwoActionTextPreference preference;
+            if (com.android.internal.camera.flags.Flags.cameraPrivacyAllowlist()
+                    && Flags.requiredInfotainmentAppsSettingsPage()) {
+                preference = RequiredInfotainmentAppsUtils.createRequiredAppPreference(
+                        getContext(), mPackageManager, adasApp, Process.myUserHandle(),
+                        Manifest.permission_group.LOCATION, showSummary);
+            } else {
+                preference = AdasPrivacyPolicyUtil.createPrivacyPolicyPreference(
+                        getContext(), mPackageManager, adasApp, Process.myUserHandle());
+            }
+            if (preference != null) {
+                getPreference().addPreference(preference);
             }
         }
     }

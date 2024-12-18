@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"উজ্জ্বলতাৰ স্তৰ"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"অভিযোজিত উজ্জ্বলতা"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"স্ক্ৰীনৰ উজ্জ্বলতা আৰু সামগ্ৰিক অৱস্থা মিলাওক"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"থীম"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"ৰাতিৰ লাইট অন হৈ আছে"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"নেটৱৰ্ক আৰু ইণ্টাৰনেট"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"ম’বাইল নেটৱৰ্ক"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"৫.০ গিগাহাৰ্টজ বেণ্ডক অগ্ৰাধিকাৰ দিয়া হৈছে"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"২.৪ গিগাহাৰ্টজ"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"৫.০ গিগাহাৰ্টজ"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"২.৪ আৰু ৫.০ GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"ৱাই-ফাই হটস্পটৰ বাবে কমেও এটা বেণ্ড বাছনি কৰক:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"ৱাই-ফাই হটস্পট"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"হটস্পট"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"ৱাই-ফাই হটস্পট ব্যৱহাৰ কৰক"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"অফ আছে"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"স্বয়ংক্ৰিয়ভাৱে হটস্পট অফ কৰক"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"যদি কোনো ডিভাইচ সংযোগ হৈ নাথাকে, তেন্তে ৱাই-ফাই হটস্পট অফ হ’ব"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"আটাইবোৰ ড্ৰাইভৰ বাবে হ’টস্প’ট ব্যৱহাৰ কৰক"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"গাড়ীখন অন হৈ থকা যিকোনো সময়তে হ’টস্প’ট উপলব্ধ কৰক"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\"ৰ সৈতে সংযোগ কৰিবলৈ এই কিউআৰ ক’ডটো স্কেন কৰক"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"হটস্পটৰ পাছৱৰ্ড: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g>এ ৱাই-ফাই অন কৰিব বিচাৰে"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"আগতে সংযোগ কৰা"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s সংযোগ কৰা হ’ল"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$sৰ সংযোগ বিচ্ছিন্ন কৰা হ’ল"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"আপোনাৰ গাড়ীৰ সৈতে ডিভাইচৰ সংযোগ"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"আল্ট্ৰা-ৱাইডবেণ্ড (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"আপোনাক গাড়ীখনক UWB ডিভাইচৰ স্থান চিনাক্ত কৰাত সহায় কৰে"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"ব্লুটুথ যোৰা লগোৱাৰ অনুৰোধ"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"পেয়াৰ আৰু সংযোগ কৰক"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ব্লুটুথ যোৰ লগোৱা ক’ড"</string>
@@ -230,7 +235,7 @@
     <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"মিডিয়া"</string>
     <string name="language_settings" msgid="2079258598337245546">"ভাষা"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"ভাষা আৰু ইনপুট"</string>
-    <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"প্ৰস্তাৱিত"</string>
+    <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"পৰামৰ্শিত"</string>
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"সকলো ভাষা"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"কীব’ৰ্ড"</string>
     <string name="manage_keyboard" msgid="4045394766282200132">"কীব’ৰ্ড পৰিচালনা কৰক"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"সতৰ্কবাৰ্তাৰ ধ্বনি"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"ৰিংট’ন, জাননী, এলাৰ্ম"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"ইয়াত মিডিয়া প্লে’ কৰক"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"মিডিয়া %1$sলৈ সলনি কৰি থকা হৈছে"</string>
     <string name="display_brightness" msgid="5718970880488110840">"উজ্জ্বলতা"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"কম পোহৰৰ বাবে স্ক্ৰীন মিলাওক"</string>
     <string name="units_settings" msgid="402325305096925886">"এককসমূহ"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"ছিষ্টেম দেখুৱাওক"</string>
     <string name="hide_system" msgid="8845453295584638040">"ছিষ্টেম লুকুৱাওক"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"ছিষ্টেম এপ্‌ লুকুৱাওক"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"এলাৰ্ম আৰু ৰিমাইণ্ডাৰ"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"ছিষ্টেমৰ ছেটিংসমূহ সংশোধন কৰক"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"এই অনুমতিটোৱে কোনো এপক ছিষ্টেম ছেটিংসমূহ সংশোধন কৰিবলৈ অনুমতি দিয়ে।"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"জাননীৰ এক্সেছ"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"বাতিল কৰক"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"এই এপ্‌সমূহে ছিষ্টেমৰ কাৰ্যদক্ষতাত ঋণাত্মক প্ৰভাৱ পেলায় আৰু এইবোৰক নেপথ্যত চলাত বাধা দিয়া হৈছে।\nনেপথ্যত ব্যৱহাৰৰ অনুমতি দিবলৈ আৰু ইয়াক সূচীখনৰ পৰা আঁতৰাবলৈ এপক অগ্ৰাধিকাৰ দিয়ক।"</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"এপক অগ্ৰাধিকাৰ দিয়ক"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"প্ৰিমিয়াম এছএমএছৰ এক্সেছ"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"প্ৰিমিয়াম এছএমএছ"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"প্ৰিমিয়াম এছএমএছৰ কাৰণে আপুনি খৰচ বহন কৰিবলগীয়া হ’ব পাৰে যাৰ বাবে বাহকে আপোনালৈ পঠিওৱা বিলত দেয়ৰ পৰিমাণ বাঢ়িব পাৰে। আপুনি যদি কোনো এপক অনুমতি দিয়ে, তেন্তে আপুনি সেই এপ্‌টো ব্যৱহাৰ কৰি প্ৰিমিয়াম এছএমএছ পঠাব পাৰিব।"</string>
     <string name="usage_access_title" msgid="7153427122072303254">"ব্যৱহাৰৰ এক্সেছ"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"ব্যৱহাৰৰ এক্সেছ সুবিধাই এটা এপক আপুনি আন কি এপ্ ব্যৱহাৰ কৰে আৰু সেইবোৰ কিমান সঘনাই ব্যৱহাৰ কৰে, লগতে আপোনাৰ বাহক, ভাষাৰ ছেটিংসমূহ আৰু অন্যান্য সবিশেষ ট্ৰেক কৰিবলৈ অনুমতি দিয়ে।"</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"অৱস্থান"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"অৱস্থান ব্যৱহাৰ কৰক"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"আপুনি নিৰ্দিষ্ট কৰা যিকোনো এপৰ সৈতে আপোনাৰ গাড়ীৰ অৱস্থান ব্যৱহাৰ কৰক।"</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"ইনফ’টেইনমেণ্ট এপ্‌সমূহ"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"এপ্‌সমূহক আপোনাৰ অৱস্থানৰ এক্সেছ কৰিবলৈ অনুমতি দিয়ক"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"আপুনি যদি এইটো অফ কৰে, তেন্তে চালক সাহায্যৰ বাবে আৱশ্যক হোৱা এপৰ বাহিৰে এইটোৱে আটাইবোৰ এপৰ বাবে অৱস্থানৰ এক্সেছ আঁতৰাব"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"আপুনি যদি এইটো অফ কৰে, তেন্তে অৱস্থানৰ তথ্যৰ ওপৰত নিৰ্ভৰশীল চালকৰ সাহায্য এপ্‌সমূহ অক্ষম কৰা হ’ব"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"তথাপি অফ কৰক"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"২৪ ঘণ্টীয়া ফৰমেট"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"২৪ ঘণ্টীয়া ফৰমেট ব্যৱহাৰ কৰক"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"সময়"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"সময় ছেট কৰক"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ঘড়ী ছেট কৰক"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"সময় মণ্ডল"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"সময় মণ্ডল বাছনি কৰক"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"তাৰিখ"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"সময় মণ্ডল অনুসৰি সজাওক"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"তাৰিখ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"সময়"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"স্বয়ংক্ৰিয় তাৰিখ আৰু সময়ৰ সুবিধাই তাৰিখ, সময় আৰু সময় মণ্ডল নিৰ্ধাৰণ কৰিবলৈ অৱস্থান আৰু ম’বাইল নেটৱৰ্কৰ দৰে উৎসসমূহ ব্যৱহাৰ কৰিব পাৰে।"</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"তাৰিখ আৰু সময় স্বয়ংক্ৰিয়ভাৱে ছেট কৰিবলৈ আপোনাৰ গাড়ীৰ অৱস্থান ব্যৱহাৰ কৰক। অৱস্থান অন থাকিলেহে কাম কৰে।"</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"অব্যাহত ৰাখক"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"ছেটিঙত সলনি কৰক"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"আপোনাৰ অৱস্থান অফ হৈ আছে। স্বয়ংক্ৰিয় সময়ৰ সুবিধাটোৱে কাম নকৰিবও পাৰে।"</string>
     <string name="user_admin" msgid="1535484812908584809">"প্ৰশাসক"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"প্ৰশাসক হিচাপে ছাইন ইন হৈ আছে"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"প্ৰশাসকীয় অনুমতি প্ৰদান কৰিবনে?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"আপোনাৰ প্ৰ’ফাইলটো মচক"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ইনফ’টেইনমেণ্ট ছিষ্টেমটোৰ পৰা আপোনাৰ প্ৰ’ফাইল আৰু একাউণ্ট মচক"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"আপোনাৰ প্ৰ’ফাইলত এই কাৰ্যটো উপলব্ধ নহয়"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"মাইক্ৰ’ফ’নৰ এক্সেছ"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"এপ্‌সমূহে আপোনাৰ গাড়ীৰ মাইক্ৰ’ফ’ন এক্সেছ কৰিব পাৰেনে নোৱাৰে সেয়া বাছনি কৰক"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"ইনফ’টেইনমেণ্ট এপ্‌সমূহ"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ইনফ’টেইনমেণ্ট এপ্‌সমূহক অডিঅ’ ৰেকৰ্ড কৰিবলৈ অনুমতি দিয়ক"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"কেমেৰাৰ এক্সেছ"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"এপ্‌সমূহে আপোনাৰ গাড়ীৰ কেমেৰা এক্সেছ কৰিব পাৰেনে নোৱাৰে সেয়া বাছনি কৰক"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"আপোনাৰ গাড়ীৰ কেমেৰা ইয়াৰ সৈতে ব্যৱহাৰ কৰক:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"যিকোনো এপ্"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"আপুনি নিজৰ কেমেৰা এক্সেছ কৰিবলৈ অনুমতি দিয়া যিকোনো এপ্"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"কোনো এপ্‌ নাই"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"আপোনাৰ কোনো এপ্ নহয়"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"আপোনাক গাড়ী চলোৱাত সহায় কৰা এপ্"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"পাৰ্কিঙৰ সময়ত আপোনাৰ চৌপাশ দেখুওৱাৰ দৰে কাৰ্যসমূহত সহায় কৰা এপ্"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"কেৱল আৱশ্যকীয় এপ্"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"কেৱল আপোনাৰ গাড়ী নিৰ্মাতাৰ বাবে আৱশ্যকীয় এপ্"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"আপোনাক গাড়ী চলোৱাত সহায় কৰা এপ্"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"পাৰ্কিঙৰ সময়ত আপোনাৰ চৌপাশ দেখুওৱাৰ দৰে কাৰ্যসমূহত সহায় কৰা এপ্ আৰু আৱশ্যকীয়া এপ্"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"আপোনাক গাড়ী চলোৱাত সহায় কৰা এপ্"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"এই এপ্‌সমূহে গাড়ী চলোৱাত সহায় কৰিবলৈ আপোনাৰ কেমেৰা এক্সেছ কৰিব পাৰে"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"আৱশ্যকীয় এপ্"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"আপোনাৰ গাড়ীখন সুৰক্ষিতভাৱে চলি থাকিবলৈ এই এপ্‌সমূহ আৱশ্যক"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"নীতি"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"আপোনাৰ গাড়ীৰ নিৰ্মাতাৰ ওচৰত এতিয়াও আপোনাৰ গাড়ীৰ কেমেৰাৰ এক্সেছ থাকিব পাৰে। অধিক তথ্যৰ বাবে আপুনি তেওঁলোকৰ নীতি পৰ্যালোচনা কৰিব পাৰে।"</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"প্ৰতিটো এপৰ গোপনীয়তাৰ নীতি পৰ্যালোচনা কৰি সেইসমূহে কিদৰে আপোনাৰ কেমেৰা ব্যৱহাৰ কৰে সেই বিষয়ে অধিক জানক।"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"আৱশ্যকীয় এপ্‌সমূহ"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"আপুনি গাড়ী চলোৱাৰ সময়ত সহায় কৰিবলৈ আপোনাৰ গাড়ী নিৰ্মাতাৰ বাবে আৱশ্যকীয় এপ্‌সমূহ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"নীতি"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"আপোনাৰ গাড়ীৰ নিৰ্মাতাৰ ওচৰত এতিয়াও আপোনাৰ গাড়ীৰ কেমেৰাৰ এক্সেছ থাকিব পাৰে"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"ইনফ’টেইনমেণ্ট এপ্‌সমূহ"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ইনফ’টেইনমেণ্ট এপ্‌সমূহক ফট’ তুলিবলৈ আৰু ভিডিঅ’ ৰেকৰ্ড কৰিবলৈ অনুমতি দিয়ক"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"অনুমতি দিয়া হৈছে"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"সকলো সময়তে"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"অনুমতি নাই"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"কেৱল এপ্‌টো ব্যৱহাৰ কৰি থকাৰ সময়ত"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"প্ৰতিবাৰতে সোধক"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"সুৰক্ষা"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"স্ক্ৰীন লক"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"নাই"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"আপোনাৰ ডিভাইচসমূহ চাবলৈ ব্লুটুথ অন কৰক"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"কোনো ডিভাইচ পেয়াৰ কৰিবলৈ ব্লুটুথ ছেটিং খোলক"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"থীম"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"লে’আউটৰ সীমা দেখুৱাওক"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"ইনফ’টেইনমেণ্ট ছিষ্টেমৰ প্ৰশাসক"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"সক্ৰিয় কৰা এপ্"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"নিষ্ক্ৰিয় কৰা এপ্"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"শেহতীয়াকৈ এক্সেছ কৰা"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"আটাইবোৰ চাওক"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"ল’ড কৰি থকা হৈছে…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"আঁচনি চাওক"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"আপোনাৰ ইণ্টাৰনেটৰ আঁচনিৰ ম্যাদ উকলিছে"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"আঁচনি চাওক"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"কৰা হ’ল"</string>
 </resources>

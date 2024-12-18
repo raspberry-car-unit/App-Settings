@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Ниво на осветленост"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Адаптивна осветленост"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Приспособи ја осветленоста на екранот на средината"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Тема"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Ноќното светло е вклучено"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Мрежа и интернет"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Мобилна мрежа"</string>
@@ -135,7 +136,7 @@
     <string name="wifi_wakeup" msgid="7451825226044542000">"Вклучувај Wi‑Fi автоматски"</string>
     <string name="wifi_wakeup_summary" msgid="7237521683331291414">"Wi‑Fi ќе се вклучува на зачувани мрежи со висок квалитет во близина, како на пр., домашната мрежа"</string>
     <string name="wifi_wakeup_summary_no_location" msgid="2821576525488435259">"Недостапно, локацијата е исклучена. Вклучете ја "<annotation id="link">"локацијата"</annotation>"."</string>
-    <string name="wifi_settings_scanning_required_title" msgid="2726782203331704928">"Да се вклучи скенирањето Wi-Fi?"</string>
+    <string name="wifi_settings_scanning_required_title" msgid="2726782203331704928">"Да се вклучи скенирање за Wi-Fi?"</string>
     <string name="wifi_settings_scanning_required_turn_on" msgid="4464931023377210050">"Вклучи"</string>
     <string name="wifi_settings_scanning_required_enabled" msgid="5457372118991438313">"Скенирањето Wi‑Fi е вклучено"</string>
     <string name="wifi_cellular_fallback_title" msgid="8322675436784870862">"Автоматски префрли се на мобилен интернет"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Претпочитан опсег: 5,0 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 и 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Избери барем еден појас:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Точка на пристап за Wi‑Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Точка на пристап"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Користи „Точка на пристап за Wi-Fi“"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Исклучен"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Автоматско исклучување на точката на пристап"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Точката на пристап преку Wi‑Fi ќе се исклучи ако нема поврзани уреди"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Користете точка на пристап за сите типови возење"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Направете точката на пристап да биде достапна секогаш кога е вклучен автомобилот"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Скенирајте го QR-кодов за да се придружите на „%s“"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Лозинка на точката за пристап: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> сака да вклучи Wi-Fi"</string>
@@ -192,7 +194,7 @@
     <string name="bluetooth_name" msgid="2609869978821094114">"Име на возилото"</string>
     <string name="bluetooth_rename_vehicle" msgid="5769424875066563154">"Преименувајте го возилово"</string>
     <string name="bluetooth_rename_device" msgid="8406868875363878712">"Преименувајте го уредот"</string>
-    <string name="bluetooth_rename_button" msgid="2397892174725986383">"Преименувај"</string>
+    <string name="bluetooth_rename_button" msgid="2397892174725986383">"Преименувајте"</string>
     <string name="bluetooth_available_devices" msgid="1854446368146061448">"Достапни уреди"</string>
     <string name="bluetooth_profiles" msgid="5580372290862835951">"Профили"</string>
     <string name="bluetooth_error_title" msgid="2341600997536511742"></string>
@@ -211,12 +213,15 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Претходно поврзани"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Уредот %1$s е поврзан"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Уредот %1$s не е поврзан"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Поврзувања на уредот со вашиот автомобил"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ултраширок појас (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Му помага на вашиот автомобил да ја идентификува положбата на уредите со UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Барање за спарување преку Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Спари и поврзи"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Код за спарување преку Bluetooth"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"PIN-от содржи букви или симболи"</string>
     <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"Внесете го кодот за спарување, а потоа притиснете Врати или Внеси"</string>
-    <string name="bluetooth_pairing_request" msgid="4769675459526556801">"Дали да се спари со <xliff:g id="DEVICE_NAME">%1$s</xliff:g>?"</string>
+    <string name="bluetooth_pairing_request" msgid="4769675459526556801">"Да се спари со <xliff:g id="DEVICE_NAME">%1$s</xliff:g>?"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"Дозволете <xliff:g id="DEVICE_NAME">%1$s</xliff:g> да пристапува до контактите и историјата на повици."</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"Можеби ќе треба да го внесе овој PIN и на другиот уред."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="7147248221018865922">"Може ќе треба да ја внесете лозинката и на другиот уред."</string>
@@ -233,7 +238,7 @@
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"Предложен"</string>
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"Сите јазици"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"Тастатура"</string>
-    <string name="manage_keyboard" msgid="4045394766282200132">"Управување со тастатури"</string>
+    <string name="manage_keyboard" msgid="4045394766282200132">"Управувајте со тастатурите"</string>
     <string name="text_to_speech_settings" msgid="811985746199507343">"Претворање текст во говор"</string>
     <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Претпочитан софтвер"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"Тековен софтвер"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Звуци на предупредување"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Мелодија, известувања, аларм"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Пуштајте аудиовизуелни содржини на"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Се префрлаат аудиовизуелните содржини на %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Осветленост"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Приспособи го екранот за слаба светлина"</string>
     <string name="units_settings" msgid="402325305096925886">"Мерни единици"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Прикажи го системот"</string>
     <string name="hide_system" msgid="8845453295584638040">"Скриј го системот"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Скриј ги системските апликации"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Аларми и потсетници"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Менување системски поставки"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Оваа дозвола ѝ овозможува на апликацијата да менува системски поставки."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Пристап до известувања"</string>
@@ -405,9 +412,9 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Откажи"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Апликацииве негативно влијаат на изведбата на системот и спречени се да се извршуваат во заднина.\nДајте предност на апликација за да дозволите користење во заднина и отстранете ја од списоков."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Дајте предност на апликацијата"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Пристап до премиум SMS"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Премиум SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Премиум SMS може да ве чини пари, а сумата ќе се додаде на сметките од операторот. Ако овозможите дозвола за апликацијата, ќе може да испраќате премиум SMS со неа."</string>
-    <string name="usage_access_title" msgid="7153427122072303254">"Пристап до употреба"</string>
+    <string name="usage_access_title" msgid="7153427122072303254">"Пристап до податоци за користењето"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Пристапот до податоци за користењето овозможува апликацијата да следи кои други апликации ги користите и колку често, како и операторот, поставките за јазик и други детали."</string>
     <string name="wifi_control_title" msgid="5660436566907731929">"Контрола на Wi-Fi"</string>
     <string name="wifi_control_description" msgid="6021926850423169261">"Контролата на Wi-Fi дозволува апликацијава да вклучува или исклучува Wi-Fi, да скенира и да се поврзува на Wi-Fi мрежи, да додава или отстранува мрежи или да стартува локална точка на пристап."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Локација"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Користи ја локацијата"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Користете ја локацијата на вашиот автомобил со секоја апликација што сте ја навеле."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Апликации за информации и забава"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Дозволете апликациите да имаат пристап до вашата локација"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Ако го исклучите ова, ќе се отстрани пристапот до локацијата за сите апликации, освен за оние што се потребни за помош за возачи"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Ако го исклучите ова, апликациите за помош за возачи што зависат од податоците за локација ќе бидат оневозможени"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Сепак исклучи"</string>
@@ -430,7 +439,7 @@
     <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"Правило"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Дозволи на ниво на апликација"</string>
     <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"Управувајте со поединечните дозволи за апликациите"</string>
-    <string name="location_settings_services_title" msgid="1186133632690970468">"Услуги според локација"</string>
+    <string name="location_settings_services_title" msgid="1186133632690970468">"Локациски услуги"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Користи ја локацијата"</string>
     <string name="location_access_settings_title" msgid="2378398106582207440">"Пристап до локацијата"</string>
     <string name="location_access_settings_summary" msgid="7676354917209152932">"Одредете дали апликациите може да пристапуваат до локацијата на вашиот автомобил"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Формат од 24 часа"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Користи 24-часовен формат"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Време"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Постави време"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Поставете часовник"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Часовна зона"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Изберете часовна зона"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Датум"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Подреди по временска зона"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Датум"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Време"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Автоматскиот датум и време може да користат извори како локација и мобилни мрежи за одредување на датумот, времето и временската зона."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Користете ја локацијата на вашиот автомобил за автоматско поставување на датумот и времето. Функционира само ако е вклучена локацијата."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Продолжете"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Променете во „Поставки“"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Вашата локација е исклучена. Автоматското време можеби нема да функционира."</string>
     <string name="user_admin" msgid="1535484812908584809">"Администратор"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Најавени сте како: администратор"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Да се доделат администраторски дозволи?"</string>
@@ -554,8 +568,8 @@
     <string name="user_add_user_menu" msgid="4125869008006021799">"Додај профил"</string>
     <string name="user_new_user_name" msgid="906698527658609819">"Нов профил"</string>
     <string name="user_add_user_title" msgid="6296827596015729982">"Да се додаде нов профил?"</string>
-    <string name="user_add_user_message_setup" msgid="812616230454605159">"Откако ќе создадете нов профил за некое лице, тоа ќе треба да си го приспособи за себе."</string>
-    <string name="user_add_user_message_update" msgid="3836353291078729240">"Апликациите може да се ажурират од кој било профил, а може да ги користат сите други профили."</string>
+    <string name="user_add_user_message_setup" msgid="812616230454605159">"Откако ќе создадете нов профил за некого, тоа лице ќе треба да си го приспособи профилот."</string>
+    <string name="user_add_user_message_update" msgid="3836353291078729240">"Апликациите може да се ажурираат од кој било профил и ќе се ажурираат за сите други профили."</string>
     <string name="user_limit_reached_title" msgid="5677729355746623293">"Достигнат е максимален број профили"</string>
     <string name="user_limit_reached_message" msgid="2773441357248819721">"{count,plural, =1{Може да се создаде само еден профил.}one{Може да создадете најмногу # профил.}other{Може да создадете најмногу # профили.}}"</string>
     <string name="add_user_error_title" msgid="7589792057846396341">"Не можеше да се создаде нов профил"</string>
@@ -581,7 +595,7 @@
     <string name="users_list_title" msgid="770764290290240909">"Корисници"</string>
     <string name="profiles_list_title" msgid="1443396686780460221">"Профили"</string>
     <string name="user_details_admin_title" msgid="3530292857178371891">"Дадени се дозволи на %1$s"</string>
-    <string name="storage_settings_title" msgid="8957054192781341797">"Капацитет"</string>
+    <string name="storage_settings_title" msgid="8957054192781341797">"Простор"</string>
     <string name="storage_music_audio" msgid="7827147379976134040">"Музика и аудио"</string>
     <string name="storage_other_apps" msgid="945509804756782640">"Други апликации"</string>
     <string name="storage_files" msgid="6382081694781340364">"Датотеки"</string>
@@ -603,9 +617,9 @@
     <string name="accounts_settings_title" msgid="436190037084293471">"Сметки"</string>
     <string name="user_add_account_menu" msgid="6625351983590713721">"Додајте сметка"</string>
     <string name="no_accounts_added" msgid="5148163140691096055">"Нема додадени сметки"</string>
-    <string name="account_list_title" msgid="7631588514613843065">"Сметки за <xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g>"</string>
+    <string name="account_list_title" msgid="7631588514613843065">"Сметки за: <xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g>"</string>
     <string name="account_auto_sync_title" msgid="3238816995364191432">"Автоматска синхронизација на податоци"</string>
-    <string name="account_auto_sync_summary" msgid="6963837893148304128">"Дозволи апликациите автоматски да ги освежуваат податоците"</string>
+    <string name="account_auto_sync_summary" msgid="6963837893148304128">"Дозволи им на апликациите автоматски да ги освежуваат податоците"</string>
     <string name="data_usage_auto_sync_on_dialog_title" msgid="8068513213445588532">"Да се дозволи автоматско синхронизирање податоци?"</string>
     <string name="data_usage_auto_sync_on_dialog" msgid="8683935973719807821">"Сите промени што ќе ги извршите на вашите сметки во прелистувачот ќе се ископираат автоматски и во возилото.\n\nКај некои сметки, сите извршени промени преку возилото може да се ископираат автоматски и во прелистувачот."</string>
     <string name="data_usage_auto_sync_off_dialog_title" msgid="6683011954002351091">"Да се забрани автоматско синхронизирање податоци?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Избришете го профилот"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Избришете го вашиот профил и сметките од системот за информации и забава"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Дејствово е недостапно за вашиот профил"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Пристап до микрофонот"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Изберете дали да може апликациите да пристапуваат до микрофоните на вашиот автомобил"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Апликации за информации и забава"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Дозволете им на апликациите за информации и забава да снимаат аудио"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Пристап до камерата"</string>
-    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Изберете дали апликациите да може да пристапуваат до камерите на вашиот автомобил"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Користете ги камерите на вашиот автомобил со:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Која било апликација"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Секоја апликација што сте дозволиле да пристапува до камерата"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Нема апликации"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Ниту една од апликациите"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"апликации што ви помагаат додека возите"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"апликации што помагаат со работи како прикажување на опкружувањето при паркирање"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Само задолжителни апликации"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Само апликации што ги бара производителот на вашиот автомобил"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"апликации што ви помагаат додека возите"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"апликации што помагаат со работи како прикажување на опкружувањето при паркирање и задолжителни апликации"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Апликации што ви помагаат додека возите"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Апликацииве може да пристапуваат до камерата за да ви помагаат при возењето"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Задолжителни апликации"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Апликацииве се потребни за да му помагаат на вашиот автомобил да функционира безбедно"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Правило"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Производителот на вашиот автомобил можеби сѐ уште има пристап до камерата на автомобилот. За повеќе информации, може да ги прегледате неговите правила."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Дознајте повеќе за тоа како секоја апликација ја користи вашата камера со прегледување на нејзината „Политика за приватност“."</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Изберете дали апликациите може да пристапуваат до камерите на вашиот автомобил"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Задолжителни апликации"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Апликации што ги бара производителот на вашиот автомобил за да ви помагаат при возење"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Политика"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Производителот на вашиот автомобил можеби сѐ уште има пристап до камерата на автомобилот"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Апликации за информации и забава"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Дозволете им на апликациите за информации и забава да снимаат фотографии и видеа"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Дозволено"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Цело време"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Не е дозволено"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Само додека се користи апликацијата"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Секогаш прашувај"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Безбедност"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Заклучување екран"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Нема"</string>
@@ -778,7 +789,7 @@
     <string name="notifications_all_apps" msgid="3557079551048958846">"Сите апликации"</string>
     <string name="profiles_and_accounts_settings_title" msgid="2672643892127659812">"Профили и сметки"</string>
     <string name="manage_other_profiles_button_text" msgid="2262188413455510828">"Управувајте со други профили"</string>
-    <string name="add_a_profile_button_text" msgid="8027395095117925114">"Додај профил"</string>
+    <string name="add_a_profile_button_text" msgid="8027395095117925114">"Додајте профил"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"Избриши го профилов"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"Додај профил"</string>
     <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"Во моментов, профилов е најавен како возач. Обидете се пак кога профилот нема да се користи како возач."</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"За да ги видите уредите, вклучете Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"За да спарите уред, отворете ги поставките за Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Тема"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Прикажи граници на слој"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Администратор на системот за информации и забава"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Активирани апликации"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Деактивирани апликации"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Неодамна пристапени"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Прикажи ги сите"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Се вчитува…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Погледнете ги пакетите"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Вашите интернет-пакети се истечени"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Погледнете ги пакетите"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Готово"</string>
 </resources>

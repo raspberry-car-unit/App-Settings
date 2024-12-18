@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Kirkkaustaso"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Kirkkauden säätö"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Mukauta näytön kirkkaus ympäristöön"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Teema"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Yövalo on päällä"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Verkko ja internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobiiliverkko"</string>
@@ -135,7 +136,7 @@
     <string name="wifi_wakeup" msgid="7451825226044542000">"Laita Wi-Fi päälle automaattisesti"</string>
     <string name="wifi_wakeup_summary" msgid="7237521683331291414">"Wi-Fi otetaan käyttöön kotiverkon tai muun laadukkaan tallennetun verkon lähellä"</string>
     <string name="wifi_wakeup_summary_no_location" msgid="2821576525488435259">"Ei saatavilla, koska sijaintia ei käytetä. Käytä "<annotation id="link">"sijaintia"</annotation>"."</string>
-    <string name="wifi_settings_scanning_required_title" msgid="2726782203331704928">"Otetaanko Wi-Fi-haku käyttöön?"</string>
+    <string name="wifi_settings_scanning_required_title" msgid="2726782203331704928">"Laitetaanko Wi-Fi-haku päälle?"</string>
     <string name="wifi_settings_scanning_required_turn_on" msgid="4464931023377210050">"Ota käyttöön"</string>
     <string name="wifi_settings_scanning_required_enabled" msgid="5457372118991438313">"Wi-Fi-haku on käytössä"</string>
     <string name="wifi_cellular_fallback_title" msgid="8322675436784870862">"Vaihda mobiilidataan automaattisesti"</string>
@@ -159,13 +160,14 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5,0 GHz:n taajuus ensisijainen"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 ja 5 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Valitse väh. yksi kaista Wi‑Fi-hotspotille:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi-hotspot"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Käytä Wi-Fi-hotspotia"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Poissa päältä"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Laita hotspot pois päältä automaattisesti"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Wi‑Fi-hotspot poistetaan käytöstä, jos laitteita ei ole yhdistetty"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Käytä hotspotia aina ajaessa"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Laita hotspot päälle aina kun auto on käynnissä"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Liity tähän skannaamalla QR-koodi: %s"</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Hotspotin salasana: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> haluaa käynnistää Wi-Fin"</string>
@@ -211,6 +213,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Aiemmin yhdistetyt"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s yhdistetty"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Yhteys katkaistu: %1$s"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Laitteiden yhteydet autoosi"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultra-Wideband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Auttaa autoa tunnistamaan UWB-laitteiden sijainnin"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Bluetooth-laiteparipyyntö"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Muodosta laitepari ja yhdistä"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth-laiteparikoodi"</string>
@@ -255,6 +260,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Hälytysäänet"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Soittoääni, ilmoitukset, hälytykset"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Median ulostulo:"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Vaihdetaan medialähteeksi %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Kirkkaus"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Valitse näytölle himmeää valaistus"</string>
     <string name="units_settings" msgid="402325305096925886">"Yksiköt"</string>
@@ -395,6 +401,7 @@
     <string name="show_system" msgid="4401355756969485287">"Näytä järjestelmä"</string>
     <string name="hide_system" msgid="8845453295584638040">"Piilota järjestelmä"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Piilota järjestelmäsovellukset"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Herätykset ja muistutukset"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Järjestelmäasetusten muokkaus"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Tämä käyttöoikeus sallii sovelluksen muokata järjestelmäasetuksia."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Pääsy ilmoituksiin"</string>
@@ -405,7 +412,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Peru"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Nämä sovellukset vaikuttavat järjestelmän suorituskykyyn negatiivisesti ja niiden toiminta taustalla on estetty.\nPriorisoi sovellusta salliaksesi sen toiminnan taustalla ja poista se listalta."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Priorisoi sovellusta"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Premium-tekstiviestien käyttö"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Maksullinen tekstiviesti"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Premium-tekstiviestien käyttö saattaa olla maksullista, ja kulut lisätään operaattorisi laskuun. Jos annat sovellukselle käyttöoikeuden, voit lähettää premium-tekstiviestejä kyseisellä sovelluksella."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Käyttöoikeus"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Tämä käyttöoikeus antaa sovellukselle luvan seurata, mitä muita sovelluksia käytät ja kuinka usein, sekä nähdä operaattorisi, kieliasetuksesi ja muita tietoja."</string>
@@ -415,6 +422,8 @@
     <string name="location_settings_title" msgid="901334356682423679">"Sijainti"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Käytä sijaintia"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Käytä autosi sijaintia millä tahansa haluamallasi sovelluksella."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Infotainment-sovellukset"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Salli sovelluksille pääsy sijaintiisi"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Jos laitat sijainnin pois päältä, pääsy siihen poistetaan kaikilta sovelluksilta, jotka eivät tarvitse sijaintia ajoavustimeen"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Jos laitat tämän pois päältä, sijaintia käyttävät ajoavustinsovellukset poistetaan käytöstä"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Laita pois päältä"</string>
@@ -530,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24 tunnin kello"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Käytä 24 tunnin kelloa"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Aika"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Aseta aika"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Aseta kello"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Aikavyöhyke"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Valitse aikavyöhyke"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Päivämäärä"</string>
@@ -539,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Lajittele aikavyöhykkeen mukaan"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Päivämäärä"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Aika"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Automaattinen päivämäärä ja aika saattaa käyttää esimerkiksi sijaintia ja mobiiliverkkoja päivämäärän, ajan ja aikavyöhykkeen määrittämiseen."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Käytä auton sijaintia päivämäärän ja ajan automaattiseen asettamiseen. Tämä toimii vain, jos sijainti on päällä."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Jatka"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Muuta asetuksissa"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Sijainti on pois päältä. Automaattinen aika ei ehkä toimi."</string>
     <string name="user_admin" msgid="1535484812908584809">"Järjestelmänvalvoja"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Kirjautunut järjestelmänvalvojana"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Myönnetäänkö järjestelmänvalvojan luvat?"</string>
@@ -643,26 +657,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Poista profiili"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Poista profiilisi ja tilisi infotainment-järjestelmästä"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Tämä toiminto ei ole mahdollinen profiilillasi"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Pääsy mikrofoniin"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Valitse, onko sovelluksilla pääsy autosi mikrofoneihin"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Infotainment-sovellukset"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Salli, että infotainment-sovellukset tallentavat audiota"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Pääsy kameraan"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Valitse, onko sovelluksilla pääsy autosi kameraan"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Käytä auton kameraa näiden kanssa:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Mikä tahansa sovellus"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Sovellukset, joilla on pääsy käyttää kameraasi"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Ei sovelluksia"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Ei mikään sovelluksistasi"</string>
-    <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"Ajamisessa auttavat sovellukset"</string>
-    <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"Sovellukset, jotka auttavat esimerkiksi ympäristön näyttämisessä pysäköinnin aikana"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Vain vaaditut sovellukset"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Vain autosi valmistajan vaatimat sovellukset"</string>
-    <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"Ajamisessa auttavat sovellukset"</string>
-    <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Sovellukset, jotka auttavat esimerkiksi ympäristön näyttämisessä pysäköinnin aikana, sekä vaadittavat sovellukset"</string>
-    <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Ajamisessa auttavat sovellukset"</string>
-    <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Nämä sovellukset voivat päästä kameraan ajamisessa auttamista varten"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Vaaditut sovellukset"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Näitä sovelluksia tarvitaan auton turvallista toimintaa varten"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Käytäntö"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Autosi valmistajalla saattaa yhä olla pääsy autosi kameraan. Voit lukea lisää valmistajan käytännöistä."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Lue lisää siitä, miten jokainen sovellus käyttää kameraa tarkistamalla niiden tietosuojakäytäntö."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Tarvittavat sovellukset"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Auton valmistajan edellyttämät sovellukset, jotka auttavat ajamaan"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Käytäntö"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Autosi valmistajalla saattaa yhä olla pääsy autosi kameraan"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Infotainment-sovellukset"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Salli, että infotainment-sovellukset ottavat kuvia ja kuvaavat videoita"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Sallittu"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Aina"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Ei sallittu"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Vain sovelluksen käytön aikana"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Kysy aina"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Tietoturva"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Näytön lukitus"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Ei mitään"</string>
@@ -786,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Laita Bluetooth päälle, jotta voit nähdä laitteesi"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Avaa Bluetooth-asetukset, jotta voit muodostaa laiteparin"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Teema"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Näytä asettelun rajat"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Infotainment-järjestelmän valvoja"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktivoidut sovellukset"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Käytöstä poistetut sovellukset"</string>
@@ -917,4 +929,8 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Käytetty äskettäin"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Katso kaikki"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Ladataan…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Katso liittymät"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Internetliittymäsi ovat vanhentuneet"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Katso liittymät"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Valmis"</string>
 </resources>

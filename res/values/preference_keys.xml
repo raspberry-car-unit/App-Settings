@@ -29,8 +29,10 @@
     <string name="pk_wireless_extra_settings" translatable="false">wireless_extra_settings</string>
     <string name="pk_bluetooth_settings_entry" translatable="false">bluetooth_settings_entry
     </string>
+    <string name="pk_device_connection" translatable="false">device_connection_settings</string>
     <string name="pk_bluetooth_extra_settings" translatable="false">bluetooth_extra_settings
     </string>
+    <string name="pk_uwb_key" translatable="false">uwb_setting</string>
     <string name="pk_location_settings_entry" translatable="false">location_settings_entry</string>
     <string name="pk_notifications_settings_entry" translatable="false">
         notifications_settings_entry
@@ -99,7 +101,7 @@
     </string>
     <string name="pk_wifi_tether_security" translatable="false">wifi_tether_security</string>
     <string name="pk_wifi_tether_ap_band" translatable="false">wifi_tether_ap_band</string>
-    <string name="pk_wifi_tether_auto_off" translatable="false">wifi_tether_auto_off</string>
+    <string name="pk_wifi_tether_keep_on" translatable="false">wifi_tether_keep_on</string>
     <string name="pk_wifi_tether_password" translatable="false">wifi_tether_password</string>
     <string name="pk_wifi_tether_name" translatable="false">wifi_tether_name</string>
     <string name="pk_wifi_tether_state_switch" translatable="false">wifi_tether_state_switch
@@ -137,7 +139,7 @@
     <string name="pk_limited_wifi_list" translatable="false">limited_wifi_list</string>
 
     <!-- Bluetooth -->
-    <string name="pk_bluetooth_paired_devices" translatable="false">bluetooth_paired_devicesd
+    <string name="pk_bluetooth_paired_devices" translatable="false">bluetooth_paired_devices
     </string>
     <string name="pk_bluetooth_pair_new_device" translatable="false">bluetooth_pair_new_device
     </string>
@@ -256,6 +258,13 @@
     </string>
 
     <!-- Special App Access Settings -->
+    <string name="pk_alarms_and_reminders_entry" translatable="false">
+        alarms_and_reminders_entry
+    </string>
+    <string name="pk_alarms_and_reminders" translatable="false">alarms_and_reminders</string>
+    <string name="pk_alarms_and_reminders_description" translatable="false">
+        pk_alarms_and_reminders_description
+    </string>
     <string name="pk_modify_system_settings_entry" translatable="false">
         modify_system_settings_entry
     </string>
@@ -315,49 +324,39 @@
     <string name="pk_mute_mic_switch" translatable="false">privacy_mute_mic</string>
     <string name="pk_vehicle_data" translatable="false">vehicle_data</string>
     <string name="pk_vehicle_data_delete_profile" translatable="false">vehicle_data_delete_profile</string>
+    <string name="pk_microphone_access" translatable="false">microphone_access</string>
+    <string name="pk_microphone_access_fragment" translatable="false">microphone_access_fragment</string>
+    <string name="pk_microphone_infotainment_apps_switch" translatable="false">
+        microphone_infotainment_apps_switch
+    </string>
+    <string name="pk_microphone_infotainment_apps_list" translatable="false">
+        microphone_infotainment_apps_list
+    </string>
     <string name="pk_camera_access" translatable="false">camera_access</string>
     <string name="pk_camera_access_fragment" translatable="false">camera_access_fragment</string>
-    <string name="pk_camera_access_radio_any_app" translatable="false">
-        camera_access_radio_any_app
-    </string>
-    <string name="pk_camera_access_radio_no_apps" translatable="false">
-        camera_access_radio_no_apps
-    </string>
-    <string name="pk_camera_access_radio_helpful_apps" translatable="false">
-        camera_access_radio_helpful_apps
-    </string>
-    <string name="pk_camera_access_radio_required_apps" translatable="false">
-        camera_access_radio_required_apps
-    </string>
-    <string name="pk_camera_access_radio_helpful_required_apps" translatable="false">
-        camera_access_radio_helpful_required_apps
-    </string>
-    <string name="pk_camera_access_radio_group" translatable="false">
-        camera_access_radio_group
-    </string>
-    <string name="pk_camera_helpful_apps_list" translatable="false">
-        camera_helpful_apps_list
-    </string>
-    <string name="pk_camera_helpful_apps_group" translatable="false">
-        camera_helpful_apps_group
-    </string>
-    <string name="pk_camera_helpful_apps_policy" translatable="false">
-        camera_helpful_apps_policy
-    </string>
     <string name="pk_camera_required_apps_list" translatable="false">
         camera_required_apps_list
     </string>
     <string name="pk_camera_required_apps_group" translatable="false">
         camera_required_apps_group
     </string>
-    <string name="pk_camera_required_apps_policy" translatable="false">
-        camera_required_apps_policy
-    </string>
     <string name="pk_camera_access_disclaimer" translatable="false">
         camera_access_disclaimer
     </string>
-    <string name="pk_camera_privacy_policy_info" translatable="false">
-        camera_privacy_policy_info
+    <string name="pk_camera_infotainment_apps_group" translatable="false">
+        camera_infotainment_apps_group
+    </string>
+    <string name="pk_camera_infotainment_apps_switch" translatable="false">
+        camera_infotainment_apps_switch
+    </string>
+    <string name="pk_camera_infotainment_apps_list" translatable="false">
+        camera_infotainment_apps_list
+    </string>
+    <string name="pk_camera_required_apps_switch" translatable="false">
+        camera_required_apps_switch
+    </string>
+    <string name="pk_camera_required_apps_header" translatable="false">
+        camera_required_apps_header
     </string>
 
     <!-- Storage -->
@@ -398,6 +397,7 @@
     <string name="pk_adaptive_brightness_switch" translatable="false">adaptive_brightness_switch
     </string>
     <string name="pk_brightness_level" translatable="false">brightness_level</string>
+    <string name="pk_theme_toggle" translatable="false">theme_toggle</string>
     <string name="pk_display_extra_settings" translatable="false">display_extra_settings</string>
     <!-- DateTime Settings -->
     <string name="pk_auto_datetime_switch" translatable="false">auto_datetime_switch</string>
@@ -458,6 +458,13 @@
     <string name="pk_location_access_disclaimer" translatable="false">
         location_access_disclaimer
     </string>
+    <string name="pk_location_required_apps_group" translatable="false">
+        location_required_apps_group
+    </string>
+    <string name="pk_location_infotainment_apps_group" translatable="false">
+        location_infotainment_apps_group
+    </string>
+    <string name="pk_auto_local_time_disclaimer" translatable="false">auto_local_time_disclaimer</string>
 
     <!-- Microphone Settings -->
     <string name="pk_microphone_state_switch" translatable="false">microphone_state_switch</string>
