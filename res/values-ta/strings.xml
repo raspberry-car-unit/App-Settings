@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24 மணிநேர வடிவம்"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24 மணிநேர வடிவத்தைப் பயன்படுத்து"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"நேரம்"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"நேரத்தை அமை"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"கடிகாரத்தை அமைத்தல்"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"நேர மண்டலம்"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"நேரமண்டலத்தை அமை"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"தேதி"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"நேர மண்டலத்தின்படி வரிசைப்படுத்து"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"தேதி"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"நேரம்"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"தேதி, நேரம், நேர மண்டலம் ஆகியவற்றைத் தீர்மானிக்க \'தானியங்கு தேதி மற்றும் நேரம்\' இருப்பிடம், மொபைல் நெட்வொர்க் போன்ற ஆதாரங்களைப் பயன்படுத்தக்கூடும்."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"தேதியையும் நேரத்தையும் தானாக அமைக்க, உங்கள் காரின் இருப்பிடத்தைப் பயன்படுத்தவும். இருப்பிடம் இயக்கப்பட்டிருந்தால் மட்டுமே இது வேலை செய்யும்."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"தொடர்க"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"அமைப்புகளில் மாற்று"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"உங்கள் இருப்பிடம் முடக்கப்பட்டுள்ளது. தானியங்கு நேரம் வேலை செய்யாமல் போகக்கூடும்."</string>
     <string name="user_admin" msgid="1535484812908584809">"நிர்வாகி"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"நிர்வாகியாக உள்நுழைந்துள்ளீர்கள்"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"நிர்வாகி அனுமதிகளை வழங்கவா?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"உங்கள் சாதனங்களைக் காண புளூடூத்தை ஆன் செய்யுங்கள்"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"சாதனத்துடன் இணைக்க புளூடூத் அமைப்புகளைத் திறங்கள்"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"தீம்"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"தளவமைப்பு எல்லைகளைக் காட்டுதல்"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"இன்ஃபோடெயின்மென்ட் சிஸ்டம் நிர்வாகி"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"செயல்படுத்தப்பட்ட ஆப்ஸ்"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"முடக்கப்பட்ட ஆப்ஸ்"</string>

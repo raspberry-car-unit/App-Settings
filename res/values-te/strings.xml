@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24‑గంటల ఫార్మాట్"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"24-గంటల ఫార్మాట్‌ని ఉపయోగించండి"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"సమయం"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"సమయాన్ని సెట్ చేయండి"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"గడియారంలో తేదీ, టైమ్ సెట్ చేయండి"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"సమయ మండలి"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"సమయ మండలిని ఎంచుకోండి"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"తేదీ"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"సమయ మండలి ప్రకారం క్రమీకరించు"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"తేదీ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"సమయం"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"ఆటోమేటిక్ తేదీ, టైమ్ అనేవి తేదీ, టైమ్, అలాగే టైమ్ జోన్‌ను గుర్తించడానికి లొకేషన్, మొబైల్ నెట్‌వర్క్‌ల వంటి సోర్స్‌లను ఉపయోగించవచ్చు."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"తేదీ, టైమ్‌ను ఆటోమేటిక్‌గా సెట్ చేయడానికి మీ కారు లొకేషన్‌ను ఉపయోగించండి. మీ పరికరంలో లొకేషన్ ఆన్‌లో ఉంటే మాత్రమే పని చేస్తుంది."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"కొనసాగించండి"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"సెట్టింగ్‌లలో మార్చండి"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"మీ పరికరంలో లొకేషన్ ఆఫ్‌లో ఉంది. ఆటోమేటిక్‌గా టైమ్ అప్‌డేట్ అనేది పని చేయకపోవచ్చు."</string>
     <string name="user_admin" msgid="1535484812908584809">"నిర్వాహకుడు"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"నిర్వాహకుడిగా సైన్ ఇన్ చేశారు"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"అడ్మిన్ అనుమతులను మంజూరు చేయాలా?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"మీ పరికరాలను చూడటానికి, బ్లూటూత్‌ను ఆన్ చేయండి"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"పరికరాన్ని పెయిర్ చేయడానికి, బ్లూటూత్ సెట్టింగ్‌లను తెరవండి"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"రూపం"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"లేఅవుట్ హద్దులను చూపండి"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"సమాచారంతో కూడిన వినోదం సిస్టమ్ అడ్మిన్"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"యాక్టివేట్ చేయబడిన యాప్‌లు"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"యాక్టివేట్ చేయబడని యాప్‌లు"</string>

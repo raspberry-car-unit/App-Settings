@@ -539,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"24hodinový formát"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Používat 24hodinový formát"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Čas"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Nastavit čas"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Nastavení hodin"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Časové pásmo"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Vybrat časové pásmo"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Datum"</string>
@@ -548,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Seřadit podle časového pásma"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Datum"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Čas"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"Automatické datum a čas může k odhadu data, času a časového pásma používat zdroje jako poloha a mobilní sítě."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Používat polohu auta k automatickému nastavení data a času. Funguje, jen když je zapnuté určování polohy."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Pokračovat"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Změnit v nastavení"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"Určování polohy je vypnuté. Automatický čas nemusí fungovat."</string>
     <string name="user_admin" msgid="1535484812908584809">"Administrátor"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Jste přihlášeni jako administrátor"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Udělit oprávnění administrátora?"</string>
@@ -792,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Pokud chcete zobrazit svá zařízení, zapněte Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Zařízení spárujete v nastavení Bluetooth"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Motiv"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Zobrazit ohraničení"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Administrátor informačního a zábavního systému"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktivované aplikace"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Deaktivované aplikace"</string>
