@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d69a2352_bdd4fd82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1470463
+      },
+      "writtenOn": "2025-02-04T21:42:29Z",
+      "side": 1,
+      "message": "Hi, please fix the lint errors and then I can start the review. Thank you.",
+      "revId": "d35e44afe71fd870ba348b475ba69455f47de520",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
