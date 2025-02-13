@@ -96,6 +96,10 @@ public class WifiDetailsFragment extends SettingsFragment {
                 .init(mWifiEntry, mWifiInfoProvider));
         mControllers.add(use(WifiFrequencyPreferenceController.class, R.string.pk_wifi_frequency)
                 .init(mWifiEntry, mWifiInfoProvider));
+        mControllers.add(use(WifiMeteredPreferenceController.class, R.string.mark_as_metered)
+                .init(mWifiEntry, mWifiInfoProvider));
+        mControllers.add(use(WifiPrivacyPreferenceController.class, R.string.use_randomized_mac)
+                .init(mWifiEntry, mWifiInfoProvider));
         mControllers.add(use(WifiSecurityPreferenceController.class, R.string.pk_wifi_security)
                 .init(mWifiEntry, mWifiInfoProvider));
         mControllers.add(use(WifiMacAddressPreferenceController.class, R.string.pk_wifi_mac_address)

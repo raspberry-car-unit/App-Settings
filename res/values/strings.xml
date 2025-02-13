@@ -239,6 +239,8 @@
     <string name="wifi_frequency">Frequency</string>
     <!-- Label for the IP address of the connection -->
     <string name="wifi_ip_address">IP address</string>
+    <!-- Text for wifi privacy -->
+    <string name="wifi_privacy_setting">Randomized mac</string>
     <!-- Text for show password ListItem -->
     <string name="show_password">Show password</string>
     <!-- Summary for wifi network name. [CHAR LIMIT=40] -->
@@ -247,6 +249,10 @@
     <string name="default_password_summary">Enter password</string>
     <!-- Key for the tag to store UI info for access point -->
     <string name="access_point_tag_key">access_point_tag_key</string>
+    <!-- Text for randomized mac -->
+    <string name="use_randomized_mac">Privacy</string>
+    <!-- Text for set as metered -->
+    <string name="mark_as_metered">Network usage</string>
     <!-- Match this with drawable.wifi_signal. --><skip/>
     <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
     <string-array name="wifi_signals">
