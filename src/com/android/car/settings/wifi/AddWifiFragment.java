@@ -49,6 +49,8 @@ public class AddWifiFragment extends SettingsFragment {
     private static final Logger LOG = new Logger(AddWifiFragment.class);
     private static final String KEY_NETWORK_NAME = "network_name";
     private static final String KEY_SECURITY_TYPE = "security_type";
+    private static final String KEY_NETWORK_METERED = "metered_choice";
+    private static final String KEY_NETWORK_PRIVACY = "privacy_setting";
 
     @VisibleForTesting
     final BroadcastReceiver mNameChangeReceiver = new BroadcastReceiver() {
@@ -67,6 +69,28 @@ public class AddWifiFragment extends SettingsFragment {
             mSecurityType = intent.getIntExtra(
                     NetworkSecurityPreferenceController.KEY_SECURITY_TYPE,
                     WifiEntry.SECURITY_NONE);
+            setButtonEnabledState();
+        }
+    };
+
+    @VisibleForTesting
+    final BroadcastReceiver mMeteredChangeReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            mMeteredChoice = intent.getIntExtra(
+                    NetworkMeteredPreferenceController.KEY_NETWORK_METERED,
+                    WifiEntry.METERED_CHOICE_AUTO);
+            setButtonEnabledState();
+        }
+    };
+
+    @VisibleForTesting
+    final BroadcastReceiver mPrivacyChangeReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            mPrivacyChoice = intent.getIntExtra(
+                    NetworkPrivacyPreferenceController.KEY_NETWORK_PRIVACY,
+                    WifiEntry.PRIVACY_RANDOMIZED_MAC);
             setButtonEnabledState();
         }
     };
@@ -90,6 +114,8 @@ public class AddWifiFragment extends SettingsFragment {
 
     private MenuItem mAddWifiButton;
     private String mNetworkName;
+    private int mMeteredChoice = WifiEntry.METERED_CHOICE_AUTO;
+    private int mPrivacyChoice = WifiEntry.PRIVACY_RANDOMIZED_MAC;
     private int mSecurityType = WifiEntry.SECURITY_NONE;
 
     @Override
@@ -117,6 +143,7 @@ public class AddWifiFragment extends SettingsFragment {
                     // This only needs to handle hidden/unsecure networks.
                     WifiUtil.connectToWifiEntry(getContext(), mNetworkName,
                             mSecurityType, /* password= */ null, /* hidden= */ true,
+                            mMeteredChoice, mPrivacyChoice,
                             mConnectionListener);
                 })
                 .build();
@@ -124,6 +151,10 @@ public class AddWifiFragment extends SettingsFragment {
                 new IntentFilter(NetworkNamePreferenceController.ACTION_NAME_CHANGE));
         LocalBroadcastManager.getInstance(getContext()).registerReceiver(mSecurityChangeReceiver,
                 new IntentFilter(NetworkSecurityPreferenceController.ACTION_SECURITY_CHANGE));
+        LocalBroadcastManager.getInstance(getContext()).registerReceiver(mMeteredChangeReceiver,
+                new IntentFilter(NetworkMeteredPreferenceController.ACTION_METERED_CHANGE));
+        LocalBroadcastManager.getInstance(getContext()).registerReceiver(mPrivacyChangeReceiver,
+                new IntentFilter(NetworkPrivacyPreferenceController.ACTION_PRIVACY_CHANGE));
     }
 
     @Override
@@ -131,6 +162,8 @@ public class AddWifiFragment extends SettingsFragment {
         super.onDestroy();
         LocalBroadcastManager.getInstance(getContext()).unregisterReceiver(mNameChangeReceiver);
         LocalBroadcastManager.getInstance(getContext()).unregisterReceiver(mSecurityChangeReceiver);
+        LocalBroadcastManager.getInstance(getContext()).unregisterReceiver(mMeteredChangeReceiver);
+        LocalBroadcastManager.getInstance(getContext()).unregisterReceiver(mPrivacyChangeReceiver);
     }
 
     @Override
