@@ -237,6 +237,22 @@ public class WifiUtil {
         wifiManager.connect(wifiConfig, listener);
     }
 
+    /**
+     * Attempts to connect to a specified enterprise Wi-Fi entry.
+     * @param listener for callbacks on success or failure of connection attempt (can be null)
+     */
+    public static void connectToEAPWifiEntry(Context context, String ssid, int security,
+            WifiConfiguration config, boolean hidden, int metered, int privacy,
+            @Nullable WifiManager.ActionListener listener) {
+        WifiManager wifiManager = context.getSystemService(WifiManager.class);
+        config.SSID = String.format("\"%s\"", ssid);
+        config.hiddenSSID = hidden;
+        config.meteredOverride = metered;
+        config.macRandomizationSetting = privacy == WifiEntry.PRIVACY_RANDOMIZED_MAC
+                ? WifiConfiguration.RANDOMIZATION_AUTO : WifiConfiguration.RANDOMIZATION_NONE;
+        wifiManager.connect(config, listener);
+    }
+
     private static WifiConfiguration getWifiConfig(String ssid, int security,
             String password, boolean hidden, int metered, int privacy) {
         WifiConfiguration wifiConfig = new WifiConfiguration();
@@ -291,13 +307,16 @@ public class WifiUtil {
                 }
                 break;
             case WifiEntry.SECURITY_EAP:
+            case WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE:
             case WifiEntry.SECURITY_EAP_SUITE_B:
                 if (security == WifiEntry.SECURITY_EAP_SUITE_B) {
                     // allowedSuiteBCiphers will be set according to certificate type
                     wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_EAP_SUITE_B);
-                } else {
+                } else if (security == WifiEntry.SECURITY_EAP) {
                     wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_EAP);
-                }
+                } else {
+                    wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_EAP_WPA3_ENTERPRISE);
+		}
                 if (!TextUtils.isEmpty(password)) {
                     wifiConfig.enterpriseConfig.setPassword(password);
                 }
@@ -364,6 +383,8 @@ public class WifiUtil {
             return WifiEntry.SECURITY_EAP_SUITE_B;
         } else if (result.capabilities.contains("EAP")) {
             return WifiEntry.SECURITY_EAP;
+        } else if (result.capabilities.contains("EAP_WPA3_ENTERPRISE")) {
+            return WifiEntry.SECURITY_EAP_WPA3_ENTERPRISE;
         } else if (result.capabilities.contains("OWE")) {
             return WifiEntry.SECURITY_OWE;
         }
