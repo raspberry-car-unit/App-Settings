@@ -44,6 +44,12 @@
         <item>@string/wifi_ap_choose_5G</item>
     </string-array>
 
+    <string-array translatable="false" name="wifi_metered_spinner_choice">
+        <item>Network usage - detect automatically</item>
+        <item>Treat as metered network</item>
+        <item>Treat as unmetered network</item>
+    </string-array>
+
     <string-array translatable="false" name="wifi_ap_band">
         <item>1</item>
         <item>3</item>
@@ -67,5 +73,25 @@
         <item>com.android.systemui</item>
         <item>com.android.providers.calendar</item>
         <item>com.android.providers.media</item>
+    </string-array>
+
+    <string-array translatable="false" name="wifi_metered_choice">
+        <item>Detect automatically</item>
+        <item>Treat as metered</item>
+        <item>Treat as unmetered</item>
+    </string-array>
+    <string-array translatable="false" name="wifi_metered_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array translatable="false" name="wifi_privacy_choice">
+        <item>Use device MAC</item>
+        <item>Use randomized MAC (default)</item>
+    </string-array>
+    <string-array translatable="false" name="wifi_privacy_values">
+        <item>0</item>
+        <item>1</item>
     </string-array>
 </resources>
