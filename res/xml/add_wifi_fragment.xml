@@ -36,6 +36,51 @@
         settings:controller="com.android.car.settings.wifi.NetworkSecurityPreferenceController"
         settings:occupant_front_passenger="read"
         settings:occupant_rear_passenger="read"/>
+    <ListPreference
+        android:dialogTitle="@string/wifi_eap_method"
+        android:key="@string/pk_add_eap_method"
+        android:persistent="false"
+        android:title="@string/wifi_eap_method"
+        settings:controller="com.android.car.settings.wifi.NetworkEapMethodPreferenceController"/>
+    <ListPreference
+        android:dialogTitle="@string/please_select_phase2"
+        android:key="@string/pk_add_phase2_authentication"
+        android:persistent="false"
+        android:title="@string/please_select_phase2"
+        settings:controller="com.android.car.settings.wifi.NetworkPhase2AuthenticationPreferenceController"/>
+    <ListPreference
+        android:dialogTitle="@string/ca_certificate"
+        android:key="@string/pk_add_ca_certificate"
+        android:persistent="false"
+        android:title="@string/ca_certificate"
+        settings:controller="com.android.car.settings.wifi.NetworkCaCertificatePreferenceController"/>
+    <com.android.car.settings.wifi.NetworkNameRestrictedPasswordEditTextPreference
+        android:dialogTitle="@string/wifi_eap_identity"
+        android:key="@string/pk_add_eap_identity"
+        android:persistent="false"
+        android:summary="@string/default_identity_summary"
+        android:title="@string/wifi_eap_identity"
+        settings:controller="com.android.car.settings.wifi.NetworkIdentityPreferenceController"/>
+    <com.android.car.settings.wifi.NetworkNameRestrictedPasswordEditTextPreference
+        android:dialogTitle="@string/wifi_eap_anonymous"
+        android:key="@string/pk_add_eap_anonymous"
+        android:persistent="false"
+        android:summary="@string/default_anonymous"
+        android:title="@string/wifi_eap_anonymous"
+        settings:controller="com.android.car.settings.wifi.NetworkAnonymousIdentityPreferenceController"/>
+    <com.android.car.settings.wifi.NetworkNameRestrictedPasswordEditTextPreference
+        android:dialogTitle="@string/wifi_eap_domain"
+        android:key="@string/pk_add_eap_domain"
+        android:persistent="false"
+        android:summary="@string/default_domain_warning"
+        android:title="@string/wifi_eap_domain"
+        settings:controller="com.android.car.settings.wifi.NetworkDomainPreferenceController"/>
+    <ListPreference
+        android:dialogTitle="@string/wifi_eap_user_cert"
+        android:key="@string/pk_add_user_certificate"
+        android:persistent="false"
+        android:title="@string/wifi_eap_user_cert"
+        settings:controller="com.android.car.settings.wifi.NetworkUserCertificatePreferenceController"/>
     <com.android.car.settings.wifi.NetworkNameRestrictedPasswordEditTextPreference
         android:dialogTitle="@string/wifi_password"
         android:key="@string/pk_add_wifi_password"
