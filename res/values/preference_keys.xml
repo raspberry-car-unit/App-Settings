@@ -123,6 +123,13 @@
     <string name="pk_wifi_status" translatable="false">wifi_status</string>
     <string name="pk_add_wifi_network_name" translatable="false">add_wifi_network_name</string>
     <string name="pk_add_wifi_security" translatable="false">add_wifi_security</string>
+    <string name="pk_add_eap_method" translatable="false">add_eap_method</string>
+    <string name="pk_add_phase2_authentication" translatable="false">add_phase2_authentication</string>
+    <string name="pk_add_ca_certificate" translatable="false">add_ca_certificate</string>
+    <string name="pk_add_user_certificate" translatable="false">add_user_certificate</string>
+    <string name="pk_add_eap_identity" translatable="false">add_eap_identity</string>
+    <string name="pk_add_eap_anonymous" translatable="false">add_eap_anonymous</string>
+    <string name="pk_add_eap_domain" translatable="false">add_eap_domain</string>
     <string name="pk_add_wifi_password" translatable="false">add_wifi_password</string>
     <string name="pk_wifi_preferences" translatable="false">wifi_preferences</string>
     <string name="pk_wifi_cellular_fallback" translatable="false">wifi_cellular_fallback</string>
