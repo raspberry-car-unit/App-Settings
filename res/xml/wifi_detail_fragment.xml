@@ -47,6 +47,22 @@
             settings:controller="com.android.car.settings.wifi.details.WifiSecurityPreferenceController"/>
     </com.android.car.settings.common.LogicalPreferenceGroup>
 
+    <ListPreference
+            android:key="@string/mark_as_metered"
+            android:title="@string/mark_as_metered"
+            android:persistent="false"
+            android:entryValues="@array/wifi_metered_values"
+            android:entries="@array/wifi_metered_choice"
+            settings:controller="com.android.car.settings.wifi.details.WifiMeteredPreferenceController"/>
+
+    <ListPreference
+            android:key="@string/use_randomized_mac"
+            android:title="@string/use_randomized_mac"
+            android:persistent="false"
+            android:entryValues="@array/wifi_privacy_values"
+            android:entries="@array/wifi_privacy_choice"
+            settings:controller="com.android.car.settings.wifi.details.WifiPrivacyPreferenceController"/>
+
     <!-- Ip Details Category -->
     <PreferenceCategory
         android:title="@string/wifi_network_detail">
