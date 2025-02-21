@@ -16,6 +16,24 @@
       "message": "Hi, please fix the lint errors and then I can start the review. Thank you.",
       "revId": "d35e44afe71fd870ba348b475ba69455f47de520",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f19d8421_33d69771",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-02-21T09:33:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d69a2352_bdd4fd82",
+      "revId": "d35e44afe71fd870ba348b475ba69455f47de520",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
