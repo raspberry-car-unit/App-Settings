@@ -16,6 +16,29 @@
       "message": "Hi, please help do Code-Review the patch from the partner. Thank you.",
       "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1592619a_b4039c30",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1646785
+      },
+      "writtenOn": "2025-03-07T21:37:06Z",
+      "side": 1,
+      "message": "I will defer to the Setting team on this but I do fear having SubSettingsActivity ignore uiMode chnages may be problematic since it can host virtually any fragment and said UIs may need UI mode updates.",
+      "range": {
+        "startLine": 121,
+        "startChar": 12,
+        "endLine": 121,
+        "endChar": 42
+      },
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
