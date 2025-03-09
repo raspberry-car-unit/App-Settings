@@ -180,6 +180,12 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"सफलतापूर्वक जोडियो"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"सबै देखाउनुहोस्"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"खोजी गर्दै"</string>
+    <!-- no translation found for wifi_detail_share (3765487472190563802) -->
+    <skip />
+    <!-- no translation found for wifi_detail_share_description (1417559695973326762) -->
+    <skip />
+    <!-- no translation found for wifi_detail_share_toast (9106513465439393280) -->
+    <skip />
     <string name="connected_settings_title" msgid="8868738903280658151">"कनेक्ट भएका डिभाइसहरू"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"ब्लुटुथ"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"ब्लुटुथ प्रयोग गर्नुहोस्"</string>
@@ -343,6 +349,16 @@
     <string name="unused_apps" msgid="648471933781010395">"प्रयोग नगरिएका एपहरू"</string>
     <string name="unused_apps_summary" msgid="8257304516038923072">"{count,plural, =1{प्रयोग नगरिएको # एप}other{प्रयोग नगरिएका # वटा एप}}"</string>
     <string name="unused_apps_switch" msgid="4433958286200341563">"अनुमति रद्द गर्नुहोस् र ठाउँ खाली गर्नुहोस्"</string>
+    <string name="aspect_ratio_label" msgid="5484863076085548807">"एस्पेक्ट रेसियो (परीक्षणका क्रममा रहेको)"</string>
+    <string name="aspect_ratio_action_button" msgid="5581373962239508271">"खोल्नुहोस्"</string>
+    <string name="user_aspect_ratio_app_default" msgid="283669241296845522">"एपको डिफल्ट एस्पेक्ट रेसियो"</string>
+    <string name="user_aspect_ratio_fullscreen" msgid="7558176135316113">"फुल स्क्रिन"</string>
+    <string name="user_aspect_ratio_half_screen" msgid="6294133158286722632">"आधा स्क्रिन"</string>
+    <string name="user_aspect_ratio_device_size" msgid="960231007272059744">"डिभाइसको एस्पेक्ट रेसियो"</string>
+    <string name="user_aspect_ratio_16_9" msgid="2419220677608547650">"१६:९"</string>
+    <string name="user_aspect_ratio_3_2" msgid="5245528023878893826">"३:२"</string>
+    <string name="user_aspect_ratio_4_3" msgid="6639743021314111820">"४:३"</string>
+    <string name="app_aspect_ratio_footer" msgid="7814071704357140611">"तपाईंले एस्पेक्ट रेसियो बदल्नुभयो भने एप रिस्टार्ट हुने छ। तपाईंले सेभ नगरेका परिवर्तनहरू गुम्न सक्छन्। केही एपहरू निश्चित एस्पेक्ट रेसियोका लागि अप्टिमाइज नगरिन सक्छन्।"</string>
     <string name="storage_type_internal" msgid="8918688427078709570">"%s इन्चको आन्तरिक भण्डारण"</string>
     <string name="prioritize_app_performance_summary" msgid="1081874788185691418">"एपको पर्फर्मेन्सलाई प्राथमिकता दिन सिस्टमसम्बन्धी स्रोतहरू प्रयोग गर्नुहोस्"</string>
     <string name="data_usage_summary_title" msgid="4368024763485916986">"डेटाको प्रयोग"</string>
@@ -743,12 +759,12 @@
     <string name="lockpassword_password_requires_letters" msgid="324864645474528299">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # अक्षर समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # वटा अक्षर समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_requires_lowercase" msgid="5373735547134824114">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # लोवरकेसका अक्षर समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # वटा लोवरकेसका अक्षर समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_requires_uppercase" msgid="2002482631049525313">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # अप्परकेसका अक्षर समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # वटा अप्परकेसका अक्षर समावेश हुनु पर्छ}}"</string>
-    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # अङ्क समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # वटा अङ्क समावेश हुनु पर्छ}}"</string>
+    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{कम्तीमा पनि # अङ्क समावेश हुनु पर्छ}other{कम्तीमा पनि # वटा अङ्क समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_requires_symbols" msgid="1789501049908004075">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # विशेष चिन्ह समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # वटा विशेष चिन्ह समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि अक्षरबाहेकका # वर्ण समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि अक्षरबाहेकका # वटा वर्ण समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि अङ्कबाहेकका # वर्ण समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि अङ्कबाहेकका # वटा वर्ण समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # भन्दा कम वर्ण समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # भन्दा कम वर्ण समावेश हुनु पर्छ}}"</string>
-    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # अङ्क समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # वटा अङ्क समावेश हुनु पर्छ}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{कम्तीमा पनि # अङ्क समावेश हुनु पर्छ}other{कम्तीमा पनि # वटा अङ्क समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{अनिवार्य रूपमा # भन्दा कम वर्ण हुनु पर्छ}other{अनिवार्य रूपमा # भन्दा कम वर्ण हुनु पर्छ}}"</string>
     <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{अनिवार्य रूपमा # भन्दा कम अङ्क हुनु पर्छ}other{अनिवार्य रूपमा # भन्दा कम अङ्क हुनु पर्छ}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"बढ्दो, घट्दो क्रममा वा दोहोरिएका अङ्क हाल्न मिल्दैन"</string>
@@ -797,7 +813,10 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"आफ्ना डिभाइस हेर्न ब्लुटुथ अन गर्नुहोस्"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"डिभाइस कनेक्ट गर्न ब्लुटुथ सेटिङ खोल्नुहोस्"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"थिम"</string>
+    <string name="driving_mode_title" msgid="8103270030335833998">"ड्राइभिङ मोड सेट गर्नुहोस्"</string>
     <string name="show_layout_bounds_title" msgid="8590148405645027755">"लेआउटका सीमाहरू देखाउनुहोस्"</string>
+    <string name="show_force_rtl_title" msgid="8240732919603115320">"RTL लेआउट बलपूर्वक प्रयोग गर्नुहोस्"</string>
+    <string name="show_customization_overlay_title" msgid="2543804846629965883">"कस्टमाइजेसन ओभरले"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"इन्फोटेनमेन्ट प्रणालीका एड्मिन"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"एक्टिभेट गरिएका एपहरू"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"डिएक्टिभेट गरिएका एपहरू"</string>
@@ -933,4 +952,5 @@
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"तपाईंको इन्टरनेट योजनाको म्याद सकिएको छ"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"योजनाहरू हेर्नुहोस्"</string>
     <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"पूरा भयो"</string>
+    <string name="unsupported_intents_toast_text" msgid="3112314947877145848">"तपाईंको कारमा यो सुविधा प्रयोग गर्न मिल्दैन"</string>
 </resources>
