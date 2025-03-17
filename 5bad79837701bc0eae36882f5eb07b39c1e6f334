@@ -39,6 +39,23 @@
       },
       "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3138d67_936bed5c",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 794,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-03-17T17:33:15Z",
+      "side": 1,
+      "message": "In the bug video it shows creating the user from the SystemUI user picker flow. Can you clarify how are the Settings activities interfering with this? Does it happen only if the user has the settings app open in the background? Is the issue happening for ProfileSwitcherActivity flow as well as the quick controls flow?",
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
