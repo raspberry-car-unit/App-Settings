@@ -56,6 +56,24 @@
       "message": "In the bug video it shows creating the user from the SystemUI user picker flow. Can you clarify how are the Settings activities interfering with this? Does it happen only if the user has the settings app open in the background? Is the issue happening for ProfileSwitcherActivity flow as well as the quick controls flow?",
       "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ebbec2e2_ba13a059",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 794,
+      "author": {
+        "id": 3247794
+      },
+      "writtenOn": "2025-03-20T03:21:44Z",
+      "side": 1,
+      "message": "- Can you clarify how are the Settings activities interfering with this?\n  - onConfigurationChanged() is called by the Day/Night mode change and the activity is recreated. When a new user is created at the same time onConfigurationChanged(), the new user\u0027s start event is not sent. Thus, user switching was not performed.\n- Does it happen only if the user has the settings app open in the background?\n  - Yes. Because of SubSettingsActivity and ProfileSwitcherActivity\u0027s recreation on new user created.\n- Is the issue happening for ProfileSwitcherActivity flow as well as the quick controls flow?\n  - Yes. This occurs on both two flows.\n\nSince SubSettingsActivity is used universally in CarSettings, it is concerned that granting uiMode may affect other parts of CarSettings that are used.\nAfter checking, we have confirmed there is no screen in CarSettings that changes the display when switching between Day/Night Mode.\nTherefore, we have confirmed that granting uiMode to SubSettingsActivity has no impact at present, however, I think the impact of future updates still cannot be ignored.",
+      "parentUuid": "d3138d67_936bed5c",
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
