@@ -43,6 +43,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "925515d3_d048340c",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1894970
+      },
+      "writtenOn": "2025-03-20T16:38:26Z",
+      "side": 1,
+      "message": "This would break switching between day/night at runtime",
+      "parentUuid": "1592619a_b4039c30",
+      "range": {
+        "startLine": 121,
+        "startChar": 12,
+        "endLine": 121,
+        "endChar": 42
+      },
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d3138d67_936bed5c",
         "filename": "AndroidManifest.xml",
         "patchSetId": 3
@@ -90,6 +114,24 @@
       "side": 1,
       "message": "@nirajdesai@google.com do you know if any OEMs have different day/night resources for settings? If not then we can likely merge this safely.",
       "parentUuid": "ebbec2e2_ba13a059",
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4fbbcf05_9d7b7be4",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 794,
+      "author": {
+        "id": 1894970
+      },
+      "writtenOn": "2025-03-20T16:38:26Z",
+      "side": 1,
+      "message": "Yes there are OEMs with day/night theming.",
+      "parentUuid": "deb9e78c_606fccc7",
       "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
