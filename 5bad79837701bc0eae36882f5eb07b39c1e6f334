@@ -134,6 +134,24 @@
       "parentUuid": "deb9e78c_606fccc7",
       "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f0f27d57_7cb8cffd",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 794,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-03-20T16:56:15Z",
+      "side": 1,
+      "message": "@yoshiyuki_oyama@jp.honda Can you clarify why this issue is settings specific? When the user creates a new user through quick controls in SystemUI, wouldn\u0027t any background app that doesn\u0027t handle uichanges also cause this issue?",
+      "parentUuid": "4fbbcf05_9d7b7be4",
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
