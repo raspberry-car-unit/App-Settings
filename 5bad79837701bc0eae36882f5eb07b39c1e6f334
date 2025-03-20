@@ -74,6 +74,24 @@
       "parentUuid": "d3138d67_936bed5c",
       "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "deb9e78c_606fccc7",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 794,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-03-20T16:22:45Z",
+      "side": 1,
+      "message": "@nirajdesai@google.com do you know if any OEMs have different day/night resources for settings? If not then we can likely merge this safely.",
+      "parentUuid": "ebbec2e2_ba13a059",
+      "revId": "5bad79837701bc0eae36882f5eb07b39c1e6f334",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
