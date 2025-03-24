@@ -1,0 +1,127 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1bbfa0d8_7889ad7c",
+        "filename": "res/layout/preference_dialog_secure_network.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-03-24T21:36:28Z",
+      "side": 1,
+      "message": "date - here and in the other files",
+      "range": {
+        "startLine": 3,
+        "startChar": 14,
+        "endLine": 3,
+        "endChar": 18
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "84bc69b7_80a6bd4a",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "res/layout/preference_dialog_secure_network.xml",
+              "range": {
+                "startLine": 3,
+                "startChar": 0,
+                "endLine": 4,
+                "endChar": 0
+              },
+              "replacement": "    Copyright 2020 The Android Open Source Project\n"
+            }
+          ]
+        }
+      ],
+      "revId": "bced79be62be5d1671b14e74275aa2aaba951fe3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2cdf92a6_15833750",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-03-24T21:36:28Z",
+      "side": 1,
+      "message": "seems like an error or at least warning",
+      "range": {
+        "startLine": 61,
+        "startChar": 16,
+        "endLine": 61,
+        "endChar": 17
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "04ae4f6b_2a3cd114",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+              "range": {
+                "startLine": 61,
+                "startChar": 0,
+                "endLine": 62,
+                "endChar": 0
+              },
+              "replacement": "            LOG.w(\"Can\u0027t set metered choice\");\n"
+            }
+          ]
+        }
+      ],
+      "revId": "bced79be62be5d1671b14e74275aa2aaba951fe3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b035109c_f9cda1b2",
+        "filename": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-03-24T21:36:28Z",
+      "side": 1,
+      "message": "same as the other log comment",
+      "range": {
+        "startLine": 62,
+        "startChar": 16,
+        "endLine": 62,
+        "endChar": 17
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "db80c778_4d97363d",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
+              "range": {
+                "startLine": 62,
+                "startChar": 0,
+                "endLine": 63,
+                "endChar": 0
+              },
+              "replacement": "            LOG.w(\"Can\u0027t set privacy\");\n"
+            }
+          ]
+        }
+      ],
+      "revId": "bced79be62be5d1671b14e74275aa2aaba951fe3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
