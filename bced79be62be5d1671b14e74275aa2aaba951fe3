@@ -42,6 +42,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3655aac1_daf85f74",
+        "filename": "res/layout/preference_dialog_secure_network.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-03-26T03:33:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1bbfa0d8_7889ad7c",
+      "range": {
+        "startLine": 3,
+        "startChar": 14,
+        "endLine": 3,
+        "endChar": 18
+      },
+      "revId": "bced79be62be5d1671b14e74275aa2aaba951fe3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2cdf92a6_15833750",
@@ -83,6 +107,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "391d5679_296b82f8",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-03-26T03:33:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2cdf92a6_15833750",
+      "range": {
+        "startLine": 61,
+        "startChar": 16,
+        "endLine": 61,
+        "endChar": 17
+      },
+      "revId": "bced79be62be5d1671b14e74275aa2aaba951fe3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b035109c_f9cda1b2",
@@ -120,6 +168,30 @@
           ]
         }
       ],
+      "revId": "bced79be62be5d1671b14e74275aa2aaba951fe3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6221daa3_c5c2f028",
+        "filename": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-03-26T03:33:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b035109c_f9cda1b2",
+      "range": {
+        "startLine": 62,
+        "startChar": 16,
+        "endLine": 62,
+        "endChar": 17
+      },
       "revId": "bced79be62be5d1671b14e74275aa2aaba951fe3",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
