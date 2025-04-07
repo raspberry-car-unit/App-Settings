@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "206b0702_72ba1f84",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-04-07T15:58:00Z",
+      "side": 1,
+      "message": "looks fine overall, but the new files have old dates still",
+      "revId": "394e0eab998e805bb2c3dbd597a130bc58a02306",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9de5c4c_c862baa6",
+        "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-04-07T15:58:00Z",
+      "side": 1,
+      "message": "date",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "394e0eab998e805bb2c3dbd597a130bc58a02306",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ec96185_cf06b41f",
+        "filename": "src/com/android/car/settings/wifi/NetworkPrivacyPreferenceController.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-04-07T15:58:00Z",
+      "side": 1,
+      "message": "date",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "394e0eab998e805bb2c3dbd597a130bc58a02306",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cfca4f81_95a9b0a7",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-04-07T15:58:00Z",
+      "side": 1,
+      "message": "date",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "394e0eab998e805bb2c3dbd597a130bc58a02306",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dce3e168_bf6fc491",
+        "filename": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1565997
+      },
+      "writtenOn": "2025-04-07T15:58:00Z",
+      "side": 1,
+      "message": "date",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "394e0eab998e805bb2c3dbd597a130bc58a02306",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
