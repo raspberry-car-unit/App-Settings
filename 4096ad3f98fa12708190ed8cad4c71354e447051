@@ -16,6 +16,144 @@
       "message": "Hi Cassie, can you take a look at this? I only have +1 to give",
       "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ba09f7e_9376a3a9",
+        "filename": "res/layout/preference_dialog_secure_network.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-11T21:55:45Z",
+      "side": 1,
+      "message": "please update the date",
+      "fixSuggestions": [
+        {
+          "fixId": "9b2434fc_c38b7d3e",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "res/layout/preference_dialog_secure_network.xml",
+              "range": {
+                "startLine": 3,
+                "startChar": 0,
+                "endLine": 4,
+                "endChar": 0
+              },
+              "replacement": "    Copyright 2023 The Android Open Source Project\n"
+            }
+          ]
+        }
+      ],
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d0c3b12_aa49c054",
+        "filename": "res/layout/wifi_meter_spinner.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-11T21:55:45Z",
+      "side": 1,
+      "message": "same as above",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b82ae92_3248cba0",
+        "filename": "res/layout/wifi_meter_spinner_dropdown.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-11T21:55:45Z",
+      "side": 1,
+      "message": "same as above.",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ab5b97a_c88804d9",
+        "filename": "src/com/android/car/settings/wifi/AddWifiFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-11T21:55:45Z",
+      "side": 1,
+      "message": "Are these values used?",
+      "fixSuggestions": [
+        {
+          "fixId": "8dd6bff0_0ba4e508",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/wifi/AddWifiFragment.java",
+              "range": {
+                "startLine": 52,
+                "startChar": 0,
+                "endLine": 54,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7eb44ecf_7b1526fb",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-11T21:55:45Z",
+      "side": 1,
+      "message": "Should we even show this setting if it can\u0027t be changed? Maybe set the DefaultAvailabilityStatus to CONDITIONALLY_UNAVAILABLE?",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2eeb4d9f_954843eb",
+        "filename": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-11T21:55:45Z",
+      "side": 1,
+      "message": "same as above",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
