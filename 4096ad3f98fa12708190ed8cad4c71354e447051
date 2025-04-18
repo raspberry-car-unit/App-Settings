@@ -124,6 +124,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "14927284_387bccca",
+        "filename": "src/com/android/car/settings/wifi/AddWifiFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-18T10:49:17Z",
+      "side": 1,
+      "message": "Yes, they are used.",
+      "parentUuid": "7ab5b97a_c88804d9",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7eb44ecf_7b1526fb",
         "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
         "patchSetId": 6
@@ -135,6 +153,24 @@
       "writtenOn": "2025-04-11T21:55:45Z",
       "side": 1,
       "message": "Should we even show this setting if it can\u0027t be changed? Maybe set the DefaultAvailabilityStatus to CONDITIONALLY_UNAVAILABLE?",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa9e2aae_d85e5fad",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-18T10:49:17Z",
+      "side": 1,
+      "message": "Set which status to CONDITIONALLY_UNAVAILABLE? setMeteredChoice?",
+      "parentUuid": "7eb44ecf_7b1526fb",
       "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
