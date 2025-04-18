@@ -53,6 +53,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "62e35782_1b01b5d4",
+        "filename": "res/layout/preference_dialog_secure_network.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-18T10:51:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ba09f7e_9376a3a9",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4d0c3b12_aa49c054",
@@ -70,6 +88,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "250acbe3_c9f3971b",
+        "filename": "res/layout/wifi_meter_spinner.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-18T10:51:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4d0c3b12_aa49c054",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5b82ae92_3248cba0",
@@ -83,6 +119,24 @@
       "writtenOn": "2025-04-11T21:55:45Z",
       "side": 1,
       "message": "same as above.",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb0ff8a7_679280d0",
+        "filename": "res/layout/wifi_meter_spinner_dropdown.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-18T10:51:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b82ae92_3248cba0",
       "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
