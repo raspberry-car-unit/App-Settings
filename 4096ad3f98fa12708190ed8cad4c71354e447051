@@ -249,6 +249,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8cd567b9_858d5934",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-23T09:09:04Z",
+      "side": 1,
+      "message": "Has done this in updateState().\nif wifiEntry.canSetMeteredChoice() is false, then\n            setAvailabilityStatusForZone(\"hidden\");\n            refreshUi();",
+      "parentUuid": "e77b0523_13bca17e",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2eeb4d9f_954843eb",
         "filename": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
         "patchSetId": 6
@@ -260,6 +278,24 @@
       "writtenOn": "2025-04-11T21:55:45Z",
       "side": 1,
       "message": "same as above",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8c45df4_cee55c2e",
+        "filename": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-23T09:09:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2eeb4d9f_954843eb",
       "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
