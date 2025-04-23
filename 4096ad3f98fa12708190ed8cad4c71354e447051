@@ -267,6 +267,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8ab276ed_52f68e2c",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-23T16:38:35Z",
+      "side": 1,
+      "message": "Please override getDefaultAvailabilityStatus() and put the logic there instead. \n\n```\n    @Override\n    protected void updateState(ListPreference preference) {\n        WifiEntry wifiEntry \u003d getWifiEntry();\n        if (wifiEntry \u003d\u003d null) {\n            return;\n        }\n         preference.setValue(String.valueOf(wifiEntry.getMeteredChoice()));\n         preference.setSummary(mMeteredChoices[wifiEntry.getMeteredChoice()]);\n    }\n    \n   @Override\n    public int getDefaultAvailabilityStatus() {\n        WifiEntry wifiEntry \u003d getWifiEntry();\n        if (wifiEntry \u003d\u003d null || !wifiEntry.canSetMeteredChoice()) {\n            return CONDITIONALLY_UNAVAILABLE;\n        }\n        \n        return AVAILABLE;\n        if (wifiEntry.canSetMeteredChoice()) {\n            preference.setValue(String.valueOf(wifiEntry.getMeteredChoice()));\n            preference.setVisible(true);\n            preference.setSummary(mMeteredChoices[wifiEntry.getMeteredChoice()]);\n        } else {\n            LOG.w(\"Can\u0027t set metered choice, hidding meteredOption\");\n            setAvailabilityStatusForZone(\"hidden\");\n            refreshUi();\n        }\n    }\n```",
+      "parentUuid": "8cd567b9_858d5934",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2eeb4d9f_954843eb",
         "filename": "src/com/android/car/settings/wifi/details/WifiPrivacyPreferenceController.java",
         "patchSetId": 6
