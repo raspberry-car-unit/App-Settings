@@ -283,6 +283,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "242a30a9_0b5c208b",
+        "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-24T09:51:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8ab276ed_52f68e2c",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2eeb4d9f_954843eb",
