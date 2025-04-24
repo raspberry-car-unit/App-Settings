@@ -196,6 +196,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "054f5a5b_a263c3d6",
+        "filename": "src/com/android/car/settings/wifi/AddWifiFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-24T16:21:45Z",
+      "side": 1,
+      "message": "Where is it used? I just see references to NetworkMeteredPreferenceController.KEY_NETWORK_METERED",
+      "parentUuid": "14927284_387bccca",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7eb44ecf_7b1526fb",
         "filename": "src/com/android/car/settings/wifi/details/WifiMeteredPreferenceController.java",
         "patchSetId": 6

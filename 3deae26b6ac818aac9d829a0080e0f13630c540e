@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "642d27ff_9639132a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-24T16:21:45Z",
+      "side": 1,
+      "message": "Can you also make sure the existing unit tests don\u0027t break from this? For example AddWifiFragmentTest#onCreate_registersReceivers checks that only two broadcast receivers are registered, it will now fail since we\u0027re registering four.",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "324d837c_410cbb2a",
+        "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-24T16:21:45Z",
+      "side": 1,
+      "message": "nit: not needed.",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6b99b9d_3f34545e",
+        "filename": "src/com/android/car/settings/wifi/NetworkPrivacyPreferenceController.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-24T16:21:45Z",
+      "side": 1,
+      "message": "nit: not needed.",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
