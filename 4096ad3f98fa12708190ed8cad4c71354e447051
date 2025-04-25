@@ -212,6 +212,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b9f02e0_bf76fd86",
+        "filename": "src/com/android/car/settings/wifi/AddWifiFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-25T09:58:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "054f5a5b_a263c3d6",
+      "revId": "4096ad3f98fa12708190ed8cad4c71354e447051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7eb44ecf_7b1526fb",
