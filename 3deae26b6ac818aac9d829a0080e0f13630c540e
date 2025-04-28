@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f8deed78_f53ab06f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-28T15:29:09Z",
+      "side": 1,
+      "message": "I run \"atest com.android.car.settings.wifi -c\" failed.  This is not because of my gerrit, because I have removed my gerrit before running atest.\n\n[ 99% 122/123] finishing legacy Make module parsing ...\nFAILED:\nIn file included from build/make/core/main.mk:1216:\nIn file included from build/make/core/Makefile:8230:\nbuild/make/core/tasks/cts.mk:52: error:         \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n        Could not find version \"14\" in CTS platform version file:\n        cts/tests/tests/os/assets/platform_versions.txt\n        Most likely PLATFORM_VERSION in build/core/version_defaults.mk\n        has changed and a new version must be added to this CTS file.\n        \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d.\n08:17:51 ckati failed with: exit status 1\nError: Build failure when running: ./build/soong/soong_ui.bash --make-mode WRAPPER_TOOL\u003datest ATEST_RUN_ID\u003d859cda26-0884-475c-8fab-67fee75e0893 out/target/product/qssi_au/module-info.json atest_tradefed.sh-host adb-host CarSettingsDevicelessRoboTests-target tradefed-host atest_script_help.sh-host atest-tradefed-host\n\nTest logs: /tmp/atest_result_jinbliu/20250428_081554_iln_hwdm/log\nLog file list: file:///tmp/atest_result_jinbliu/20250428_081554_iln_hwdm/local_log_file_list.html",
+      "parentUuid": "c7dc7da6_493609df",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
