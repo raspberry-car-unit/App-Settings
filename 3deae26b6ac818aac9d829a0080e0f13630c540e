@@ -110,6 +110,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "44dd2648_3ef7e38e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-29T03:08:34Z",
+      "side": 1,
+      "message": "jinbliu@hu-jinbliu-lv:/local/mnt/workspace/LA_AU.QSSI.16.0.0$ atest CarSettingsMultivalentDeviceTests:com.android.car.settings.wifi -c\nAtest results and logs directory: /tmp/atest_result_jinbliu/20250428_200800_7ey5nj_v\n\nReading config: /usr2/jinbliu/.atest/config\n\nFinding Tests...\nFound \u0027CarSettingsMultivalentDeviceTests:com.android.car.settings.wifi\u0027 as MODULE_PACKAGE\nStop running test(s): CarSettingsMultivalentDeviceTests require a device.\n\nTest logs: /tmp/atest_result_jinbliu/20250428_200800_7ey5nj_v/log\nLog file list: file:///tmp/atest_result_jinbliu/20250428_200800_7ey5nj_v/local_log_file_list.html",
+      "parentUuid": "3ebb7e17_2e927a79",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
