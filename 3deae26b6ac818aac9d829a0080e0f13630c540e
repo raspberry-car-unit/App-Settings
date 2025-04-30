@@ -164,6 +164,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "07a40be6_b794d482",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-04-30T15:05:10Z",
+      "side": 1,
+      "message": "You can find developer documentation for building and flashing https://source.android.com/docs/setup/test\n\nI\u0027m assuming this patch has been tested though? If your device is already automotive and has the patch, you can simply connect it to your computer and make sure it shows on `adb devices`, lunch the appropriate build target in your terminal (https://source.android.com/docs/setup/build/building), and then run the CarSettingsMultivalentDeviceTests.",
+      "parentUuid": "5ea5657a_47ef8752",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
