@@ -146,6 +146,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5ea5657a_47ef8752",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-04-30T03:26:15Z",
+      "side": 1,
+      "message": "We cannot create the emulator, but we have real device that can run android W. Do you have the detailed steps about how to run the test on my device? Thanks.",
+      "parentUuid": "f87c14cb_2817f6af",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
