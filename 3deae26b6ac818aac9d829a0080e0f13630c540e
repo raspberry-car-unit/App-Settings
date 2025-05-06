@@ -182,6 +182,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "80bbd2dd_7a4c62ef",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-05-06T10:43:04Z",
+      "side": 1,
+      "message": "Our QSSI project is in the ubuntu server located in the US, and there is no real device connecting to it. In this case, how can I finish the CarSettingsMultivalentDeviceTests?",
+      "parentUuid": "07a40be6_b794d482",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
