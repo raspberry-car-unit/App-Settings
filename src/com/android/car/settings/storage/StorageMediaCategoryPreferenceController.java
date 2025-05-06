@@ -41,6 +41,11 @@ public class StorageMediaCategoryPreferenceController extends StorageUsageBasePr
     }
 
     @Override
+    protected boolean showMaxLabel() {
+       return false;
+    }
+
+    @Override
     protected long calculateCategoryUsage(SparseArray<StorageAsyncLoader.AppsStorageResult> result,
             long usedSizeBytes) {
         StorageAsyncLoader.AppsStorageResult data = result.get(UserHandle.myUserId());

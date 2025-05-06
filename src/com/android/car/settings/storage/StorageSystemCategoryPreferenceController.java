@@ -40,6 +40,11 @@ public class StorageSystemCategoryPreferenceController extends
     }
 
     @Override
+    protected boolean showMaxLabel() {
+       return true;
+    }
+
+    @Override
     protected long calculateCategoryUsage(
             SparseArray<StorageAsyncLoader.AppsStorageResult> result, long usedSizeBytes) {
         long attributedSize = 0;

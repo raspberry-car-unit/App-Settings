@@ -51,6 +51,8 @@ public abstract class StorageUsageBasePreferenceController extends
         return ProgressBarPreference.class;
     }
 
+    protected abstract boolean showMaxLabel();
+
     /**
      * Calculates the storage used by the category.
      *
@@ -97,6 +99,14 @@ public abstract class StorageUsageBasePreferenceController extends
             progressPercent = (int) (size * PROGRESS_MAX / total);
         }
         getPreference().setProgress(progressPercent);
+
+        if (showMaxLabel()) {
+            getPreference().setMaxLabel(FileSizeFormatter.formatFileSize(
+                                        getContext(),
+                                        total,
+                                        MeasureUnit.GIGABYTE,
+                                        FileSizeFormatter.GIGABYTE_IN_BYTES) + " total");
+        }
     }
 
     private static int getGigabyteSuffix(Resources res) {
