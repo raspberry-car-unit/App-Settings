@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7868fb37_336d4576",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1842959
+      },
+      "writtenOn": "2025-05-13T07:21:22Z",
+      "side": 1,
+      "message": "Commit message extended.",
+      "parentUuid": "e6a7b2e4_08146966",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 46
+      },
+      "revId": "899c700669e28b39ec4f4e714065fa732f4011c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "93c113ea_750b0daf",
         "filename": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
         "patchSetId": 1
@@ -37,6 +61,30 @@
       "writtenOn": "2025-05-06T17:22:59Z",
       "side": 1,
       "message": "Is there a reason why we are adding this to the BasePreferenceController, which all classes inherit from, and not to a specific controller (i.e to `StorageSystemCategoryPreferenceController`)?",
+      "range": {
+        "startLine": 54,
+        "startChar": 31,
+        "endLine": 54,
+        "endChar": 43
+      },
+      "revId": "899c700669e28b39ec4f4e714065fa732f4011c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5bfdfa54_15863bb0",
+        "filename": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1842959
+      },
+      "writtenOn": "2025-05-13T07:21:22Z",
+      "side": 1,
+      "message": "showMaxLabel method removed and the Storage specific code added to its Class.",
+      "parentUuid": "93c113ea_750b0daf",
       "range": {
         "startLine": 54,
         "startChar": 31,
