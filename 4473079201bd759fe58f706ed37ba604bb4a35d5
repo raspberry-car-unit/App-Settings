@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "131ec779_ec412a26",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2059244
+      },
+      "writtenOn": "2025-05-13T16:14:30Z",
+      "side": 1,
+      "message": "Looks good. Please make the following nit changes!",
+      "revId": "4473079201bd759fe58f706ed37ba604bb4a35d5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2be7314_3a76d586",
+        "filename": "src/com/android/car/settings/storage/StorageSystemCategoryPreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2059244
+      },
+      "writtenOn": "2025-05-13T16:14:30Z",
+      "side": 1,
+      "message": "Could you make this method `protected` to limit access scope? This should be possible since it was a private method.",
+      "range": {
+        "startLine": 62,
+        "startChar": 9,
+        "endLine": 62,
+        "endChar": 23
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "bb06234f_772b15e1",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/storage/StorageSystemCategoryPreferenceController.java",
+              "range": {
+                "startLine": 62,
+                "startChar": 0,
+                "endLine": 63,
+                "endChar": 0
+              },
+              "replacement": "    protected void setStorageSize(long size, long total) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "4473079201bd759fe58f706ed37ba604bb4a35d5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a62504a7_aaa32c3c",
+        "filename": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 2059244
+      },
+      "writtenOn": "2025-05-13T16:14:30Z",
+      "side": 1,
+      "message": "Add to comment\n/* Subclass may extend this method to update the preference with category specific information, such as setMaxLabel or summary. */",
+      "range": {
+        "startLine": 84,
+        "startChar": 6,
+        "endLine": 84,
+        "endChar": 43
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "4209fe64_cc8129ec",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+              "range": {
+                "startLine": 85,
+                "startChar": 0,
+                "endLine": 85,
+                "endChar": 0
+              },
+              "replacement": "     *\n     * \u003cp\u003eSubclass may extend this method to update the preference with category specific\n     * information, such as setMaxLabel or summary.\n"
+            },
+            {
+              "path": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+              "range": {
+                "startLine": 101,
+                "startChar": 0,
+                "endLine": 105,
+                "endChar": 0
+              },
+              "replacement": ""
+            }
+          ]
+        }
+      ],
+      "revId": "4473079201bd759fe58f706ed37ba604bb4a35d5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
