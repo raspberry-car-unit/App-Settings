@@ -83,6 +83,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e6bd12f_9bb69a7e",
+        "filename": "src/com/android/car/settings/storage/StorageSystemCategoryPreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1842959
+      },
+      "writtenOn": "2025-05-16T06:43:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "880154c6_0fb4e4d3",
+      "range": {
+        "startLine": 62,
+        "startChar": 9,
+        "endLine": 62,
+        "endChar": 23
+      },
+      "revId": "4473079201bd759fe58f706ed37ba604bb4a35d5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a62504a7_aaa32c3c",
@@ -148,6 +172,30 @@
       "side": 1,
       "message": "Fixed. Please see new revision.",
       "parentUuid": "a62504a7_aaa32c3c",
+      "range": {
+        "startLine": 84,
+        "startChar": 6,
+        "endLine": 84,
+        "endChar": 43
+      },
+      "revId": "4473079201bd759fe58f706ed37ba604bb4a35d5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59566b67_bdc1402e",
+        "filename": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1842959
+      },
+      "writtenOn": "2025-05-16T06:43:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4aa8cfff_6bb07cab",
       "range": {
         "startLine": 84,
         "startChar": 6,
