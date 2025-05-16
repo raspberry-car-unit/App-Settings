@@ -1,0 +1,45 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f760dfd5_69185038",
+        "filename": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 2059244
+      },
+      "writtenOn": "2025-05-16T18:23:30Z",
+      "side": 1,
+      "message": "Please make it protected here as well",
+      "range": {
+        "startLine": 89,
+        "startChar": 4,
+        "endLine": 89,
+        "endChar": 8
+      },
+      "fixSuggestions": [
+        {
+          "fixId": "55abde1b_ffbf725a",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+              "range": {
+                "startLine": 89,
+                "startChar": 0,
+                "endLine": 90,
+                "endChar": 0
+              },
+              "replacement": "    protected void setStorageSize(long size, long total) {\n"
+            }
+          ]
+        }
+      ],
+      "revId": "989a2d7ffc09e32d888832f9bcf2c18c8ddfb438",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
