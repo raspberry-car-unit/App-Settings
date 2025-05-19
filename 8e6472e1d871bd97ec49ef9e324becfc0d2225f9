@@ -34,6 +34,24 @@
       ],
       "revId": "8e6472e1d871bd97ec49ef9e324becfc0d2225f9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be0bd629_a52a974b",
+        "filename": "src/com/android/car/settings/storage/StorageSystemCategoryPreferenceController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 2059244
+      },
+      "writtenOn": "2025-05-19T16:22:38Z",
+      "side": 1,
+      "message": "Yes - please add the following resource to string.xml, and import it in the `onCreate` method, then attach it in `setStorageSize` with the formatted unit.\n\n`\u003cstring name\u003d\"storage_usage_total_size_summary\"\u003e%s total\u003c/string\u003e`. This way, the ordering will be properly translated.\n\nPlease also add the value to `packages/apps/Car/Settings/res/values/overlayable.xml`",
+      "parentUuid": "2f1d3f33_905dcfc3",
+      "revId": "8e6472e1d871bd97ec49ef9e324becfc0d2225f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
