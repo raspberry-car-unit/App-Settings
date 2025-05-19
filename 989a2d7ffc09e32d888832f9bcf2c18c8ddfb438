@@ -40,6 +40,30 @@
       ],
       "revId": "989a2d7ffc09e32d888832f9bcf2c18c8ddfb438",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46b54653_2e05d5a5",
+        "filename": "src/com/android/car/settings/storage/StorageUsageBasePreferenceController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1842959
+      },
+      "writtenOn": "2025-05-19T09:33:11Z",
+      "side": 1,
+      "message": "Fixed. Base is now changed to protected from private.",
+      "parentUuid": "f760dfd5_69185038",
+      "range": {
+        "startLine": 89,
+        "startChar": 4,
+        "endLine": 89,
+        "endChar": 8
+      },
+      "revId": "989a2d7ffc09e32d888832f9bcf2c18c8ddfb438",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
