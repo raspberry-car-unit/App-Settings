@@ -1,0 +1,39 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f1d3f33_905dcfc3",
+        "filename": "src/com/android/car/settings/storage/StorageSystemCategoryPreferenceController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-05-19T16:15:20Z",
+      "side": 1,
+      "message": "Please put the string in strings.xml. We will translate it to support other languages",
+      "fixSuggestions": [
+        {
+          "fixId": "15b31460_5bc20c1e",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "src/com/android/car/settings/storage/StorageSystemCategoryPreferenceController.java",
+              "range": {
+                "startLine": 69,
+                "startChar": 0,
+                "endLine": 70,
+                "endChar": 0
+              },
+              "replacement": "                        FileSizeFormatter.GIGABYTE_IN_BYTES) + \" \" +\n                        getContext().getString(R.string.storage_total_label));\n"
+            }
+          ]
+        }
+      ],
+      "revId": "8e6472e1d871bd97ec49ef9e324becfc0d2225f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
