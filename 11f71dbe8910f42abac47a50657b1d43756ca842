@@ -16,6 +16,41 @@
       "message": "LGTM",
       "revId": "11f71dbe8910f42abac47a50657b1d43756ca842",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9aef3276_9cc19a22",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 1430,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-05-20T16:35:29Z",
+      "side": 1,
+      "message": "nit: strings should be annotated with a char limit for our translators, ex [CHAR LIMIT\u003d50]",
+      "fixSuggestions": [
+        {
+          "fixId": "15e66264_c6dc1d0f",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "res/values/strings.xml",
+              "range": {
+                "startLine": 1430,
+                "startChar": 0,
+                "endLine": 1431,
+                "endChar": 0
+              },
+              "replacement": "    \u003c!-- Max unit label of system storage framgment [CHAR LIMIT\u003d50] --\u003e\n"
+            }
+          ]
+        }
+      ],
+      "revId": "11f71dbe8910f42abac47a50657b1d43756ca842",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
