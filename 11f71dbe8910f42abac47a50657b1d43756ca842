@@ -35,6 +35,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "920ae75d_e6773b65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1970475
+      },
+      "writtenOn": "2025-05-20T20:19:42Z",
+      "side": 1,
+      "message": "For partner contribution we should CP it into internal main and submit only there, not in aosp",
+      "parentUuid": "f00e1e0f_b9e62166",
+      "revId": "11f71dbe8910f42abac47a50657b1d43756ca842",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9aef3276_9cc19a22",
