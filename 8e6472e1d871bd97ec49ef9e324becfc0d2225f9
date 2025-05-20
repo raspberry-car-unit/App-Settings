@@ -52,6 +52,24 @@
       "parentUuid": "2f1d3f33_905dcfc3",
       "revId": "8e6472e1d871bd97ec49ef9e324becfc0d2225f9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f88fa8bd_aed46b55",
+        "filename": "src/com/android/car/settings/storage/StorageSystemCategoryPreferenceController.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1842959
+      },
+      "writtenOn": "2025-05-20T13:48:37Z",
+      "side": 1,
+      "message": "I have exported the \" total\" string to R.string.storage_total_label to strings.xml and added it into overlayable.xml",
+      "parentUuid": "be0bd629_a52a974b",
+      "revId": "8e6472e1d871bd97ec49ef9e324becfc0d2225f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
