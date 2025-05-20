@@ -200,6 +200,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a4aff888_d343199a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-05-20T20:29:56Z",
+      "side": 1,
+      "message": "Sorry for the late response, I was OOO - how are these changes verified without a device then?",
+      "parentUuid": "80bbd2dd_7a4c62ef",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
