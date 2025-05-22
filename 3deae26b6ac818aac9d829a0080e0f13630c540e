@@ -236,6 +236,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a9e63ead_f20e81e8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-05-22T17:24:46Z",
+      "side": 1,
+      "message": "Hi if you have a local device `atest CarSettingsMultivalentDeviceTests:com.android.car.settings.wifi` should work as well, you just need an android device connected via adb, it can be emulator or a physical device.",
+      "parentUuid": "ab4a726e_36174f2e",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
