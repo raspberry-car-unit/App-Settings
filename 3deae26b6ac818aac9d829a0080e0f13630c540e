@@ -290,6 +290,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5f22138f_e265a0a5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-05-23T21:37:23Z",
+      "side": 1,
+      "message": "@quic_jinbliu@quicinc.com Can you also add the bug to the commit message? Thanks!",
+      "parentUuid": "61f8f9e0_f4e25bb5",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
