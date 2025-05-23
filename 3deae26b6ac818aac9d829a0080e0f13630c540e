@@ -254,6 +254,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ac8bf701_2d08711f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-05-23T03:27:44Z",
+      "side": 1,
+      "message": "The point is that our project is in US server, which means that my local deice is connected to my local computer, not the US server. In other words, no devices is connected to the US server. That is, the US server cannot find any device connected to it.",
+      "parentUuid": "a9e63ead_f20e81e8",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
