@@ -270,6 +270,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "61f8f9e0_f4e25bb5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1862424
+      },
+      "writtenOn": "2025-05-23T21:15:55Z",
+      "side": 1,
+      "message": "I see, thanks for the explanation. In that case we will proceed to cherrypick the CL and update the tests ourselves. \n\nThe current process for merging partner code is for us to cherrypick to our internal main branch (We don\u0027t have the ability to +2 code review anymore). This should make in to the next aosp release.",
+      "parentUuid": "ac8bf701_2d08711f",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "324d837c_410cbb2a",
