@@ -308,6 +308,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cb55f644_84ebbfb7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3530670
+      },
+      "writtenOn": "2025-07-03T09:33:56Z",
+      "side": 1,
+      "message": "I have updated the commit message. Is this gerrit in merging progress?",
+      "parentUuid": "5f22138f_e265a0a5",
+      "revId": "3deae26b6ac818aac9d829a0080e0f13630c540e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "324d837c_410cbb2a",
         "filename": "src/com/android/car/settings/wifi/NetworkMeteredPreferenceController.java",
         "patchSetId": 10
