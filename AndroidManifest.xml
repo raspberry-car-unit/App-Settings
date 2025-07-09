@@ -1063,10 +1063,10 @@
                   android:launchMode="singleTask"
                   android:taskAffinity=".deeplink.DeepLinkHomepageActivity"
                   android:permission="android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.settings.SETTINGS_EMBED_DEEP_LINK_ACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".search.CarSearchResultTrampoline"
                   android:theme="@android:style/Theme.NoDisplay"
