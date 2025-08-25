@@ -32,4 +32,18 @@
         <item>com.android.systemui</item>
     </string-array>
 
+    <string-array name="rotation_entries">
+	    <item>Portrait</item>
+	    <item>Landscape</item>
+	    <item>Portrait (Reverse)</item>
+	    <item>Landscape (Reverse)</item>
+    </string-array>
+
+    <string-array name="rotation_values">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+    </string-array>
+
 </resources>

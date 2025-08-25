@@ -71,6 +71,7 @@ import com.android.car.settings.wifi.AddWifiFragment;
 import com.android.car.settings.wifi.WifiSettingsFragment;
 import com.android.car.settings.wifi.WifiTetherFragment;
 import com.android.car.settings.wifi.preferences.WifiPreferencesFragment;
+import com.android.car.settings.pi.PiSettingsFragment;
 
 /**
  * Top level settings class, containing static instances of CarSettings activities.
@@ -656,6 +657,15 @@ public class CarSettingActivities {
         @Override
         protected Fragment getInitialFragment() {
             return new AlarmsAndReminderFragment();
+        }
+    }
+
+    /** Raspberry Pi settings activity. */
+    public static class RaspberryPiSettingsActivity extends BaseCarSettingsActivity {
+        @Nullable
+        @Override
+        protected Fragment getInitialFragment() {
+            return new PiSettingsFragment();
         }
     }
 }

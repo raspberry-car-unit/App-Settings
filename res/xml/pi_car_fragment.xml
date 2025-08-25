@@ -1,0 +1,15 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="Raspberry Pi Unit Settings"
+    android:key="pi_car_settings">
+
+    <ListPreference
+	    android:key="screen_orientation"
+	    android:title="Screen Orientation"
+	    android:defaultValue="0"
+	    android:entries="@array/rotation_entries"
+	    android:entryValues="@array/rotation_values"
+        settings:controller="com.android.car.settings.pi.OrientationPreferenceController" />
+
+</PreferenceScreen>
