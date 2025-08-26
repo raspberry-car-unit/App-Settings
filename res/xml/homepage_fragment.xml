@@ -132,6 +132,4 @@
         android:icon="@drawable/ic_top_level_pi" 
         android:fragment="com.android.car.settings.pi.PiSettingsFragment"
         settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController" />
-
-    </com.android.car.settings.common.LogicalPreferenceGroup>
 </PreferenceScreen>
